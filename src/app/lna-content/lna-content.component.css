@@ -1,0 +1,11 @@
+.top-banner {
+  height: 40px;
+  background: var(--color01);
+  color:white;
+  padding-left:20px;
+  font-size: 23px;
+  font-weight: 600;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ letter-spacing:3px;
+ 
+}

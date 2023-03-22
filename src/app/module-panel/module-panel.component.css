@@ -1,0 +1,35 @@
+.panel-background {
+  width: 100px;
+  height: 100vh;
+  background: var(--color03);
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hriqLogo {
+  margin: 25px 0px;
+  height: 44px
+}
+.panelIcons{
+    padding-top:43px
+}
+
+.icons{
+    padding-bottom:20px
+}
+.moduleIcons {
+    width:32px
+}
+.moduleLegend{
+    color: var(--color01);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none
+}
+
+
+.shift-right {
+  padding-left: 100px
+}

@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-lg shift-right">
+  <div class="container-fluid p-0">
+    <div class="d-flex align-items-center">
+      <img class="icons" src="./assets/clientLogo.png" class="client-logo">
+    </div>
+
+
+    <div class="d-flex justify-content-end align-items-center">
+      <!-- <a type="button" data-toggle="tooltip" title="Bookmark">
+        <img class="icons" src="./assets/iconsTopbar2px/pin02.svg" />
+      </a>-->
+
+      <a type="button" href="#"
+         tooltipClass="tooltipclass"
+         placement="bottom"
+         ngbTooltip="Quick Links"
+         [openDelay]="300">
+        <img class="icons" src="./assets/iconsTopbar2px/pin02.svg" />
+      </a>
+
+      <a type="button" href="#"
+         class="pe-2"
+         popoverTitle="Information"
+         ngbPopover="Info details"
+         triggers="mouseenter:mouseleave"
+         [openDelay]="200">
+        <button type="button"
+                class="btn btn-sm rounded-pill information"
+                style="width: 2rem; height:2rem;">
+          3
+        </button>
+        <img class="icons" src="./assets/iconsTopbar2px/infoHexagon.svg" />
+      </a>
+
+      <a type="button" href="#"
+         class="pe-2"
+         popoverTitle="Notification"
+         ngbPopover="Notification details"
+         triggers="mouseenter:mouseleave"
+         [openDelay]="200">
+        <button type="button"
+                class="btn btn-sm rounded-pill notification"
+                style="width: 2rem; height:2rem;">
+          3
+        </button>
+        <img class="icons" src="./assets/iconsTopbar2px/mail05.svg" />
+      </a>
+
+      <a type="button" href="#"
+         class="pe-2"
+         popoverTitle="Alerts"
+         ngbPopover="Alert details"
+         triggers="mouseenter:mouseleave"
+         [openDelay]="200">
+        <button type="button"
+                class="btn btn-sm rounded-pill alerts"
+                style="width: 2rem; height:2rem;">
+          14
+        </button>
+        <img class="icons" src="./assets/iconsTopbar2px/bellRinging03.svg" />
+      </a>
+
+      <a type="button" href="#"
+         tooltipClass="tooltipclass"
+         placement="bottom"
+         ngbTooltip="Dashboard"
+         [openDelay]="200">
+        <img class="icons" src="./assets/iconsTopbar2px/pieChart03.svg" />
+      </a>
+
+      <a type="button" href="#"
+         tooltipClass="tooltipclass"
+         placement="bottom"
+         ngbTooltip="Change Company"
+         [openDelay]="200">
+        <img class="icons" src="./assets/iconsTopbar2px/building07.svg" />
+      </a>
+
+      <a type="button" href="#"
+         tooltipClass="tooltipclass"
+         placement="bottom"
+         ngbTooltip="Switch to ESS"
+         [openDelay]="200">
+        <img class="icons mt-3" src="./assets/iconsTopbar2px/ESS.svg" />
+      </a>
+
+      <a type="button" href="#"
+         tooltipClass="tooltipclass"
+         placement="bottom"
+         ngbTooltip="Logout"
+         [openDelay]="200">
+        <img class="icons" src="./assets/iconsTopbar2px/arrowCircleBrokenRight01.svg" />
+      </a>
+
+
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+
+      <div class="collapse navbar-collapse profile pe-2" id="navbarScroll">
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="pe-3" src="./assets/profile.png" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="#">Change Language</a></li>
+            <li><a class="dropdown-item" href="#">Change Theme</a></li>
+          </ul>
+        </li>
+      </div>
+
+
+    </div>
+  </div>
+</nav>
+
+

@@ -1,0 +1,16 @@
+:host {
+  --color01: #00377d;
+  --color02: #c8e2fb;
+  --color03: #eaf4ff;
+  --color04: #b5caf0;
+  --colorGrey: #a2a2a2
+}
+
+/*@font-face{
+    font-family: 'Trebuchet MS';
+    src: url('../assets/fonts/trebuc.ttf')
+}*/
+
+.shift-right {
+  padding-left: 100px;
+}
