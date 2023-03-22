@@ -4,8 +4,8 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\lna-content",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\top-panel"
+    "\\src\\app\\menu"
   ],
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }
