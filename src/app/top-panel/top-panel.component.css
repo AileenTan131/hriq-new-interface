@@ -130,13 +130,15 @@ button {
   letter-spacing: 1px;
 }
 
-
+.dropdown-menu{
+    margin-right:15px
+}
 .dropdown-item {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   padding-top: 4px !important;
   padding-bottom: 4px !important;
-    font-size:16px
+  font-size:16px
 }
 
   .dropdown-item:hover {
