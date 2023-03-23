@@ -2,28 +2,52 @@
     padding-top:0;
     padding-bottom:0
 }
-li {
-  list-style-type: none;
-}
-
-.icons, .profile {
-  padding: 0px;
-  margin: 0px 20px;
-}
-
 .top-panel {
   padding: 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end
 }
-
+li {
+  list-style-type: none;
+}
+.icons, .profile {
+  padding: 0px;
+  margin: 0px 15px;
+}
+button {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.alerts, .notification, .information{
+  top: 15px;
+}
+.alerts {
+  position: fixed;
+  right: 413px;
+  background-color: #ff0000;
+}
+.notification {
+  position: fixed;
+  right: 486px;
+  background-color: #ffa200;
+}
+.information {
+  position: fixed;
+  right: 568px;
+  background-color: var(--color01);
+}
 .dropdown-item {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   /*  font-size:18px*/
 }
-
 ::ng-deep .popover {
   color: black;
   background-color: white;
@@ -33,11 +57,9 @@ li {
   /*  border: 1px solid var(--color04);*/
   border-radius: 10px;
 }
-
 /*::ng-deep .popover .arrow::after {
   border-top-color: var(--color04);
 }*/
-
 
 /*tooltip*/
 ::ng-deep .tooltipclass .tooltip-inner {
@@ -50,48 +72,14 @@ li {
   border-radius: 10px;
   padding: 5px 10px;
 }
-
 ::ng-deep .tooltipclass .tooltip-arrow::before {
   border-bottom-color: #bebebe;
 }
-
 .spinner-border {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-width: 10px;
   position: fixed;
-  right: 50px;
-  color: var(--color02);
-}
-
-button {
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center
-}
-
-.alerts {
-  position: fixed;
-  right: 459px;
-  top: 24px;
-  background-color: #ff0000;
-}
-
-.notification {
-  position: fixed;
-  right: 537px;
-  top: 24px;
-  background-color: #ffa200;
-}
-
-.information {
-  position: fixed;
-  right: 621px;
-  top: 24px;
-  background-color: var(--color01);
+  right: 46px;
+  color: var(--color04);
 }
