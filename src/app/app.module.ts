@@ -13,10 +13,13 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap'
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { EncapsulationComponent } from './encapsulation/encapsulation.component';
 
 const appRoutes: Routes = [
   { path: 'learning-menu', component: LearningMenuComponent },
-  { path: 'lna-content', component: LnaContentComponent }
+  { path: 'lna-content', component: LnaContentComponent },
+  { path: 'dashboard', component: DashboardComponent}
   ]
 
 
@@ -27,7 +30,9 @@ const appRoutes: Routes = [
     TopPanelComponent,
     LnaContentComponent,
     FooterComponent,
-    LearningMenuComponent
+    LearningMenuComponent,
+    DashboardComponent,
+    EncapsulationComponent
   ],
   imports: [
     BrowserModule,

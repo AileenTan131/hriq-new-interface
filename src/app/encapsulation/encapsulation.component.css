@@ -1,0 +1,25 @@
+.shift-right {
+  margin-left: 100px
+}
+h1 {
+  color: var(--color01);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  padding-left: 30px;
+}
+.top-banner {
+  height: 40px;
+  margin: 0px 20px;
+  background: var(--color01);
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 3px;
+  border-radius: 10px;
+}
+.banner-title-01 {
+  padding-left: 20px;
+  padding-right: 0
+}

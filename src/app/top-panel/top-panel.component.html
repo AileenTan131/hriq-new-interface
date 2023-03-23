@@ -11,14 +11,15 @@
       </a>-->
 
       <a type="button" href="#"
-         tooltipClass="tooltipclass"
-         placement="bottom"
-         ngbTooltip="Quick Links"
-         [openDelay]="300">
+         class="pe-2"
+         popoverTitle="Quick Links"
+         ngbPopover="Quick link page 01"
+         triggers="mouseenter:mouseleave"
+         [openDelay]="200">
         <img class="icons" src="./assets/iconsTopbar2px/pin02.svg" />
       </a>
 
-      <a type="button" href="#"
+      <a type="button" routerLink="/dashboard"
          class="pe-2"
          popoverTitle="Information"
          ngbPopover="Info details"
@@ -32,7 +33,7 @@
         <img class="icons" src="./assets/iconsTopbar2px/infoHexagon.svg" />
       </a>
 
-      <a type="button" href="#"
+      <a type="button" routerLink="/dashboard"
          class="pe-2"
          popoverTitle="Notification"
          ngbPopover="Notification details"
@@ -46,7 +47,7 @@
         <img class="icons" src="./assets/iconsTopbar2px/mail05.svg" />
       </a>
 
-      <a type="button" href="#"
+      <a type="button" routerLink="/dashboard"
          class="pe-2"
          popoverTitle="Alerts"
          ngbPopover="Alert details"
@@ -60,7 +61,7 @@
         <img class="icons" src="./assets/iconsTopbar2px/bellRinging03.svg" />
       </a>
 
-      <a type="button" href="#"
+      <a type="button" routerLink="/dashboard"
          tooltipClass="tooltipclass"
          placement="bottom"
          ngbTooltip="Dashboard"
