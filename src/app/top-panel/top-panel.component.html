@@ -6,60 +6,69 @@
 
 
     <div class="d-flex justify-content-end align-items-center">
-      <!-- <a type="button" data-toggle="tooltip" title="Bookmark">
-        <img class="icons" src="./assets/iconsTopbar2px/pin02.svg" />
-      </a>-->
 
-      <a type="button" href="#"
-         class="pe-2"
-         popoverTitle="Quick Links"
-         ngbPopover="Quick link page 01"
-         triggers="mouseenter:mouseleave"
-         [openDelay]="200">
-        <img class="icons" src="./assets/iconsTopbar2px/pin02.svg" />
-      </a>
+      <div class="hover-menu">
+        <a href="#" class="menu-button">
+          <img class="icons" src="./assets/iconsTopbar2px/pin02.svg" />
+        </a>
+        <div class="dropdown-menu dropdown-menu-end dropdowns">
+          <h6 class="dropdown-header">Quick Links</h6>
+          <a class="dropdown-item" href="#">Page link 01</a>
+          <a class="dropdown-item" href="#">Page link 02</a>
+          <a class="dropdown-item" href="#">Page link 03</a>
+        </div>
+      </div>
 
-      <a type="button" routerLink="/dashboard"
-         class="pe-3"
-         popoverTitle="Information"
-         ngbPopover="Info details"
-         triggers="mouseenter:mouseleave"
-         [openDelay]="200">
-        <button type="button"
-                class="btn btn-sm rounded-pill information"
-                style="width: 2rem; height:2rem;">
-          3
-        </button>
-        <img class="icons" src="./assets/iconsTopbar2px/infoHexagon.svg" />
-      </a>
+      <div class="hover-menu pe-3">
+        <a  routerLink="/dashboard"  class="menu-button">
+          <img class="icons" src="./assets/iconsTopbar2px/infoHexagon.svg" />
+          <button type="button"
+                  class="btn btn-sm rounded-pill information"
+                  style="width: 2rem; height:2rem;">
+            3
+          </button>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end dropdowns">
+          <h6 class="dropdown-header">Information</h6>
+          <a class="dropdown-item" href="#">Information message 01</a>
+          <a class="dropdown-item" href="#">Information message 02</a>
+          <a class="dropdown-item" href="#">Information message 03</a>
+        </div>
+      </div>
 
-      <a type="button" routerLink="/dashboard"
-         class="pe-3"
-         popoverTitle="Notification"
-         ngbPopover="Notification details"
-         triggers="mouseenter:mouseleave"
-         [openDelay]="200">
-        <button type="button"
-                class="btn btn-sm rounded-pill notification"
-                style="width: 2rem; height:2rem;">
-          3
-        </button>
-        <img class="icons" src="./assets/iconsTopbar2px/mail05.svg" />
-      </a>
+      <div class="hover-menu pe-3">
+        <a  routerLink="/dashboard" class="menu-button">
+          <img class="icons" src="./assets/iconsTopbar2px/mail05.svg" />
+          <button type="button"
+                  class="btn btn-sm rounded-pill notification"
+                  style="width: 2rem; height:2rem;">
+            3
+          </button>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end dropdowns">
+          <h6 class="dropdown-header">Notification</h6>
+          <a class="dropdown-item" href="#">Notification message 01</a>
+          <a class="dropdown-item" href="#">Notification message 02</a>
+        </div>
+      </div>
 
-      <a type="button" routerLink="/dashboard"
-         class="pe-3"
-         popoverTitle="Alerts"
-         ngbPopover="Alert details"
-         triggers="mouseenter:mouseleave"
-         [openDelay]="200">
-        <button type="button"
-                class="btn btn-sm rounded-pill alerts"
-                style="width: 2rem; height:2rem;">
-          14
-        </button>
-        <img class="icons" src="./assets/iconsTopbar2px/bellRinging03.svg" />
-      </a>
+
+      <div class="hover-menu pe-3">
+        <a  routerLink="/dashboard" class="menu-button">
+          <img class="icons" src="./assets/iconsTopbar2px/bellRinging03.svg" />
+          <button type="button"
+                  class="btn btn-sm rounded-pill alerts"
+                  style="width: 2rem; height:2rem;">
+            14
+          </button>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end dropdowns">
+          <h6 class="dropdown-header">Alerts</h6>
+          <a class="dropdown-item" href="#">Alert message 01</a>
+          <a class="dropdown-item" href="#">Alert message 02</a>
+          <a class="dropdown-item" href="#">Alert message 03</a>
+        </div>
+      </div>
 
       <a type="button" routerLink="/dashboard"
          tooltipClass="tooltipclass"
@@ -98,18 +107,15 @@
         <span class="visually-hidden">Loading...</span>
       </div>
 
-
-      <div class="collapse navbar-collapse profile pe-2" id="navbarScroll">
-        <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img class="pe-3" src="./assets/profile.png" />
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Change Password</a></li>
-            <li><a class="dropdown-item" href="#">Change Language</a></li>
-            <li><a class="dropdown-item" href="#">Change Theme</a></li>
-          </ul>
-        </li>
+      <div class="btn-group">
+        <a class="nav-link dropdown-toggle pe-3" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="p-3" src="./assets/profile.png" />
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Change Password</a></li>
+          <li><a class="dropdown-item" href="#">Change Language</a></li>
+          <li><a class="dropdown-item" href="#">Change Theme</a></li>
+        </ul>
       </div>
 
 

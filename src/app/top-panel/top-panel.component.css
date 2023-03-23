@@ -1,20 +1,24 @@
-.navbar{
-    padding-top:0;
-    padding-bottom:0
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0
 }
+
 .top-panel {
   padding: 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end
 }
+
 li {
   list-style-type: none;
 }
+
 .icons, .profile {
   padding: 0px;
   margin: 0px 15px;
 }
+
 button {
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,28 +29,27 @@ button {
   justify-content: center;
   align-items: center
 }
-.alerts, .notification, .information{
+
+.alerts, .notification, .information {
   top: 15px;
 }
+
 .alerts {
   position: fixed;
-  right: 413px;
+  right: 407px;
   background-color: #ff0000;
 }
+
 .notification {
   position: fixed;
-  right: 486px;
+  right: 481px;
   background-color: #ffa200;
 }
+
 .information {
   position: fixed;
-  right: 568px;
+  right: 563px;
   background-color: var(--color01);
-}
-.dropdown-item {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  letter-spacing: 1px;
-  /*  font-size:18px*/
 }
 ::ng-deep .popover {
   color: black;
@@ -65,21 +68,78 @@ button {
 ::ng-deep .tooltipclass .tooltip-inner {
   color: black;
   background-color: white;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1px;
   border: 1px solid #bebebe;
   border-radius: 10px;
   padding: 5px 10px;
 }
+
 ::ng-deep .tooltipclass .tooltip-arrow::before {
   border-bottom-color: #bebebe;
 }
+
 .spinner-border {
   width: 65px;
   height: 65px;
   border-width: 10px;
   position: fixed;
-  right: 46px;
+  right: 39px;
   color: var(--color04);
 }
+
+.btn-group {
+  width: 100%
+}
+
+.hover-menu {
+  position: relative;
+  display: inline-block;
+  float: right
+}
+
+.dropdowns {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  /* z-index:1*/
+}
+
+  .dropdowns a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*display: block*/
+  }
+
+    .dropdowns a:hover {
+      background-color: #efefef;
+      color: black;
+    }
+
+.hover-menu:hover .dropdowns {
+  display: block
+}
+
+.dropdown-header {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+
+.dropdown-item {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+    font-size:16px
+}
+
+  .dropdown-item:hover {
+    background-color: #efefef;
+    color: black
+  }
