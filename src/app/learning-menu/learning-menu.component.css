@@ -1,0 +1,49 @@
+h1 {
+  color: var(--color01);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  padding-left: 30px;
+}
+.top-banner {
+  height: 40px;
+  margin: 0px 20px;
+  background: var(--color01);
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 3px;
+  border-radius: 10px;
+}
+.banner-title-01{
+    padding-left:20px;
+  padding-right:0
+}
+.banner-title-02{
+  padding-left: 40px;
+  padding-right:0
+}
+.banner-title-03 {
+  padding-left: 40px;
+}
+.page-links {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.texts {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button {
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 3.5px 15px;
+  border: none
+}
+button:hover{
+    color: var(--color01);
+    background-color: var(--color03)
+}

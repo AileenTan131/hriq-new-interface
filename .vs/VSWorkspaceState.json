@@ -3,9 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\lna-content",
-    "\\src\\app\\menu"
+    "\\src\\app\\footer",
+    "\\src\\app\\learning-menu",
+    "\\src\\app\\lna-content"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\footer\\footer.component.css",
   "PreviewInSolutionExplorer": false
 }
