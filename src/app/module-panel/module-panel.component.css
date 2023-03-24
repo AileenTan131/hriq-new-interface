@@ -22,7 +22,6 @@
 }
 .moduleLegend{
     color: var(--color01);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
 }
 a{

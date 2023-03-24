@@ -1,11 +1,28 @@
-.top-banner {
+.banner {
   height: 40px;
   background: var(--color01);
   color:white;
   padding-left:20px;
   font-size: 23px;
   font-weight: 600;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- letter-spacing:3px;
- 
+  letter-spacing:3px;
+}
+.card {
+  border-color:white;
+  padding: 5px
+}
+.hide-profile{
+ font-style:italic;
+ text-decoration:none;
+ color: var(--color01);
+}
+.profile-square{
+    width:116px
+}
+.profile-detail{
+    font-size:18px;
+    padding-top:10px
+}
+.detail{
+    padding-bottom:5px
 }

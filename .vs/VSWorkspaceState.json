@@ -3,10 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\footer",
-    "\\src\\app\\learning-menu",
-    "\\src\\app\\lna-content"
+    "\\src\\app\\dashboard",
+    "\\src\\app\\encapsulation",
+    "\\src\\app\\top-panel",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\footer\\footer.component.css",
+  "SelectedNode": "\\src\\app\\encapsulation\\encapsulation.component.css",
   "PreviewInSolutionExplorer": false
 }

@@ -3,7 +3,6 @@
 }
 h1 {
   color: var(--color01);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 600;
   font-size: 26px;
   padding-left: 30px;
@@ -15,7 +14,6 @@ h1 {
   color: white;
   font-size: 22px;
   font-weight: 600;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 3px;
   border-radius: 10px;
 }
