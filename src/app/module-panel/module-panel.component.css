@@ -1,7 +1,7 @@
 .panel-background {
   width: 100px;
   height: 100vh;
-  background: var(--color03);
+  background-color: var(--color03);
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,6 @@
 }
 .moduleLegend{
     color: var(--color01);
-    font-size: 15px;
 }
 a{
     text-decoration: none

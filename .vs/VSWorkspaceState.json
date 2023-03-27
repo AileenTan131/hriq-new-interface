@@ -5,9 +5,12 @@
     "\\src\\app",
     "\\src\\app\\dashboard",
     "\\src\\app\\encapsulation",
+    "\\src\\app\\lna-content",
+    "\\src\\app\\module-panel",
     "\\src\\app\\top-panel",
-    "\\src\\assets"
+    "\\src\\assets",
+    "\\src\\assets\\iconsOthers2px"
   ],
-  "SelectedNode": "\\src\\app\\encapsulation\\encapsulation.component.css",
+  "SelectedNode": "\\src\\app\\app.component.css",
   "PreviewInSolutionExplorer": false
 }

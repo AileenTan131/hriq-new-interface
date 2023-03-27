@@ -6,15 +6,25 @@
   --colorGrey: #a2a2a2
 }
 
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 /*@font-face{
     font-family: 'Trebuchet MS';
     src: url('../assets/fonts/trebuc.ttf')
 }*/
 
-.shift-right {
-  padding-left: 100px;
+.app{
+    display: grid;
+    grid-template-columns:100px 1fr;
+    grid-template-rows: 92px 1fr;
 }
-
-*{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+.top-panel{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+.module-panel{
+    grid-column:1/2;
+    grid-row:1/-1;
 }

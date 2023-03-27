@@ -1,28 +1,110 @@
 .banner {
   height: 40px;
   background: var(--color01);
-  color:white;
-  padding-left:20px;
-  font-size: 23px;
+  color: white;
+  padding-left: 20px;
+  font-size: 21px;
   font-weight: 600;
-  letter-spacing:3px;
+  letter-spacing: 3px;
 }
+
 .card {
-  border-color:white;
-  padding: 5px
+  border-color: transparent;
+  padding: 5px;
+  background-color: transparent
 }
-.hide-profile{
- font-style:italic;
- text-decoration:none;
- color: var(--color01);
+
+.hide-profile {
+  font-style: italic;
+  text-decoration: none;
+  color: var(--color01);
+  position: relative;
+  z-index: 1
 }
-.profile-square{
-    width:116px
+.profile-square {
+  width: 116px
 }
-.profile-detail{
-    font-size:18px;
-    padding-top:10px
+
+.profile-detail {
+  font-size: 18px;
+  padding-top: 10px
 }
-.detail{
-    padding-bottom:5px
+
+.detail {
+  padding-bottom: 5px
 }
+/*table{
+    margin: 30px
+}*/
+.container-fluid {
+  margin: 0;
+  padding: 10px 30px
+}
+
+table {
+  border-color: var(--color04);
+}
+/*thead{
+    background-color:var(--color04);
+
+}*/
+/*.table-banner-header {
+  height: 40px;
+    width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color04);
+  color: var(--color01);
+  font-weight: 600;
+  padding: 0px 15px
+}*/
+
+.fit-content {
+  max-width: fit-content;
+}
+
+.header {
+  color: var(--color01);
+  background-color: var(--color02);
+}
+
+.remark {
+  border-top: hidden;
+  margin-top: 100px
+}
+
+.remark-padding {
+  padding-top: 0
+}
+
+.training-plan {
+  font-weight: 600;
+  color: var(--color01);
+  background-color: var(--color03);
+  border-radius: 13px;
+  border: none;
+  padding: 0px 0px 0px 15px
+}
+.rounded-pill {
+
+  background-color: var(--color04);
+  border-color: var(--color03);
+  color: var(--color01);
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center
+}
+.text-center{
+    text-align: center;
+}
+.summary, .button-01{
+    color: var(--color01);
+    font-weight: 600;
+}
+.lna-details{
+    position: relative;
+    top:-25px;
+}
+

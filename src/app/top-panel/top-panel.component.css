@@ -2,49 +2,39 @@
   padding-top: 0;
   padding-bottom: 0
 }
-
 .top-panel {
   padding: 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end
 }
-
 li {
   list-style-type: none;
-}
-
-.icons, .profile {
+}.icons, .profile {
   padding: 0px;
   margin: 0px 15px;
 }
-
 button {
   color: white;
   font-weight: 600;
   font-size: 15px;
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center
 }
-
 .alerts, .notification, .information {
   top: 15px;
 }
-
 .alerts {
   position: fixed;
   right: 407px;
   background-color: #ff0000;
 }
-
 .notification {
   position: fixed;
   right: 481px;
   background-color: #ffa200;
 }
-
 .information {
   position: fixed;
   right: 563px;
@@ -75,7 +65,6 @@ button {
 ::ng-deep .tooltipclass .tooltip-arrow::before {
   border-bottom-color: var(--color04);
 }
-
 .spinner-border {
   width: 70px;
   height: 70px;
@@ -84,13 +73,11 @@ button {
   right: 38px;
   color: var(--color04);
 }
-
 .hover-menu {
   position: relative;
   display: inline-block;
   float: right
 }
-
 .dropdowns {
   display: none;
   position: absolute;
@@ -108,16 +95,13 @@ button {
       background-color: #efefef;
       color: black;
     }
-
 .hover-menu:hover .dropdowns {
   display: block
 }
-
 .dropdown-header {
   font-size: 16px;
   letter-spacing: 1px;
 }
-
 .dropdown-menu{
     margin-right:15px;
     border-color:var(--color04)
