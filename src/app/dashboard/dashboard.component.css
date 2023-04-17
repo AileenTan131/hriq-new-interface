@@ -1,31 +1,36 @@
-img{  
-    max-width:47%
+img {
+  max-width: 47%
 }
+
 .second-banner {
- position: fixed;
- right: 0px;
- top: 60%;
- width: 31%;
+  position: fixed;
+  right: 0px;
+  top: 60%;
+  width: 31%;
 }
-.table{
-    width:31%;
-    max-height: 40%;
-    position: fixed;
-    right:20px;
+
+.table {
+  width: 31%;
+  max-height: 40%;
+  position: fixed;
+  right: 20px;
 }
-.numbers{
-    padding:3px;
-    padding-left:20px;
-    width:5%;
-    color: red;
-    font-size:18px;
+
+.numbers {
+  padding: 3px;
+  padding-left: 20px;
+  width: 5%;
+  color: red;
+  font-size: 1.13rem;
 }
+
 td {
   padding: 3px;
   padding-left: 18px;
-  font-size: 18px;
+  font-size: 1.13rem;
 }
+
 .notifications {
-   position: absolute;
-   top:64%
+  position: absolute;
+  top: 64%
 }

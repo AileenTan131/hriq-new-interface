@@ -4,13 +4,9 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\dashboard",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\lna-content",
     "\\src\\app\\module-panel",
-    "\\src\\app\\top-panel",
-    "\\src\\assets",
-    "\\src\\assets\\iconsOthers2px"
+    "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src\\app\\app.component.css",
+  "SelectedNode": "\\src\\app\\top-panel\\top-panel.component.html",
   "PreviewInSolutionExplorer": false
 }
