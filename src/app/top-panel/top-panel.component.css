@@ -81,7 +81,7 @@ button {
   border-bottom-color: var(--color04);
 }
 
-.spinner-border {
+/*.spinner-border {
   width: 70px;
   height: 70px;
   border-width: 4px;
@@ -89,7 +89,7 @@ button {
   right: 38px;
   color: var(--color04);
 }
-
+*/
 .hover-menu {
   position: relative;
   display: inline-block;
@@ -141,3 +141,7 @@ button {
     background-color: #efefef;
     color: black
   }
+
+.profile-pic {
+  height: 110%
+}

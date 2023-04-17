@@ -1,25 +1,9 @@
 img {
-  max-width: 47%
-}
-
-.second-banner {
-  position: fixed;
-  right: 0px;
-  top: 60%;
-  width: 31%;
-}
-
-.table {
-  width: 31%;
-  max-height: 40%;
-  position: fixed;
-  right: 20px;
+  max-width: 70%
 }
 
 .numbers {
   padding: 3px;
-  padding-left: 20px;
-  width: 5%;
   color: red;
   font-size: 1.13rem;
 }
@@ -30,7 +14,8 @@ td {
   font-size: 1.13rem;
 }
 
-.notifications {
-  position: absolute;
-  top: 64%
+.notification{
+    width:100%;
+    position: relative;
+    right:14px
 }
