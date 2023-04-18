@@ -7,22 +7,74 @@
   flex-direction: column;
   text-align: center;
 }
+
 .hriqLogo {
   margin: 25px 0px;
   height: 44px
 }
-.panelIcons{
-    padding-top:43px
+
+.panelIcons {
+  padding-top: 43px
 }
-.icons{
-    padding-bottom:20px;
+
+.icons {
+  padding-bottom: 20px;
 }
+
 .moduleIcons {
-    width:29px
+  width: 29px
 }
-.moduleLegend{
+
+.moduleLegend {
+  color: var(--color01);
+}
+
+a {
+  text-decoration: none
+}
+
+
+.modal {
+  --bs-modal-width: 80%
+}
+
+.line {
+  position: absolute;
+  top: 118px
+}
+
+.modal-header, .modal-footer {
+  border: none
+}
+.modal-body{
+    padding-bottom:60px
+}
+.dot {
+  color: var(--color01);
+}
+
+button.header {
+  color: var(--color01);
+  font-weight: 600;
+}
+
+.selection {
+  text-align: center
+}
+
+button {
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 3.5px 15px;
+  border: none
+}
+
+  button:hover {
     color: var(--color01);
-}
-a{
-    text-decoration: none
+    background-color: var(--color03)
+  }
+
+h5 {
+  margin: 0
 }
