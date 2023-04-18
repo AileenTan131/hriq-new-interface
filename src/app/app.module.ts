@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ModulePanelComponent } from './module-panel/module-panel.component';
 import { TopPanelComponent } from './top-panel/top-panel.component';
 import { LnaContentComponent } from './lna-content/lna-content.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterQuicklinksComponent } from './footer/footer-quicklinks.component';
 import { LearningMenuComponent } from './learning-menu/learning-menu.component';
 
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
@@ -29,7 +29,7 @@ const appRoutes: Routes = [
     ModulePanelComponent,
     TopPanelComponent,
     LnaContentComponent,
-    FooterComponent,
+    FooterQuicklinksComponent,
     LearningMenuComponent,
     DashboardComponent,
     EncapsulationComponent
