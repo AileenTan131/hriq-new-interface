@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
 export class LnaContentComponent {
   public isCollapsed = false;
 
-/*  $(function() {
-    $("#content-2").mCustomScrollbar({
-      theme: "rounded-dark"
-      });
-  });*/
+  textShow=true
 }

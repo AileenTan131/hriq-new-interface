@@ -3,6 +3,7 @@
   background: var(--color01);
   color: white;
   padding-left: 20px;
+  margin-bottom:10px;
   font-size: 1.31rem;
   font-weight: 600;
   letter-spacing: 3px;
@@ -23,7 +24,8 @@
 }
 
 .profile-square {
-  width: 116px
+  width: 116px;
+  margin-left:30px
 }
 
 .profile-detail {
@@ -32,7 +34,11 @@
 }
 
 .detail {
-  padding-bottom: 5px
+  padding-bottom: 5px;
+  padding-left:25px;
+}
+.profile-detail {
+  padding-left: 37px
 }
 /*table{
     margin: 30px
@@ -109,12 +115,14 @@ table {
 
 .lna-details {
   position: relative;
-  top: -25px;
+  top: -29px;
 }
-
-.approving-officers {
-font-weight: 600;
-position: absolute;
-bottom:37px
+.ao {
+  position: relative;
+  top: -50px;
 }
-
+.action-icons{
+    position: absolute;
+    right:0px;
+    padding-right:25px
+}
