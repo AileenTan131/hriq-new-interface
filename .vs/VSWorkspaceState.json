@@ -4,10 +4,7 @@
     "\\.angular",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\homepage",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\top-panel"
+    "\\src\\app\\module-panel"
   ],
-  "SelectedNode": "\\src\\app\\homepage\\homepage.component.ts",
   "PreviewInSolutionExplorer": false
 }

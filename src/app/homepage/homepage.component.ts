@@ -12,9 +12,5 @@ export class HomepageComponent implements OnInit {
   toggleOff = false
 
   ngOnInit() { }
- 
-
-
 
   }
-

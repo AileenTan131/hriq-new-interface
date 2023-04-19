@@ -106,7 +106,11 @@
               </div>
               <h5 class="text-center pt-2"><strong>Global</strong></h5>
               <br />
-              <div class="selection"><button>Company</button></div>
+              <button class="selection"
+                      (click)="onSelect(globals)"
+                      *ngFor='let globals of global'>
+                {{globals.name}}
+              </button>
             </div>
 
             <div class="col-2">
@@ -115,16 +119,11 @@
               </div>
               <h5 class="text-center pt-2"><strong>Course</strong></h5>
               <br />
-              <div class="selection"><button>Course Classification</button></div>
-              <div class="selection"><button>Vendor</button></div>
-              <div class="selection"><button>Subsidy</button></div>
-              <div class="selection"><button>Absent Remarks</button></div>
-              <div class="selection"><button>Course Expenses</button></div>
-              <div class="selection"><button>Bond Enquiry Leave Code</button></div>
-              <div class="selection"><button>Feedback Form Template</button></div>
-              <div class="selection"><button>CPD Hours Target</button></div>
-              <div class="selection"><button>Maximum Course</button></div>
-              <div class="selection"><button>Announcements</button></div>
+              <button class="selection"
+                      (click)="onSelect(courses)"
+                      *ngFor='let courses of course'>
+                {{courses.name}}
+              </button>
             </div>
 
             <div class="col-2">
@@ -133,12 +132,15 @@
               </div>
               <h5 class="text-center pt-2"><strong>Competency</strong></h5>
               <br />
-              <div class="selection"><button>Competency Mapping</button></div>
-              <div class="selection"><button>Competency</button></div>
+              <button class="selection"
+                      (click)="onSelect(competencies)"
+                      [class.selected]="isSelected(competencies)"
+                      data-bs-dismiss="modal"
+                      *ngFor='let competencies of competency'>
+                {{competencies.name}}
+              </button>
               <div class="selection" routerLink="/lna-content">
-                <button type="button" data-bs-dismiss="modal">Learning Needs</button>
               </div>
-              <div class="selection"><button>Job Grade Matrix</button></div>
             </div>
 
             <div class="col-2">
@@ -147,8 +149,11 @@
               </div>
               <h5 class="text-center pt-2"><strong>Currency</strong></h5>
               <br />
-              <div class="selection"><button>Currency</button></div>
-              <div class="selection"><button>Currency Rate</button></div>
+              <button class="selection"
+                      (click)="onSelect(currencies)"
+                      *ngFor='let currencies of currency'>
+                {{currencies.name}}
+              </button>
             </div>
 
             <div class="col-2">
@@ -157,8 +162,11 @@
               </div>
               <h5 class="text-center  pt-2"><strong>Budget</strong></h5>
               <br />
-              <div class="selection"><button>Budget Control Setup</button></div>
-              <div class="selection"><button>Manage Budget</button></div>
+              <button class="selection"
+                      (click)="onSelect(budgets)"
+                      *ngFor='let budgets of budget'>
+                {{budgets.name}}
+              </button>
             </div>
 
             <div class="col-2">
@@ -167,15 +175,16 @@
               </div>
               <h5 class="text-center pt-2"><strong>Access Controls</strong></h5>
               <br />
-              <div class="selection"><button>Training Access Rights</button></div>
-              <div class="selection"><button>Course Type</button></div>
+              <button class="selection"
+                      (click)="onSelect(accesses)"
+                      *ngFor='let accesses of access'>
+                {{accesses.name}}
+              </button>
             </div>
           </div>
-
         </div>
         <div class="modal-footer"></div>
       </div>
     </div>
   </div>
-
 </div>
