@@ -134,13 +134,10 @@
               <br />
               <button class="selection"
                       (click)="onSelect(competencies)"
-                      [class.selected]="isSelected(competencies)"
                       data-bs-dismiss="modal"
                       *ngFor='let competencies of competency'>
                 {{competencies.name}}
               </button>
-              <div class="selection" routerLink="/lna-content">
-              </div>
             </div>
 
             <div class="col-2">

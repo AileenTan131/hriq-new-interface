@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router'
 
 @Component({
@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from '@angular/router'
   templateUrl: './module-panel.component.html',
   styleUrls: ['./module-panel.component.css']
 })
-export class ModulePanelComponent implements OnInit{
+export class ModulePanelComponent{
   public global = [{ 'id': 1, 'name': 'Company' }];
 
   public course = [
@@ -43,19 +43,11 @@ export class ModulePanelComponent implements OnInit{
     { 'id': 20, 'name': 'Training Access Rights' },
     { 'id': 21, 'name': 'Course Type' },
   ];
-  constructor(private router: Router, private route: ActivatedRoute) { }
-  ngOnInit() { }
+
+  constructor(private router: Router) { }
 
 
   onSelect(selection) {
     this.router.navigate(['/homepage', selection.id]);
   }
-
-
-
-
-
-
-
-  isSelected(competencies) { }
 }
