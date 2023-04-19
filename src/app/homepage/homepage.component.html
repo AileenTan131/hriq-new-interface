@@ -2,10 +2,15 @@
   <h1 class="pb-1 ps-4">Welcome back, {{name}}</h1>
 
   <div class="top-banner dark-banner mt-2">
-    <div class="col-8 banner-title-01">
+    <div class="col-8 banner-title-01"
+         [class.toggleHide]="toggleOff">
       Dashboard
     </div>
-    <div class="col-4 banner-title-01 ps-4">
+    <div class="col-8 banner-title-01"
+         [class.toggleHide]="!toggleOff">
+      Information
+    </div>
+    <div class="col-4 banner-title-01 ps-4 ms-1">
       Action Box
     </div>
   </div>
@@ -16,7 +21,7 @@
         <app-dashboard [class.toggleHide]="toggleOff" class="dashboard"></app-dashboard>
         <app-information [class.toggleHide]="!toggleOff"></app-information>
       </div>
-      <a type="button" (click)="togglepage()">
+      <a type="button" (click)="toggleOff=!toggleOff">
         <img class="toggle-page" src="./assets/iconsOthers2px/intersectSquare.svg"
          tooltipClass="tooltipclass"
          placement="bottom"
