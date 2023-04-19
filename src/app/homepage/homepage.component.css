@@ -1,0 +1,30 @@
+.numbers {
+  padding: 3px;
+  color: red;
+  font-size: 1.13rem;
+}
+
+td {
+  padding: 3px;
+  padding-left: 18px;
+  font-size: 1.13rem;
+}
+
+.notification{
+    width:100%;
+    position: relative;
+    right:14px
+}
+.toggle-page{
+    position: fixed;
+    right:650px;
+    top:190px;
+    height:3%
+}
+.toggleHide{
+    display:none
+}
+a{
+    text-decoration: none;
+    color: black
+}

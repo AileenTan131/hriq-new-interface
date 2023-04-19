@@ -4,8 +4,10 @@
     "\\.angular",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\dashboard"
+    "\\src\\app\\homepage",
+    "\\src\\app\\module-panel",
+    "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src\\app\\dashboard\\dashboard.component.html",
+  "SelectedNode": "\\src\\app\\homepage\\homepage.component.ts",
   "PreviewInSolutionExplorer": false
 }

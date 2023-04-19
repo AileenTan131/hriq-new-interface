@@ -1,0 +1,78 @@
+<div class="shift-right ms-1 mt-1">
+  <h1 class="pb-1 ps-4">Welcome back, {{name}}</h1>
+
+  <div class="top-banner dark-banner mt-2">
+    <div class="col-8 banner-title-01">
+      Dashboard
+    </div>
+    <div class="col-4 banner-title-01 ps-4">
+      Action Box
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="mt-4">
+        <app-dashboard [class.toggleHide]="toggleOff" class="dashboard"></app-dashboard>
+        <app-information [class.toggleHide]="!toggleOff"></app-information>
+      </div>
+      <a type="button" (click)="togglepage()">
+        <img class="toggle-page" src="./assets/iconsOthers2px/intersectSquare.svg"
+         tooltipClass="tooltipclass"
+         placement="bottom"
+         ngbTooltip="Toggle Page"
+         [openDelay]="200"/>
+      </a>
+    </div>
+
+
+    <div class="col-4">
+      <table class="table table-borderless mt-3">
+        <tbody>
+          <tr>
+            <a href="#">
+            <th class="numbers" scope="row">3</th>
+            <td>Pending approval HR employee data changes</td>
+            </a>
+          </tr>
+          <tr>
+            <a href="#">
+            <th class="numbers" scope="row">1</th>
+            <td>Moderation</td>
+            </a>
+          </tr>
+          <tr>
+            <a href="#">
+            <th class="numbers" scope="row">10</th>
+            <td>HR alerts</td>
+            </a>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="top-banner dark-banner notification ms-auto">
+        <div class="col banner-title-01">
+          Notifications
+        </div>
+      </div>
+
+      <div class="row">
+        <table class="table table-borderless mt-3 ">
+          <tbody>
+            <tr>
+              <td>Your leave has been approved</td>
+            </tr>
+            <tr>
+              <td>Reminder to submit your appraisal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
