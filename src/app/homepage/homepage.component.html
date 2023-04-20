@@ -6,10 +6,24 @@
       <div class="col-8 banner-title-01"
            [class.toggleHide]="toggleOff">
         Dashboard
+        <a type="button" (click)="toggleOff=!toggleOff">
+          <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
+               tooltipClass="tooltipclass"
+               placement="bottom"
+               ngbTooltip="Toggle Page"
+               [openDelay]="200" />
+        </a>
       </div>
       <div class="col-8 banner-title-01"
            [class.toggleHide]="!toggleOff">
         Information
+        <a type="button" (click)="toggleOff=!toggleOff">
+          <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
+               tooltipClass="tooltipclass"
+               placement="bottom"
+               ngbTooltip="Toggle Page"
+               [openDelay]="200" />
+        </a>
       </div>
       <div class="col-4 banner-title-01 ps-4 ms-1">
         Action Box
@@ -22,13 +36,6 @@
           <app-dashboard [class.toggleHide]="toggleOff" class="dashboard"></app-dashboard>
           <app-information [class.toggleHide]="!toggleOff"></app-information>
         </div>
-        <a type="button" (click)="toggleOff=!toggleOff">
-          <img class="toggle-page" src="./assets/iconsOthers2px/intersectSquare.svg"
-               tooltipClass="tooltipclass"
-               placement="bottom"
-               ngbTooltip="Toggle Page"
-               [openDelay]="200" />
-        </a>
       </div>
 
 
