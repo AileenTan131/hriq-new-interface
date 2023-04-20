@@ -27,7 +27,7 @@ export class MenuComponent {
     this.hideTransaction = true;
     this.hideReport = true;
     this.hideSetting = false;
-    return this.menu = 'SYSTEM';
+    return this.menu = 'SYSTEM    ';
     /* this.router.navigate(['setting'], { relativeTo: this.route });*/
   }
 }

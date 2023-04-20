@@ -7,7 +7,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router'
   styleUrls: ['./setting.component.css']
 })
 export class SettingComponent {
-  public global = [{ 'id': 1, 'name': 'Company' }];
+  public global = [{ 'id': 'global', 'name': 'Company' }];
 
   public course = [
     { 'id': 2, 'name': 'Course Classification' },

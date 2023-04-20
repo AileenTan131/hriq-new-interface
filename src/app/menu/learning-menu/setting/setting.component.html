@@ -6,7 +6,7 @@
 
 <br />
 <div class="row">
-  <div class="col-2">
+  <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
       <img src="./assets/iconsMenu/global.png" />
     </div>
@@ -14,12 +14,14 @@
     <br />
     <button class="selection"
             (click)="onSelect(globals)"
+            [class.selected]="isSelected(globals)"
+            data-bs-dismiss="modal"
             *ngFor='let globals of global'>
       {{globals.name}}
     </button>
   </div>
 
-  <div class="col-2">
+  <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
       <img src="./assets/iconsMenu/course.png" />
     </div>
@@ -27,12 +29,14 @@
     <br />
     <button class="selection"
             (click)="onSelect(courses)"
+            [class.selected]="isSelected(courses)"
+            data-bs-dismiss="modal"
             *ngFor='let courses of course'>
       {{courses.name}}
     </button>
   </div>
 
-  <div class="col-2">
+  <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
       <img src="./assets/iconsMenu/competency.png" />
     </div>
@@ -48,7 +52,7 @@
   </div>
 
 
-  <div class="col-2">
+  <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
       <img src="./assets/iconsMenu/currency.png" />
     </div>
@@ -56,12 +60,14 @@
     <br />
     <button class="selection"
             (click)="onSelect(currencies)"
+            [class.selected]="isSelected(currencies)"
+            data-bs-dismiss="modal"
             *ngFor='let currencies of currency'>
       {{currencies.name}}
     </button>
   </div>
 
-  <div class="col-2">
+  <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
       <img src="./assets/iconsMenu/budget.png" />
     </div>
@@ -69,12 +75,14 @@
     <br />
     <button class="selection"
             (click)="onSelect(budgets)"
+            [class.selected]="isSelected(budget)"
+            data-bs-dismiss="modal"
             *ngFor='let budgets of budget'>
       {{budgets.name}}
     </button>
   </div>
 
-  <div class="col-2">
+  <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
       <img src="./assets/iconsMenu/accessControls.png" />
     </div>
@@ -82,6 +90,8 @@
     <br />
     <button class="selection"
             (click)="onSelect(accesses)"
+            [class.selected]="isSelected(accesses)"
+            data-bs-dismiss="modal"
             *ngFor='let accesses of access'>
       {{accesses.name}}
     </button>
