@@ -29,7 +29,7 @@ button {
   border: none
 }
 
-  button:hover, .selected {
+  button:hover, .isSelected {
     color: var(--color01);
     background-color: var(--color03)
   }

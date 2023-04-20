@@ -22,15 +22,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { EncapsulationComponent } from './encapsulation/encapsulation.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomepageComponent },
   { path: 'homepage', component: HomepageComponent },
-  {
-    path: 'menu',
-    component: MenuComponent,
-    children: [
-      { path: 'transaction', component: TransactionComponent },
-      { path: 'report', component: ReportComponent },
-      { path: 'setting', component: SettingComponent }
-    ]},
+  { path: 'menu',component: MenuComponent},
   { path: 'information', component: InformationComponent },
   { path: 'homepage/lna-content', component: LnaContentComponent },
  /* { path: 'homepage/:id', component: LnaContentComponent},*/

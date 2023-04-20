@@ -5,214 +5,217 @@
       <a href="#"><img src="./assets/iconsOthers2px/pin01.svg" /></a>
       <a href="#"><img class=" ps-3" src="./assets/iconsOthers2px/send-01.svg" /></a>
       <a href="#"><img class=" ps-3" src="./assets/iconsOthers2px/save-01.svg" /></a>
-</span>
+    </span>
   </div>
+    <span class="ms-3">
+      <a class="hide-profile ps-4"
+         data-bs-toggle="collapse"
+         href="#collapseExample"
+         aria-controls="collapseExample"
+         aria-expanded="true"
+         (click)="textShow=!textShow">
+        - Hide/Show Profile
+      </a>
+    </span>
+      <span class="profile-detail col-3" *ngIf="textShow"><strong>Name: Jesicca Wong SG0001</strong> </span>
+      <span class="profile-detail col-3" *ngIf="textShow"><strong>Company: Admin Office SG</strong> </span>
+      <span class="profile-detail col-3" *ngIf="textShow"><strong>Created on: 6-Feb-2023</strong> </span>
 
-  <span class="ms-3">
-    <a class="hide-profile ps-4" href="#" data-bs-toggle="collapse" href="#collapseExample"  aria-controls="collapseExample"
-       (click)="textShow=!textShow">
-      - Hide/Show Profile
-    </a>
-    <span class="profile-detail col-3" *ngIf="textShow"><strong>Name: Jesicca Wong SG0001</strong> </span> 
-    <span class="profile-detail col-3" *ngIf="textShow"><strong>Company: Admin Office SG</strong> </span>
-    <span class="profile-detail col-3" *ngIf="textShow"><strong>Created on: 6-Feb-2023</strong> </span>
-  </span>
-
-  <div class="collapse ms-3" id="collapseExample">
-    <div class="card card-body">
-      <div class="row">
-        <div class="col-1">
-          <img class="profile-square" src="./assets/profile-square.png" />
-        </div>
-      
-        <div class="col-3 profile-detail">
-          <div class="detail"><strong>Name:</strong> Jesicca Wong SG0001</div>
-          <div class="detail"><strong>Department:</strong> MGMT</div>
-          <div class="detail"><strong>Optional Field:</strong> Field Details</div>
-        </div>
-        <div class="col-3 profile-detail">
-          <div class="detail"><strong>Company:</strong> Admin Office SG</div>
-          <div class="detail"><strong>Designation:</strong> Internal Auditor</div>
-          <div class="detail"><strong>Optional Field:</strong> Field Details</div>
-        </div>
-        <div class="col-3 profile-detail">
-          <div class="detail"><strong>Created on:</strong> 6-Feb-2023</div>
-          <div class="detail"><strong>Employee Type:</strong> Full Time</div>
-          <div class="detail"><strong>Optional Field:</strong> Field Details</div>
-        </div>
-    
-      </div>
-    </div>
-  </div>
-
-
-  <!--<!--<div class="container-fluid">
-      <button class="table-banner-header">
+    <div class="collapse show ms-3" id="collapseExample">
+      <div class="card card-body">
         <div class="row">
-          <span class="col fit-content">S/N</span>
-          <span class="col fit-content">Competency Type</span>
-          <span class="col">Skills</span>
-          <span class="col fit-content">Current Rate</span>
-          <span class="col fit-content">Required Rate</span>
-          <span class="col fit-content">Gap</span>
-          <span class="col fit-content">Piority</span>
-          <span class="col fit-content">Courses Interested</span>
-          <span class="col fit-content">Total Hours</span>
-          <span class="col fit-content">Total Budget</span>
+          <div class="col-1">
+            <img class="profile-square" src="./assets/profile-square.png" />
+          </div>
+
+          <div class="col-2 profile-detail">
+            <div class="detail"><strong>Name:</strong> Jesicca Wong SG0001</div>
+            <div class="detail"><strong>Department:</strong> MGMT</div>
+            <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+          </div>
+          <div class="col-3 ps-5 ms-5 profile-detail">
+            <div class="detail"><strong>Company:</strong> Admin Office SG</div>
+            <div class="detail"><strong>Designation:</strong> Internal Auditor</div>
+            <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+          </div>
+          <div class="col-3 profile-detail">
+            <div class="detail"><strong>Created on:</strong> 6-Feb-2023</div>
+            <div class="detail"><strong>Employee Type:</strong> Full Time</div>
+            <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+          </div>
+
         </div>
-      </button>
-      <table class="table">
-
-
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  -->
-
-  <div class="lna-details">
-    <div class="d-flex justify-content-end">
-      <a href="#" class="pe-3 summary">Summary of courses & budget</a>
-      <button class="button-01 me-4 mb-1">
-        <img src="./assets/iconsOthers2px/settings-04.svg" />
-        Filter
-      </button>
-    </div>
-
-    <div class="container-fluid p-4 pt-1">
-      <table class="table" style="width:100%">
-        <thead>
-          <tr class="header">
-            <th width="10px" scope="col">S/N</th>
-            <th width="150px" scope="col">Competency Type</th>
-            <th scope="col">Skills</th>
-            <th width="10px" scope="col"></th>
-            <th width="120px" scope="col">Current Rate</th>
-            <th width="130px" scope="col">Required Rate</th>
-            <th width="10px" scope="col">Gap</th>
-            <th width="10px" scope="col">Piority</th>
-            <th width="190px" scope="col" class="text-center">Courses Interested</th>
-            <th width="110px" scope="col" class="text-center">Total Hours</th>
-            <th width="110px" scope="col" class="text-center">Total Budget</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Technical</td>
-            <td>
-              Understands internal and external customer requirements, customer needs and organisation’s service standards and takes initiative to provide value-added advice/ suggestions to address needs.
-              <br />
-            </td>
-            <td><a href="#"><img class="attachment" src="./assets/iconsOthers2px/paperclip.svg" /></a></td>
-            <td>3/5</td>
-            <td>3/5</td>
-            <td class="text-center">0</td>
-            <td class="text-center">2</td>
-            <td>
-              <button class="training-plan">
-                My Training Plan
-                <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">2</button>
-              </button>
-            </td>
-            <td class="text-center">10</td>
-            <td class="text-center">$3000</td>
-          </tr>
-          <tr class="remark">
-            <td colspan="2"></td>
-            <td class="remark-padding" colspan="9">
-              <strong>Remarks:</strong> This training has equipped me positively with problem-solving skills. It has helped me to see different ways to think and leverage challenges in my career.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Technical</td>
-            <td>Escalates suggestions on how to provide better services</td>
-            <td></td>
-            <td>3/5</td>
-            <td>4/5</td>
-            <td class="text-center">-2</td>
-            <td class="text-center">3</td>
-            <td>
-              <button class="training-plan">
-                My Training Plan
-                <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">3</button>
-              </button>
-            </td>
-            <td class="text-center">7</td>
-            <td class="text-center">$1500</td>
-          </tr>
-          <tr class="remark">
-            <td colspan="2"></td>
-            <td class="remark-padding" colspan="9">
-              <strong>Remarks:</strong> The new diverse expertise I acquire from the training will surely be pragmatically used.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Technical</td>
-            <td>Builds rapport with internal and external customers and maintains customers’ trust by providing prompt, effective and quality service, takes continued interest in customers’ affairs.</td>
-            <td><a href="#"><img class="attachment" src="./assets/iconsOthers2px/paperclip.svg" /></a></td>
-            <td>3/5</td>
-            <td>1/5</td>
-            <td class="text-center">3</td>
-            <td class="text-center">4</td>
-            <td>
-              <button class="training-plan">
-                My Training Plan
-                <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">11</button>
-              </button>
-            </td>
-            <td class="text-center">8</td>
-            <td class="text-center">$2200</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="ps-4 ao">
-    <strong>
-      <span>Approving Officers</span>
-      <button class="button-02 ms-2">Approving Officer 1</button>
-      <button class="button-02 ms-2">
-        Approving Officer 2
-      </button>
-    </strong>
-  </div>
-
-
-  <!--<div class="card mb-4">
-    <div class="card-body p-5">
-      <div id="content-2" class="custom-scrollbar-js">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus, dolor quis rutrum posuere, est risus laoreet lacus, eu fermentum quam urna sit amet orci. Donec ullamcorper sem id augue interdum, ac aliquam quam ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae nisl vel est semper laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac risus eget justo mattis viverra. Duis dapibus nibh tincidunt, euismod leo at, tincidunt odio. Aenean sit amet pharetra tortor.
-
-          Praesent consequat placerat nisl vitae eleifend. Donec a ultrices arcu. Fusce scelerisque congue eros, nec pharetra nunc. Nulla felis lacus, feugiat eget ultricies aliquam, ultrices eu nisi. Donec sit amet mi in magna interdum lacinia vitae ac massa. In eget urna ultricies, rutrum velit eu, egestas dolor. Ut malesuada nisi et nulla fermentum eleifend.
-
-          Proin aliquam ex ipsum, at facilisis dui feugiat at. Etiam rutrum hendrerit interdum. Vivamus diam nisi, vehicula vel hendrerit ut, dignissim at ex. Vestibulum congue ante odio, vel vehicula est commodo eget. Proin in sapien rutrum, vehicula nunc ut, rhoncus augue. Proin pulvinar odio quis augue faucibus, vel varius turpis imperdiet. Phasellus sodales elementum arcu sed pellentesque. Aliquam fringilla placerat scelerisque.
-
-          Nullam molestie consectetur nulla, sed efficitur eros malesuada quis. Proin imperdiet justo vestibulum, viverra neque vel, dictum elit. Nam imperdiet ante id aliquet viverra. Phasellus laoreet in nulla at vulputate. Etiam eleifend velit sit amet mi egestas, eu lobortis erat ullamcorper. Pellentesque aliquam eros turpis, nec sollicitudin elit dignissim vitae. Sed lectus est, porta vel magna sit amet, posuere facilisis nisi. Fusce a fringilla sem. Aliquam laoreet urna in sagittis laoreet.
-        </p>
       </div>
     </div>
-  </div>-->
+
+
+    <!--<!--<div class="container-fluid">
+        <button class="table-banner-header">
+          <div class="row">
+            <span class="col fit-content">S/N</span>
+            <span class="col fit-content">Competency Type</span>
+            <span class="col">Skills</span>
+            <span class="col fit-content">Current Rate</span>
+            <span class="col fit-content">Required Rate</span>
+            <span class="col fit-content">Gap</span>
+            <span class="col fit-content">Piority</span>
+            <span class="col fit-content">Courses Interested</span>
+            <span class="col fit-content">Total Hours</span>
+            <span class="col fit-content">Total Budget</span>
+          </div>
+        </button>
+        <table class="table">
+
+
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    -->
+
+    <div class="lna-details">
+      <div class="d-flex justify-content-end">
+        <a href="#" class="pe-3 summary">Summary of courses & budget</a>
+        <button class="button-01 me-4">
+          <img src="./assets/iconsOthers2px/settings-04.svg" />
+          Filter
+        </button>
+      </div>
+
+      <div class="container-fluid p-4 pt-1">
+        <table class="table" style="width:100%">
+          <thead>
+            <tr class="header">
+              <th width="10px" scope="col">S/N</th>
+              <th width="150px" scope="col">Competency Type</th>
+              <th scope="col">Skills</th>
+              <th width="10px" scope="col"></th>
+              <th width="120px" scope="col">Current Rate</th>
+              <th width="130px" scope="col">Required Rate</th>
+              <th width="10px" scope="col">Gap</th>
+              <th width="10px" scope="col">Piority</th>
+              <th width="190px" scope="col" class="text-center">Courses Interested</th>
+              <th width="110px" scope="col" class="text-center">Total Hours</th>
+              <th width="110px" scope="col" class="text-center">Total Budget</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Technical</td>
+              <td>
+                Understands internal and external customer requirements, customer needs and organisation’s service standards and takes initiative to provide value-added advice/ suggestions to address needs.
+                <br />
+              </td>
+              <td><a href="#"><img class="attachment" src="./assets/iconsOthers2px/paperclip.svg" /></a></td>
+              <td>3/5</td>
+              <td>3/5</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td>
+                <button class="training-plan">
+                  My Training Plan
+                  <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">2</button>
+                </button>
+              </td>
+              <td class="text-center">10</td>
+              <td class="text-center">$3000</td>
+            </tr>
+            <tr class="remark">
+              <td colspan="2"></td>
+              <td class="remark-padding" colspan="9">
+                <strong>Remarks:</strong> This training has equipped me positively with problem-solving skills. It has helped me to see different ways to think and leverage challenges in my career.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Technical</td>
+              <td>Escalates suggestions on how to provide better services</td>
+              <td></td>
+              <td>3/5</td>
+              <td>4/5</td>
+              <td class="text-center">-2</td>
+              <td class="text-center">3</td>
+              <td>
+                <button class="training-plan">
+                  My Training Plan
+                  <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">3</button>
+                </button>
+              </td>
+              <td class="text-center">7</td>
+              <td class="text-center">$1500</td>
+            </tr>
+            <tr class="remark">
+              <td colspan="2"></td>
+              <td class="remark-padding" colspan="9">
+                <strong>Remarks:</strong> The new diverse expertise I acquire from the training will surely be pragmatically used.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Technical</td>
+              <td>Builds rapport with internal and external customers and maintains customers’ trust by providing prompt, effective and quality service, takes continued interest in customers’ affairs.</td>
+              <td><a href="#"><img class="attachment" src="./assets/iconsOthers2px/paperclip.svg" /></a></td>
+              <td>3/5</td>
+              <td>1/5</td>
+              <td class="text-center">3</td>
+              <td class="text-center">4</td>
+              <td>
+                <button class="training-plan">
+                  My Training Plan
+                  <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">11</button>
+                </button>
+              </td>
+              <td class="text-center">8</td>
+              <td class="text-center">$2200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="ps-4 ao">
+      <strong>
+        <span>Approving Officers</span>
+        <button class="button-02 ms-2">Approving Officer 1</button>
+        <button class="button-02 ms-2">
+          Approving Officer 2
+        </button>
+      </strong>
+    </div>
+
+
+    <!--<div class="card mb-4">
+      <div class="card-body p-5">
+        <div id="content-2" class="custom-scrollbar-js">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus, dolor quis rutrum posuere, est risus laoreet lacus, eu fermentum quam urna sit amet orci. Donec ullamcorper sem id augue interdum, ac aliquam quam ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae nisl vel est semper laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac risus eget justo mattis viverra. Duis dapibus nibh tincidunt, euismod leo at, tincidunt odio. Aenean sit amet pharetra tortor.
+
+            Praesent consequat placerat nisl vitae eleifend. Donec a ultrices arcu. Fusce scelerisque congue eros, nec pharetra nunc. Nulla felis lacus, feugiat eget ultricies aliquam, ultrices eu nisi. Donec sit amet mi in magna interdum lacinia vitae ac massa. In eget urna ultricies, rutrum velit eu, egestas dolor. Ut malesuada nisi et nulla fermentum eleifend.
+
+            Proin aliquam ex ipsum, at facilisis dui feugiat at. Etiam rutrum hendrerit interdum. Vivamus diam nisi, vehicula vel hendrerit ut, dignissim at ex. Vestibulum congue ante odio, vel vehicula est commodo eget. Proin in sapien rutrum, vehicula nunc ut, rhoncus augue. Proin pulvinar odio quis augue faucibus, vel varius turpis imperdiet. Phasellus sodales elementum arcu sed pellentesque. Aliquam fringilla placerat scelerisque.
+
+            Nullam molestie consectetur nulla, sed efficitur eros malesuada quis. Proin imperdiet justo vestibulum, viverra neque vel, dictum elit. Nam imperdiet ante id aliquet viverra. Phasellus laoreet in nulla at vulputate. Etiam eleifend velit sit amet mi egestas, eu lobortis erat ullamcorper. Pellentesque aliquam eros turpis, nec sollicitudin elit dignissim vitae. Sed lectus est, porta vel magna sit amet, posuere facilisis nisi. Fusce a fringilla sem. Aliquam laoreet urna in sagittis laoreet.
+          </p>
+        </div>
+      </div>
+    </div>-->
 
 </div>

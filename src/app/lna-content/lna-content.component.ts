@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class LnaContentComponent {
   public isCollapsed = false;
 
-  textShow=true
+  textShow=false
 }

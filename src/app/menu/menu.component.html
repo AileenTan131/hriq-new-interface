@@ -9,17 +9,23 @@
         <img src="./assets/iconsMenu/learningSetting.png" />
       </div>
       <div class="modal-body">
-        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING SYSTEM SETTINGS</h1>
+        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
         <h6 class="text-center">
-          <button (click)="showTransaction()" class="header">
+          <button (click)="showTransaction()"
+                  [class.isSelected]="!hideTransaction"
+                  class="header">
             Transactions
           </button>
           <span class="dot"> • </span>
-          <button (click)="showReport()" class="header">
+          <button (click)="showReport()"
+                  [class.isSelected]="!hideReport"
+                  class="header">
             Reports
           </button>
           <span class="dot"> • </span>
-          <button (click)="showSetting()" class="header">
+          <button (click)="showSetting()"
+                  [class.isSelected]="!hideSetting"
+                  class="header">
             System Settings
           </button>
           <app-transaction [class.hide]="hideTransaction"></app-transaction>
@@ -28,7 +34,7 @@
           <!-- <router-outlet></router-outlet>-->
         </h6>
       </div>
-   
+
     </div>
   </div>
 </div>
