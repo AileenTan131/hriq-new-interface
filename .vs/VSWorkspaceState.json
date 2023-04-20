@@ -4,12 +4,13 @@
     "\\.angular",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\encapsulation",
+    "\\src\\app\\footer",
     "\\src\\app\\homepage",
     "\\src\\app\\menu",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\module-panel\\learning-menu",
-    "\\src\\app\\module-panel\\learning-menu\\transaction"
+    "\\src\\app\\menu\\learning-menu",
+    "\\src\\app\\module-panel"
   ],
-  "SelectedNode": "\\src\\app\\menu\\menu.component.html",
+  "SelectedNode": "\\src\\app\\homepage\\homepage.component.html",
   "PreviewInSolutionExplorer": false
 }
