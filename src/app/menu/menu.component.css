@@ -1,6 +1,7 @@
 
 .modal {
-  --bs-modal-width: 80%
+  --bs-modal-width: 80%;
+  height: 80%
 }
 
 .modal-header, .modal-footer {
@@ -8,7 +9,7 @@
 }
 
 .modal-body {
-  padding-bottom: 60px
+    height:600px
 }
 
 .dot {
@@ -33,3 +34,6 @@ button {
     background-color: var(--color03)
   }
 
+  .hide{
+      display: none
+  }

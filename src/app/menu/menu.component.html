@@ -11,14 +11,21 @@
       <div class="modal-body">
         <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING SYSTEM SETTINGS</h1>
         <h6 class="text-center">
-          <button class="header">Transactions</button>
+          <button (click)="showTransaction()" class="header">
+            Transactions
+          </button>
           <span class="dot"> • </span>
-          <button class="header">Reports</button>
+          <button (click)="showReport()" class="header">
+            Reports
+          </button>
           <span class="dot"> • </span>
- 
-         <!-- <router-outlet></router-outlet>-->
-           <button (click)="showSetting()" class="header">System Settings</button>
-           <app-setting></app-setting>
+          <button (click)="showSetting()" class="header">
+            System Settings
+          </button>
+          <app-transaction [class.hide]="hideTransaction"></app-transaction>
+          <app-report [class.hide]="hideReport"></app-report>
+          <app-setting [class.hide]="hideSetting"></app-setting>
+          <!-- <router-outlet></router-outlet>-->
         </h6>
       </div>
    
