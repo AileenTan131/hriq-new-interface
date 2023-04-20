@@ -1,0 +1,35 @@
+
+.modal {
+  --bs-modal-width: 80%
+}
+
+.modal-header, .modal-footer {
+  border: none
+}
+
+.modal-body {
+  padding-bottom: 60px
+}
+
+.dot {
+  color: var(--color01);
+}
+
+button.header {
+  color: var(--color01);
+  font-weight: 600;
+}
+
+button {
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 3.5px 15px;
+  border: none
+}
+
+  button:hover, .selected {
+    color: var(--color01);
+    background-color: var(--color03)
+  }
+

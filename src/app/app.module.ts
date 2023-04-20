@@ -10,6 +10,10 @@ import { FooterQuicklinksComponent } from './footer/footer-quicklinks.component'
 import { HomepageComponent } from './homepage/homepage.component';
 import { InformationComponent } from './information/information.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SettingComponent } from './menu/learning-menu/setting/setting.component';
+import { ReportComponent } from './menu/learning-menu/report/report.component';
+import { TransactionComponent } from './menu/learning-menu/transaction/transaction.component';
+import { MenuComponent } from './menu/menu.component';
 
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap'
@@ -18,16 +22,18 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { EncapsulationComponent } from './encapsulation/encapsulation.component';
 
 const appRoutes: Routes = [
+  { path: 'homepage', component: HomepageComponent },
   {
-    path: 'homepage', component: HomepageComponent,
+    path: 'menu',
+    component: MenuComponent,
     children: [
-      { path: 'information', component: InformationComponent },
-      { path: 'dashboard', component: DashboardComponent }
-    ]
-  },
+      { path: 'transaction', component: TransactionComponent },
+      { path: 'report', component: ReportComponent },
+      { path: 'setting', component: SettingComponent }
+    ]},
   { path: 'information', component: InformationComponent },
   { path: 'homepage/lna-content', component: LnaContentComponent },
-  { path: 'homepage/:id', component: LnaContentComponent},
+ /* { path: 'homepage/:id', component: LnaContentComponent},*/
 ]
 
 
@@ -41,7 +47,11 @@ const appRoutes: Routes = [
     HomepageComponent,
     EncapsulationComponent,
     InformationComponent,
-    DashboardComponent
+    DashboardComponent,
+    SettingComponent,
+    ReportComponent,
+    TransactionComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
