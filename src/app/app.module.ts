@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GridModule } from '@progress/kendo-angular-grid';
 
 
 @NgModule({
@@ -26,6 +27,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     NgbPopoverModule,
     NgbCollapseModule,
     NoopAnimationsModule,
+    GridModule,
+    BrowserAnimationsModule,
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],

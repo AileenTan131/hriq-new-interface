@@ -1,1 +1,22 @@
-<p>global works!</p>
+<kendo-grid [data]="gridData"
+            [resizable]="true">
+  <kendo-grid-column field="SN" title="S/N"
+                     [width]="50"> </kendo-grid-column>
+  <kendo-grid-column field="CompetencyType" title="Competency Type"
+                     [width]="140"> </kendo-grid-column>
+  <kendo-grid-column field="Skills" title="Skills"> </kendo-grid-column>
+  <kendo-grid-column field="CurrentRate" title="Current Rate"
+                     [width]="110"> </kendo-grid-column>
+  <kendo-grid-column field="RequiredRate" title="Required Rate"
+                     [width]="120"> </kendo-grid-column>
+  <kendo-grid-column field="Gap" title="Gap"
+                     [width]="50"> </kendo-grid-column>
+  <kendo-grid-column field="Piority" title="Piority"
+                     [width]="70"> </kendo-grid-column>
+  <kendo-grid-column field="CoursesInterested" title="Courses Interested"
+                     [width]="150"> </kendo-grid-column>
+  <kendo-grid-column field="TotalHours" title="Total Hours"
+                     [width]="100"> </kendo-grid-column>
+  <kendo-grid-column field="TotalBudget" title="Total Budget"
+                     [width]="110"></kendo-grid-column>
+</kendo-grid>
