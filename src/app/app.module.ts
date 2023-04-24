@@ -14,11 +14,12 @@ import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform
 import { GridModule } from '@progress/kendo-angular-grid';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     EncapsulationComponent,
-    RoutingComponents
+    RoutingComponents,
   ],
   imports: [
     BrowserModule,

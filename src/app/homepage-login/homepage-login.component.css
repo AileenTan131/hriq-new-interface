@@ -1,0 +1,28 @@
+.app {
+  display: grid;
+  /*  width: 1920px;
+    height: 1080px;*/
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 92px 1fr 50px;
+}
+
+.top-panel {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.module-panel {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.footer-panel {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: end
+}
+
+.main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}

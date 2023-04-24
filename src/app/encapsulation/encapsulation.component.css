@@ -42,3 +42,6 @@ h1 {
   color: var(--color01);
   font-weight: 600;
 }
+.password{
+    font-weight:100px !important;
+}

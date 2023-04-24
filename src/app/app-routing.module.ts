@@ -14,15 +14,26 @@ import { SettingComponent } from './menu/learning-menu/setting/setting.component
 import { ReportComponent } from './menu/learning-menu/report/report.component';
 import { TransactionComponent } from './menu/learning-menu/transaction/transaction.component';
 import { FooterQuicklinksComponent } from './footer/footer-quicklinks.component';
+import { LoginComponent } from './login/login.component';
+import { HomepageLoginComponent } from './homepage-login/homepage-login.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: 'homepage', component: HomepageComponent },
-  { path: 'menu', component: MenuComponent },
-  { path: 'information', component: InformationComponent },
-  { path: 'homepage/lna-content', component: LnaContentComponent },
-  { path: 'homepage/global', component: GlobalComponent },
-  /* { path: 'homepage/:id', component: LnaContentComponent},*/
+  { path: '', redirectTo: '/homepage-login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'homepage-login',
+    component: HomepageLoginComponent,
+    children: [
+      { path: '', component: HomepageComponent },
+      { path: 'homepage', component: HomepageComponent },
+      { path: 'menu', component: MenuComponent },
+      { path: 'information', component: InformationComponent },
+
+      { path: 'homepage-login/lna-content', component: LnaContentComponent },
+       /*{ path: 'homepage-login/:id', component: LnaContentComponent, pathMatch:'full'},*/
+      { path: 'homepage-login/global', component: GlobalComponent },
+    ]
+  }
 ]
 
 @NgModule({
@@ -31,7 +42,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forRoot(routes),
   ],
-  exports:[RouterModule]
+  exports: [RouterModule]
 })
 
 export class AppRoutingModule { }
@@ -48,7 +59,10 @@ export const RoutingComponents = [
   SettingComponent,
   ReportComponent,
   TransactionComponent,
-  FooterQuicklinksComponent
-  ]
+  FooterQuicklinksComponent,
+  FooterQuicklinksComponent,
+  LoginComponent,
+  HomepageLoginComponent
+]
 
 

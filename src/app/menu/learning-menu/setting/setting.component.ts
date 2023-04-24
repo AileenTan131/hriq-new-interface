@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router'
 
 @Component({
@@ -6,7 +6,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router'
   templateUrl: './setting.component.html',
   styleUrls: ['./setting.component.css']
 })
-export class SettingComponent {
+export class SettingComponent implements OnInit{
   public global = [{ 'id': 'global', 'name': 'Company' }];
 
   public course = [
@@ -55,7 +55,7 @@ export class SettingComponent {
   }
 
   onSelect(selection) {
-    this.router.navigate(['/homepage', selection.id]);
+    this.router.navigate(['/homepage-login', selection.id]);
   }
   isSelected(selection) {
     return selection.id === this.selectedId
