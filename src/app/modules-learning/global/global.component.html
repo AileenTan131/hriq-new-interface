@@ -1,10 +1,16 @@
 <kendo-grid [data]="gridData"
             [resizable]="true">
   <kendo-grid-column field="SN" title="S/N"
+                     [headerStyle]="{ 'background-color': '#666' }"
+                     [headerClass]="'headerCustomClass'"
                      [width]="50"> </kendo-grid-column>
   <kendo-grid-column field="CompetencyType" title="Competency Type"
+                     [headerStyle]="{ 'background-color': '#666' }"
+                     [headerClass]="'headerCustomClass'"
                      [width]="140"> </kendo-grid-column>
-  <kendo-grid-column field="Skills" title="Skills"> </kendo-grid-column>
+  <kendo-grid-column field="Skills" title="Skills"
+                     [headerStyle]="{ 'background-color': '#666' }"
+                     [headerClass]="'headerCustomClass'"> </kendo-grid-column>
   <kendo-grid-column field="CurrentRate" title="Current Rate"
                      [width]="110"> </kendo-grid-column>
   <kendo-grid-column field="RequiredRate" title="Required Rate"

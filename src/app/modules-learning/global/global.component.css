@@ -1,0 +1,7 @@
+.headerCustomClass {
+  color: #fff;
+}
+
+th.headerCustomClass {
+  justify-content: right;
+}

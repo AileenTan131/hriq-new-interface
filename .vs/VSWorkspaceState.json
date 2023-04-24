@@ -4,10 +4,10 @@
     "\\.angular",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\modules-learning",
-    "\\src\\app\\modules-learning\\global",
-    "\\src\\app\\modules-learning\\lna-content"
+    "\\src\\app\\encapsulation",
+    "\\src\\app\\homepage",
+    "\\src\\app\\modules-learning\\global"
   ],
-  "SelectedNode": "\\src\\app\\modules-learning\\lna-content\\lna-content.component.html",
+  "SelectedNode": "\\src\\app\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }
