@@ -3,31 +3,33 @@
   height: 100vh;
   padding: 0;
   background-image: url("https://picsum.photos/1920/1080?");
-  background-size: cover
+  background-size: cover;
+  background-color: black
 }
-
 .hriqLogo {
-  position: fixed;
-  top: 0px;
-  margin: 20px 20px;
-  height: 44px;
+  position:relative;
+  left:15px;
+  bottom:30px;
+  width: 55px
 }
-
+.card-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height:100vh
+}
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
   position:relative;
-  top:220px
+  top:220px;
+  margin-right:200px;
 }
-
 .justify-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   height: 500px;
-  width: 60%;
+  width: 700px;
   padding: 0pc 20px;
   background-color: var(--color03);
   border-radius: 10px;
@@ -38,18 +40,18 @@
 
 .client-logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 400px;
+  position:relative;
+  right:150px;
 }
-
 input {
   border-color: var(--color04);
 }
-
 .sign-in-btn, input {
   border-radius: 10px;
   height: 45px;
-  width: 80%;
+  width: 70%;
   display: block;
   margin: 0 auto;
   margin-top: 25px
