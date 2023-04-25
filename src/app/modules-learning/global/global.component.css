@@ -1,7 +1,8 @@
 .headerCustomClass {
-  color: #fff;
+  color: var(--color01);
+  font-weight:bold
 }
 
-th.headerCustomClass {
-  justify-content: right;
+.lnaGrid{
+    padding:30px;
 }

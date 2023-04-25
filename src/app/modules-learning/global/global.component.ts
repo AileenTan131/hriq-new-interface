@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-global',
   templateUrl: './global.component.html',
-  styleUrls: ['./global.component.css']
+  styleUrls: ['./global.component.css'], encapsulation: ViewEncapsulation.None,
 })
 export class GlobalComponent {
   public gridData = [
