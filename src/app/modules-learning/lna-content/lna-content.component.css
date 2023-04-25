@@ -1,3 +1,7 @@
+.container-fluid{
+ /*   padding-left:0;
+    padding-right:0;*/
+}
 .banner {
   height: 38px;
   background: var(--color01);

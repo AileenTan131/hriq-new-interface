@@ -55,7 +55,7 @@ export class SettingComponent implements OnInit{
   }
 
   onSelect(selection) {
-    this.router.navigate(['/homepage-login', selection.id]);
+    this.router.navigate(['homepage', selection.id], { relativeTo: this.route });
   }
   isSelected(selection) {
     return selection.id === this.selectedId

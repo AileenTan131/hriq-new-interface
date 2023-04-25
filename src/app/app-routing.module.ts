@@ -29,9 +29,8 @@ const routes: Routes = [
  /*     { path: 'menu', component: MenuComponent },
       { path: 'information', component: InformationComponent },*/
 
-      { path: 'homepage-login/lna-content', component: LnaContentComponent },
-       /*{ path: 'homepage-login/:id', component: LnaContentComponent, pathMatch:'full'},*/
-      { path: 'homepage-login/global', component: GlobalComponent },
+      { path: 'homepage/lna-content', component: LnaContentComponent},
+      { path: 'homepage/global', component: GlobalComponent },
     ]
   }
 ]
