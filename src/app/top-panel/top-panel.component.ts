@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router, ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-top-panel',
@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
 
 
 export class TopPanelComponent {
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
+  showHomepage() {
+    this.router.navigate(['homepage'], { relativeTo: this.route })
+  }
 }

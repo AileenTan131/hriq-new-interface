@@ -24,10 +24,10 @@ const routes: Routes = [
     path: 'homepage-login',
     component: HomepageLoginComponent,
     children: [
-      { path: '', component: HomepageComponent },
+     /* { path: '', component: HomepageComponent },*/
       { path: 'homepage', component: HomepageComponent },
-      { path: 'menu', component: MenuComponent },
-      { path: 'information', component: InformationComponent },
+ /*     { path: 'menu', component: MenuComponent },
+      { path: 'information', component: InformationComponent },*/
 
       { path: 'homepage-login/lna-content', component: LnaContentComponent },
        /*{ path: 'homepage-login/:id', component: LnaContentComponent, pathMatch:'full'},*/

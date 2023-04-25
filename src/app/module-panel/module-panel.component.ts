@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-module-panel',
@@ -6,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./module-panel.component.css']
 })
 export class ModulePanelComponent implements OnInit {
+  constructor(private route: ActivatedRoute, private router: Router) { }
+
   ngOnInit() { }
+
+  showHomepage() {
+    this.router.navigate(['homepage'], {relativeTo:this.route})
+  }
 }
 
 

@@ -5,9 +5,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\encapsulation",
-    "\\src\\app\\homepage",
-    "\\src\\app\\modules-learning\\global"
+    "\\src\\app\\login",
+    "\\src\\app\\menu\\learning-menu",
+    "\\src\\app\\menu\\learning-menu\\setting",
+    "\\src\\app\\module-panel"
   ],
-  "SelectedNode": "\\src\\app\\app-routing.module.ts",
+  "SelectedNode": "\\src\\app\\login\\login.component.html",
   "PreviewInSolutionExplorer": false
 }
