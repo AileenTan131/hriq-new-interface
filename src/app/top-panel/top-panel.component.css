@@ -70,7 +70,7 @@ button {
 ::ng-deep .tooltipclass .tooltip-inner {
   color: black;
   background-color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   border: 1px solid var(--color04);
   border-radius: 10px;
@@ -134,7 +134,7 @@ button {
   letter-spacing: 1px;
   padding-top: 4px !important;
   padding-bottom: 4px !important;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
   .dropdown-item:hover {
