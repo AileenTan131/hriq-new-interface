@@ -11,7 +11,7 @@ padding: 8px 0px
 }
 */
 .lnaGrid {
-  padding: 30px;
+  padding: 0px 30px;
 }
 
 kendo-textbox {
@@ -22,4 +22,135 @@ kendo-textbox {
 .k-grid .k-table-row.k-table-alt-row,
 .rowCustomClass {
   background-color: none
+}
+.lnaGrid {
+  position: relative;
+  top: -17px;
+}
+
+
+
+.banner {
+  height: 38px;
+  background: var(--color01);
+  color: white;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.31rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.card {
+  padding: 0;
+  border-color: transparent;
+}
+
+.hide-profile {
+  font-style: italic;
+  text-decoration: none;
+  color: var(--color01);
+  position: relative;
+  z-index: 1
+}
+
+.profile-square {
+  width: 116px;
+  margin-left: 30px;
+  width: 90%
+}
+
+.profile-detail {
+  /*font-size: 1.13rem;*/
+ /* margin-left: 40px;*/
+  margin-top: 10px
+}
+
+.detail {
+  padding-bottom: 5px;
+  padding-left: 25px;
+}
+
+.profile-detail {
+  padding-left: 37px
+}
+
+
+table {
+  border-color: var(--color04);
+}
+
+
+.header {
+  color: var(--color01);
+  background-color: var(--color02);
+}
+
+.remark {
+  border-top: hidden;
+  margin-top: 100px
+}
+
+.remark-padding {
+  padding-top: 0
+}
+
+.training-plan {
+  font-weight: 600;
+  color: var(--color01);
+  background-color: var(--color03);
+  border-radius: 13px;
+  border: none;
+  padding: 0px 0px 0px 15px
+}
+
+.rounded-pill {
+  background-color: var(--color04);
+  border-color: var(--color03);
+  color: var(--color01);
+  font-weight: 600;
+  font-size: 0.94rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.text-center {
+  text-align: center;
+}
+
+.summary {
+  color: var(--color01);
+  font-weight: 600;
+  position: relative;
+  top: 3px;
+  margin-right:35px
+}
+
+.lna-details {
+  position: relative;
+  top: -27px;
+
+}
+
+.ao {
+  position: relative;
+  top: 16px;
+}
+
+.action-icons {
+  position: absolute;
+  right: 0px;
+  padding-right: 25px;
+}
+.row {
+  width:100%
+}
+
+
+.height-max{
+    height: 660px
+}
+.height-min{
+    height:540px
 }

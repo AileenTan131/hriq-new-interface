@@ -1,8 +1,66 @@
+<!--<div class="container-fluid p-0">-->
+<div class="banner d-flex align-items-center">
+  MY LEARNING NEEDS ANALYSIS 2023
+  <span class="action-icons pb-1">
+    <a href="#"><img src="./assets/iconsOthers2px/pin01.svg" /></a>
+    <a href="#"><img class=" ps-3" src="./assets/iconsOthers2px/send-01.svg" /></a>
+    <a href="#"><img class=" ps-3" src="./assets/iconsOthers2px/save-01.svg" /></a>
+  </span>
+</div>
+<span>
+  <a class="hide-profile ms-3 ps-3"
+     data-bs-toggle="collapse"
+     href="#collapseExample"
+     aria-controls="collapseExample"
+     aria-expanded="true"
+     (click)="textShow=!textShow">
+    - Hide/Show Profile
+  </a>
+</span>
+<span class="profile-detail col-3" *ngIf="textShow"><strong>Name: Jesicca Wong SG0001</strong> </span>
+<span class="profile-detail col-3" *ngIf="textShow"><strong>Company: Admin Office SG</strong> </span>
+<span class="profile-detail col-3" *ngIf="textShow"><strong>Created on: 6-Feb-2023</strong> </span>
+
+<div class="collapse show" id="collapseExample">
+  <div class="card card-body">
+    <div class="row">
+      <div class="col-1">
+        <img class="profile-square" src="./assets/profile-square.png" />
+      </div>
+
+      <div class="col-2 profile-detail">
+        <div class="detail"><strong>Name:</strong> Jesicca Wong SG0001</div>
+        <div class="detail"><strong>Department:</strong> MGMT</div>
+        <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+      </div>
+      <div class="col-3 ps-5 ms-5 profile-detail">
+        <div class="detail"><strong>Company:</strong> Admin Office SG</div>
+        <div class="detail"><strong>Designation:</strong> Internal Auditor</div>
+        <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+      </div>
+      <div class="col-3 profile-detail">
+        <div class="detail"><strong>Created on:</strong> 6-Feb-2023</div>
+        <div class="detail"><strong>Employee Type:</strong> Full Time</div>
+        <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="lna-details">
+  <div class="d-flex justify-content-end">
+    <a href="#" class="summary">Summary of courses & budget</a>
+  </div>
+</div>
+
 
 <div class="lnaGrid">
   <kendo-grid #grid
               [kendoGridBinding]="gridData"
-              [filterable]="true"
+              [class.height-max]="textShow"
+              [class.height-min]="!textShow"
+              [filterable]="false"
               [sortable]="{
                allowUnsort:true,
                mode:'multiple'
@@ -10,20 +68,31 @@
               (dataStateChange)="onDataStateChange()"
               [resizable]="true">
     <kendo-grid-column field="SN" title="S/N"
+                       [filterable]="false"
                        [headerStyle]="{ 'background-color': 'var(--color02)' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [headerClass]="'headerCustomClass'">
+    </kendo-grid-column>
 
     <kendo-grid-column field="CompetencyType" title="Competency Type"
                        [headerStyle]="{ 'background-color': 'var(--color02)' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [headerClass]="'headerCustomClass'">
+
+      <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+        <kendo-grid-string-filter-cell [showOperators]="false"
+                                       [column]="column"
+                                       [filter]="filter">
+        </kendo-grid-string-filter-cell>
+      </ng-template>
+    </kendo-grid-column>
 
     <kendo-grid-column field="Skills" title="Skills"
                        [headerStyle]="{ 'background-color': 'var(--color02)' }"
                        [headerClass]="'headerCustomClass'"
                        [resizable]="false"
-                       [width]=741> </kendo-grid-column>
+                       [width]=730> </kendo-grid-column>
 
     <kendo-grid-column field="Attachment" title=""
+                       [filterable]="false"
                        [headerStyle]="{ 'background-color': 'var(--color02)' }"
                        [headerClass]="'headerCustomClass'"
                        [resizable]="false"
@@ -58,4 +127,14 @@
                        [headerClass]="'headerCustomClass'"></kendo-grid-column>
 
   </kendo-grid>
+
+  <div class="ao">
+    <strong>
+      <span>Approving Officers</span>
+      <button class="button-02 ms-2">Approving Officer 1</button>
+      <button class="button-02 ms-2">Approving Officer 2</button>
+    </strong>
+  </div>
+
 </div>
+<!--</div>-->
