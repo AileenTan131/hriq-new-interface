@@ -1,0 +1,25 @@
+.headerCustomClass {
+  color: var(--color01);
+  font-weight: bold;
+  /*  justify-content:center*/
+}
+
+/*th.headerCustomClass {
+
+padding: 8px 0px
+ 
+}
+*/
+.lnaGrid {
+  padding: 30px;
+}
+
+kendo-textbox {
+  display: none
+}
+
+.k-table-alt-row,
+.k-grid .k-table-row.k-table-alt-row,
+.rowCustomClass {
+  background-color: none
+}

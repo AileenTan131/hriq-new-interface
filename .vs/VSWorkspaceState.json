@@ -4,12 +4,10 @@
     "\\.angular",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\login",
-    "\\src\\app\\menu\\learning-menu",
-    "\\src\\app\\menu\\learning-menu\\setting",
-    "\\src\\app\\module-panel"
+    "\\src\\app\\modules-learning",
+    "\\src\\app\\modules-learning\\global",
+    "\\src\\app\\modules-learning\\lna-content"
   ],
-  "SelectedNode": "\\src\\app\\login\\login.component.html",
+  "SelectedNode": "\\src\\app\\modules-learning\\global\\global.component.css",
   "PreviewInSolutionExplorer": false
 }

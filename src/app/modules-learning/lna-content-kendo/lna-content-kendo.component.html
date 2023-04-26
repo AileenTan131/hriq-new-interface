@@ -1,0 +1,61 @@
+
+<div class="lnaGrid">
+  <kendo-grid #grid
+              [kendoGridBinding]="gridData"
+              [filterable]="true"
+              [sortable]="{
+               allowUnsort:true,
+               mode:'multiple'
+               }"
+              (dataStateChange)="onDataStateChange()"
+              [resizable]="true">
+    <kendo-grid-column field="SN" title="S/N"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="CompetencyType" title="Competency Type"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="Skills" title="Skills"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"
+                       [resizable]="false"
+                       [width]=741> </kendo-grid-column>
+
+    <kendo-grid-column field="Attachment" title=""
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"
+                       [resizable]="false"
+                       [width]=50> </kendo-grid-column>
+
+    <kendo-grid-column field="CurrentRate" title="Current Rate"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="RequiredRate" title="Required Rate"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="Gap" title="Gap"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="Piority" title="Piority"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="CoursesInterested" title="Courses Interested"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="TotalHours" title="Total Hours"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+
+    <kendo-grid-column field="TotalBudget" title="Total Budget"
+                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerClass]="'headerCustomClass'"></kendo-grid-column>
+
+  </kendo-grid>
+</div>

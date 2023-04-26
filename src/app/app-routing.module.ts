@@ -16,6 +16,7 @@ import { TransactionComponent } from './menu/learning-menu/transaction/transacti
 import { FooterQuicklinksComponent } from './footer/footer-quicklinks.component';
 import { LoginComponent } from './login/login.component';
 import { HomepageLoginComponent } from './homepage-login/homepage-login.component';
+import { LnaContentKendoComponent } from './modules-learning/lna-content-kendo/lna-content-kendo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/homepage-login', pathMatch: 'full' },
@@ -30,6 +31,7 @@ const routes: Routes = [
       { path: 'information', component: InformationComponent },*/
 
       { path: 'homepage/lna-content', component: LnaContentComponent},
+      { path: 'homepage/lna-content-kendo', component: LnaContentKendoComponent },
       { path: 'homepage/global', component: GlobalComponent },
     ]
   }
@@ -61,7 +63,8 @@ export const RoutingComponents = [
   FooterQuicklinksComponent,
   FooterQuicklinksComponent,
   LoginComponent,
-  HomepageLoginComponent
+  HomepageLoginComponent,
+  LnaContentKendoComponent
 ]
 
 
