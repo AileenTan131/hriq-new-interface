@@ -1,6 +1,6 @@
 .headerCustomClass {
   color: var(--color01);
-  font-weight: bold;
+  font-weight:bolder;
   /*  justify-content:center*/
 }
 

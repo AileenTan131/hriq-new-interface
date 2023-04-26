@@ -4,11 +4,13 @@
     "\\.angular",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\menu",
+    "\\src\\app\\footer",
+    "\\src\\app\\homepage-login",
     "\\src\\app\\modules-learning",
     "\\src\\app\\modules-learning\\global",
     "\\src\\app\\modules-learning\\lna-content",
     "\\src\\app\\modules-learning\\lna-content-kendo"
   ],
+  "SelectedNode": "\\src\\app\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -96,7 +96,13 @@
                        [headerStyle]="{ 'background-color': 'var(--color02)' }"
                        [headerClass]="'headerCustomClass'"
                        [resizable]="false"
-                       [width]=50> </kendo-grid-column>
+                       [width]=50>
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+        <a type="button">
+          <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />
+        </a>
+      </ng-template>
+    </kendo-grid-column>
 
     <kendo-grid-column field="CurrentRate" title="Current Rate"
                        [headerStyle]="{ 'background-color': 'var(--color02)' }"
