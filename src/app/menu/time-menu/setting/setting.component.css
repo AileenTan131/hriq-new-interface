@@ -1,0 +1,26 @@
+.line {
+  position: absolute;
+  top: 118px
+}
+
+.selection {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 3.5px 15px;
+  border: none
+}
+
+  button:hover, .selected {
+    color: var(--color01);
+    background-color: var(--color03)
+  }
+
+h5 {
+  margin: 0
+}

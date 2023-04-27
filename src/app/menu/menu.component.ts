@@ -6,28 +6,67 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+  //Learning menu
   public menu = 'TRANSACTIONS';
-  public hideTransaction = false;
-  public hideReport = true;
-  public hideSetting = true;
+  public hideLearningTransaction = false;
+  public hideLearningReport = true;
+  public hideLearningSetting = true;
 
-  showTransaction() {
-    this.hideTransaction = false;
-    this.hideReport = true;
-    this.hideSetting = true;
+  showLearningTransaction() {
+    this.hideLearningTransaction = false;
+    this.hideLearningReport = true;
+    this.hideLearningSetting = true;
     return this.menu = 'TRANSACTIONS';
   }
-  showReport() {
-    this.hideTransaction = true;
-    this.hideReport = false;
-    this.hideSetting = true;
+  showLearningReport() {
+    this.hideLearningTransaction = true;
+    this.hideLearningReport = false;
+    this.hideLearningSetting = true;
     return this.menu = 'REPORTS';
   }
-  showSetting() {
-    this.hideTransaction = true;
-    this.hideReport = true;
-    this.hideSetting = false;
+  showLearningSetting() {
+    this.hideLearningTransaction = true;
+    this.hideLearningReport = true;
+    this.hideLearningSetting = false;
     return this.menu = 'SYSTEM    ';
     /* this.router.navigate(['setting'], { relativeTo: this.route });*/
   }
+
+  //Time Menu
+  public hideTimeTransaction = false;
+  public hideTimeExport = true;
+  public hideTimeAttendance = true;
+  public hideTimeSetting = true;
+
+  showTimeTransaction() {
+    this.hideTimeTransaction = false;
+    this.hideTimeExport = true;
+    this.hideTimeAttendance = true;
+    this.hideTimeSetting = true;
+    return this.menu = 'TRANSACTIONS';
+  }
+  showTimeExport() {
+    this.hideTimeTransaction = true;
+    this.hideTimeExport = false;
+    this.hideTimeAttendance = true;
+    this.hideTimeSetting = true;
+    return this.menu = 'EXPORT'
+  }
+
+  showTimeAttendance() {
+    this.hideTimeTransaction = true;
+    this.hideTimeExport = true;
+    this.hideTimeAttendance = false;
+    this.hideTimeSetting = true;
+    return this.menu = 'ATTENDANCE'
+  }
+
+  showTimeSetting() {
+    this.hideTimeTransaction = true;
+    this.hideTimeExport = true;
+    this.hideTimeAttendance = true;
+    this.hideTimeSetting = false;
+    return this.menu = 'SYSTEM    ';
+  }
+
 }
