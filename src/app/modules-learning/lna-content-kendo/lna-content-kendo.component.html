@@ -55,6 +55,7 @@
 </div>
 
 
+
 <div class="lnaGrid">
   <kendo-grid #grid
               [kendoGridBinding]="gridData"
@@ -67,16 +68,18 @@
                }"
               (dataStateChange)="onDataStateChange()"
               [resizable]="true">
-    <kendo-grid-column field="SN" title="S/N"
+
+    <kendo-grid-column field="SN" title="#"
                        [filterable]="false"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [resizable]="false" [width]=38
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'">
     </kendo-grid-column>
 
     <kendo-grid-column field="CompetencyType" title="Competency Type"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
-                       [headerClass]="'headerCustomClass'">
-
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                       [headerClass]="'headerCustomClass'"
+                       [resizable]="false" [width]=150>
       <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
         <kendo-grid-string-filter-cell [showOperators]="false"
                                        [column]="column"
@@ -86,17 +89,20 @@
     </kendo-grid-column>
 
     <kendo-grid-column field="Skills" title="Skills"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"
-                       [resizable]="false"
-                       [width]=730> </kendo-grid-column>
+                       [resizable]="false" [width]=730>
+
+
+
+
+    </kendo-grid-column>
 
     <kendo-grid-column field="Attachment" title=""
                        [filterable]="false"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"
-                       [resizable]="false"
-                       [width]=50>
+                       [resizable]="false" [width]=50>
       <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
         <a type="button">
           <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />
@@ -105,31 +111,54 @@
     </kendo-grid-column>
 
     <kendo-grid-column field="CurrentRate" title="Current Rate"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"> </kendo-grid-column>
 
     <kendo-grid-column field="RequiredRate" title="Required Rate"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"> </kendo-grid-column>
 
     <kendo-grid-column field="Gap" title="Gap"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"> </kendo-grid-column>
 
     <kendo-grid-column field="Piority" title="Piority"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [width]=88 [resizable]="false"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                       [headerClass]="'headerCustomClass'">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <kendo-label class="k-form">
+          <kendo-numerictextbox [value]="dataItem.Piority"
+                                [min]="0"
+                                [max]="100"
+                                [autoCorrect]="autoCorrect"
+                                [format]="'#'">
+
+          </kendo-numerictextbox>
+        </kendo-label>
+      </ng-template>
+
+
+    </kendo-grid-column>
 
     <kendo-grid-column field="CoursesInterested" title="Courses Interested"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                       [headerClass]="'headerCustomClass'">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <button class="training-plan" (click)="showHomepage()">
+          My Training Plan
+          <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">11</button>
+        </button>
+      </ng-template>
+
+    </kendo-grid-column>
 
     <kendo-grid-column field="TotalHours" title="Total Hours"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"> </kendo-grid-column>
 
     <kendo-grid-column field="TotalBudget" title="Total Budget"
-                       [headerStyle]="{ 'background-color': 'var(--color02)' }"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"></kendo-grid-column>
 
   </kendo-grid>

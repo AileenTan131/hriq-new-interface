@@ -3,14 +3,11 @@ import {
     ViewChild,
     ViewEncapsulation,
     NgZone,
-    AfterViewInit,
-} from "@angular/core";
+    AfterViewInit } from "@angular/core";
 import { take } from "rxjs/operators";
-import {
-    GridComponent,
-    FilterableSettings,
-} from "@progress/kendo-angular-grid";
+import { GridComponent, FilterableSettings } from "@progress/kendo-angular-grid";
 import { Customers } from "./customers";
+import { Router, ActivatedRoute } from '@angular/router'
 
 @Component({
     selector: "app-lna-content-kendo",
@@ -25,7 +22,7 @@ export class LnaContentKendoComponent implements AfterViewInit {
 
     @ViewChild(GridComponent)
     public grid: GridComponent;
-    constructor(private ngZone: NgZone) {}
+  constructor(private ngZone: NgZone, private route: ActivatedRoute, private router: Router) {}
     public ngAfterViewInit(): void {
         this.fitColumns();
     }
@@ -43,7 +40,14 @@ export class LnaContentKendoComponent implements AfterViewInit {
 
     public isCollapsed = false;
 
-    textShow = false;
+  textShow = false;
+
+  public value = 5;
+  public autoCorrect = false
+
+  showHomepage() {
+    this.router.navigate(['homepage'], { relativeTo: this.route })
+  }
 
     /*  $("#grid").kendoGrid({
     columns: [{

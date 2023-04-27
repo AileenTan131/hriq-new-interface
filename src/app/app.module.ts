@@ -14,6 +14,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { InputsModule } from "@progress/kendo-angular-inputs";
+import { LabelModule } from "@progress/kendo-angular-label";
 
 
 
@@ -33,7 +34,8 @@ import { InputsModule } from "@progress/kendo-angular-inputs";
     GridModule,
     BrowserAnimationsModule,
     FormsModule,
-    InputsModule
+    InputsModule,
+    LabelModule
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],
