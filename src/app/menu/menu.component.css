@@ -1,15 +1,15 @@
 
 .modal {
   --bs-modal-width: 80%;
-  height: 80%
 }
 
 .modal-header, .modal-footer {
-  border: none
+  border: none;
 }
 
 .modal-body {
-    height:600px
+    height:600px;
+
 }
 
 .dot {
@@ -37,3 +37,12 @@ button {
   .hide{
       display: none
   }
+
+.color-scheme-img {
+ width: 200px
+
+}
+h5{
+    font-weight:normal;
+    font-size:1.1rem
+}

@@ -69,4 +69,7 @@ export class MenuComponent {
     return this.menu = 'SYSTEM    ';
   }
 
+
+//Color Scheme Menu
+changeHydrangea(){ }
 }

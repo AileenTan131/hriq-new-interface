@@ -1,5 +1,5 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -40,7 +40,7 @@
 </div>
 
 <div class="modal fade" id="exampleModalTime" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -85,4 +85,172 @@
 
     </div>
   </div>
+</div>
+
+
+<!--Color Scheme Modal Page-->
+<div class="modal fade" id="exampleModalColor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Choose your Color Scheme</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h5 class="top-banner dark-banner banner-title-01 pb-1">
+                Primary Theme Series
+              </h5>
+              <div class="row pt-2 pb-4">
+                <div class="col-4">
+                  <button>
+                    <h6>Blue</h6>
+                    <img class="color-scheme-img" src="././assets/blue.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Green</h6>
+                    <img class="color-scheme-img" src="././assets/green.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Red</h6>
+                    <img class="color-scheme-img" src="././assets/red.jpg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="top-banner dark-banner banner-title-01 pb-1">
+                Flower Theme Series
+              </h5>
+              <div class="row pt-2 pb-4">
+                <div class="col-4">
+                  <button (click)="changeHydrangea()"
+                          [class.isSelected]="!hideTimeAttendance">
+                    <h6>Hydrangea</h6>
+                    <img class="color-scheme-img" src="././assets/hydrangea.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Sakura</h6>
+                    <img class="color-scheme-img" src="././assets/sakura.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Lavender</h6>
+                    <img class="color-scheme-img" src="././assets/lavender.jpg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="top-banner dark-banner banner-title-01 pb-1">
+                Style Theme Series
+              </h5>
+              <div class="row pt-2 pb-4">
+                <div class="col-4">
+                  <button>
+                    <h6>Mediterranean</h6>
+                    <img class="color-scheme-img" src="././assets/mediterranean.jpg" />
+                  </button>
+
+                  <button>
+                    <h6>Industrial</h6>
+                    <img class="color-scheme-img" src="././assets/industrial.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Minimalist</h6>
+                    <img class="color-scheme-img" src="././assets/minimalist.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Bohemian</h6>
+                    <img class="color-scheme-img" src="././assets/bohemian.jpg" />
+                  </button>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-6">
+            <div>
+              <h5 class="top-banner dark-banner banner-title-01 pb-1">
+                Nature Theme Series
+              </h5>
+              <div class="row pt-2 pb-4">
+                <div class="col-4">
+                  <button>
+                    <h6>Forest</h6>
+                    <img class="color-scheme-img" src="././assets/forest.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Beach</h6>
+                    <img class="color-scheme-img" src="././assets/beach.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Sea</h6>
+                    <img class="color-scheme-img" src="././assets/sea.jpg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="top-banner dark-banner banner-title-01 pb-1">
+                Seasons Theme Series
+              </h5>
+              <div class="row pt-2 pb-4">
+                <div class="col-4">
+                  <button>
+                    <h6>Spring</h6>
+                    <img class="color-scheme-img" src="././assets/spring.jpg" />
+                  </button>
+
+                  <button>
+                    <h6>Winter</h6>
+                    <img class="color-scheme-img" src="././assets/winter.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Summer</h6>
+                    <img class="color-scheme-img" src="././assets/summer.jpg" />
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button>
+                    <h6>Autumn</h6>
+                    <img class="color-scheme-img" src="././assets/autumn.jpg" />
+                  </button>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
 </div>

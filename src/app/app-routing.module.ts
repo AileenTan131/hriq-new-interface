@@ -64,7 +64,7 @@ export const RoutingComponents = [
   FooterQuicklinksComponent,
   LoginComponent,
   HomepageLoginComponent,
-  LnaContentKendoComponent
+  LnaContentKendoComponent,
 ]
 
 

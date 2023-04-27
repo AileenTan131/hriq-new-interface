@@ -15,7 +15,6 @@ import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform
 import { GridModule } from '@progress/kendo-angular-grid';
 import { InputsModule } from "@progress/kendo-angular-inputs";
 import { LabelModule } from "@progress/kendo-angular-label";
-import { ColorThemesComponent } from './top-panel/color-themes/color-themes.component';
 import { SettingComponent } from './menu/time-menu/setting/setting.component';
 
 
@@ -25,7 +24,6 @@ import { SettingComponent } from './menu/time-menu/setting/setting.component';
     AppComponent,
     EncapsulationComponent,
     RoutingComponents,
-    ColorThemesComponent,
     SettingComponent,
   ],
   imports: [
