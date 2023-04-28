@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
+  host: {
+    "[class.blue-theme]": "(theme==='blue')",
+    "[class.green-theme]": "(theme==='green')",
+  },
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
@@ -71,5 +75,11 @@ export class MenuComponent {
 
 
 //Color Scheme Menu
-changeHydrangea(){ }
+  changeHydrangea() { }
+
+  public theme: string;
+
+  constructor() {
+    this.theme = "blue";
+  }
 }

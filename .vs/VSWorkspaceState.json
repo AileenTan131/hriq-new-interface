@@ -1,15 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.angular",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\encapsulation",
     "\\src\\app\\menu",
-    "\\src\\app\\menu\\time-menu\\setting",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\top-panel",
-    "\\src\\app\\top-panel\\color-themes"
+    "\\src\\app\\modules-learning",
+    "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src\\app\\top-panel\\top-panel.component.html",
+  "SelectedNode": "\\src\\app\\menu\\menu.component.html",
   "PreviewInSolutionExplorer": false
 }

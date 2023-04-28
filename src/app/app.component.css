@@ -15,3 +15,10 @@
     src: url('../assets/fonts/trebuc.ttf')
 }*/
 
+/*:host-context(app-root.blue-theme).btn{
+    background-color: blue;
+    color:aqua;
+    font-weight:bold
+}
+
+*/

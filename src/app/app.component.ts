@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  public theme = '';
+  constructor() {
+    this.theme = "blue"
+  }
 }

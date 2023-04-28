@@ -1,3 +1,4 @@
+<!--Learning Menu Modal Page-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
@@ -39,6 +40,7 @@
   </div>
 </div>
 
+<!--Time Menu Modal Page-->
 <div class="modal fade" id="exampleModalTime" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
@@ -87,17 +89,93 @@
   </div>
 </div>
 
+<!--Password Modal Page-->
+<div class="modal fade" id="exampleModalPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Change Password</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body shift-body-up">
+        <div class="body-align">
+          <p class="form-text">Your password must be at least 6 characters and cannot contain spaces. Make sure to include at least 1 number, 1 special character and 1 uppercase alphabet.</p>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingInput" placeholder="Old Password">
+            <label for="floatingInput">Old Password</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingInput" placeholder="New Password">
+            <label for="floatingInput">New Password</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingInput" placeholder="Confirm New Password">
+            <label for="floatingInput">Confirm New Password</label>
+          </div>         
+          <button class="button-03" type="submit">Update Password</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="modal fade" id="exampleModalPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Change Password</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body shift-body-up">
+        <div class="body-align">
+          <p class="form-text">Your password must be at least 6 characters and cannot contain spaces. Make sure to include at least 1 number, 1 special character and 1 uppercase alphabet.</p>
+          <form class="mb-3">
+            <label class="form-label"><strong>Old Password</strong></label>
+            <input class="form-control" type="password" />
+          </form>
+          <form class="mb-3">
+            <label class="form-label"><strong>New Password</strong></label>
+            <input class="form-control" type="password" />
+          </form>
+          <form class="mb-3">
+            <label class="form-label"><strong>Confirm New Password</strong></label>
+            <input class="form-control" type="password" />
+          </form>
+          <button class="button-03" type="submit">Update Password</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<!--Language Modal Page-->
+<div class="modal fade" id="exampleModalLanguage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header shift-body-up">
+        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Select your Default Language</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 
 <!--Color Scheme Modal Page-->
 <div class="modal fade" id="exampleModalColor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1>Choose your Color Scheme</h1>
+      <div class="modal-header ">
+        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Choose your Color Scheme</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-
+      <div class="modal-body shift-body-up">
         <div class="row">
           <div class="col-6">
             <div>
@@ -106,13 +184,13 @@
               </h5>
               <div class="row pt-2 pb-4">
                 <div class="col-4">
-                  <button>
+                  <button class="change-blue-btn" (click)="(theme='blue')">
                     <h6>Blue</h6>
                     <img class="color-scheme-img" src="././assets/blue.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button>
+                  <button class="change-green-btn">
                     <h6>Green</h6>
                     <img class="color-scheme-img" src="././assets/green.jpg" />
                   </button>
@@ -253,4 +331,4 @@
       </div>
       <div class="modal-footer"></div>
     </div>
-</div>
+  </div>
