@@ -1,5 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { languages } from './languages';
+import { DropDownSize } from "@progress/kendo-angular-dropdowns";
 
 
 @Component({
@@ -73,7 +74,7 @@ export class MenuComponent {
 
   //Languages
   public languageSelect = languages;
-
+  public selectedSize: DropDownSize = "large";
 
   //Color Scheme Menu
 
