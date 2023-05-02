@@ -1,5 +1,6 @@
-<div class="theme">
-  <router-outlet></router-outlet>
+<div >
+  <button [class.green]="isGreen" (click)="changeGreenHost()">click</button>
+  <router-outlet (greenTheme)="changeGreenHost()"></router-outlet>
 </div>
 
 <app-encapsulation></app-encapsulation>

@@ -153,11 +153,14 @@
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header shift-body-up">
-        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Select your Default Language</h1>
+        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Input and Select your Default Language</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       
+        <div>
+          <kendo-autocomplete [data]="languageSelect">
+          </kendo-autocomplete>
+        </div>
 
       </div>
 
@@ -184,13 +187,13 @@
               </h5>
               <div class="row pt-2 pb-4">
                 <div class="col-4">
-                  <button class="change-blue-btn" (click)="(theme='blue')">
+                  <button class="change-blue-btn">
                     <h6>Blue</h6>
                     <img class="color-scheme-img" src="././assets/blue.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button class="change-green-btn">
+                  <button class="change-green-btn" (click)="changeGreenTheme()">
                     <h6>Green</h6>
                     <img class="color-scheme-img" src="././assets/green.jpg" />
                   </button>
@@ -210,8 +213,7 @@
               </h5>
               <div class="row pt-2 pb-4">
                 <div class="col-4">
-                  <button (click)="changeHydrangea()"
-                          [class.isSelected]="!hideTimeAttendance">
+                  <button [class.isSelected]="!hideTimeAttendance">
                     <h6>Hydrangea</h6>
                     <img class="color-scheme-img" src="././assets/hydrangea.jpg" />
                   </button>

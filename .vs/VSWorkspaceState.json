@@ -5,9 +5,9 @@
     "\\src\\app",
     "\\src\\app\\encapsulation",
     "\\src\\app\\menu",
-    "\\src\\app\\modules-learning",
-    "\\src\\app\\top-panel"
+    "\\src\\app\\modules-learning\\lna-content",
+    "\\src\\app\\modules-learning\\lna-content-kendo"
   ],
-  "SelectedNode": "\\src\\app\\menu\\menu.component.html",
+  "SelectedNode": "\\src\\app\\app.component.css",
   "PreviewInSolutionExplorer": false
 }

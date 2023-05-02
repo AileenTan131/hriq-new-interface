@@ -15,6 +15,7 @@ import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform
 import { GridModule } from '@progress/kendo-angular-grid';
 import { InputsModule } from "@progress/kendo-angular-inputs";
 import { LabelModule } from "@progress/kendo-angular-label";
+import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
 import { SettingComponent } from './menu/time-menu/setting/setting.component';
 
 
@@ -37,7 +38,8 @@ import { SettingComponent } from './menu/time-menu/setting/setting.component';
     BrowserAnimationsModule,
     FormsModule,
     InputsModule,
-    LabelModule
+    LabelModule,
+    DropDownsModule
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],

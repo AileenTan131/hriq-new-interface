@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { languages } from './languages';
+
 
 @Component({
   selector: 'app-menu',
-  host: {
-    "[class.blue-theme]": "(theme==='blue')",
-    "[class.green-theme]": "(theme==='green')",
-  },
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent {
   //Learning menu
@@ -73,13 +71,17 @@ export class MenuComponent {
     return this.menu = 'SYSTEM    ';
   }
 
+  //Languages
+  public languageSelect = languages;
 
-//Color Scheme Menu
-  changeHydrangea() { }
 
-  public theme: string;
+  //Color Scheme Menu
 
-  constructor() {
-    this.theme = "blue";
+  public changeGreen = false;
+
+  @Output() public greenTheme = new EventEmitter<string>();
+
+  changeGreenTheme() {
+    this.greenTheme.emit()
   }
 }
