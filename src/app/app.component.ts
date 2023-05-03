@@ -1,15 +1,31 @@
-import { Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ColorSchemesService } from './color-schemes.service'
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent {
- isGreen=false
+export class AppComponent implements OnInit{
+  runGreenTheme: any;
+  runRedTheme: any;
 
-  changeGreenHost() {
-   this.isGreen=true
+  constructor(private colorSchemes: ColorSchemesService) { }
+
+  ngOnInit() {
+    this.colorSchemes.data$.subscribe(data => {
+      this.runGreenTheme = data;
+    })
+
+
+  //Red Theme
+/*    this.colorSchemes.data$.subscribe(data => {
+      this.runRedTheme = data;
+    })*/
   }
+
+
+
 }

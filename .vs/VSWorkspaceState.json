@@ -3,11 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
     "\\src\\app\\menu",
-    "\\src\\app\\modules-learning\\lna-content",
-    "\\src\\app\\modules-learning\\lna-content-kendo"
+    "\\src\\app\\module-panel"
   ],
-  "SelectedNode": "\\src\\app\\app.component.css",
+  "SelectedNode": "\\src\\app\\module-panel\\module-panel.component.ts",
   "PreviewInSolutionExplorer": false
 }

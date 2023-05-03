@@ -6,8 +6,24 @@
   --colorGrey: #a2a2a2
 }
 
-.green {
-  color01: #b5caf0;
+.green-theme {
+  --color01: #056770;
+  --color02: #bde3d9;
+  --color03: #ebf5ec;
+  --color04: #aeddd1;
+  --colorGrey: #a2a2a2
+}
+.red-theme {
+  --color01: #c91700;
+  --color02: #f5d4d7;
+  --color03: #faf0f0;
+  --color04: #ffbdbd;
+  --colorGrey: #a2a2a2
+}
+
+button {
+  background-color: var(--color01);
+  color: var(--color02);
 }
 
 *{

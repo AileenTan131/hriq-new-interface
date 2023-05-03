@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { TopPanelComponent } from './top-panel/top-panel.component';
 import { ModulePanelComponent } from './module-panel/module-panel.component';
-import { MenuComponent } from './menu/menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InformationComponent } from './information/information.component';
 import { GlobalComponent } from './modules-learning/global/global.component';
@@ -27,9 +26,6 @@ const routes: Routes = [
     children: [
       { path: '', component: HomepageComponent },
       { path: 'homepage', component: HomepageComponent },
- /*     { path: 'menu', component: MenuComponent },
-      { path: 'information', component: InformationComponent },*/
-
       { path: 'homepage/lna-content', component: LnaContentComponent},
       { path: 'homepage/lna-content-kendo', component: LnaContentKendoComponent },
       { path: 'homepage/global', component: GlobalComponent },
@@ -52,7 +48,6 @@ export const RoutingComponents = [
   HomepageComponent,
   TopPanelComponent,
   ModulePanelComponent,
-  MenuComponent,
   DashboardComponent,
   InformationComponent,
   GlobalComponent,
