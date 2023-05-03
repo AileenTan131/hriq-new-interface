@@ -10,18 +10,10 @@ export class ColorSchemesService {
   data$ = this.serviceData.asObservable();
 
   //Green Theme
-  setGreenData(data: any) {
+  setData(data: any) {
     this.serviceData.next(data);
   }
-  getGreenData() {
-    return this.serviceData.getValue();
-  }
-
-  //Red Theme
-  setRedData(data: any) {
-    this.serviceData.next(data);
-  }
-  getRedData() {
+  getData() {
     return this.serviceData.getValue();
   }
 }

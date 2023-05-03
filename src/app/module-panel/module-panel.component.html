@@ -262,13 +262,13 @@
                 </h5>
                 <div class="row pt-2 pb-4">
                   <div class="col-4">
-                    <button class="change-blue-btn">
+                    <button (click)="setBlueData()">
                       <h6>Blue</h6>
                       <img class="color-scheme-img" src="././assets/blue.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button class="change-green-btn" (click)="setGreenData()">
+                    <button (click)="setGreenData()">
                       <h6>Green</h6>
                       <img class="color-scheme-img" src="././assets/green.jpg" />
                     </button>
@@ -288,19 +288,19 @@
                 </h5>
                 <div class="row pt-2 pb-4">
                   <div class="col-4">
-                    <button [class.isSelected]="!hideTimeAttendance">
+                    <button (click)="setHydrangeaData()">
                       <h6>Hydrangea</h6>
                       <img class="color-scheme-img" src="././assets/hydrangea.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setSakuraData()">
                       <h6>Sakura</h6>
                       <img class="color-scheme-img" src="././assets/sakura.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setLavenderData()">
                       <h6>Lavender</h6>
                       <img class="color-scheme-img" src="././assets/lavender.jpg" />
                     </button>
@@ -314,32 +314,29 @@
                 </h5>
                 <div class="row pt-2 pb-4">
                   <div class="col-4">
-                    <button>
+                    <button (click)="setMediterraneanData()">
                       <h6>Mediterranean</h6>
                       <img class="color-scheme-img" src="././assets/mediterranean.jpg" />
                     </button>
-
-                    <button>
+                    <button (click)="setIndustrialData()">
                       <h6>Industrial</h6>
                       <img class="color-scheme-img" src="././assets/industrial.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setMinimalistData()">
                       <h6>Minimalist</h6>
                       <img class="color-scheme-img" src="././assets/minimalist.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setBohemianData()">
                       <h6>Bohemian</h6>
                       <img class="color-scheme-img" src="././assets/bohemian.jpg" />
                     </button>
-
                   </div>
                 </div>
               </div>
-
             </div>
 
             <div class="col-6">
@@ -349,19 +346,19 @@
                 </h5>
                 <div class="row pt-2 pb-4">
                   <div class="col-4">
-                    <button>
+                    <button (click)="setForestData()">
                       <h6>Forest</h6>
                       <img class="color-scheme-img" src="././assets/forest.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setBeachData()">
                       <h6>Beach</h6>
                       <img class="color-scheme-img" src="././assets/beach.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setSeaData()">
                       <h6>Sea</h6>
                       <img class="color-scheme-img" src="././assets/sea.jpg" />
                     </button>
@@ -375,28 +372,26 @@
                 </h5>
                 <div class="row pt-2 pb-4">
                   <div class="col-4">
-                    <button>
+                    <button (click)="setSpringData()">
                       <h6>Spring</h6>
                       <img class="color-scheme-img" src="././assets/spring.jpg" />
                     </button>
-
-                    <button>
+                    <button (click)="setWinterData()">
                       <h6>Winter</h6>
                       <img class="color-scheme-img" src="././assets/winter.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setSummerData()">
                       <h6>Summer</h6>
                       <img class="color-scheme-img" src="././assets/summer.jpg" />
                     </button>
                   </div>
                   <div class="col-4">
-                    <button>
+                    <button (click)="setAutumnData()">
                       <h6>Autumn</h6>
                       <img class="color-scheme-img" src="././assets/autumn.jpg" />
                     </button>
-
                   </div>
                 </div>
 

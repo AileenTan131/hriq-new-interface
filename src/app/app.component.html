@@ -3,7 +3,25 @@
       <button (greenTheme)="changeGreenHost($event)">Click me</button>
     </div>-->
 
-  <div [ngClass]="{'green-theme': runGreenTheme==='green', 'red-theme': runGreenTheme==='red'}">
+  <div [ngClass]="{
+       ':host': runTheme==='Blue',
+       'green-theme': runTheme==='Green',
+       'red-theme': runTheme==='Red',
+       'hydrangea-theme': runTheme==='Hydrangea',
+       'sakura-theme': runTheme==='Sakura',
+       'lavender-theme': runTheme==='Lavender',
+       'mediterranean-theme': runTheme==='Mediterranean',
+       'industrial-theme': runTheme==='Industrial',
+       'minimalist-theme': runTheme==='Minimalist',
+       'bohemian-theme': runTheme==='Bohemian',
+       'forest-theme': runTheme==='Forest',
+       'beach-theme': runTheme==='Beach',
+       'sea-theme': runTheme==='Sea',
+       'spring-theme': runTheme==='Spring',
+       'winter-theme': runTheme==='Winter',
+       'summer-theme': runTheme==='Summer',
+       'autumn-theme': runTheme==='Autumn'
+       }">
     <router-outlet></router-outlet>
   </div>
 

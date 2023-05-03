@@ -9,21 +9,14 @@ import { ColorSchemesService } from './color-schemes.service'
 })
 
 export class AppComponent implements OnInit{
-  runGreenTheme: any;
-  runRedTheme: any;
+  runTheme: any;
 
   constructor(private colorSchemes: ColorSchemesService) { }
 
   ngOnInit() {
     this.colorSchemes.data$.subscribe(data => {
-      this.runGreenTheme = data;
+      this.runTheme = data;
     })
-
-
-  //Red Theme
-/*    this.colorSchemes.data$.subscribe(data => {
-      this.runRedTheme = data;
-    })*/
   }
 
 

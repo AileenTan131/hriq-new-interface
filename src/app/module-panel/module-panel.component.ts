@@ -89,11 +89,55 @@ export class ModulePanelComponent implements OnInit {
 
   //Color Scheme Menu
    setGreenData() {
-      this.colorSchemes.setGreenData('green');
+      this.colorSchemes.setData('Green');
   }
   setRedData() {
-    this.colorSchemes.setRedData('red');
+    this.colorSchemes.setData('Red');
   }
-
+  setBlueData() {
+    this.colorSchemes.setData('Blue');
+  }
+  setHydrangeaData() {
+    this.colorSchemes.setData('Hydrangea');
+  }
+  setSakuraData() {
+    this.colorSchemes.setData('Sakura');
+  }
+  setLavenderData() {
+    this.colorSchemes.setData('Lavender');
+  }
+  setMediterraneanData() {
+    this.colorSchemes.setData('Mediterranean');
+  }
+  setIndustrialData() {
+    this.colorSchemes.setData('Industrial');
+  }
+  setMinimalistData() {
+    this.colorSchemes.setData('Minimalist');
+  }
+  setBohemianData() {
+    this.colorSchemes.setData('Bohemian');
+  }
+  setForestData() {
+    this.colorSchemes.setData('Forest');
+  }
+  setBeachData() {
+    this.colorSchemes.setData('Beach');
+  }
+  setSeaData() {
+    this.colorSchemes.setData('Sea');
+  }
+  setSpringData() {
+    this.colorSchemes.setData('Spring');
+  }
+  setWinterData() {
+    this.colorSchemes.setData('Winter');
+  }
+  setSummerData() {
+    this.colorSchemes.setData('Summer');
+  }
+  setAutumnData() {
+    this.colorSchemes.setData('Autumn');
+  }
 
 }
