@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { ColorSchemesService } from '../../../color-schemes.service';
 
@@ -55,7 +55,9 @@ export class SettingComponent implements OnInit {
   ) { }
 
   public selectedId;
-  runTheme = 'Blue';
+/*  @Input() public parentData;
+*/   runTheme = 'Blue';
+  
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {

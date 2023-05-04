@@ -23,17 +23,17 @@
           }">
         <img class="menu-icon" src="./assets/iconsMenu/global.png" />
       </div>
-      </div>
-      <h5 class="text-center pt-2"><strong>Global</strong></h5>
-      <br />
-      <button class="selection"
-              (click)="onSelect(globals)"
-              [class.selected]="isSelected(globals)"
-              data-bs-dismiss="modal"
-              *ngFor='let globals of global'>
-        {{globals.name}}
-      </button>
     </div>
+    <h5 class="text-center pt-2"><strong>Global</strong></h5>
+    <br />
+    <button class="selection"
+            (click)="onSelect(globals)"
+            [class.selected]="isSelected(globals)"
+            data-bs-dismiss="modal"
+            *ngFor='let globals of global'>
+      {{globals.name}}
+    </button>
+  </div>
 
   <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
@@ -60,16 +60,16 @@
         <img class="menu-icon" src="./assets/iconsMenu/course.png" />
       </div>
     </div>
-      <h5 class="text-center pt-2"><strong>Course</strong></h5>
-      <br />
-      <button class="selection"
-              (click)="onSelect(courses)"
-              [class.selected]="isSelected(courses)"
-              data-bs-dismiss="modal"
-              *ngFor='let courses of course'>
-        {{courses.name}}
-      </button>
-    </div>
+    <h5 class="text-center pt-2"><strong>Course</strong></h5>
+    <br />
+    <button class="selection"
+            (click)="onSelect(courses)"
+            [class.selected]="isSelected(courses)"
+            data-bs-dismiss="modal"
+            *ngFor='let courses of course'>
+      {{courses.name}}
+    </button>
+  </div>
 
   <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
@@ -95,17 +95,17 @@
           }">
         <img class="menu-icon" src="./assets/iconsMenu/competency.png" />
       </div>
-   </div>
-      <h5 class="text-center pt-2"><strong>Competency</strong></h5>
-      <br />
-      <button class="selection"
-              (click)="onSelect(competencies)"
-              [class.selected]="isSelected(competencies)"
-              data-bs-dismiss="modal"
-              *ngFor='let competencies of competency'>
-        {{competencies.name}}
-      </button>
     </div>
+    <h5 class="text-center pt-2"><strong>Competency</strong></h5>
+    <br />
+    <button class="selection"
+            (click)="onSelect(competencies)"
+            [class.selected]="isSelected(competencies)"
+            data-bs-dismiss="modal"
+            *ngFor='let competencies of competency'>
+      {{competencies.name}}
+    </button>
+  </div>
 
 
   <div class="col-2 mt-2">
@@ -133,16 +133,16 @@
         <img class="menu-icon" src="./assets/iconsMenu/currency.png" />
       </div>
     </div>
-      <h5 class="text-center pt-2"><strong>Currency</strong></h5>
-      <br />
-      <button class="selection"
-              (click)="onSelect(currencies)"
-              [class.selected]="isSelected(currencies)"
-              data-bs-dismiss="modal"
-              *ngFor='let currencies of currency'>
-        {{currencies.name}}
-      </button>
-    </div>
+    <h5 class="text-center pt-2"><strong>Currency</strong></h5>
+    <br />
+    <button class="selection"
+            (click)="onSelect(currencies)"
+            [class.selected]="isSelected(currencies)"
+            data-bs-dismiss="modal"
+            *ngFor='let currencies of currency'>
+      {{currencies.name}}
+    </button>
+  </div>
 
   <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
@@ -168,17 +168,17 @@
           }">
         <img class="menu-icon" src="./assets/iconsMenu/budget.png" />
       </div>
-   </div>
-      <h5 class="text-center  pt-2"><strong>Budget</strong></h5>
-      <br />
-      <button class="selection"
-              (click)="onSelect(budgets)"
-              [class.selected]="isSelected(budget)"
-              data-bs-dismiss="modal"
-              *ngFor='let budgets of budget'>
-        {{budgets.name}}
-      </button>
     </div>
+    <h5 class="text-center  pt-2"><strong>Budget</strong></h5>
+    <br />
+    <button class="selection"
+            (click)="onSelect(budgets)"
+            [class.selected]="isSelected(budget)"
+            data-bs-dismiss="modal"
+            *ngFor='let budgets of budget'>
+      {{budgets.name}}
+    </button>
+  </div>
 
   <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
@@ -204,15 +204,15 @@
           }">
         <img class="menu-icon" src="./assets/iconsMenu/accessControls.png" />
       </div>
-      </div>
-      <h5 class="text-center pt-2"><strong>Access Controls</strong></h5>
-      <br />
-      <button class="selection"
-              (click)="onSelect(accesses)"
-              [class.selected]="isSelected(accesses)"
-              data-bs-dismiss="modal"
-              *ngFor='let accesses of access'>
-        {{accesses.name}}
-      </button>
     </div>
+    <h5 class="text-center pt-2"><strong>Access Controls</strong></h5>
+    <br />
+    <button class="selection"
+            (click)="onSelect(accesses)"
+            [class.selected]="isSelected(accesses)"
+            data-bs-dismiss="modal"
+            *ngFor='let accesses of access'>
+      {{accesses.name}}
+    </button>
+  </div>
 </div>

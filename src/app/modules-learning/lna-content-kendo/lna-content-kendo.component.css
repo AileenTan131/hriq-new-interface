@@ -35,7 +35,6 @@ kendo-textbox {
   background: var(--color01);
   color: white;
   padding-left: 20px;
-  margin-bottom: 10px;
   font-size: 1.31rem;
   font-weight: 600;
   letter-spacing: 3px;
@@ -135,7 +134,7 @@ table {
 
 .ao {
   position: relative;
-  top: 16px;
+  top: 15px;
 }
 
 .action-icons {

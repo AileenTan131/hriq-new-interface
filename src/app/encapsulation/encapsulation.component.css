@@ -179,3 +179,8 @@ h1 {
   z-index:1;
   /*position: relative;*/
 }
+
+
+.progress-bar{
+    background-color:var(--color04)
+}

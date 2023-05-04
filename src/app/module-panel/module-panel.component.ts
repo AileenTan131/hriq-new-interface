@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { DropDownSize } from "@progress/kendo-angular-dropdowns";
 import { languages } from './languages';
 import { ColorSchemesService } from '../color-schemes.service'
+import { ColorFiltersService } from '../color-filters.service';
 
 
 @Component({
@@ -11,7 +12,12 @@ import { ColorSchemesService } from '../color-schemes.service'
   styleUrls: ['./module-panel.component.css']
 })
 export class ModulePanelComponent implements OnInit {
-  constructor(private route: ActivatedRoute, private router: Router, private colorSchemes: ColorSchemesService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private colorSchemes: ColorSchemesService,
+    private colorFilter: ColorFiltersService
+  ) { }
 
   ngOnInit() { }
 
@@ -88,11 +94,12 @@ export class ModulePanelComponent implements OnInit {
 
 
   //Color Scheme Menu
-  runTheme = "Blue";
+  runTheme = 'Blue';
 
    setGreenData() {
      this.colorSchemes.setData('Green');
-     this.runTheme='Green'
+     this.colorFilter.setData(false);
+     this.runTheme = 'Green';
   }
   setRedData() {
     this.colorSchemes.setData('Red');

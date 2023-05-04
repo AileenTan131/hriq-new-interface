@@ -85,10 +85,7 @@ h5 {
   font-weight: normal;
   font-size: 1.1rem
 }
-.line{
-    z-index:-1;
-    /*position:relative;*/
-}
+
 .line-box{
     height:5px;
     background-color: black;
