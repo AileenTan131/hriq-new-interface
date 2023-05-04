@@ -6,5 +6,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./encapsulation.component.css'], encapsulation:ViewEncapsulation.None
 })
 export class EncapsulationComponent {
-
+  
 }

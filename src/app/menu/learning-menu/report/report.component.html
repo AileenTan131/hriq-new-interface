@@ -1,89 +1,216 @@
-<div class="d-flex justify-content-center">
+<!--<div class="d-flex justify-content-center">
   <div class="line">
     <img class="img-fluid" src="./assets/iconsMenu/line.png" />
   </div>
 </div>
 
-<br />
+<br />-->
 <div class="row">
   <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
-      <img src="./assets/iconsMenu/global.png" />
+      <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+        <img class="menu-icon" src="./assets/iconsMenu/global.png" />
+      </div>
+      <img class="white" src="./assets/iconsMenu/whiteCircle.png" />
     </div>
-    <!--   <h5 class="text-center pt-2"><strong>Global</strong></h5>
-       <br />
-       <button class="selection"
-               (click)="onSelect(globals)"
-               *ngFor='let globals of global'>
-         {{globals.name}}
-       </button>-->
-  </div>
-
-  <div class="col-2 mt-2">
-    <div class="d-flex justify-content-center">
-      <img src="./assets/iconsMenu/course.png" />
-    </div>
-    <!--<h5 class="text-center pt-2"><strong>Course</strong></h5>
-    <br />
-    <button class="selection"
-            (click)="onSelect(courses)"
-            *ngFor='let courses of course'>
-      {{courses.name}}
-    </button>-->
-  </div>
-
-  <div class="col-2 mt-2">
-    <div class="d-flex justify-content-center">
-      <img src="./assets/iconsMenu/competency.png" />
-    </div>
-    <!-- <h5 class="text-center pt-2"><strong>Competency</strong></h5>
+      <!--   <h5 class="text-center pt-2"><strong>Global</strong></h5>
      <br />
      <button class="selection"
-             (click)="onSelect(competencies)"
-             [class.selected]="isSelected(competencies)"
-             data-bs-dismiss="modal"
-             *ngFor='let competencies of competency'>
-       {{competencies.name}}
+             (click)="onSelect(globals)"
+             *ngFor='let globals of global'>
+       {{globals.name}}
      </button>-->
-  </div>
+    </div>
+
+  <div class="col-2 mt-2">
+    <div class="d-flex justify-content-center">
+      <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+        <img class="menu-icon" src="./assets/iconsMenu/course.png" />
+      </div>
+      <img class="white" src="./assets/iconsMenu/whiteCircle.png" />
+    </div>
+      <!--<h5 class="text-center pt-2"><strong>Course</strong></h5>
+  <br />
+  <button class="selection"
+          (click)="onSelect(courses)"
+          *ngFor='let courses of course'>
+    {{courses.name}}
+  </button>-->
+    </div>
+
+  <div class="col-2 mt-2">
+    <div class="d-flex justify-content-center">
+      <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+        <img class="menu-icon" src="./assets/iconsMenu/competency.png" />
+      </div>
+      <img class="white" src="./assets/iconsMenu/whiteCircle.png" />
+    </div>
+      <!-- <h5 class="text-center pt-2"><strong>Competency</strong></h5>
+   <br />
+   <button class="selection"
+           (click)="onSelect(competencies)"
+           [class.selected]="isSelected(competencies)"
+           data-bs-dismiss="modal"
+           *ngFor='let competencies of competency'>
+     {{competencies.name}}
+   </button>-->
+    </div>
 
 
   <div class="col-2 mt-2">
     <div class="d-flex justify-content-center">
-      <img src="./assets/iconsMenu/currency.png" />
+      <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+        <img class="menu-icon" src="./assets/iconsMenu/currency.png" />
+      </div>
+      <img class="white" src="./assets/iconsMenu/whiteCircle.png" />
     </div>
-    <!--    <h5 class="text-center pt-2"><strong>Currency</strong></h5>
-        <br />
-        <button class="selection"
-                (click)="onSelect(currencies)"
-                *ngFor='let currencies of currency'>
-          {{currencies.name}}
-        </button>-->
-  </div>
-
-  <div class="col-2 mt-2">
-    <div class="d-flex justify-content-center">
-      <img src="./assets/iconsMenu/budget.png" />
-    </div>
-    <!--    <h5 class="text-center  pt-2"><strong>Budget</strong></h5>
-        <br />
-        <button class="selection"
-                (click)="onSelect(budgets)"
-                *ngFor='let budgets of budget'>
-          {{budgets.name}}
-        </button>-->
-  </div>
-
-  <div class="col-2 mt-2">
-    <div class="d-flex justify-content-center">
-      <img src="./assets/iconsMenu/accessControls.png" />
-    </div>
-    <!--  <h5 class="text-center pt-2"><strong>Access Controls</strong></h5>
+      <!--    <h5 class="text-center pt-2"><strong>Currency</strong></h5>
       <br />
       <button class="selection"
-              (click)="onSelect(accesses)"
-              *ngFor='let accesses of access'>
-        {{accesses.name}}
+              (click)="onSelect(currencies)"
+              *ngFor='let currencies of currency'>
+        {{currencies.name}}
       </button>-->
-  </div>
+
+    </div>
+
+  <div class="col-2 mt-2">
+    <div class="d-flex justify-content-center">
+      <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+        <img class="menu-icon" src="./assets/iconsMenu/budget.png" />
+      </div>
+      <img class="white" src="./assets/iconsMenu/whiteCircle.png" />
+    </div>
+      <!--    <h5 class="text-center  pt-2"><strong>Budget</strong></h5>
+      <br />
+      <button class="selection"
+              (click)="onSelect(budgets)"
+              *ngFor='let budgets of budget'>
+        {{budgets.name}}
+      </button>-->
+    </div>
+
+  <div class="col-2 mt-2">
+    <div class="d-flex justify-content-center">
+      <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+        <img class="menu-icon" src="./assets/iconsMenu/accessControls.png" />
+      </div>
+      <img class="white" src="./assets/iconsMenu/whiteCircle.png" />
+    </div>
+      <!--  <h5 class="text-center pt-2"><strong>Access Controls</strong></h5>
+    <br />
+    <button class="selection"
+            (click)="onSelect(accesses)"
+            *ngFor='let accesses of access'>
+      {{accesses.name}}
+    </button>-->
+    </div>
 </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router'
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-setting',
@@ -45,7 +47,11 @@ export class SettingComponent implements OnInit{
     { 'id': 21, 'name': 'Course Type' },
   ];
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute
+  ) { }
+
   public selectedId;
 
   ngOnInit() {
@@ -62,4 +68,8 @@ export class SettingComponent implements OnInit{
     return selection.id === this.selectedId
   }
 
+  //run color themes
+   runTheme = '';
+
+  
 }

@@ -88,56 +88,76 @@ export class ModulePanelComponent implements OnInit {
 
 
   //Color Scheme Menu
+  runTheme = "Blue";
+
    setGreenData() {
-      this.colorSchemes.setData('Green');
+     this.colorSchemes.setData('Green');
+     this.runTheme='Green'
   }
   setRedData() {
     this.colorSchemes.setData('Red');
+    this.runTheme = 'Red'
   }
   setBlueData() {
     this.colorSchemes.setData('Blue');
+    this.runTheme = 'Blue'
   }
   setHydrangeaData() {
     this.colorSchemes.setData('Hydrangea');
+    this.runTheme = 'Hydrangea'
   }
   setSakuraData() {
     this.colorSchemes.setData('Sakura');
+    this.runTheme = 'Sakura'
   }
   setLavenderData() {
     this.colorSchemes.setData('Lavender');
+    this.runTheme = 'Lavender'
   }
   setMediterraneanData() {
     this.colorSchemes.setData('Mediterranean');
+    this.runTheme = 'Mediterranean'
   }
   setIndustrialData() {
     this.colorSchemes.setData('Industrial');
+    this.runTheme = 'Industrial'
   }
   setMinimalistData() {
     this.colorSchemes.setData('Minimalist');
+    this.runTheme = 'Minimalist'
   }
   setBohemianData() {
     this.colorSchemes.setData('Bohemian');
+    this.runTheme = 'Bohemian'
   }
   setForestData() {
     this.colorSchemes.setData('Forest');
+    this.runTheme = 'Forest'
   }
   setBeachData() {
     this.colorSchemes.setData('Beach');
+    this.runTheme = 'Beach'
   }
   setSeaData() {
     this.colorSchemes.setData('Sea');
+    this.runTheme = 'Sea'
   }
   setSpringData() {
     this.colorSchemes.setData('Spring');
+    this.runTheme = 'Spring'
   }
   setWinterData() {
     this.colorSchemes.setData('Winter');
+    this.runTheme = 'Winter'
   }
   setSummerData() {
     this.colorSchemes.setData('Summer');
+    this.runTheme = 'Summer'
   }
   setAutumnData() {
     this.colorSchemes.setData('Autumn');
+    this.runTheme = 'Autumn'
   }
 
+  
 }

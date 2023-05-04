@@ -19,14 +19,13 @@
 .panelIcons {
 }
 
-.icons {
+.module-icons {
   padding-bottom: 20px;
 }
 
 .moduleIcons {
-  width: 29px
+  width: 29px;
 }
-
 .moduleLegend {
   color: var(--color01);
 }
@@ -86,7 +85,17 @@ h5 {
   font-weight: normal;
   font-size: 1.1rem
 }
-
+.line{
+    z-index:-1;
+    /*position:relative;*/
+}
+.line-box{
+    height:5px;
+    background-color: black;
+    width: 100%;
+ /*   position:relative;
+    top:600px*/
+}
 
 .body-align {
   padding: 0px 20px
@@ -102,3 +111,8 @@ h5 {
 .shift-body-up {
   padding-top: 0
 }
+
+
+
+
+/*.svg icons color-filter themes in encapsulation*/

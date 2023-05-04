@@ -4,72 +4,253 @@
       <img class="hriqLogo" src="./assets/hriqLogo.png">
     </a>
 
+
     <div class="panelIcons ">
-      <div class="icons">
+      <div class="module-icons">
+      
         <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/user02.svg" /></div>
-          <div class="moduleLegend">HR</div>
+          <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/user02.svg" /></div>
+          </div>
+            <div class="moduleLegend">HR</div>
         </a>
-      </div>
+        </div>
 
-      <div class="icons">
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/calendarCheck01.svg" /></div>
-          <div class="moduleLegend">Leave</div>
-        </a>
-      </div>
+        <div class="module-icons">
+          <a href="#">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/calendarCheck01.svg" /></div>
+            </div>
+              <div class="moduleLegend">Leave</div>
+          </a>
+        </div>
 
-      <div class="icons">
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalColor">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/currencyDollar02.svg" /></div>
-          <div class="moduleLegend">Payroll</div>
-        </a>
-      </div>
+        <div class="module-icons">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalColor">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/currencyDollar02.svg" /></div>
+            </div>
+              <div class="moduleLegend">Payroll</div>
+          </a>
+        </div>
 
-      <div class="icons">
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/coinsHand.svg" /></div>
-          <div class="moduleLegend">Claims</div>
-        </a>
-      </div>
+        <div class="module-icons">
+          <a href="#">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/coinsHand.svg" /></div>
+            </div>
+              <div class="moduleLegend">Claims</div>
+          </a>
+        </div>
 
-      <div class="icons">
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalTime">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userLeft01.svg" /></div>
-          <div class="moduleLegend">Time</div>
-        </a>
-      </div>
+        <div class="module-icons">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalTime">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userLeft01.svg" /></div>
+            </div>
+              <div class="moduleLegend">Time</div>
+          </a>
+        </div>
 
-      <div class="icons">
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/graduationHat02.svg" /></div>
-          <div class="moduleLegend">Learning</div>
-        </a>
-      </div>
+        <div class="module-icons">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/graduationHat02.svg" /></div>
+            </div>
+              <div class="moduleLegend">Learning</div>
+          </a>
+        </div>
 
-      <div class="icons">
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/edit05.svg" /></div>
-          <div class="moduleLegend">Appraisal</div>
-        </a>
-      </div>
+        <div class="module-icons">
+          <a href="#">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/edit05.svg" /></div>
+            </div>
+              <div class="moduleLegend">Appraisal</div>
+          </a>
+        </div>
 
-      <div class="icons">
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userCircle.svg" /></div>
-          <div class="moduleLegend">Recruit</div>
-        </a>
-      </div>
+        <div class="module-icons">
+          <a href="#">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userCircle.svg" /></div>
+            </div>
+              <div class="moduleLegend">Recruit</div>
+          </a>
+        </div>
 
-      <div class="icons">
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/key01.svg" /></div>
-          <div class="moduleLegend">Security</div>
-        </a>
+        <div class="module-icons">
+          <a href="#">
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/key01.svg" /></div>
+            </div>
+              <div class="moduleLegend">Security</div>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-
 
 
 
@@ -85,7 +266,27 @@
         </div>
 
         <div class="d-flex justify-content-center">
-          <img src="./assets/iconsMenu/learningSetting.png" />
+          <div [ngClass]="{
+           'blue-filter04': runTheme==='Blue',
+           'green-filter04': runTheme==='Green',
+           'red-filter04': runTheme==='Red',
+           'hydrangea-filter04': runTheme==='Hydrangea',
+           'sakura-filter04': runTheme==='Sakura',
+           'lavender-filter04': runTheme==='Lavender',
+           'mediterranean-filter04': runTheme==='Mediterranean',
+           'industrial-filter04': runTheme==='Industrial',
+           'minimalist-filter04': runTheme==='Minimalist',
+           'bohemian-filter04': runTheme==='Bohemian',
+           'forest-filter04': runTheme==='Forest',
+           'beach-filter04': runTheme==='Beach',
+           'sea-filter04': runTheme==='Sea',
+           'spring-filter04': runTheme==='Spring',
+           'winter-filter04': runTheme==='Winter',
+           'summer-filter04': runTheme==='Summer',
+           'autumn-filter04': runTheme==='Autumn'
+          }">
+            <img src="./assets/iconsMenu/learningSetting.png" />
+          </div>
         </div>
         <div class="modal-body">
           <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
@@ -107,14 +308,39 @@
                     class="header">
               System Settings
             </button>
+
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <div class="line-box"></div>
+            </div>
+
             <learning-transaction [class.hide]="hideLearningTransaction"></learning-transaction>
             <app-report [class.hide]="hideLearningReport"></app-report>
             <app-setting [class.hide]="hideLearningSetting"></app-setting>
             <!-- <router-outlet></router-outlet>-->
           </h6>
-        </div>
 
-      </div>
+        </div>
+          </div>
+
+        </div>
     </div>
   </div>
 
@@ -127,43 +353,63 @@
         </div>
 
         <div class="d-flex justify-content-center">
-          <img src="./assets/iconsMenu/learningSetting.png" />
-        </div>
-        <div class="modal-body">
-          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">TIME {{menu}} SETTING</h1>
-          <h6 class="text-center">
-            <button (click)="showTimeTransaction()"
-                    [class.isSelected]="!hideTimeTransaction"
-                    class="header">
-              Transactions
-            </button>
-            <span class="dot"> • </span>
-            <button (click)="showTimeExport()"
-                    [class.isSelected]="!hideTimeExport"
-                    class="header">
-              Export
-            </button>
-            <span class="dot"> • </span>
-            <button (click)="showTimeAttendance()"
-                    [class.isSelected]="!hideTimeAttendance"
-                    class="header">
-              Attendance
-            </button>
-            <span class="dot"> • </span>
-            <button (click)="showTimeSetting()"
-                    [class.isSelected]="!hideTimeSetting"
-                    class="header">
-              System Settings
-            </button>
-            <learning-transaction [class.hide]="hideTimeTransaction"></learning-transaction>
-            <app-report [class.hide]="hideTimeExport"></app-report>
-            <app-report [class.hide]="hideTimeAttendance"></app-report>
-            <time-setting [class.hide]="hideTimeSetting"></time-setting>
-            <!-- <router-outlet></router-outlet>-->
-          </h6>
-        </div>
+          <div [ngClass]="{
+           'blue-filter04': runTheme==='Blue',
+           'green-filter04': runTheme==='Green',
+           'red-filter04': runTheme==='Red',
+           'hydrangea-filter04': runTheme==='Hydrangea',
+           'sakura-filter04': runTheme==='Sakura',
+           'lavender-filter04': runTheme==='Lavender',
+           'mediterranean-filter04': runTheme==='Mediterranean',
+           'industrial-filter04': runTheme==='Industrial',
+           'minimalist-filter04': runTheme==='Minimalist',
+           'bohemian-filter04': runTheme==='Bohemian',
+           'forest-filter04': runTheme==='Forest',
+           'beach-filter04': runTheme==='Beach',
+           'sea-filter04': runTheme==='Sea',
+           'spring-filter04': runTheme==='Spring',
+           'winter-filter04': runTheme==='Winter',
+           'summer-filter04': runTheme==='Summer',
+           'autumn-filter04': runTheme==='Autumn'
+          }">
+            <img src="./assets/iconsMenu/learningSetting.png" />
+          </div>
+          </div>
+          <div class="modal-body">
+            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">TIME {{menu}} SETTING</h1>
+            <h6 class="text-center">
+              <button (click)="showTimeTransaction()"
+                      [class.isSelected]="!hideTimeTransaction"
+                      class="header">
+                Transactions
+              </button>
+              <span class="dot"> • </span>
+              <button (click)="showTimeExport()"
+                      [class.isSelected]="!hideTimeExport"
+                      class="header">
+                Export
+              </button>
+              <span class="dot"> • </span>
+              <button (click)="showTimeAttendance()"
+                      [class.isSelected]="!hideTimeAttendance"
+                      class="header">
+                Attendance
+              </button>
+              <span class="dot"> • </span>
+              <button (click)="showTimeSetting()"
+                      [class.isSelected]="!hideTimeSetting"
+                      class="header">
+                System Settings
+              </button>
+              <learning-transaction [class.hide]="hideTimeTransaction"></learning-transaction>
+              <app-report [class.hide]="hideTimeExport"></app-report>
+              <app-report [class.hide]="hideTimeAttendance"></app-report>
+              <time-setting [class.hide]="hideTimeSetting"></time-setting>
+              <!-- <router-outlet></router-outlet>-->
+            </h6>
+          </div>
 
-      </div>
+        </div>
     </div>
   </div>
 
@@ -398,7 +644,6 @@
 
               </div>
             </div>
-
           </div>
         </div>
         <div class="modal-footer"></div>
@@ -415,7 +660,7 @@
 
 
 
-<!--    <app-menu></app-menu>-->
+    <!--    <app-menu></app-menu>-->
     <!--            <button (click)="showSetting()">BUTTON</button>
                 <router-outlet></router-outlet>-->
 
