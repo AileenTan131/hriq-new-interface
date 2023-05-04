@@ -3,11 +3,6 @@
   top: 118px
 }
 
-/*button.header {
-  color: var(--color01);
-  font-weight: 600;
-}
-*/
 .selection {
   display: block;
   margin: 0 auto;
@@ -29,3 +24,5 @@ button {
 h5 {
   margin: 0
 }
+
+/*class menu-icon and white input encapsulation*/

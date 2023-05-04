@@ -166,7 +166,7 @@ h1 {
 }
 
 .menu-icon {
-  /*    z-index:2;*/
+      z-index:2;
   position: relative;
   left: 27px
 }
@@ -175,5 +175,5 @@ h1 {
   position: relative;
   right: 27px;
   bottom: 5px;
-  z-index: -1
+ 
 }
