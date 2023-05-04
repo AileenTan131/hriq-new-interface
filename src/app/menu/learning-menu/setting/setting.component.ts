@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { ColorSchemesService } from '../../../color-schemes.service';
 
 
 
@@ -8,7 +9,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
   templateUrl: './setting.component.html',
   styleUrls: ['./setting.component.css']
 })
-export class SettingComponent implements OnInit{
+export class SettingComponent implements OnInit {
   public global = [{ 'id': 'global', 'name': 'Company' }];
 
   public course = [
@@ -49,15 +50,21 @@ export class SettingComponent implements OnInit{
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private colorSchemes: ColorSchemesService
   ) { }
 
   public selectedId;
+  runTheme = 'Blue';
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
       let id = parseInt(params.get('id'));
       this.selectedId = id;
+
+      this.colorSchemes.data$.subscribe(data => {
+        this.runTheme = data;
+      })
     });
   }
 
@@ -67,9 +74,5 @@ export class SettingComponent implements OnInit{
   isSelected(selection) {
     return selection.id === this.selectedId
   }
-
-  //run color themes
-   runTheme = '';
-
   
 }

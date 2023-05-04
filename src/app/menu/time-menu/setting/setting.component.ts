@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./setting.component.css']
 })
 export class SettingComponent {
-  runTheme = '';
 }

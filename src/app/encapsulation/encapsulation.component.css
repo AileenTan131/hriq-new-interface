@@ -165,15 +165,17 @@ h1 {
   filter: invert(34%) sepia(12%) saturate(2481%) hue-rotate(321deg) brightness(105%) contrast(77%);
 }
 
-.menu-icon {
-      z-index:2;
-  position: relative;
-  left: 27px
+.white-circle {
+  position: absolute;
+  bottom: 308px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%
 }
-
-.white {
+.menu-icon {
   position: relative;
-  right: 27px;
-  bottom: 5px;
- 
+  left: 0px;
+  z-index:1;
+  /*position: relative;*/
 }
