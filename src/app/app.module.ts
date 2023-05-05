@@ -16,6 +16,7 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { InputsModule } from "@progress/kendo-angular-inputs";
 import { LabelModule } from "@progress/kendo-angular-label";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
+import { ButtonsModule } from "@progress/kendo-angular-buttons";
 import { SettingComponent } from './menu/time-menu/setting/setting.component';
 
 
@@ -39,7 +40,8 @@ import { SettingComponent } from './menu/time-menu/setting/setting.component';
     FormsModule,
     InputsModule,
     LabelModule,
-    DropDownsModule
+    DropDownsModule,
+    ButtonsModule
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],

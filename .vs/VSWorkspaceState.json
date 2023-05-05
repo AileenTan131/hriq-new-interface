@@ -3,14 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\menu",
     "\\src\\app\\menu\\learning-menu",
     "\\src\\app\\menu\\learning-menu\\report",
-    "\\src\\app\\menu\\learning-menu\\setting",
-    "\\src\\app\\module-panel",
+    "\\src\\app\\menu\\time-menu",
+    "\\src\\app\\menu\\time-menu\\setting",
     "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src\\app\\top-panel\\top-panel.component.ts",
+  "SelectedNode": "\\src\\app\\top-panel\\top-panel.component.css",
   "PreviewInSolutionExplorer": false
 }
