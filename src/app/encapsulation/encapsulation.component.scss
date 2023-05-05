@@ -1,0 +1,186 @@
+h1 {
+  color: var(--color01);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.top-banner {
+/*  height: 35px;*/
+  margin: 0px 10px;
+  color: white;
+  font-size: 1.31rem;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center
+}
+
+.banner-title-01 {
+  padding-left: 20px;
+  padding-right: 0
+}
+
+.dark-banner {
+  background: var(--color01);
+}
+
+.light-banner {
+  background: var(--color04);
+}
+
+.button-01 {
+  border-radius: 10px;
+  border: 1px solid var(--color01);
+  color: var(--color01);
+  font-weight: 600;
+}
+
+.button-02 {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color03);
+  color: var(--color01);
+  font-weight: 600;
+}
+
+.button-03 {
+  border-radius: 10px;
+  border: 1px solid var(--color02);
+  color: var(--color01);
+  font-weight: 600;
+}
+
+.password{
+    font-weight:100px !important;
+}
+
+
+/*.svg icons color-filter themes*/
+.blue-filter {
+  filter: invert(9%) sepia(89%) saturate(5098%) hue-rotate(207deg) brightness(88%) contrast(100%);
+}
+.green-filter {
+  filter: invert(16%) sepia(62%) saturate(5166%) hue-rotate(174deg) brightness(92%) contrast(96%);
+}
+
+.red-filter {
+  filter: invert(11%) sepia(93%) saturate(5513%) hue-rotate(20deg) brightness(100%) contrast(107%);
+}
+.hydrangea-filter {
+  filter: invert(62%) sepia(32%) saturate(679%) hue-rotate(175deg) brightness(81%) contrast(89%);
+}
+.sakura-filter {
+  filter: invert(21%) sepia(59%) saturate(4186%) hue-rotate(330deg) brightness(98%) contrast(88%);
+}
+.lavender-filter {
+  filter: invert(50%) sepia(8%) saturate(2197%) hue-rotate(225deg) brightness(89%) contrast(88%);
+}
+.mediterranean-filter {
+  filter: invert(48%) sepia(5%) saturate(548%) hue-rotate(201deg) brightness(96%) contrast(85%);
+}
+.industrial-filter {
+  filter: invert(14%) sepia(11%) saturate(6%) hue-rotate(315deg) brightness(99%) contrast(98%);
+}
+.minimalist-filter {
+  filter: invert(34%) sepia(24%) saturate(274%) hue-rotate(179deg) brightness(90%) contrast(89%);
+}
+.bohemian-filter {
+  filter: invert(20%) sepia(61%) saturate(2865%) hue-rotate(325deg) brightness(94%) contrast(99%);
+}
+.forest-filter {
+  filter: invert(11%) sepia(11%) saturate(2995%) hue-rotate(343deg) brightness(104%) contrast(88%);
+}
+.beach-filter {
+  filter: invert(46%) sepia(56%) saturate(7054%) hue-rotate(173deg) brightness(89%) contrast(87%);
+}
+.sea-filter {
+  filter: invert(11%) sepia(47%) saturate(712%) hue-rotate(165deg) brightness(97%) contrast(101%);
+}
+.spring-filter {
+  filter: invert(49%) sepia(30%) saturate(2462%) hue-rotate(334deg) brightness(99%) contrast(92%);
+}
+.winter-filter {
+  filter: invert(10%) sepia(70%) saturate(5570%) hue-rotate(202deg) brightness(97%) contrast(84%);
+}
+.summer-filter {
+  filter: invert(74%) sepia(7%) saturate(3679%) hue-rotate(53deg) brightness(90%) contrast(79%);
+}
+.autumn-filter {
+  filter: invert(6%) sepia(76%) saturate(5175%) hue-rotate(13deg) brightness(101%) contrast(91%);
+}
+
+
+
+
+
+.blue-filter04 {
+  filter: invert(84%) sepia(3%) saturate(4119%) hue-rotate(188deg) brightness(92%) contrast(106%);
+}
+.green-filter04 {
+  filter: invert(83%) sepia(25%) saturate(251%) hue-rotate(114deg) brightness(99%) contrast(88%);
+}
+.red-filter04 {
+  filter: invert(83%) sepia(56%) saturate(2573%) hue-rotate(302deg) brightness(133%) contrast(101%);
+}
+.hydrangea-filter04 {
+  filter: invert(86%) sepia(2%) saturate(257%) hue-rotate(329deg) brightness(88%) contrast(84%);
+}
+.sakura-filter04 {
+  filter: invert(60%) sepia(13%) saturate(1057%) hue-rotate(185deg) brightness(95%) contrast(100%);
+}
+.lavender-filter04 {
+  filter: invert(59%) sepia(29%) saturate(285%) hue-rotate(72deg) brightness(88%) contrast(88%);
+}
+.mediterranean-filter04 {
+  filter: invert(79%) sepia(46%) saturate(316%) hue-rotate(342deg) brightness(97%) contrast(92%);
+}
+.industrial-filter04 {
+  filter: invert(30%) sepia(66%) saturate(375%) hue-rotate(13deg) brightness(98%) contrast(86%);
+}
+.minimalist-filter04 {
+  filter: invert(99%) sepia(4%) saturate(1345%) hue-rotate(211deg) brightness(79%) contrast(82%);
+}
+.bohemian-filter04 {
+  filter: invert(48%) sepia(13%) saturate(2461%) hue-rotate(177deg) brightness(87%) contrast(85%);
+}
+.forest-filter04 {
+  filter: invert(82%) sepia(22%) saturate(608%) hue-rotate(39deg) brightness(96%) contrast(93%);
+}
+.beach-filter04 {
+  filter: invert(85%) sepia(33%) saturate(184%) hue-rotate(154deg) brightness(99%) contrast(95%);
+}
+.sea-filter04 {
+  filter: invert(30%) sepia(93%) saturate(990%) hue-rotate(161deg) brightness(92%) contrast(98%);
+}
+.spring-filter04 {
+  filter: invert(70%) sepia(26%) saturate(962%) hue-rotate(50deg) brightness(93%) contrast(88%);
+}
+.winter-filter04 {
+  filter: invert(78%) sepia(6%) saturate(123%) hue-rotate(202deg) brightness(93%) contrast(91%);
+}
+.summer-filter04 {
+  filter: invert(62%) sepia(90%) saturate(295%) hue-rotate(139deg) brightness(84%) contrast(84%);
+}
+.autumn-filter04 {
+  filter: invert(34%) sepia(12%) saturate(2481%) hue-rotate(321deg) brightness(105%) contrast(77%);
+}
+
+.white-circle {
+  position: absolute;
+  bottom: 308px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%
+}
+.menu-icon {
+  position: relative;
+  left: 0px;
+  z-index:1;
+  /*position: relative;*/
+}
+
+
+.progress-bar{
+    background-color:var(--color04)
+}
