@@ -495,6 +495,33 @@
           <kendo-autocomplete [data]="languageSelect" [size]="selectedSize">
           </kendo-autocomplete>
         </div>
+
+        <div class="form-floating">
+          <select class="form-select mb-3" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Select from list</option>
+            <option value="1">English</option>
+            <option value="2">Chinese</option>
+            <option value="3">Malay</option>
+            <option value="4">Spanish</option>
+          </select>
+          <label for="floatingSelect">Your default language</label>
+        </div>
+
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <kendo-autocomplete [data]="languageSelect" [size]="selectedSize"></kendo-autocomplete>
+          <label for="floatingTextarea2">Comments</label>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="txtName">Product name:</label>
+            <input class="form-control" id="txtName" type="text" placeholder="Name of the product" />
+          </div>
+          </form>>
+
+          <button class="button-03" type="submit">Update Language</button>
       </div>
     </div>
   </div>

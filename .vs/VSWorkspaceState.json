@@ -3,14 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\menu",
-    "\\src\\app\\menu\\learning-menu",
-    "\\src\\app\\menu\\learning-menu\\report",
     "\\src\\app\\menu\\learning-menu\\setting",
+    "\\src\\app\\menu\\learning-menu\\transaction",
     "\\src\\app\\module-panel",
-    "\\src\\app\\top-panel"
+    "\\src\\app\\modules-learning\\lna-content-kendo",
+    "\\src\\assets\\iconsMenu"
   ],
-  "SelectedNode": "\\src\\app\\top-panel\\top-panel.component.ts",
+  "SelectedNode": "\\src\\app\\module-panel\\module-panel.component.ts",
   "PreviewInSolutionExplorer": false
 }

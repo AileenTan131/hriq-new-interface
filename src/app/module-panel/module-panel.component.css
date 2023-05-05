@@ -111,6 +111,13 @@ h5 {
 }
 
 
+.form-control:focus {
+  border-color: var(--color04);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--color03);
+}
 
-
+kendo-input {
+  focus-bg: #ec295f;
+  focus-text: #ec295f;
+}
 /*.svg icons color-filter themes in encapsulation*/

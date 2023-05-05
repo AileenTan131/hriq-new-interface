@@ -166,5 +166,12 @@ export class ModulePanelComponent implements OnInit {
     this.runTheme = 'Autumn'
   }
 
-  
+
+/*  $("#txtName").kendoAutoComplete({
+    dataSource: data,
+    filter: "startswith",
+    placeholder: "Select product..."
+    });
+*/
+
 }
