@@ -29,7 +29,8 @@ h6 {
   position: fixed;
   bottom: 19px;
   padding-left: 8px;
-  right:8px
+  right:8px;
+  width:1830px
 }
 
 .company, .timestamp, .quick-links{

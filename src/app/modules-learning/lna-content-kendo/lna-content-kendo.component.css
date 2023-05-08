@@ -1,5 +1,5 @@
 .headerCustomClass {
-  color: var(--color01-if-white);
+  color: var(--color02-if-white);
   font-weight: bolder;
   /*  justify-content:center*/
 }
@@ -106,7 +106,7 @@ table {
 .rounded-pill {
   background-color: var(--color04);
   border-color: var(--color03);
-  color: var(--color01-if-white);
+  color: var(--color04-if-white);
   font-weight: 600;
   font-size: 0.94rem;
   display: inline-flex;
@@ -134,7 +134,7 @@ table {
 
 .ao {
   position: relative;
-  top: 15px;
+  top: 13px;
 }
 
 .action-icons {

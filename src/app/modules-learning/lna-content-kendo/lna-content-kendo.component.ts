@@ -3,7 +3,7 @@ import {
     ViewChild,
     ViewEncapsulation,
     NgZone,
-    AfterViewInit } from "@angular/core";
+ } from "@angular/core";
 import { take } from "rxjs/operators";
 import { GridComponent, FilterableSettings } from "@progress/kendo-angular-grid";
 import { Customers } from "./customers";
@@ -15,7 +15,7 @@ import { Router, ActivatedRoute } from '@angular/router'
     styleUrls: ["./lna-content-kendo.component.css"],
     encapsulation: ViewEncapsulation.None,
 })
-export class LnaContentKendoComponent implements AfterViewInit {
+export class LnaContentKendoComponent {
     public gridData: unknown[] = Customers;
 
     public filterMode: FilterableSettings = "menu";
@@ -23,7 +23,7 @@ export class LnaContentKendoComponent implements AfterViewInit {
     @ViewChild(GridComponent)
     public grid: GridComponent;
   constructor(private ngZone: NgZone, private route: ActivatedRoute, private router: Router) {}
-    public ngAfterViewInit(): void {
+ /*   public ngAfterViewInit(): void {
         this.fitColumns();
     }
     public onDataStateChange(): void {
@@ -36,7 +36,7 @@ export class LnaContentKendoComponent implements AfterViewInit {
             .subscribe(() => {
                 this.grid.autoFitColumns();
             });
-    }
+    }*/
 
     public isCollapsed = false;
 

@@ -9,11 +9,11 @@
 </div>
 
 <div class="progress loading-bar" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-     aria-valuemin="0" aria-valuemax="100" style="height: 6px; background-color: white">
+     aria-valuemin="0" aria-valuemax="100" style="height: 5px; background-color: white">
   <div class="progress-bar" style="width: 75%; "></div>
 </div>
 
-<div class="pt-1">
+<div class="pt-2">
 <span>
   <a class="hide-profile ms-3 ps-3"
      data-bs-toggle="collapse"
@@ -69,16 +69,12 @@
               [class.height-max]="textShow"
               [class.height-min]="!textShow"
               [filterable]="false"
-              [sortable]="{
-               allowUnsort:true,
-               mode:'multiple'
-               }"
-              (dataStateChange)="onDataStateChange()"
+              [sortable]="true"             
               [resizable]="true">
 
     <kendo-grid-column field="SN" title="#"
                        [filterable]="false"
-                       [resizable]="false" [width]=38
+                       [resizable]="false" [width]=39
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'">
     </kendo-grid-column>
@@ -86,7 +82,8 @@
     <kendo-grid-column field="CompetencyType" title="Competency Type"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"
-                       [resizable]="false" [width]=150>
+                       [width]=150
+                       [minResizableWidth]="100">
       <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
         <kendo-grid-string-filter-cell [showOperators]="false"
                                        [column]="column"
@@ -98,11 +95,8 @@
     <kendo-grid-column field="Skills" title="Skills"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                        [headerClass]="'headerCustomClass'"
-                       [resizable]="false" [width]=730>
-
-
-
-
+                       [width]="550"
+                       [minResizableWidth]="300">
     </kendo-grid-column>
 
     <kendo-grid-column field="Attachment" title=""
@@ -119,15 +113,21 @@
 
     <kendo-grid-column field="CurrentRate" title="Current Rate"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [headerClass]="'headerCustomClass'"
+                       [width]="120"
+                       [minResizableWidth]="50"> </kendo-grid-column>
 
     <kendo-grid-column field="RequiredRate" title="Required Rate"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [headerClass]="'headerCustomClass'"
+                       [width]="126"
+                       [minResizableWidth]="50"> </kendo-grid-column>
 
     <kendo-grid-column field="Gap" title="Gap"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [headerClass]="'headerCustomClass'"
+                       [width]="57"
+                       [minResizableWidth]="40"> </kendo-grid-column>
 
     <kendo-grid-column field="Piority" title="Piority"
                        [width]=88 [resizable]="false"
@@ -144,30 +144,39 @@
           </kendo-numerictextbox>
         </kendo-label>
       </ng-template>
-
-
     </kendo-grid-column>
 
     <kendo-grid-column field="CoursesInterested" title="Courses Interested"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'">
+                       [headerClass]="'headerCustomClass'"
+                       [width]="183"
+                       [resizable]="false"
+                       [minResizableWidth]="40"
+                       >
       <ng-template kendoGridCellTemplate let-dataItem>
         <button class="training-plan" (click)="showHomepage()">
           My Training Plan
           <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">11</button>
         </button>
       </ng-template>
-
     </kendo-grid-column>
 
-    <kendo-grid-column field="TotalHours" title="Total Hours"
+    <kendo-grid-column field="TotalHours" title="Hours"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"> </kendo-grid-column>
+                       [headerClass]="'headerCustomClass'"
+                        [width]="70"
+                       [minResizableWidth]="40"> </kendo-grid-column>
 
-    <kendo-grid-column field="TotalBudget" title="Total Budget"
+    <kendo-grid-column field="TotalBudget" title="Budget"
                        [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"></kendo-grid-column>
+                       [headerClass]="'headerCustomClass'"
+                        [width]="78"
+                       [minResizableWidth]="65"></kendo-grid-column>
 
+    <kendo-grid-column field="Remarks" title="Remarks"
+                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                       [headerClass]="'headerCustomClass'"
+                       [width]=480></kendo-grid-column>
   </kendo-grid>
 
   <div class="ao">

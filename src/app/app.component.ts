@@ -10,6 +10,7 @@ import { ColorSchemesService } from './color-schemes.service'
 
 export class AppComponent implements OnInit{
   runTheme='blue';
+runBlueTheme='blue';
 
   constructor(private colorSchemes: ColorSchemesService) { }
 

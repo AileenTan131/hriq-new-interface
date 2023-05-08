@@ -3,12 +3,15 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\menu\\learning-menu",
+    "\\src\\app\\encapsulation",
+    "\\src\\app\\footer",
     "\\src\\app\\menu\\learning-menu\\report",
-    "\\src\\app\\menu\\time-menu",
+    "\\src\\app\\menu\\learning-menu\\setting",
+    "\\src\\app\\menu\\learning-menu\\transaction",
     "\\src\\app\\menu\\time-menu\\setting",
-    "\\src\\app\\top-panel"
+    "\\src\\app\\modules-learning",
+    "\\src\\app\\modules-learning\\lna-content-kendo"
   ],
-  "SelectedNode": "\\src\\app\\top-panel\\top-panel.component.css",
+  "SelectedNode": "\\src\\app\\encapsulation\\encapsulation.component.ts",
   "PreviewInSolutionExplorer": false
 }

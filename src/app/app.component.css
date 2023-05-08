@@ -4,49 +4,56 @@
   --color03: #eaf4ff;
   --color04: #b5caf0;
   --colorGrey: #a2a2a2;
-  --color01-if-white: #00377d;
+  --color02-if-white: #00377d;
+  --color04-if-white: #00377d;
 }
 .green-theme {
   --color01: #056770;
   --color02: #bde3d9;
   --color03: #ebf5ec;
   --color04: #aeddd1;
-  --color01-if-white: #056770;
+  --color02-if-white: #056770;
+  --color04-if-white: #056770;
 }
 .red-theme {
   --color01: #c91700;
   --color02: #f5d4d7;
   --color03: #faf0f0;
   --color04: #ffbdbd;
-  --color01-if-white: #c91700;
+  --color02-if-white: #c91700;
+  --color04-if-white: #c91700;
 }
 .hydrangea-theme {
   --color01: #608dc5;
   --color02: #fdefe8;
   --color03: #eef0f7;
   --color04: #bbb8b7;
-  --color01-if-white: #608dc5;
+  --color02-if-white: #608dc5;
+  --color04-if-white: white;
 }
 .sakura-theme {
   --color01: #ec295f;
   --color02: #e5eef8;
   --color03: #f2ecef;
   --color04: #7f95cc;
-  --color01-if-white: #ec295f;
+  --color02-if-white: #ec295f;
+  --color04-if-white: white;
 }
 .lavender-theme {
   --color01: #8769aa;
   --color02: #eef3e2;
   --color03: #f4eef6;
   --color04: #769577;
-  --color01-if-white: #8769aa;
+  --color02-if-white: #8769aa;
+  --color04-if-white: white;
 }
 .mediterranean-theme {
   --color01: #787882;
   --color02: #266493;
   --color03: #fff8eb;
   --color04: #eec494;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 
 .industrial-theme {
@@ -54,7 +61,8 @@
   --color02: #868583;
   --color03: #f2ede9;
   --color04: #665d2b;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 
 .minimalist-theme {
@@ -62,7 +70,8 @@
   --color02: #eaeaea;
   --color03: #ecf0f7;
   --color04: #bcb7bc;
-  --color01-if-white: #505763;
+  --color02-if-white: #505763;
+  --color04-if-white: #505763;
 }
 
 .bohemian-theme {
@@ -70,56 +79,64 @@
   --color02: #58aada;
   --color03: #f0e8ef;
   --color04: #4474be;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 .forest-theme {
   --color01: #3a2617;
   --color02: #105b2f;
   --color03: #e0f0df;
   --color04: #b9d981;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 .beach-theme {
   --color01: #1182a9;
   --color02: #f2bba1;
   --color03: #f9f2ef;
   --color04: #c4e9f7;
-  --color01-if-white: #1182a9;
+  --color02-if-white: #1182a9;
+  --color04-if-white: #1182a9;
 }
 .sea-theme {
   --color01: #0a2033;
   --color02: #01a19a;
   --color03: #e2edf8;
   --color04: #027496;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 .spring-theme {
   --color01: #f26545;
   --color02: #e5d042;
   --color03: #f9f8e7;
   --color04: #7ac142;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 .winter-theme {
   --color01: #144880;
   --color02: #9ba9ce;
   --color03: #f0eef2;
   --color04: #b5b5b9;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 .summer-theme {
   --color01: #70ba44;
   --color02: #4ebd8e;
   --color03: #f1f1ea;
   --color04: #45aebb;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 .autumn-theme {
   --color01: #5b180c;
   --color02: #e64a3e;
   --color03: #ffe6d6;
   --color04: #a05649;
-  --color01-if-white: white;
+  --color02-if-white: white;
+  --color04-if-white: white;
 }
 
 

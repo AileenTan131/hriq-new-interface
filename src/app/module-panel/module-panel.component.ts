@@ -1,9 +1,8 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DropDownSize } from "@progress/kendo-angular-dropdowns";
 import { languages } from './languages';
 import { ColorSchemesService } from '../color-schemes.service'
-import { ColorFiltersService } from '../color-filters.service';
 
 
 @Component({
@@ -11,16 +10,14 @@ import { ColorFiltersService } from '../color-filters.service';
   templateUrl: './module-panel.component.html',
   styleUrls: ['./module-panel.component.css']
 })
-export class ModulePanelComponent implements OnInit {
+export class ModulePanelComponent {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private colorSchemes: ColorSchemesService,
-    private colorFilter: ColorFiltersService
   ) { }
 
-  ngOnInit() { }
-
+ 
   showHomepage() {
     this.router.navigate(['homepage'], { relativeTo: this.route })
   }
@@ -98,7 +95,6 @@ export class ModulePanelComponent implements OnInit {
 
    setGreenData() {
      this.colorSchemes.setData('Green');
-     this.colorFilter.setData(false);
      this.runTheme = 'Green';
   }
   setRedData() {
