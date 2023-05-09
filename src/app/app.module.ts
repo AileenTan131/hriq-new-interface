@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, RoutingComponents } from './app-routing.module'
 import { EncapsulationComponent } from './encapsulation/encapsulation.component';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 /*import { Routes, RouterModule } from '@angular/router';*/
 
@@ -42,7 +42,8 @@ import { SettingComponent } from './menu/time-menu/setting/setting.component';
     InputsModule,
     LabelModule,
     DropDownsModule,
-    ButtonsModule
+    ButtonsModule,
+    ReactiveFormsModule
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],

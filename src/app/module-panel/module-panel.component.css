@@ -101,6 +101,10 @@ h5 {
 .body-align {
   padding: 0px 20px
 }
+.red{
+    color: red;
+}
+
 /*button input encapsulation.css not working. repeat css codes*/
 .button-03 {
   border-radius: 10px;

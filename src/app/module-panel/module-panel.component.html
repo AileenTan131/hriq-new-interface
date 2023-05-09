@@ -433,19 +433,43 @@
       </div>
       <div class="modal-body shift-body-up">
         <div class="body-align">
-          <p class="form-text">Your password must be at least 6 characters and cannot contain spaces. Make sure to include at least 1 number, 1 special character and 1 uppercase alphabet.</p>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingInput" placeholder="Old Password">
-            <label for="floatingInput">Old Password</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingInput" placeholder="New Password">
-            <label for="floatingInput">New Password</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingInput" placeholder="Confirm New Password">
-            <label for="floatingInput">Confirm New Password</label>
-          </div>
+            <p class="form-text">Your password must be at least 6 characters.</p>
+
+            <form [formGroup]="registrationForm">
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingInput" placeholder="Old Password"
+                       formControlName="oldPassword"
+                       [class.is-invalid]="
+                       password.invalid &&
+                       password.touched"
+                       minlength="6" required>
+                <label for="floatingInput">Old Password</label>
+                <div *ngIf="password.invalid && password.touched">
+                  <small class="red" *ngIf="password.errors?.required">Please fill in your password.</small>
+                  <small class="red" *ngIf="password.errors?.minlength">Password has to be at least 6 digits long.</small>
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingInput" placeholder="New Password"
+                       formControlName="newPassword"
+                       [class.is-invalid]="
+                        newPassword.invalid &&
+                        newPassword.touched"
+                       minlength="6">
+                <label for="floatingInput">New Password</label>
+                <small class="red" [class.d-none]="newPassword.valid|| newPassword.untouched">Password has to be at least 6 digits long.</small>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingInput" placeholder="Confirm New Password"
+                       formControlName="confirmPassword"
+                       [class.is-invalid]="registrationForm.errors?.mismatch">
+                <label for="floatingInput">Confirm New Password</label>
+                <small class="red" *ngIf="registrationForm.errors?.mismatch">Password does not match.</small>
+              </div>
+          </form>
+
           <button class="button-03" type="submit">Update Password</button>
         </div>
       </div>

@@ -3,14 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\footer",
-    "\\src\\app\\menu\\learning-menu\\setting",
-    "\\src\\app\\menu\\learning-menu\\transaction",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\modules-learning\\lna-content-kendo",
-    "\\src\\app\\modules-learning\\lna-content-kendo\\courses-interested"
+    "\\src\\app\\module-panel"
   ],
-  "SelectedNode": "\\src\\app\\module-panel\\module-panel.component.html",
+  "SelectedNode": "\\src\\app\\module-panel\\module-panel.component.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { DropDownSize } from "@progress/kendo-angular-dropdowns";
 import { languages } from './languages';
-import { ColorSchemesService } from '../color-schemes.service'
+import { PasswordValidator } from './password.validator';
+import { ColorSchemesService } from '../color-schemes.service';
+import { FormBuilder } from '@angular/forms';
 
 
 @Component({
@@ -15,6 +17,7 @@ export class ModulePanelComponent {
     private route: ActivatedRoute,
     private router: Router,
     private colorSchemes: ColorSchemesService,
+    private fb: FormBuilder,
   ) { }
 
  
@@ -84,6 +87,21 @@ export class ModulePanelComponent {
     this.hideTimeSetting = false;
     return this.menu = 'SYSTEM    ';
   }
+
+  //Set New Password
+  get password() {
+    return this.registrationForm.get('oldPassword')
+  }
+  get newPassword() {
+    return this.registrationForm.get('newPassword')
+  }
+
+  registrationForm = this.fb.group({
+    oldPassword: [''],
+    newPassword: [''],
+    confirmPassword: [''],
+  }, { validator: PasswordValidator });
+
 
   //Languages
   public languageSelect = languages;
