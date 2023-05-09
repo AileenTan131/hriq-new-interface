@@ -162,5 +162,7 @@ export class ModulePanelComponent {
     this.runTheme = 'Autumn'
   }
 
-  
+  applyTheme() { 
+     alert(this.runTheme + " theme is applied!");
+  }
 }

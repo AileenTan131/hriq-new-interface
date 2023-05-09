@@ -4,29 +4,43 @@
   <h6 class="timestamp">Timestamp: 17/02/2023 10:10 AM | Country: SG</h6>
 
 
-  <div class="quick-links">
-      <li *ngFor="let quicklink of quicklinks">
-        <a href="#">{{quicklink.link}}</a>
-      </li>
+    <div class="quick-links">
+        <li *ngFor="let quicklink of quicklinks">
+          <a href="#">{{quicklink.link}}</a>
+        </li>
+        Quick Links
+    </div>
 
-      Quick Links
+    <div class="btn-group dropup">
+      <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img class="icons" src="./assets/iconsTopbar2px/pin02.svg" /> hide
+      </a>
+      <ul class="dropdown-menu">
+        <h6 class="dropdown-header">Quick Links</h6> hide
+        <li *ngFor="let quicklink of quicklinks">
+          <a href="#">{{quicklink.link}}</a>
+        </li>
+      </ul>
 
+
+<!--<div class="quicklink-row" [ngClass]="{'overflow': quicklinks.length > maxquicklinks}">
+  <div class="quicklink" *ngFor="let quicklink of quicklinks.slice(0, maxquicklinks)">
+    <a href="{{ quicklink.url }}">{{ quicklink.title }}</a>
   </div>
-
-  <div class="btn-group dropup">
-    <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <!--<img class="icons" src="./assets/iconsTopbar2px/pin02.svg" />-->
-    </a>
-    <ul class="dropdown-menu">
-      <!--<h6 class="dropdown-header">Quick Links</h6>-->
-      <li *ngFor="let quicklink of quicklinks">
-        <a href="#">{{quicklink.link}}</a>
-      </li>
-      <!--     <a class="dropdown-item" href="#">Page link 01</a>
-       <a class="dropdown-item" href="#">Page link 02</a>
-       <a class="dropdown-item" href="#">Page link 03</a>-->
-    </ul>
+  <div class="quicklink-dropdown" *ngIf="quicklinks.length > maxquicklinks">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        More quicklinks
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="{{ quicklink.url }}" *ngFor="let quicklink of quicklinks.slice(maxquicklinks)">
+          {{ quicklink.title }}
+        </a>
+      </div>
+    </div>
   </div>
+</div>-->
+    </div>
 
   <div class="quick-links-background border-top"></div>
 </div>

@@ -1,3 +1,4 @@
+
 <!--<div class="container-fluid p-0">-->
 <div class="banner d-flex align-items-center">
   MY LEARNING NEEDS ANALYSIS 2023
@@ -14,178 +15,192 @@
 </div>
 
 <div class="pt-2">
-<span>
-  <a class="hide-profile ms-3 ps-3"
-     data-bs-toggle="collapse"
-     href="#collapseExample"
-     aria-controls="collapseExample"
-     aria-expanded="true"
-     (click)="textShow=!textShow">
-    - Hide/Show Profile
-  </a>
-</span>
-<span class="profile-detail col-3" *ngIf="textShow"><strong>Name: Jesicca Wong SG0001</strong> </span>
-<span class="profile-detail col-3" *ngIf="textShow"><strong>Company: Admin Office SG</strong> </span>
-<span class="profile-detail col-3" *ngIf="textShow"><strong>Created on: 6-Feb-2023</strong> </span>
+  <span>
+    <a class="hide-profile ms-3 ps-3"
+       data-bs-toggle="collapse"
+       href="#collapseExample"
+       aria-controls="collapseExample"
+       aria-expanded="true"
+       (click)="textShow=!textShow">
+      - Hide/Show Profile
+    </a>
+  </span>
+  <span class="profile-detail col-3" *ngIf="textShow"><strong>Name: Jesicca Wong SG0001</strong> </span>
+  <span class="profile-detail col-3" *ngIf="textShow"><strong>Company: Admin Office SG</strong> </span>
+  <span class="profile-detail col-3" *ngIf="textShow"><strong>Created on: 6-Feb-2023</strong> </span>
 
-<div class="collapse show" id="collapseExample">
-  <div class="card card-body">
-    <div class="row">
-      <div class="col-1">
-        <img class="profile-square" src="./assets/profile-square.png" />
-      </div>
+  <div class="collapse show" id="collapseExample">
+    <div class="card card-body">
+      <div class="row">
+        <div class="col-1">
+          <img class="profile-square" src="./assets/profile-square.png" />
+        </div>
 
-      <div class="col-2 profile-detail">
-        <div class="detail"><strong>Name:</strong> Jesicca Wong SG0001</div>
-        <div class="detail"><strong>Department:</strong> MGMT</div>
-        <div class="detail"><strong>Optional Field:</strong> Field Details</div>
-      </div>
-      <div class="col-3 ps-5 ms-5 profile-detail">
-        <div class="detail"><strong>Company:</strong> Admin Office SG</div>
-        <div class="detail"><strong>Designation:</strong> Internal Auditor</div>
-        <div class="detail"><strong>Optional Field:</strong> Field Details</div>
-      </div>
-      <div class="col-3 profile-detail">
-        <div class="detail"><strong>Created on:</strong> 6-Feb-2023</div>
-        <div class="detail"><strong>Employee Type:</strong> Full Time</div>
-        <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+        <div class="col-2 profile-detail">
+          <div class="detail"><strong>Name:</strong> Jesicca Wong SG0001</div>
+          <div class="detail"><strong>Department:</strong> MGMT</div>
+          <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+        </div>
+        <div class="col-3 ps-5 ms-5 profile-detail">
+          <div class="detail"><strong>Company:</strong> Admin Office SG</div>
+          <div class="detail"><strong>Designation:</strong> Internal Auditor</div>
+          <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+        </div>
+        <div class="col-3 profile-detail">
+          <div class="detail"><strong>Created on:</strong> 6-Feb-2023</div>
+          <div class="detail"><strong>Employee Type:</strong> Full Time</div>
+          <div class="detail"><strong>Optional Field:</strong> Field Details</div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<div class="lna-details">
-  <div class="d-flex justify-content-end">
-    <a href="#" class="summary">Summary of courses & budget</a>
+  <div class="lna-details">
+    <div class="d-flex justify-content-end">
+      <a href="#" class="summary">Summary of courses & budget</a>
+    </div>
   </div>
-</div>
 
 
 
-<div class="lnaGrid">
-  <kendo-grid #grid
-              [kendoGridBinding]="gridData"
-              [class.height-max]="textShow"
-              [class.height-min]="!textShow"
-              [filterable]="false"
-              [sortable]="true"             
-              [resizable]="true">
+  <div class="lnaGrid">
+    <kendo-grid #grid
+                [kendoGridBinding]="gridData"
+                [class.height-max]="textShow"
+                [class.height-min]="!textShow"
+                [filterable]="false"
+                [sortable]="true"
+                [resizable]="true">
 
-    <kendo-grid-column field="SN" title="#"
-                       [filterable]="false"
-                       [resizable]="false" [width]=39
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'">
-    </kendo-grid-column>
+      <!--SN-->
+      <kendo-grid-column field="SN" title="#"
+                         [filterable]="false"
+                         [resizable]="false" [width]=39
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'">
+      </kendo-grid-column>
 
-    <kendo-grid-column field="CompetencyType" title="Competency Type"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [width]=150
-                       [minResizableWidth]="100">
-      <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
-        <kendo-grid-string-filter-cell [showOperators]="false"
-                                       [column]="column"
-                                       [filter]="filter">
-        </kendo-grid-string-filter-cell>
-      </ng-template>
-    </kendo-grid-column>
+      <!--Competency Type-->
+      <kendo-grid-column field="CompetencyType" title="Competency Type"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]=150
+                         [minResizableWidth]="100">
+        <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+          <kendo-grid-string-filter-cell [showOperators]="false"
+                                         [column]="column"
+                                         [filter]="filter">
+          </kendo-grid-string-filter-cell>
+        </ng-template>
+      </kendo-grid-column>
 
-    <kendo-grid-column field="Skills" title="Skills"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [width]="550"
-                       [minResizableWidth]="300">
-    </kendo-grid-column>
+      <!--Skills-->
+      <kendo-grid-column field="Skills" title="Skills"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]="550"
+                         [minResizableWidth]="300">
+      </kendo-grid-column>
 
-    <kendo-grid-column field="Attachment" title=""
-                       [filterable]="false"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [resizable]="false" [width]=50>
-      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
-        <a type="button">
-          <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />
-        </a>
-      </ng-template>
-    </kendo-grid-column>
+      <!--Attachments-->
+      <kendo-grid-column field="Attachment" title=""
+                         [filterable]="false"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [resizable]="false" [width]=50>
+        <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+          <a type="button">
+            <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />
+          </a>
+        </ng-template>
+      </kendo-grid-column>
 
-    <kendo-grid-column field="CurrentRate" title="Current Rate"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [width]="120"
-                       [minResizableWidth]="50"> </kendo-grid-column>
+      <!--Current Rate-->
+      <kendo-grid-column field="CurrentRate" title="Current Rate"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]="120"
+                         [minResizableWidth]="50"> </kendo-grid-column>
 
-    <kendo-grid-column field="RequiredRate" title="Required Rate"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [width]="126"
-                       [minResizableWidth]="50"> </kendo-grid-column>
+      <!-- Required Rate-->
+      <kendo-grid-column field="RequiredRate" title="Required Rate"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]="126"
+                         [minResizableWidth]="50"> </kendo-grid-column>
 
-    <kendo-grid-column field="Gap" title="Gap"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [width]="57"
-                       [minResizableWidth]="40"> </kendo-grid-column>
+      <!--Gap-->
+      <kendo-grid-column field="Gap" title="Gap" #gap
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]="57"
+                         [minResizableWidth]="40"
+                         [ngClass]="{'negative-red': gap<0}"> </kendo-grid-column>
 
-    <kendo-grid-column field="Piority" title="Piority"
-                       [width]=88 [resizable]="false"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'">
-      <ng-template kendoGridCellTemplate let-dataItem>
-        <kendo-label class="k-form">
-          <kendo-numerictextbox [value]="dataItem.Piority"
-                                [min]="0"
-                                [max]="100"
-                                [autoCorrect]="autoCorrect"
-                                [format]="'#'">
 
-          </kendo-numerictextbox>
-        </kendo-label>
-      </ng-template>
-    </kendo-grid-column>
 
-    <kendo-grid-column field="CoursesInterested" title="Courses Interested"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [width]="183"
-                       [resizable]="false"
-                       [minResizableWidth]="40"
-                       >
-      <ng-template kendoGridCellTemplate let-dataItem>
-        <button class="training-plan" (click)="showHomepage()">
-          My Training Plan
-          <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem">11</button>
-        </button>
-      </ng-template>
-    </kendo-grid-column>
+      <!--  Piority-->
+      <kendo-grid-column field="Piority" title="Piority"
+                         [width]=88 [resizable]="false"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'">
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <kendo-label class="k-form">
+            <kendo-numerictextbox [value]="dataItem.Piority"
+                                  [min]="0"
+                                  [max]="100"
+                                  [autoCorrect]="autoCorrect"
+                                  [format]="'#'">
 
-    <kendo-grid-column field="TotalHours" title="Hours"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                        [width]="70"
-                       [minResizableWidth]="40"> </kendo-grid-column>
+            </kendo-numerictextbox>
+          </kendo-label>
+        </ng-template>
+      </kendo-grid-column>
 
-    <kendo-grid-column field="TotalBudget" title="Budget"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                        [width]="78"
-                       [minResizableWidth]="65"></kendo-grid-column>
+      <!--Courses Interested-->
+      <kendo-grid-column field="CoursesInterested" title="Courses Interested"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]="183"
+                         [resizable]="false"
+                         [minResizableWidth]="40">
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <button class="training-plan" (click)="coursesInterested()" routerLink="/courses-interested">
+            My Training Plan
+            <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem" field="PlanNo">11</button>
+          </button>
+        </ng-template>
+      </kendo-grid-column>
 
-    <kendo-grid-column field="Remarks" title="Remarks"
-                       [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                       [headerClass]="'headerCustomClass'"
-                       [width]=480></kendo-grid-column>
-  </kendo-grid>
+      <!--Hours-->
+      <kendo-grid-column field="TotalHours" title="Hours"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]="70"
+                         [minResizableWidth]="40"> </kendo-grid-column>
 
-  <div class="ao">
-    <strong>
-      <span>Approving Officers</span>
-      <button class="button-02 ms-2">Approving Officer 1</button>
-      <button class="button-02 ms-2">Approving Officer 2</button>
-    </strong>
+      <!--Budget-->
+      <kendo-grid-column field="TotalBudget" title="Budget"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]="78"
+                         [minResizableWidth]="65"></kendo-grid-column>
+
+      <!--Remarks-->
+      <kendo-grid-column field="Remarks" title="Remarks"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]=480></kendo-grid-column>
+    </kendo-grid>
+
+    <div class="ao">
+      <strong>
+        <span>Approving Officers</span>
+        <button class="button-02 ms-2">Approving Officer 1</button>
+        <button class="button-02 ms-2">Approving Officer 2</button>
+      </strong>
+    </div>
   </div>
-</div>
 </div>
 <!--</div>-->

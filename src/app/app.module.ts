@@ -21,6 +21,7 @@ import { SettingComponent } from './menu/time-menu/setting/setting.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

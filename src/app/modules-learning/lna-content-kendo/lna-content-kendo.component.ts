@@ -2,12 +2,11 @@ import {
     Component,
     ViewChild,
     ViewEncapsulation,
-    NgZone,
  } from "@angular/core";
-import { take } from "rxjs/operators";
 import { GridComponent, FilterableSettings } from "@progress/kendo-angular-grid";
 import { Customers } from "./customers";
 import { Router, ActivatedRoute } from '@angular/router'
+import { CustomersService } from "./customers.service";
 
 @Component({
     selector: "app-lna-content-kendo",
@@ -15,45 +14,58 @@ import { Router, ActivatedRoute } from '@angular/router'
     styleUrls: ["./lna-content-kendo.component.css"],
     encapsulation: ViewEncapsulation.None,
 })
-export class LnaContentKendoComponent {
+export class LnaContentKendoComponent{
     public gridData: unknown[] = Customers;
 
     public filterMode: FilterableSettings = "menu";
 
     @ViewChild(GridComponent)
     public grid: GridComponent;
-  constructor(private ngZone: NgZone, private route: ActivatedRoute, private router: Router) {}
- /*   public ngAfterViewInit(): void {
-        this.fitColumns();
-    }
-    public onDataStateChange(): void {
-        this.fitColumns();
-    }
-    private fitColumns(): void {
-        this.ngZone.onStable
-            .asObservable()
-            .pipe(take(1))
-            .subscribe(() => {
-                this.grid.autoFitColumns();
-            });
-    }*/
+
+
+
+    constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+      private customerService: CustomersService,
+    ) {
+/*      const data = this.customerService.getCustomerData();
+      data.subscribe({
+        next: (data: string)=> {
+          this.dataCustomer=data
+      },
+      error: (err: any) => {
+        console.log(err);
+      }
+        })
+      })*/
+}
 
     public isCollapsed = false;
 
-  textShow = false;
+    textShow = false;
 
-  public value = 5;
-  public autoCorrect = false
+    public value = 5;
+    public autoCorrect = false
+  
+  coursesInterested() {
+      this.router.navigate(['courses-interested'], { relativeTo: this.route })
+    }
 
-  showHomepage() {
-    this.router.navigate(['homepage'], { relativeTo: this.route })
+
+/*  customerData: Customers[];
+
+  getCustomers() {
+    this.customerService.getCustomers().then(data => this.customerData = data)
   }
+  ngOnInit() {
+    this.getCustomers();
+  }
+  public gap = this.customerData.Gap;*/
 
-    /*  $("#grid").kendoGrid({
-    columns: [{
-      field: "CoursesInterested",
-      template: '<a href="\\#">#= name#</a>'
-  }],
-    dataSource: gridData
-  });*/
+
+  /*  customerData: any;*/
+  public customerData = Customers
+
+
 }

@@ -153,3 +153,7 @@ table {
 .height-min{
     height:540px
 }
+
+.negative-red{
+    color: red;
+}

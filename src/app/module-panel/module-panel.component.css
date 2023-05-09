@@ -78,9 +78,12 @@ button {
 }
 
 .color-scheme-img {
-  width: 200px
+  width: 180px
 }
-
+.banner{
+    padding-top:2px;
+    padding-bottom:2px;
+}
 h5 {
   font-weight: normal;
   font-size: 1.1rem

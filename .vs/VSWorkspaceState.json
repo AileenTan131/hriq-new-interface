@@ -5,13 +5,12 @@
     "\\src\\app",
     "\\src\\app\\encapsulation",
     "\\src\\app\\footer",
-    "\\src\\app\\menu\\learning-menu\\report",
     "\\src\\app\\menu\\learning-menu\\setting",
     "\\src\\app\\menu\\learning-menu\\transaction",
-    "\\src\\app\\menu\\time-menu\\setting",
-    "\\src\\app\\modules-learning",
-    "\\src\\app\\modules-learning\\lna-content-kendo"
+    "\\src\\app\\module-panel",
+    "\\src\\app\\modules-learning\\lna-content-kendo",
+    "\\src\\app\\modules-learning\\lna-content-kendo\\courses-interested"
   ],
-  "SelectedNode": "\\src\\app\\encapsulation\\encapsulation.component.ts",
+  "SelectedNode": "\\src\\app\\module-panel\\module-panel.component.html",
   "PreviewInSolutionExplorer": false
 }
