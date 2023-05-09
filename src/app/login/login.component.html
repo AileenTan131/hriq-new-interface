@@ -6,28 +6,50 @@
   <div class="client-logo">
     <img class="client-logo" src="./assets/clientLogoLogin.png">
   </div>
-      <div class="justify-center">
-        <img class="hriqLogo" src="./assets/hriqLogoBlue.png">
-        <h1> Welcome Back</h1>
-        <h6>Enter your credentials to access our account</h6>
-
-        <form>
-          <input type="text"
-                 placeholder="Enter your User ID" />
-        </form>
-        <form>
-          <input type="text"
-                 placeholder="Enter your password" />
-        </form>
-
-        <button type="button" class="btn btn-warnning sign-in-btn"
-                routerLink="/homepage-login">
-          Sign In
-        </button>
-
-        <div class="password pt-4 pb-4">Forgot your password?   <a href="#"> Reset Password</a></div>
+  <div class="justify-center">
+    <div class="hriqLogo">
+      <div [ngClass]="{
+           'blue-filter04': runTheme==='Blue',
+           'green-filter04': runTheme==='Green',
+           'red-filter04': runTheme==='Red',
+           'hydrangea-filter04': runTheme==='Hydrangea',
+           'sakura-filter04': runTheme==='Sakura',
+           'lavender-filter04': runTheme==='Lavender',
+           'mediterranean-filter04': runTheme==='Mediterranean',
+           'industrial-filter04': runTheme==='Industrial',
+           'minimalist-filter04': runTheme==='Minimalist',
+           'bohemian-filter04': runTheme==='Bohemian',
+           'forest-filter04': runTheme==='Forest',
+           'beach-filter04': runTheme==='Beach',
+           'sea-filter04': runTheme==='Sea',
+           'spring-filter04': runTheme==='Spring',
+           'winter-filter04': runTheme==='Winter',
+           'summer-filter04': runTheme==='Summer',
+           'autumn-filter04': runTheme==='Autumn'
+          }">
+        <img src="./assets/hriqLogoBlack.png">
       </div>
     </div>
+      <h1> Welcome Back</h1>
+      <h6>Enter your credentials to access our account</h6>
+
+      <form>
+        <input type="text"
+               placeholder="Enter your User ID" />
+      </form>
+      <form>
+        <input type="text"
+               placeholder="Enter your password" />
+      </form>
+
+      <button type="button" class="btn btn-warnning sign-in-btn"
+              routerLink="/homepage-login">
+        Sign In
+      </button>
+
+      <div class="password pt-4 pb-4">Forgot your password?   <a href="#"> Reset Password</a></div>
+    </div>
+  </div>
   </div>
 </div>
 
