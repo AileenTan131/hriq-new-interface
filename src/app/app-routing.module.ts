@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { HomepageLoginComponent } from './homepage-login/homepage-login.component';
 import { LnaContentKendoComponent } from './modules-learning/lna-content-kendo/lna-content-kendo.component';
 import { CoursesInterestedComponent } from './modules-learning/lna-content-kendo/courses-interested/courses-interested.component';
+import { TimeSettingComponent } from './menu/time-menu/setting/setting.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/homepage-login', pathMatch: 'full' }, 
@@ -63,6 +64,8 @@ export const RoutingComponents = [
   HomepageLoginComponent,
   LnaContentKendoComponent,
   CoursesInterestedComponent,
+  TimeSettingComponent
+
 ]
 
 

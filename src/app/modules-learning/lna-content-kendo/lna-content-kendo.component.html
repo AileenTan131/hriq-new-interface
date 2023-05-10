@@ -108,10 +108,31 @@
                          [filterable]="false"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [resizable]="false" [width]=50>
+                         [resizable]="false" [width]=48>
         <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
           <a type="button">
-            <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />
+            <!--  <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />-->
+            <div [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'
+          }">
+              <span *ngIf='dataItem.Attachment==="true"' class="k-icon k-i-attachment-45"></span>
+            </div>
           </a>
         </ng-template>
       </kendo-grid-column>

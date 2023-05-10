@@ -17,8 +17,7 @@ import { InputsModule } from "@progress/kendo-angular-inputs";
 import { LabelModule } from "@progress/kendo-angular-label";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
 import { ButtonsModule } from "@progress/kendo-angular-buttons";
-import { SettingComponent } from './menu/time-menu/setting/setting.component';
-
+import { IconsModule } from "@progress/kendo-angular-icons";
 
 
 
@@ -27,7 +26,6 @@ import { SettingComponent } from './menu/time-menu/setting/setting.component';
     AppComponent,
     EncapsulationComponent,
     RoutingComponents,
-    SettingComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +41,8 @@ import { SettingComponent } from './menu/time-menu/setting/setting.component';
     LabelModule,
     DropDownsModule,
     ButtonsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    IconsModule
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],

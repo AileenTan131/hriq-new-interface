@@ -469,7 +469,7 @@
               </div>
           </form>
 
-          <button class="button-03" type="submit">Update Password</button>
+          <button class="button-03" type="submit" (click)="alertPasswordUpdate()">Update Password</button>
         </div>
       </div>
     </div>
@@ -486,11 +486,11 @@
       </div>
       <div class="modal-body">
         <div>
-          <kendo-autocomplete [data]="languageSelect" [size]="selectedSize">
+          <kendo-autocomplete [data]="languageSelect" [size]="selectedSize" placeholder="e.g. English">
           </kendo-autocomplete>
         </div>
         <div class="pt-3 d-flex justify-content-start">
-        <button class="button-03" type="submit">Set Language</button>
+        <button class="button-03" type="submit" (click)="alertLanguageUpdate()">Set Language</button>
         </div>
       </div>
     </div>
@@ -651,7 +651,7 @@
         </div>
       </div>
       <div class="modal-footer d-flex justify-content-start ps-4 pb-3">
-      <button class="button-03" type="submit" (click)="applyTheme()">Apply {{runTheme}} Theme</button>
+      <button class="button-03" type="submit" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
       </div>
     </div>
   </div>

@@ -67,11 +67,17 @@ export class ModulePanelComponent {
     confirmPassword: [''],
   }, { validator: PasswordValidator });
 
+  alertPasswordUpdate() {
+    alert("Your password has been updated!");
+  }
 
   //Languages
   public languageSelect = languages;
   public selectedSize: DropDownSize = "large";
 
+  alertLanguageUpdate() {
+/*    alert("Your language has been changed to" + this.data("kendoDropDownList").value())*/
+  }
 
   //Color Scheme Menu
   runTheme = 'Blue';
@@ -145,7 +151,7 @@ export class ModulePanelComponent {
     this.runTheme = 'Autumn'
   }
 
-  applyTheme() { 
-     alert(this.runTheme + " theme is applied!");
+  alertThemeApplied() { 
+     alert(this.runTheme + " theme has been applied!");
   }
 }

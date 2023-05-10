@@ -25,4 +25,5 @@ export class TopPanelComponent {
   showHomepage() {
     this.router.navigate(['homepage'], { relativeTo: this.route })
   }
+
 }

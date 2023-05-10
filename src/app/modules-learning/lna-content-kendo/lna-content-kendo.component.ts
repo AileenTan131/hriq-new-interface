@@ -1,12 +1,9 @@
-import {
-    Component,
-    ViewChild,
-    ViewEncapsulation,
- } from "@angular/core";
+import { Component, ViewChild, ViewEncapsulation } from "@angular/core";
 import { GridComponent, FilterableSettings } from "@progress/kendo-angular-grid";
-import { Customers } from "./customers";
 import { Router, ActivatedRoute } from '@angular/router'
+import { ColorSchemesService } from "../../color-schemes.service";
 import { CustomersService } from "./customers.service";
+import { Customers } from "./customers";
 
 @Component({
     selector: "app-lna-content-kendo",
@@ -27,8 +24,12 @@ export class LnaContentKendoComponent{
     constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private colorSchemes: ColorSchemesService,
       private customerService: CustomersService,
     ) {
+    this.colorSchemes.data$.subscribe(data => {
+      this.runTheme = data;
+    })
 /*      const data = this.customerService.getCustomerData();
       data.subscribe({
         next: (data: string)=> {
@@ -66,6 +67,10 @@ export class LnaContentKendoComponent{
 
   /*  customerData: any;*/
   public customerData = Customers
+
+
+  runTheme: any;
+
 
 
 }
