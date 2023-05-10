@@ -279,20 +279,20 @@
         <div class="modal-body">
           <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
           <h6 class="text-center">
-            <button (click)="showLearningTransaction()"
-                    [class.isSelected]="!hideLearningTransaction"
+            <button (click)="showLearningTransaction()"             
+                    [class.isSelected]="menu==='TRANSACTIONS'"
                     class="header">
               Transactions
             </button>
             <span class="dot"> • </span>
             <button (click)="showLearningReport()"
-                    [class.isSelected]="!hideLearningReport"
+                    [class.isSelected]="menu==='REPORTS'"
                     class="header">
               Reports
             </button>
             <span class="dot"> • </span>
             <button (click)="showLearningSetting()"
-                    [class.isSelected]="!hideLearningSetting"
+                    [class.isSelected]="menu==='SYSTEM'"
                     class="header">
               System Settings
             </button>
@@ -321,10 +321,9 @@
             <br />
 
             <!-- children routes-->
-            <learning-transaction [class.hide]="hideLearningTransaction"></learning-transaction>
-            <app-report [class.hide]="hideLearningReport"></app-report>
-            <app-setting [class.hide]="hideLearningSetting"></app-setting>
-           <!-- [parentData]="runTheme"-->
+            <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
+            <app-report [class.hide]="menu!=='REPORTS'"></app-report>
+            <app-setting [class.hide]="menu!=='SYSTEM'"></app-setting>
           </h6>
         </div>
       </div>
@@ -366,25 +365,25 @@
         <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">TIME {{menu}} SETTING</h1>
         <h6 class="text-center">
           <button (click)="showTimeTransaction()"
-                  [class.isSelected]="!hideTimeTransaction"
+                  [class.isSelected]="menu==='TRANSACTIONS'"
                   class="header">
             Transactions
           </button>
           <span class="dot"> • </span>
           <button (click)="showTimeExport()"
-                  [class.isSelected]="!hideTimeExport"
+                  [class.isSelected]="menu==='EXPORT'"
                   class="header">
             Export
           </button>
           <span class="dot"> • </span>
           <button (click)="showTimeAttendance()"
-                  [class.isSelected]="!hideTimeAttendance"
+                  [class.isSelected]="menu==='ATTENDANCE'"
                   class="header">
             Attendance
           </button>
           <span class="dot"> • </span>
           <button (click)="showTimeSetting()"
-                  [class.isSelected]="!hideTimeSetting"
+                  [class.isSelected]="menu==='SYSTEM'"
                   class="header">
             System Settings
           </button>
@@ -412,11 +411,11 @@
           </div>
           <br />
 
-          <!-- children routes-->
-          <learning-transaction [class.hide]="hideTimeTransaction"></learning-transaction>
-          <app-report [class.hide]="hideTimeExport"></app-report>
-          <app-report [class.hide]="hideTimeAttendance"></app-report>
-          <time-setting [class.hide]="hideTimeSetting"></time-setting>
+          <!-- children routes need to create new components and amend these placeholders-->
+          <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
+          <app-report [class.hide]="menu!=='REPORTS'"></app-report>
+          <app-report [class.hide]="menu!=='REPORTS'"></app-report>
+          <time-setting [class.hide]="menu!=='REPORTS'"></time-setting>
         </h6>
       </div>
     </div>
