@@ -18,9 +18,12 @@ export class ModulePanelComponent {
     private router: Router,
     private colorSchemes: ColorSchemesService,
     private fb: FormBuilder,
-  ) { }
+  ) {
+    this.colorSchemes.data$.subscribe(data => {
+      this.runTheme = data;
+    })
+  }
 
- 
   showHomepage() {
     this.router.navigate(['homepage'], { relativeTo: this.route })
   }
@@ -80,7 +83,7 @@ export class ModulePanelComponent {
   }
 
   //Color Scheme Menu
-  runTheme = 'Blue';
+  runTheme: any;
 
    setGreenData() {
      this.colorSchemes.setData('Green');

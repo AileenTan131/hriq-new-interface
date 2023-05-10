@@ -8,9 +8,8 @@
   font-size: 1.13rem;
 }
 
-td {
+td, .notification-list {
   padding: 3px;
-  padding-left: 18px;
   font-size: 1.13rem;
 }
 
@@ -30,7 +29,8 @@ td {
 }
 a{
     text-decoration: none;
-    color: black
+    color: black;
+    padding: 0
 }
 
 

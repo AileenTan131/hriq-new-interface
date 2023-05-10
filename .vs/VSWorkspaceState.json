@@ -3,8 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\module-panel"
+    "\\src\\app\\menu\\learning-menu",
+    "\\src\\app\\menu\\learning-menu\\setting",
+    "\\src\\app\\menu\\time-menu",
+    "\\src\\app\\modules-learning\\lna-content",
+    "\\src\\app\\modules-learning\\lna-content-kendo"
   ],
-  "SelectedNode": "\\src\\app\\module-panel\\module-panel.component.html",
+  "SelectedNode": "\\kendo-ui-license.txt",
   "PreviewInSolutionExplorer": false
 }

@@ -25,7 +25,7 @@
                [openDelay]="200" />
         </a>
       </div>
-      <div class="col-4 banner-title-01 ps-4 ms-1">
+      <div class="col-4 banner-title-01 ps-4">
         Action Box
       </div>
     </div>
@@ -63,29 +63,32 @@
           </tbody>
         </table>
 
+<!--        <div class="pt-2">
+          <div *ngFor="let action of actions"
+               class="action-list">
+            {{action}}
+          </div>
+          <div *ngFor="let actionNumber of actionNo"
+               class="action-number">
+          {{actionNumber}}
+          </div>
+        </div>-->
+
         <div class="top-banner dark-banner notification ms-auto">
           <div class="col banner-title-01">
             Notifications
           </div>
         </div>
 
-        <div class="row">
-          <table class="table table-borderless mt-3 ">
-            <tbody>
-              <tr>
-                <td>Your leave has been approved</td>
-              </tr>
-              <tr>
-                <td>Reminder to submit your appraisal</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="pt-2">
+          <div *ngFor="let notification of notifications" class="notification-list">
+            {{notification}}
+          </div>
         </div>
 
-
-    <!--    <div class="k-block">
-          <button kendoButton [primary]="true" >primary button</button>
-        </div>-->
+            <div class="k-block">
+        <button kendoButton [primary]="true" >primary button</button>
+      </div>
       </div>
     </div>
 
