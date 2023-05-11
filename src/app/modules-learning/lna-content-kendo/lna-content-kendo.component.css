@@ -97,11 +97,17 @@ table {
 .training-plan {
   font-weight: 600;
   color: var(--color01);
-  background-color: var(--color03);
-  border-radius: 13px;
+  background-color: #ebebeb;
+  border-radius: 17px;
+/*  border: 1px solid rgb(0, 0, 128, 0.1);*/
+/*  border: 2px solid white;*/
   border: none;
-  padding: 0px 0px 0px 15px
+  border-opacity: 50%;
+  padding: 0px 0px 0px 10px
 }
+/*.training-plan:hover{
+  background-color: white;
+}*/
 
 .rounded-pill {
   background-color: var(--color04);
@@ -160,7 +166,4 @@ table {
 .k-i-attachment-45{
     font-size:23px;
     color: black
-}
-.k-table-md {
-  font-size: 0.94rem;
 }

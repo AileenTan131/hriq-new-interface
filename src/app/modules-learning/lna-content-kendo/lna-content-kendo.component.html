@@ -10,7 +10,7 @@
 </div>
 
 <div class="progress loading-bar" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-     aria-valuemin="0" aria-valuemax="100" style="height: 5px; background-color: white">
+     aria-valuemin="0" aria-valuemax="100" style="height: 5px ; background-color: white">
   <div class="progress-bar" style="width: 75%; "></div>
 </div>
 
@@ -71,7 +71,9 @@
                 [class.height-min]="!textShow"
                 [filterable]="false"
                 [sortable]="true"
-                [resizable]="true">
+                [resizable]="true"
+                
+                >
 
       <!--SN-->
       <kendo-grid-column field="SN" title="#"
@@ -108,7 +110,8 @@
                          [filterable]="false"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [resizable]="false" [width]=48>
+                         [resizable]="false" [width]=48
+                         >
         <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
           <a type="button">
             <!--  <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />-->
@@ -157,8 +160,10 @@
                          [headerClass]="'headerCustomClass'"
                          [width]="59"
                          [minResizableWidth]="40"
-                         [ngClass]="{'negative-red': gap<0}"> </kendo-grid-column>
+                         
+                         > </kendo-grid-column>
 
+                         <!--[style.color]="data < 0 ? 'red' : null"-->
 
 
       <!--  Piority-->
@@ -183,7 +188,7 @@
       <kendo-grid-column field="CoursesInterested" title="Courses Interested"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [width]="183"
+                         [width]="178"
                          [resizable]="false"
                          [minResizableWidth]="40">
         <ng-template kendoGridCellTemplate let-dataItem>

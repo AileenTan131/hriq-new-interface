@@ -13,7 +13,7 @@ import { Customers } from "./customers";
 })
 export class LnaContentKendoComponent{
     public gridData: unknown[] = Customers;
-
+    public data = Customers;
     public filterMode: FilterableSettings = "menu";
 
     @ViewChild(GridComponent)
