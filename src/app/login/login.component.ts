@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ColorSchemesService } from '../color-schemes.service';
+/*import { colorFilter } from '../color-filter.service'*/
 
 @Component({
   selector: 'app-login',
@@ -16,4 +17,6 @@ export class LoginComponent {
       this.runTheme = data;
     })
   }
+
+/*  public applyColorFilter = colorFilter;*/
 }

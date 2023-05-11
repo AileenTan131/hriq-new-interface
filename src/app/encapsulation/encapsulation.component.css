@@ -184,3 +184,13 @@ h1 {
 .progress-bar{
     background-color:var(--color04)
 }
+
+
+/*kendo styling*/
+.k-button02 {
+  color: yellow;
+  background-color: var(--color02);
+}
+.k-button01 {
+    color: purple
+}

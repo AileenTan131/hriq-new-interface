@@ -161,8 +161,6 @@ table {
     font-size:23px;
     color: black
 }
-
-
-kendo-grid {
-  base-bg: red
+.k-table-md {
+  font-size: 0.94rem;
 }
