@@ -221,3 +221,7 @@ h1 {
 .k-icon {
   color: var(--color04-if-white)
 }
+.k-checkbox:checked, .k-checkbox.k-checked {
+  border-color: var(--color04);
+  background-color: var(--color04);
+}

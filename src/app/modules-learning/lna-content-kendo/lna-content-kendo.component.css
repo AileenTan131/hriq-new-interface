@@ -14,6 +14,7 @@ padding: 8px 0px
   padding: 0px 30px;
 }
 
+
 kendo-textbox {
   display: none
 }
@@ -23,11 +24,6 @@ kendo-textbox {
 .rowCustomClass {
   background-color: none
 }
-.lnaGrid {
-  position: relative;
-  top: -17px;
-}
-
 
 
 .banner {
@@ -128,14 +124,7 @@ table {
   color: var(--color01);
   font-weight: 600;
   position: relative;
-  top: 3px;
-  margin-right:35px
-}
-
-.lna-details {
-  position: relative;
-  top: -27px;
-
+  left:217px
 }
 
 .ao {
@@ -154,10 +143,10 @@ table {
 
 
 .height-max{
-    height: 660px
+    height: 640px
 }
 .height-min{
-    height:540px
+    height:520px
 }
 
 .negative-red{

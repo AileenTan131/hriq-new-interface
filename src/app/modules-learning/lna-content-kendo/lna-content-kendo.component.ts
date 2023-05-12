@@ -18,8 +18,8 @@ export class LnaContentKendoComponent{
     public filterMode: FilterableSettings = "menu";
 
     @ViewChild(GridComponent)
+    runTheme: any;
     public grid: GridComponent;
-
 
 
     constructor(
@@ -31,61 +31,44 @@ export class LnaContentKendoComponent{
     this.colorSchemes.data$.subscribe(data => {
       this.runTheme = data;
     })
-/*      const data = this.customerService.getCustomerData();
-      data.subscribe({
-        next: (data: string)=> {
-          this.dataCustomer=data
-      },
-      error: (err: any) => {
-        console.log(err);
-      }
-        })
-      })*/
 }
-
-    public isCollapsed = false;
-
-    textShow = false;
-
-    public value = 5;
-    public autoCorrect = false
-  
   coursesInterested() {
       this.router.navigate(['courses-interested'], { relativeTo: this.route })
     }
 
+    public isCollapsed = false;
 
-/*  customerData: Customers[];
+    public textShow = false;
 
-  getCustomers() {
-    this.customerService.getCustomers().then(data => this.customerData = data)
+    public value = 5;
+    public autoCorrect = false
+  
+    public customerData = Customers
+
+
+  //Checkboxes to hide columns
+  public columns: string[] = ["SN", "Competency Type", "Skills", "Attachment", "Current Rate", "Required Rate", "Gap", "Piority", "Courses Interested", "Hours", "Budget", "Remarks"];
+  public hiddenColumns: string[] = [];
+
+  public isHidden(columnName: string): boolean {
+    return this.hiddenColumns.indexOf(columnName) > -1;
   }
-  ngOnInit() {
-    this.getCustomers();
+
+  public isDisabled(columnName: string): boolean {
+    return (
+      this.columns.length - this.hiddenColumns.length === 1 &&
+      !this.isHidden(columnName)
+    );
   }
-  public gap = this.customerData.Gap;*/
 
+  public hideColumn(columnName: string): void {
+    const hiddenColumns = this.hiddenColumns;
 
-  /*  customerData: any;*/
-  public customerData = Customers
+    if (!this.isHidden(columnName)) {
+      hiddenColumns.push(columnName);
+    } else {
+      hiddenColumns.splice(hiddenColumns.indexOf(columnName), 1);
+    }
+  }
 
-
-  runTheme: any;
-
-/*  assignRed(gap) {
-    if (gap < 0)
-      return true;
-  console.log(gap)
-    }*/
-
-
-
-/*  function changeTemplate(value) {
-  console.log(value < 0);
-  if (value < 0)
-    return true;
-  else
-      return false;
-
-}*/
 }

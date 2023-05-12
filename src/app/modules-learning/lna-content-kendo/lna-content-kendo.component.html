@@ -56,13 +56,21 @@
   </div>
 
 
-  <div class="lna-details">
-    <div class="d-flex justify-content-end">
-      <a href="#" class="summary">Summary of courses & budget</a>
+  <div class="lna-details d-flex ps-4 ms-2 mt-1 mb-1">
+    <!--Checkboxes to hide columns-->
+    <div class="d-flex justify-content-start ">
+      <div *ngFor="let column of columns" class=" pe-3">
+        <input type="checkbox"
+               id="{{ column }}"
+               kendoCheckBox
+               [disabled]="isDisabled(column)"
+               [checked]="!isHidden(column)"
+               (change)="hideColumn(column)" />
+        <label class="k-checkbox-label ps-1" for="{{ column }}">{{ column }}</label>
+      </div>
     </div>
+      <a href="#" class="summary">Summary of courses & budget</a>
   </div>
-
-
 
   <div class="lnaGrid">
     <kendo-grid #grid
@@ -71,16 +79,15 @@
                 [class.height-min]="!textShow"
                 [filterable]="false"
                 [sortable]="true"
-                [resizable]="true"
-                
-                >
+                [resizable]="true">
 
       <!--SN-->
       <kendo-grid-column field="SN" title="#"
                          [filterable]="false"
                          [resizable]="false" [width]=39
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                         [headerClass]="'headerCustomClass'">
+                         [headerClass]="'headerCustomClass'"
+                         *ngIf="!isHidden('SN')">
       </kendo-grid-column>
 
       <!--Competency Type-->
@@ -88,7 +95,8 @@
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [width]=157
-                         [minResizableWidth]="100">
+                         [minResizableWidth]="100"
+                         *ngIf="!isHidden('Competency Type')">
         <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
           <kendo-grid-string-filter-cell [showOperators]="false"
                                          [column]="column"
@@ -101,8 +109,9 @@
       <kendo-grid-column field="Skills" title="Skills"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [width]="550"
-                         [minResizableWidth]="300">
+                         [width]="350"
+                         [minResizableWidth]="300"
+                         *ngIf="!isHidden('Skills')">
       </kendo-grid-column>
 
       <!--Attachments-->
@@ -111,7 +120,7 @@
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [resizable]="false" [width]=48
-                         >
+                         *ngIf="!isHidden('Attachment')">
         <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
           <a type="button">
             <!--  <img *ngIf='dataItem.Attachment==="true"' src='././assets/iconsOthers2px/paperclip.svg' width="22px" alt='Attachment' />-->
@@ -145,21 +154,24 @@
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [width]="123"
-                         [minResizableWidth]="50"> </kendo-grid-column>
+                         [minResizableWidth]="50"
+                         *ngIf="!isHidden('Current Rate')"> </kendo-grid-column>
 
       <!-- Required Rate-->
       <kendo-grid-column field="RequiredRate" title="Required Rate"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [width]="133"
-                         [minResizableWidth]="50"> </kendo-grid-column>
+                         [minResizableWidth]="50"
+                         *ngIf="!isHidden('Required Rate')"> </kendo-grid-column>
 
       <!--Gap-->
       <kendo-grid-column field="Gap" title="Gap" #gap
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [width]="59"
-                         [minResizableWidth]="40">
+                         [minResizableWidth]="40"
+                         *ngIf="!isHidden('Gap')">
 
         <ng-template kendoGridCellTemplate let-dataItem>
           <div [class.negative-red]="dataItem.Gap < 0 ">{{dataItem.Gap}}</div>
@@ -171,7 +183,8 @@
       <kendo-grid-column field="Piority" title="Piority"
                          [width]=88 [resizable]="false"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                         [headerClass]="'headerCustomClass'">
+                         [headerClass]="'headerCustomClass'"
+                         *ngIf="!isHidden('Piority')">
         <ng-template kendoGridCellTemplate let-dataItem>
           <kendo-label class="k-form">
             <kendo-numerictextbox [value]="dataItem.Piority"
@@ -191,7 +204,8 @@
                          [headerClass]="'headerCustomClass'"
                          [width]="178"
                          [resizable]="false"
-                         [minResizableWidth]="40">
+                         [minResizableWidth]="40"
+                         *ngIf="!isHidden('Courses Interested')">
         <ng-template kendoGridCellTemplate let-dataItem>
           <button class="training-plan" (click)="coursesInterested()" routerLink="/courses-interested">
             My Training Plan
@@ -205,20 +219,23 @@
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [width]="73"
-                         [minResizableWidth]="40"> </kendo-grid-column>
+                         [minResizableWidth]="40"
+                         *ngIf="!isHidden('Hours')"> </kendo-grid-column>
 
       <!--Budget-->
       <kendo-grid-column field="TotalBudget" title="Budget"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [width]="81"
-                         [minResizableWidth]="65"></kendo-grid-column>
+                         [minResizableWidth]="65"
+                         *ngIf="!isHidden('Budget')"></kendo-grid-column>
 
       <!--Remarks-->
       <kendo-grid-column field="Remarks" title="Remarks"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [width]=480></kendo-grid-column>
+                         [width]=240
+                         *ngIf="!isHidden('Remarks')"></kendo-grid-column>
     </kendo-grid>
 
     <div class="ao">
