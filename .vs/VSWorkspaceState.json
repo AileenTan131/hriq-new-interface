@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\encapsulation",
+    "\\src\\app\\homepage",
+    "\\src\\app\\modules-learning",
+    "\\src\\app\\modules-learning\\lna-content-kendo",
+    "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\app\\modules-learning\\lna-content-kendo\\lna-content-kendo.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -4,6 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router'
 import { ColorSchemesService } from "../../color-schemes.service";
 import { CustomersService } from "./customers.service";
 import { Customers } from "./customers";
+import { Model } from "./model";
 
 @Component({
     selector: "app-lna-content-kendo",
@@ -12,7 +13,7 @@ import { Customers } from "./customers";
     encapsulation: ViewEncapsulation.None,
 })
 export class LnaContentKendoComponent{
-    public gridData: unknown[] = Customers;
+    public gridData: Model[] = Customers;
     public data = Customers;
     public filterMode: FilterableSettings = "menu";
 
@@ -71,6 +72,20 @@ export class LnaContentKendoComponent{
 
   runTheme: any;
 
+/*  assignRed(gap) {
+    if (gap < 0)
+      return true;
+  console.log(gap)
+    }*/
 
 
+
+/*  function changeTemplate(value) {
+  console.log(value < 0);
+  if (value < 0)
+    return true;
+  else
+      return false;
+
+}*/
 }

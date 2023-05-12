@@ -218,3 +218,6 @@ h1 {
 .k-grid .k-table-tbody > .k-table-row:not(.k-detail-row){
   background-color: white;
 }
+.k-icon {
+  color: var(--color04-if-white)
+}

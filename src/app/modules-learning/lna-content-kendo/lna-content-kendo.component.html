@@ -134,7 +134,7 @@
            'summer-filter': runTheme==='Summer',
            'autumn-filter': runTheme==='Autumn'
           }">
-              <span *ngIf='dataItem.Attachment==="true"' class="k-icon k-i-attachment-45"></span>
+              <span *ngIf='dataItem.Attachment===true' class="k-icon k-i-attachment-45"></span>
             </div>
           </a>
         </ng-template>
@@ -159,11 +159,12 @@
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          [width]="59"
-                         [minResizableWidth]="40"
-                         
-                         > </kendo-grid-column>
+                         [minResizableWidth]="40">
 
-                         <!--[style.color]="data < 0 ? 'red' : null"-->
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <div [class.negative-red]="dataItem.Gap < 0 ">{{dataItem.Gap}}</div>
+        </ng-template>
+      </kendo-grid-column>
 
 
       <!--  Piority-->
