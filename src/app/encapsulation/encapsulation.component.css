@@ -225,3 +225,9 @@ h1 {
   border-color: var(--color04);
   background-color: var(--color04);
 }
+.k-input-solid:focus-within, .form-control:focus {
+  border: 1px solid var(--color04);
+  color: var(--color01);
+  background-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px var(--color04);
+}

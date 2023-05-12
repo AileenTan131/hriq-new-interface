@@ -54,11 +54,7 @@ input::placeholder{
   color: var(--color01);
   opacity: 50%;
 }
-.form-control:focus {
-  color: var(--color01);
-  border-color: var(--color04);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px var(--color04);
-}
+
 
 .sign-in-btn, input {
   border-radius: 10px;
