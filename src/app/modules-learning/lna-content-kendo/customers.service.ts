@@ -8,9 +8,6 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CustomersService {
 
-
-
-
   private customerData = new BehaviorSubject('');
   data$ = Customers;
 

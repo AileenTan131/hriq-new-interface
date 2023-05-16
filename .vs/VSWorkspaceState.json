@@ -4,11 +4,12 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\encapsulation",
-    "\\src\\app\\homepage",
+    "\\src\\app\\footer",
+    "\\src\\app\\module-panel",
     "\\src\\app\\modules-learning",
     "\\src\\app\\modules-learning\\lna-content-kendo",
     "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src\\app\\modules-learning\\lna-content-kendo\\lna-content-kendo.component.html",
+  "SelectedNode": "\\src\\app\\modules-learning\\lna-content-kendo\\customers.ts",
   "PreviewInSolutionExplorer": false
 }

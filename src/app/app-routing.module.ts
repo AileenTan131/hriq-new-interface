@@ -19,6 +19,8 @@ import { LnaContentKendoComponent } from './modules-learning/lna-content-kendo/l
 import { CoursesInterestedComponent } from './modules-learning/lna-content-kendo/courses-interested/courses-interested.component';
 import { TimeSettingComponent } from './menu/time-menu/setting/setting.component';
 
+import { ColorFilter } from './color-filter';
+
 const routes: Routes = [
   { path: '', redirectTo: '/homepage-login', pathMatch: 'full' }, 
   { path: 'login', component: LoginComponent }, //Login Page
@@ -64,8 +66,8 @@ export const RoutingComponents = [
   HomepageLoginComponent,
   LnaContentKendoComponent,
   CoursesInterestedComponent,
-  TimeSettingComponent
-
+  TimeSettingComponent,
+  ColorFilter
 ]
 
 

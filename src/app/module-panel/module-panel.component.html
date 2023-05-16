@@ -1,8 +1,27 @@
 <!--Left module panel-->
 <div class="container-fluid p-0">
   <div class="panel-background">
-    <a (click)="showHomepage()" type="button">
-      <img class="hriqLogo" src="./assets/hriqLogo.png">
+
+    <a (click)="showHomepage()" type="button"
+       [ngClass]="{
+           'blue-filter': runTheme==='Blue',
+           'green-filter': runTheme==='Green',
+           'red-filter': runTheme==='Red',
+           'hydrangea-filter': runTheme==='Hydrangea',
+           'sakura-filter': runTheme==='Sakura',
+           'lavender-filter': runTheme==='Lavender',
+           'mediterranean-filter': runTheme==='Mediterranean',
+           'industrial-filter': runTheme==='Industrial',
+           'minimalist-filter': runTheme==='Minimalist',
+           'bohemian-filter': runTheme==='Bohemian',
+           'forest-filter': runTheme==='Forest',
+           'beach-filter': runTheme==='Beach',
+           'sea-filter': runTheme==='Sea',
+           'spring-filter': runTheme==='Spring',
+           'winter-filter': runTheme==='Winter',
+           'summer-filter': runTheme==='Summer',
+           'autumn-filter': runTheme==='Autumn'}">
+      <img class="hriqLogo" src="./assets/hriqLogoBlack.png">
     </a>
 
     <div class="panelIcons ">
@@ -509,7 +528,7 @@
         <div class="row">
           <div class="col-6">
             <div>
-              <h5 class="banner top-banner dark-banner banner-title-01">
+              <h5 class="banner-theme top-banner dark-banner banner-title-01">
                 Primary Theme Series
               </h5>
               <div class="row pt-4 pb-4">
@@ -535,7 +554,7 @@
             </div>
 
             <div>
-              <h5 class="banner top-banner dark-banner banner-title-01">
+              <h5 class="banner-theme top-banner dark-banner banner-title-01">
                 Flower Theme Series
               </h5>
               <div class="row pt-4 pb-4">
@@ -561,7 +580,7 @@
             </div>
 
             <div>
-              <h5 class="banner top-banner dark-banner banner-title-01 ">
+              <h5 class="banner-theme top-banner dark-banner banner-title-01 ">
                 Style Theme Series
               </h5>
               <div class="row pt-4 pb-4">
@@ -593,7 +612,7 @@
 
           <div class="col-6">
             <div>
-              <h5 class="banner top-banner dark-banner banner-title-01">
+              <h5 class="banner-theme top-banner dark-banner banner-title-01">
                 Nature Theme Series
               </h5>
               <div class="row pt-4 pb-4">
@@ -619,7 +638,7 @@
             </div>
 
             <div>
-              <h5 class="banner top-banner dark-banner banner-title-01">
+              <h5 class="banner-theme top-banner dark-banner banner-title-01">
                 Seasons Theme Series
               </h5>
               <div class="row pt-4 pb-4">

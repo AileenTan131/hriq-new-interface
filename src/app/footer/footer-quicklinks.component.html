@@ -3,43 +3,25 @@
   <h6 class="company">Powered by: HRiQ | Admin Office SG</h6>
   <h6 class="timestamp">Timestamp: 17/02/2023 10:10 AM | Country: SG</h6>
 
+  <div class="quick-links">
+    {{qData}}
+    <li *ngFor="let quicklink of quicklinks.slice(0, maxquicklinks)">
+      <a href="#">{{quicklink}} </a>
 
-    <div class="quick-links">
-        <li *ngFor="let quicklink of quicklinks">
-          <a href="#">{{quicklink.link}}</a>
-        </li>
-        Quick Links
-    </div>
-
-    <div class="btn-group dropup">
-      <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      </a>
-      <ul class="dropdown-menu">
-        <h6 class="dropdown-header">Quick Links</h6> hide
-        <li *ngFor="let quicklink of quicklinks">
-          <a href="#">{{quicklink.link}}</a>
-        </li>
-      </ul>
-
-
-<!--<div class="quicklink-row" [ngClass]="{'overflow': quicklinks.length > maxquicklinks}">
-  <div class="quicklink" *ngFor="let quicklink of quicklinks.slice(0, maxquicklinks)">
-    <a href="{{ quicklink.url }}">{{ quicklink.title }}</a>
+    </li>
+    Quick Links
   </div>
-  <div class="quicklink-dropdown" *ngIf="quicklinks.length > maxquicklinks">
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        More quicklinks
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="{{ quicklink.url }}" *ngFor="let quicklink of quicklinks.slice(maxquicklinks)">
-          {{ quicklink.title }}
+
+  <!--    <div class="btn-group dropup">
+        <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
         </a>
-      </div>
-    </div>
-  </div>
-</div>-->
-    </div>
+        <ul class="dropdown-menu">
+          <h6 class="dropdown-header">Quick Links</h6> hide
+          <li *ngFor="let quicklink of quicklinks">
+            <a href="#">{{quicklink}}</a>
+          </li>
+        </ul>
+      </div>-->
 
   <div class="quick-links-background border-top"></div>
 </div>

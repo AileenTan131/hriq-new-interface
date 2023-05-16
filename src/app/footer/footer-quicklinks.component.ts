@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { QuicklinkService  } from '../quicklink.service'
 
 @Component({
   selector: 'app-footer-quicklinks',
@@ -6,35 +7,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer-quicklinks.component.css']
 })
 export class FooterQuicklinksComponent {
+  qData: any;
+
+  constructor(private quicklinkService: QuicklinkService) {
+    this.quicklinkService.$quicklinkData.subscribe(data => {
+      this.qData = data;
+    })
+  }
+
   public quicklinks = [
-    { "link": "Link01" },
-    { "link": "Link02" },
-    { "link": "Link03" },
-    { "link": "Link04" },
-    { "link": "Link05" },
-    { "link": "Link06" },
-    { "link": "Link07" },
-    { "link": "Link08" },
-    { "link": "Link09" },
-    { "link": "Link10" },
-    { "link": "Link11" },
-    { "link": "Link12" },
-    { "link": "Link13" },
-    { "link": "Link14" },
-    { "link": "Link15" },
-/*    { "link": "Link16" },
-    { "link": "Link17" },
-    { "link": "Link18" },
-    { "link": "Link19" },
-    { "link": "Link20" },
-    { "link": "Link21" },
-    { "link": "Link22" },
-    { "link": "Link23" },
-    { "link": "Link24" },
-    { "link": "Link25" },
-    { "link": "Link26" },
-    { "link": "Link27" },*/
+    "Link01",
+    "Link02",
+    "Link03",
+    "Link04",
+    "Link05",
+    "Link06",
+    "Link07",
+    "Link08",
+    "Link09",
+    "Link10",
+    "Link11",
+    "Link12",
+    "Link13",
+    "Link14",
+    "Link15",
   ];
 
-/*  maxquicklinks = 10*/
+    maxquicklinks = 15
 }

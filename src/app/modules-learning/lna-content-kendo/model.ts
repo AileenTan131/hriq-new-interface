@@ -3,8 +3,9 @@ export class Model {
   public CompetencyType: string;
   public Skills: string;
   public Attachment: boolean;
-  public CurrentRate: string;
-  public RequiredRate: string;
+  public CurrentRate: number;
+  public RequiredRate: number;
+  public FullRate: number;
   public Gap: number;
   public Piority: '';
   public CoursesInterested: string;

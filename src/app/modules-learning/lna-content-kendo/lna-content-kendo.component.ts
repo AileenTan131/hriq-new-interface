@@ -1,10 +1,12 @@
 import { Component, ViewChild, ViewEncapsulation } from "@angular/core";
 import { GridComponent, FilterableSettings } from "@progress/kendo-angular-grid";
 import { Router, ActivatedRoute } from '@angular/router'
-import { ColorSchemesService } from "../../color-schemes.service";
-import { CustomersService } from "./customers.service";
 import { Customers } from "./customers";
 import { Model } from "./model";
+
+import { CustomersService } from "./customers.service";
+import { ColorSchemesService } from "../../color-schemes.service";
+import { QuicklinkService } from "../../quicklink.service";
 
 @Component({
     selector: "app-lna-content-kendo",
@@ -26,7 +28,8 @@ export class LnaContentKendoComponent{
     private route: ActivatedRoute,
     private router: Router,
     private colorSchemes: ColorSchemesService,
-      private customerService: CustomersService,
+    private customerService: CustomersService,
+    private quicklinkService: QuicklinkService,
     ) {
     this.colorSchemes.data$.subscribe(data => {
       this.runTheme = data;
@@ -44,6 +47,17 @@ export class LnaContentKendoComponent{
     public autoCorrect = false
   
     public customerData = Customers
+
+  quicklink(event) {
+    this.quicklinkService.setQuicklinkData('Learning Needs');
+    event.preventDefault();
+  }
+  send(event) {
+    this.quicklinkService.setQuicklinkData('send plane');
+    event.preventDefault();
+  }
+
+
 
 
   //Checkboxes to hide columns
