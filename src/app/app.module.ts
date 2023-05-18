@@ -18,6 +18,8 @@ import { LabelModule } from "@progress/kendo-angular-label";
 import { DropDownsModule } from "@progress/kendo-angular-dropdowns";
 import { ButtonsModule } from "@progress/kendo-angular-buttons";
 import { IconsModule } from "@progress/kendo-angular-icons";
+import { NotificationModule } from '@progress/kendo-angular-notification';
+
 
 
 
@@ -43,7 +45,8 @@ import { IconsModule } from "@progress/kendo-angular-icons";
     DropDownsModule,
     ButtonsModule,
     ReactiveFormsModule,
-    IconsModule
+    IconsModule,
+    NotificationModule
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],

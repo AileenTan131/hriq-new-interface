@@ -3,13 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\footer",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\modules-learning",
+    "\\src\\app\\homepage-login",
+    "\\src\\app\\menu",
+    "\\src\\app\\menu\\learning-menu",
+    "\\src\\app\\menu\\learning-menu\\setting",
     "\\src\\app\\modules-learning\\lna-content-kendo",
     "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src\\app\\modules-learning\\lna-content-kendo\\customers.ts",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -21,6 +21,7 @@ export class ModulePanelComponent {
   ) {
     this.colorSchemes.data$.subscribe(data => {
       this.runTheme = data;
+      this.changeTheme();
     })
   }
 
@@ -84,6 +85,7 @@ export class ModulePanelComponent {
 
   //Color Scheme Menu
   runTheme: any;
+  themeFilters: any;
 
    setGreenData() {
      this.colorSchemes.setData('Green');
@@ -153,6 +155,30 @@ export class ModulePanelComponent {
     this.colorSchemes.setData('Autumn');
     this.runTheme = 'Autumn'
   }
+
+  changeTheme() {
+    this.themeFilters = {
+      "blue-filter": this.runTheme === 'Blue',
+      "green-filter": this.runTheme === 'Green',
+      "red-filter": this.runTheme === 'Red',
+      "hydrangea-filter": this.runTheme === 'Hydrangea',
+      "sakura-filter": this.runTheme === 'Sakura',
+      "lavender-filter": this.runTheme === 'Lavender',
+      "mediterranean-filter": this.runTheme === 'Mediterranean',
+      "industrial-filter": this.runTheme === 'Industrial',
+      "minimalist-filter": this.runTheme === 'Minimalist',
+      "bohemian-filter": this.runTheme === 'Bohemian',
+      "forest-filter": this.runTheme === 'Forest',
+      "beach-filter": this.runTheme === 'Beach',
+      "sea-filter": this.runTheme === 'Sea',
+      "spring-filter": this.runTheme === 'Spring',
+      "winter-filter": this.runTheme === 'Winter',
+      "summer-filter": this.runTheme === 'Summer',
+      "autumn-filter": this.runTheme === 'Autumn'
+    }
+  }
+
+
 
   alertThemeApplied() { 
      alert(this.runTheme + " theme has been applied!");
