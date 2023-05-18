@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ColorSchemesService } from '../color-schemes.service';
-/*import { colorFilter } from '../color-filter.service'*/
 
 @Component({
   selector: 'app-login',
@@ -8,15 +6,6 @@ import { ColorSchemesService } from '../color-schemes.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  runTheme: any;
-
-  constructor(
-    private colorSchemes: ColorSchemesService,
-  ) {
-    this.colorSchemes.data$.subscribe(data => {
-      this.runTheme = data;
-    })
-  }
 
 /*  public images = [
     'https://picsum.photos/id/235/1920/1080',

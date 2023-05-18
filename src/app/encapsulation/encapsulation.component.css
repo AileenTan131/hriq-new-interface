@@ -15,19 +15,17 @@ h1 {
   align-items: center;
   justify-content: center
 }
-
 .banner-title-01 {
   padding-left: 20px;
   padding-right: 0
 }
-
 .dark-banner {
   background: var(--color01);
 }
-
 .light-banner {
   background: var(--color04);
 }
+
 
 .button-01 {
   border-radius: 10px;
@@ -36,7 +34,6 @@ h1 {
   font-weight: 600;
   background-color: white;
 }
-
 .button-02 {
   border-radius: 10px;
   border: none;
@@ -44,7 +41,6 @@ h1 {
   color: var(--color01);
   font-weight: 600;
 }
-
 .button-03 {
   border-radius: 10px;
   border: 1px solid var(--color02);
@@ -52,6 +48,10 @@ h1 {
   font-weight: 600;
   background-color:white
 }
+/*button:hover, .isSelected {
+  color: var(--color01);
+  background-color: var(--color03)
+}*/
 
 .password{
     font-weight:100px !important;
@@ -65,7 +65,6 @@ h1 {
 .green-filter {
   filter: invert(16%) sepia(62%) saturate(5166%) hue-rotate(174deg) brightness(92%) contrast(96%);
 }
-
 .red-filter {
   filter: invert(11%) sepia(93%) saturate(5513%) hue-rotate(20deg) brightness(100%) contrast(107%);
 }
@@ -168,6 +167,7 @@ h1 {
   filter: invert(34%) sepia(12%) saturate(2481%) hue-rotate(321deg) brightness(105%) contrast(77%);
 }
 
+
 .white-circle {
   position: absolute;
   bottom: 308px;
@@ -240,4 +240,16 @@ h1 {
 .k-icon.white {
   font-size: 23px;
   color: white;
+}
+.k-i-check-outline,
+.k-i-checkmark-outline,
+.k-i-success {
+  color: green;
+}
+
+.k-notification {
+  color: black;
+  background-color: white;
+  height: 2px;
+  border-radius: 8px;
 }

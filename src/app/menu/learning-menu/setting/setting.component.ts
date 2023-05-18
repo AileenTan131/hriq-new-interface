@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { ColorSchemesService } from '../../../color-schemes.service';
-
 
 
 @Component({
@@ -9,6 +7,7 @@ import { ColorSchemesService } from '../../../color-schemes.service';
   templateUrl: './setting.component.html',
   styleUrls: ['./setting.component.css']
 })
+
 export class SettingComponent implements OnInit {
   public global = [{ 'id': 'global', 'name': 'Company' }];
 
@@ -51,25 +50,16 @@ export class SettingComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private colorSchemes: ColorSchemesService
   ) { }
-
-  public selectedId;
-  runTheme = 'Blue';
-  themeFilters: any;
-  
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
       let id = parseInt(params.get('id'));
       this.selectedId = id;
-
-      this.colorSchemes.data$.subscribe(data => {
-        this.runTheme = data;
-        this.changeTheme();
-      })
     });
   }
+
+  public selectedId;
 
   onSelect(selection) {
     this.router.navigate(['homepage', selection.id], { relativeTo: this.route });
@@ -78,25 +68,4 @@ export class SettingComponent implements OnInit {
     return selection.id === this.selectedId
   }
 
-  changeTheme() {
-    this.themeFilters = {
-      "blue-filter": this.runTheme === 'Blue',
-      "green-filter": this.runTheme === 'Green',
-      "red-filter": this.runTheme === 'Red',
-      "hydrangea-filter": this.runTheme === 'Hydrangea',
-      "sakura-filter": this.runTheme === 'Sakura',
-      "lavender-filter": this.runTheme === 'Lavender',
-      "mediterranean-filter": this.runTheme === 'Mediterranean',
-      "industrial-filter": this.runTheme === 'Industrial',
-      "minimalist-filter": this.runTheme === 'Minimalist',
-      "bohemian-filter": this.runTheme === 'Bohemian',
-      "forest-filter": this.runTheme === 'Forest',
-      "beach-filter": this.runTheme === 'Beach',
-      "sea-filter": this.runTheme === 'Sea',
-      "spring-filter": this.runTheme === 'Spring',
-      "winter-filter": this.runTheme === 'Winter',
-      "summer-filter": this.runTheme === 'Summer',
-      "autumn-filter": this.runTheme === 'Autumn'
-    }
-  }
 }

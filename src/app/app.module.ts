@@ -1,3 +1,4 @@
+import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, RoutingComponents } from './app-routing.module'
@@ -6,7 +7,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 /*import { Routes, RouterModule } from '@angular/router';*/
 
-import { AppComponent } from './app.component';
 
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';

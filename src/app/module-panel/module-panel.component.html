@@ -5,7 +5,7 @@
       <img class="hriqLogo" src="./assets/hriqLogoBlack.png" addFilter>
     </a>
 
-    <div class="panelIcons ">
+    <div>
       <div class="module-icons">
         <a href="#">
           <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/user02.svg" addFilter /></div>
@@ -223,7 +223,7 @@
             </div>
           </form>
 
-            <button class="button-03 mt-3 mb-4" type="submit" (click)="alertPasswordUpdate()">Update Password</button>
+            <button class="button-03 mt-3 mb-4" type="submit" data-bs-dismiss="modal" (click)="alertPasswordUpdate()">Update Password</button>
 
           </div>
         </div>
@@ -241,11 +241,10 @@
       </div>
       <div class="modal-body language-input shift-body-up">
 
-        <kendo-autocomplete [data]="languageSelect" [size]="selectedSize" placeholder="e.g. English"> </kendo-autocomplete>
+        <kendo-autocomplete [data]="languageSelect" #languageValue [size]="selectedSize" placeholder="e.g. English"> </kendo-autocomplete>
       </div>
       <div>
-
-        <button class="button-03  button-ms" type="submit" (click)="alertLanguageUpdate()">Set Language</button>
+        <button class="button-03  button-ms" type="submit"  data-bs-dismiss="modal" (click)="alertLanguageUpdate(languageValue.value)">Set Language</button>
       </div>
     </div>
   </div>
@@ -406,7 +405,7 @@
         </div>
       </div>
       <div class="modal-footer d-flex justify-content-start ps-4 pb-3">
-        <button class="button-03" type="submit" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
+        <button class="button-03" type="submit" data-bs-dismiss="modal" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
       </div>
     </div>
   </div>

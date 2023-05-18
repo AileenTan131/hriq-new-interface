@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { FormBuilder } from '@angular/forms';
+import { NotificationService } from "@progress/kendo-angular-notification";
 import { DropDownSize } from "@progress/kendo-angular-dropdowns";
+
 import { languages } from './languages';
 import { PasswordValidator } from './password.validator';
+
 import { ColorSchemesService } from '../color-schemes.service';
-import { FormBuilder } from '@angular/forms';
 
 
 @Component({
@@ -18,10 +21,10 @@ export class ModulePanelComponent {
     private router: Router,
     private colorSchemes: ColorSchemesService,
     private fb: FormBuilder,
+    private notificationService: NotificationService,
   ) {
     this.colorSchemes.data$.subscribe(data => {
       this.runTheme = data;
-      this.changeTheme();
     })
   }
 
@@ -72,20 +75,35 @@ export class ModulePanelComponent {
   }, { validator: PasswordValidator });
 
   alertPasswordUpdate() {
-    alert("Your password has been updated!");
+    this.notificationService.show({
+      content: "Your password has been updated!",
+      hideAfter: 1000,
+      position: { horizontal: "center", vertical: "top" },
+      animation: { type: "fade", duration: 200 },
+      type: { style: "success", icon: true, },
+    })
   }
 
   //Languages
   public languageSelect = languages;
   public selectedSize: DropDownSize = "large";
 
-  alertLanguageUpdate() {
-/*    alert("Your language has been changed to" + this.data("kendoDropDownList").value())*/
+
+  Kvalue = '';
+  alertLanguageUpdate(data) {
+    this.Kvalue = data,
+      this.notificationService.show({
+      content: this.Kvalue + " language has been applied!" ,
+      hideAfter: 1000,
+      position: { horizontal: "center", vertical: "top" },
+      animation: { type: "fade", duration: 200 },
+      type: { style: "success", icon: true, },
+    })
   }
+   
 
   //Color Scheme Menu
   runTheme: any;
-  themeFilters: any;
 
    setGreenData() {
      this.colorSchemes.setData('Green');
@@ -156,31 +174,14 @@ export class ModulePanelComponent {
     this.runTheme = 'Autumn'
   }
 
-  changeTheme() {
-    this.themeFilters = {
-      "blue-filter": this.runTheme === 'Blue',
-      "green-filter": this.runTheme === 'Green',
-      "red-filter": this.runTheme === 'Red',
-      "hydrangea-filter": this.runTheme === 'Hydrangea',
-      "sakura-filter": this.runTheme === 'Sakura',
-      "lavender-filter": this.runTheme === 'Lavender',
-      "mediterranean-filter": this.runTheme === 'Mediterranean',
-      "industrial-filter": this.runTheme === 'Industrial',
-      "minimalist-filter": this.runTheme === 'Minimalist',
-      "bohemian-filter": this.runTheme === 'Bohemian',
-      "forest-filter": this.runTheme === 'Forest',
-      "beach-filter": this.runTheme === 'Beach',
-      "sea-filter": this.runTheme === 'Sea',
-      "spring-filter": this.runTheme === 'Spring',
-      "winter-filter": this.runTheme === 'Winter',
-      "summer-filter": this.runTheme === 'Summer',
-      "autumn-filter": this.runTheme === 'Autumn'
-    }
-  }
 
-
-
-  alertThemeApplied() { 
-     alert(this.runTheme + " theme has been applied!");
+  alertThemeApplied() {
+    this.notificationService.show({
+      content: this.runTheme + " theme has been applied!",
+      hideAfter: 1000,
+      position: { horizontal: "center", vertical: "top" },
+      animation: { type: "fade", duration: 200 },
+      type: { style: "success", icon: true,},
+      })
   }
 }

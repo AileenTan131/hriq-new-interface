@@ -70,11 +70,11 @@ button.header {
   padding: 3.5px 15px;
   border: none
 }
+button:hover, .isSelected {
+  color: var(--color01);
+  background-color: var(--color03)
+}
 
-  button:hover, .isSelected {
-    color: var(--color01);
-    background-color: var(--color03)
-  }
 
 .hide {
   display: none
@@ -127,3 +127,12 @@ h5 {
   padding-left: 18px
 }
 /*.svg icons color-filter themes in encapsulation*/
+
+
+
+.k-notification {
+  color: var(--color01);
+  background-color: var(--color03);
+  height: 2px;
+  border-radius: 8px;
+}

@@ -1,9 +1,4 @@
-<div>
-  <!--  <div [ngClass]="{'green-theme': isGreenTheme}">
-      <button (greenTheme)="changeGreenHost($event)">Click me</button>
-    </div>-->
-
-  <div [ngClass]="{
+<div [ngClass]="{
        ':host': runTheme==='Blue',
        'green-theme': runTheme==='Green',
        'red-theme': runTheme==='Red',
@@ -22,10 +17,9 @@
        'summer-theme': runTheme==='Summer',
        'autumn-theme': runTheme==='Autumn'
        }">
-    <router-outlet></router-outlet>
-  </div>
-
+  <router-outlet></router-outlet>
+  <app-encapsulation></app-encapsulation>
 </div>
 
-<app-encapsulation></app-encapsulation>
+
 

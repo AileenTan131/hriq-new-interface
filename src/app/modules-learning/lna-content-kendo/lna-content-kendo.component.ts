@@ -5,7 +5,6 @@ import { Customers } from "./customers";
 import { Model } from "./model";
 
 import { CustomersService } from "./customers.service";
-import { ColorSchemesService } from "../../color-schemes.service";
 import { QuicklinkService } from "../../quicklink.service";
 
 @Component({
@@ -20,21 +19,17 @@ export class LnaContentKendoComponent{
     public filterMode: FilterableSettings = "menu";
 
     @ViewChild(GridComponent)
-    runTheme: any;
+
     public grid: GridComponent;
 
 
     constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private colorSchemes: ColorSchemesService,
     private customerService: CustomersService,
     private quicklinkService: QuicklinkService,
-    ) {
-    this.colorSchemes.data$.subscribe(data => {
-      this.runTheme = data;
-    })
-}
+  ) { }
+
   coursesInterested() {
       this.router.navigate(['courses-interested'], { relativeTo: this.route })
     }
@@ -56,7 +51,6 @@ export class LnaContentKendoComponent{
     this.quicklinkService.setQuicklinkData('send plane');
     event.preventDefault();
   }
-
 
 
 
