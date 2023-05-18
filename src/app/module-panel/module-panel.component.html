@@ -2,129 +2,81 @@
 <div class="container-fluid p-0">
   <div class="panel-background">
     <a (click)="showHomepage()" type="button">
-      <img class="hriqLogo" src="./assets/hriqLogoBlack.png" addFilter >
+      <img class="hriqLogo" src="./assets/hriqLogoBlack.png" addFilter>
     </a>
 
     <div class="panelIcons ">
       <div class="module-icons">
         <a href="#">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/user02.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/user02.svg" addFilter /></div>
           <div class="moduleLegend">HR</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a href="#">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/calendarCheck01.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/calendarCheck01.svg" addFilter /></div>
           <div class="moduleLegend">Leave</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalColor">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/currencyDollar02.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/currencyDollar02.svg" addFilter /></div>
           <div class="moduleLegend">Payroll</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a href="#">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/coinsHand.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/coinsHand.svg" addFilter /></div>
           <div class="moduleLegend">Claims</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalTime">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userLeft01.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userLeft01.svg" addFilter /></div>
           <div class="moduleLegend">Time</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/graduationHat02.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/graduationHat02.svg" addFilter /></div>
           <div class="moduleLegend">Learning</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a href="#">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/edit05.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/edit05.svg" addFilter /></div>
           <div class="moduleLegend">Appraisal</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a href="#">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userCircle.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userCircle.svg" addFilter /></div>
           <div class="moduleLegend">Recruit</div>
         </a>
       </div>
 
       <div class="module-icons">
         <a href="#">
-            <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/key01.svg" addFilter/></div>
+          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/key01.svg" addFilter /></div>
           <div class="moduleLegend">Security</div>
         </a>
       </div>
     </div>
   </div>
-
-
-  <!--Modal-->
-  <!--Modal-->
-  <!--Modal-->
-  <!--Learning Menu Modal Page-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-        <div class="d-flex justify-content-center">
-            <img src="./assets/iconsMenu/learningSetting.png" addFilter/>
-        </div>
-        <div class="modal-body">
-          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
-          <h6 class="text-center">
-            <button (click)="showLearningTransaction()"             
-                    [class.isSelected]="menu==='TRANSACTIONS'"
-                    class="header">
-              Transactions
-            </button>
-            <span class="dot"> • </span>
-            <button (click)="showLearningReport()"
-                    [class.isSelected]="menu==='REPORTS'"
-                    class="header">
-              Reports
-            </button>
-            <span class="dot"> • </span>
-            <button (click)="showLearningSetting()"
-                    [class.isSelected]="menu==='SYSTEM'"
-                    class="header">
-              System Settings
-            </button>
-
-            <!--line-->
-              <div class="line-box" addFilter></div>
- 
-            <br />
-
-            <!-- children routes-->
-            <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
-            <app-report [class.hide]="menu!=='REPORTS'"></app-report>
-            <app-setting [class.hide]="menu!=='SYSTEM'"></app-setting>
-          </h6>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
-<!--Time Menu Modal Page-->
-<div class="modal fade" id="exampleModalTime" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--Modal-->
+<!--Modal-->
+<!--Modal-->
+<!--Learning Menu Modal Page-->
+<div class="modal fade modal-menu" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -132,37 +84,84 @@
       </div>
 
       <div class="d-flex justify-content-center">
-          <img src="./assets/iconsMenu/learningSetting.png" addFilter/>
+        <img src="./assets/iconsMenu/learningSetting.png" addFilter />
       </div>
-      <div class="modal-body">
+      <div class="modal-body modal-menu-body">
+        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
+        <h6 class="text-center">
+          <button (click)="showLearningTransaction()"
+                  [class.isSelected]="menu==='TRANSACTIONS'"
+                  class="header hide-button">
+            Transactions
+          </button>
+          <span class="dot"> • </span>
+          <button (click)="showLearningReport()"
+                  [class.isSelected]="menu==='REPORTS'"
+                  class="header hide-button">
+            Reports
+          </button>
+          <span class="dot"> • </span>
+          <button (click)="showLearningSetting()"
+                  [class.isSelected]="menu==='SYSTEM'"
+                  class="header hide-button">
+            System Settings
+          </button>
+
+          <!--line-->
+          <div class="line-box" addFilter></div>
+
+          <br />
+
+          <!-- children routes-->
+          <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
+          <app-report [class.hide]="menu!=='REPORTS'"></app-report>
+          <app-setting [class.hide]="menu!=='SYSTEM'"></app-setting>
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Time Menu Modal Page-->
+<div class="modal fade modal-menu" id="exampleModalTime" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <img src="./assets/iconsMenu/learningSetting.png" addFilter />
+      </div>
+      <div class="modal-body modal-menu-body">
         <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">TIME {{menu}} SETTING</h1>
         <h6 class="text-center">
           <button (click)="showTimeTransaction()"
                   [class.isSelected]="menu==='TRANSACTIONS'"
-                  class="header">
+                  class="header hide-button">
             Transactions
           </button>
           <span class="dot"> • </span>
           <button (click)="showTimeExport()"
                   [class.isSelected]="menu==='EXPORT'"
-                  class="header">
+                  class="header hide-button">
             Export
           </button>
           <span class="dot"> • </span>
           <button (click)="showTimeAttendance()"
                   [class.isSelected]="menu==='ATTENDANCE'"
-                  class="header">
+                  class="header hide-button">
             Attendance
           </button>
           <span class="dot"> • </span>
           <button (click)="showTimeSetting()"
                   [class.isSelected]="menu==='SYSTEM'"
-                  class="header">
+                  class="header hide-button">
             System Settings
           </button>
 
           <!--line-->
-            <div class="line-box" addFilter></div>
+          <div class="line-box" addFilter></div>
 
           <br />
 
@@ -182,51 +181,52 @@
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header ">
-        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Change Password</h1>
+        <h1 class="modal-title w-100 ps-3 pt-2">Change Password</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body shift-body-up">
         <div class="body-align">
-            <p class="form-text">Your password must be at least 6 characters.</p>
+          <p class="form-text">Your password must be at least 6 characters.</p>
 
-            <form [formGroup]="registrationForm">
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingInput" placeholder="Old Password"
-                       formControlName="oldPassword"
-                       [class.is-invalid]="
+          <form [formGroup]="registrationForm">
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingInput" placeholder="Old Password"
+                     formControlName="oldPassword"
+                     [class.is-invalid]="
                        password.invalid &&
                        password.touched"
-                       minlength="6" required>
-                <label for="floatingInput">Old Password</label>
-                <div *ngIf="password.invalid && password.touched">
-                  <small class="red" *ngIf="password.errors?.required">Please fill in your password.</small>
-                  <small class="red" *ngIf="password.errors?.minlength">Password has to be at least 6 digits long.</small>
-                </div>
+                     minlength="6" required>
+              <label for="floatingInput">Old Password</label>
+              <div *ngIf="password.invalid && password.touched">
+                <small class="red" *ngIf="password.errors?.required">Please fill in your password.</small>
+                <small class="red" *ngIf="password.errors?.minlength">Password has to be at least 6 digits long.</small>
               </div>
+            </div>
 
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingInput" placeholder="New Password"
-                       formControlName="newPassword"
-                       [class.is-invalid]="
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingInput" placeholder="New Password"
+                     formControlName="newPassword"
+                     [class.is-invalid]="
                         newPassword.invalid &&
                         newPassword.touched"
-                       minlength="6">
-                <label for="floatingInput">New Password</label>
-                <small class="red" [class.d-none]="newPassword.valid|| newPassword.untouched">Password has to be at least 6 digits long.</small>
-              </div>
+                     minlength="6">
+              <label for="floatingInput">New Password</label>
+              <small class="red" [class.d-none]="newPassword.valid|| newPassword.untouched">Password has to be at least 6 digits long.</small>
+            </div>
 
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingInput" placeholder="Confirm New Password"
-                       formControlName="confirmPassword"
-                       [class.is-invalid]="registrationForm.errors?.mismatch">
-                <label for="floatingInput">Confirm New Password</label>
-                <small class="red" *ngIf="registrationForm.errors?.mismatch">Password does not match.</small>
-              </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingInput" placeholder="Confirm New Password"
+                     formControlName="confirmPassword"
+                     [class.is-invalid]="registrationForm.errors?.mismatch">
+              <label for="floatingInput">Confirm New Password</label>
+              <small class="red" *ngIf="registrationForm.errors?.mismatch">Password does not match.</small>
+            </div>
           </form>
 
-          <button class="button-03" type="submit" (click)="alertPasswordUpdate()">Update Password</button>
+            <button class="button-03 mt-3 mb-4" type="submit" (click)="alertPasswordUpdate()">Update Password</button>
+
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </div>
@@ -235,53 +235,53 @@
 <div class="modal fade" id="exampleModalLanguage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header shift-body-up">
-        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Input and Select your Default Language</h1>
+      <div class="modal-header">
+        <h1 class="modal-title w-100 ps-3 pt-2">Input your Default Language</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div>
-          <kendo-autocomplete [data]="languageSelect" [size]="selectedSize" placeholder="e.g. English">
-          </kendo-autocomplete>
-        </div>
-        <div class="pt-3 d-flex justify-content-start">
-        <button class="button-03" type="submit" (click)="alertLanguageUpdate()">Set Language</button>
-        </div>
+      <div class="modal-body language-input shift-body-up">
+
+        <kendo-autocomplete [data]="languageSelect" [size]="selectedSize" placeholder="e.g. English"> </kendo-autocomplete>
+      </div>
+      <div>
+
+        <button class="button-03  button-ms" type="submit" (click)="alertLanguageUpdate()">Set Language</button>
       </div>
     </div>
   </div>
 </div>
 
+
 <!--Color Scheme Modal Page-->
-<div class="modal fade" id="exampleModalColor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade modal-color" id="exampleModalColor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header ">
-        <h1 class="modal-title w-100 ps-3 pt-4 pb-2">Choose your Color Scheme</h1>
+        <h1 class="modal-title w-100 ps-3 pt-2 pb-2">Choose your Color Scheme</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body shift-body-up">
+      <div class="modal-body modal-color-body shift-body-up">
         <div class="row">
-          <div class="col-6">
+          <div>
             <div>
               <h5 class="banner-theme top-banner dark-banner banner-title-01">
                 Primary Theme Series
               </h5>
               <div class="row pt-4 pb-4">
                 <div class="col-4">
-                  <button class="ms-3" (click)="setBlueData()" [class.isSelected]="runTheme==='Blue'">
+                  <button class="hide-button ms-3" (click)="setBlueData()" [class.isSelected]="runTheme==='Blue'">
                     <h6>Blue</h6>
                     <img class="color-scheme-img" src="././assets/blue.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setGreenData()" [class.isSelected]="runTheme==='Green'">
+                  <button class="hide-button" (click)="setGreenData()" [class.isSelected]="runTheme==='Green'">
                     <h6>Green</h6>
                     <img class="color-scheme-img" src="././assets/green.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setRedData()" [class.isSelected]="runTheme==='Red'">
+                  <button class="hide-button" (click)="setRedData()" [class.isSelected]="runTheme==='Red'">
                     <h6>Red</h6>
                     <img class="color-scheme-img" src="././assets/red.jpg" />
                   </button>
@@ -295,19 +295,19 @@
               </h5>
               <div class="row pt-4 pb-4">
                 <div class="col-4">
-                  <button class="ms-3" (click)="setHydrangeaData()" [class.isSelected]="runTheme==='Hydrangea'">
+                  <button class="hide-button ms-3" (click)="setHydrangeaData()" [class.isSelected]="runTheme==='Hydrangea'">
                     <h6>Hydrangea</h6>
                     <img class="color-scheme-img" src="././assets/hydrangea.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setSakuraData()" [class.isSelected]="runTheme==='Sakura'">
+                  <button class="hide-button" (click)="setSakuraData()" [class.isSelected]="runTheme==='Sakura'">
                     <h6>Sakura</h6>
                     <img class="color-scheme-img" src="././assets/sakura.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setLavenderData()" [class.isSelected]="runTheme==='Lavender'">
+                  <button class="hide-button" (click)="setLavenderData()" [class.isSelected]="runTheme==='Lavender'">
                     <h6>Lavender</h6>
                     <img class="color-scheme-img" src="././assets/lavender.jpg" />
                   </button>
@@ -321,23 +321,23 @@
               </h5>
               <div class="row pt-4 pb-4">
                 <div class="col-4">
-                  <button class="ms-3" (click)="setMediterraneanData()" [class.isSelected]="runTheme==='Mediterranean'">
+                  <button class="hide-button ms-3" (click)="setMediterraneanData()" [class.isSelected]="runTheme==='Mediterranean'">
                     <h6>Mediterranean</h6>
                     <img class="color-scheme-img" src="././assets/mediterranean.jpg" />
                   </button>
-                  <button class="mt-3 ms-3" (click)="setIndustrialData()" [class.isSelected]="runTheme==='Industrial'">
+                  <button class="hide-button mt-3 ms-3" (click)="setIndustrialData()" [class.isSelected]="runTheme==='Industrial'">
                     <h6>Industrial</h6>
                     <img class="color-scheme-img" src="././assets/industrial.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setMinimalistData()" [class.isSelected]="runTheme==='Minimalist'">
+                  <button class="hide-button" (click)="setMinimalistData()" [class.isSelected]="runTheme==='Minimalist'">
                     <h6>Minimalist</h6>
                     <img class="color-scheme-img" src="././assets/minimalist.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setBohemianData()" [class.isSelected]="runTheme==='Bohemian'">
+                  <button class="hide-button" (click)="setBohemianData()" [class.isSelected]="runTheme==='Bohemian'">
                     <h6>Bohemian</h6>
                     <img class="color-scheme-img" src="././assets/bohemian.jpg" />
                   </button>
@@ -346,26 +346,26 @@
             </div>
           </div>
 
-          <div class="col-6">
+          <div>
             <div>
               <h5 class="banner-theme top-banner dark-banner banner-title-01">
                 Nature Theme Series
               </h5>
               <div class="row pt-4 pb-4">
                 <div class="col-4">
-                  <button class="ms-3" (click)="setForestData()" [class.isSelected]="runTheme==='Forest'">
+                  <button class="hide-button ms-3" (click)="setForestData()" [class.isSelected]="runTheme==='Forest'">
                     <h6>Forest</h6>
                     <img class="color-scheme-img" src="././assets/forest.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setBeachData()" [class.isSelected]="runTheme==='Beach'">
+                  <button class="hide-button" (click)="setBeachData()" [class.isSelected]="runTheme==='Beach'">
                     <h6>Beach</h6>
                     <img class="color-scheme-img" src="././assets/beach.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setSeaData()" [class.isSelected]="runTheme==='Sea'">
+                  <button  class="hide-button" (click)="setSeaData()" [class.isSelected]="runTheme==='Sea'">
                     <h6>Sea</h6>
                     <img class="color-scheme-img" src="././assets/sea.jpg" />
                   </button>
@@ -379,23 +379,23 @@
               </h5>
               <div class="row pt-4 pb-4">
                 <div class="col-4">
-                  <button class="ms-3" (click)="setSpringData()" [class.isSelected]="runTheme==='Spring'">
+                  <button class="hide-button ms-3" (click)="setSpringData()" [class.isSelected]="runTheme==='Spring'">
                     <h6>Spring</h6>
                     <img class="color-scheme-img" src="././assets/spring.jpg" />
                   </button>
-                  <button class="mt-3 ms-3" (click)="setWinterData()" [class.isSelected]="runTheme==='Winter'">
+                  <button class="hide-button mt-3 ms-3" (click)="setWinterData()" [class.isSelected]="runTheme==='Winter'">
                     <h6>Winter</h6>
                     <img class="color-scheme-img" src="././assets/winter.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setSummerData()" [class.isSelected]="runTheme==='Summer'">
+                  <button class="hide-button" (click)="setSummerData()" [class.isSelected]="runTheme==='Summer'">
                     <h6>Summer</h6>
                     <img class="color-scheme-img" src="././assets/summer.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
-                  <button (click)="setAutumnData()" [class.isSelected]="runTheme==='Autumn'">
+                  <button class="hide-button" (click)="setAutumnData()" [class.isSelected]="runTheme==='Autumn'">
                     <h6>Autumn</h6>
                     <img class="color-scheme-img" src="././assets/autumn.jpg" />
                   </button>
@@ -406,7 +406,7 @@
         </div>
       </div>
       <div class="modal-footer d-flex justify-content-start ps-4 pb-3">
-      <button class="button-03" type="submit" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
+        <button class="button-03" type="submit" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
       </div>
     </div>
   </div>
