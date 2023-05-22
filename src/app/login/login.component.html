@@ -9,18 +9,27 @@
     <div class="hriqLogo">
         <img src="./assets/hriqLogoBlack.png" addFilter>
     </div>
-    <h1 class="mb-2"> Welcome Back</h1>
+    <h1 class="mb-2 mt-3"> Welcome Back</h1>
     <h6>Enter your credentials to access our account</h6>
 
-    <form>
-      <input type="text"
-             class="form-control ps-3"
-             placeholder="Enter your User ID" />
+    <form [formGroup] ="loginForm">
+      <div class="form-group mb-0">
+        <input formControlName="userID"
+               type="text"
+               class="form-control ps-3"
+               placeholder="Enter your User ID"              
+               />
+      <small class="red error-message" [class.d-none]="userID.valid || userID.untouched">Please fill in your userID</small>
+      </div>
     </form>
-    <form>
-      <input type="text"
-             class="form-control ps-3"
-             placeholder="Enter your password" />
+    <form [formGroup] ="loginForm">
+      <div class="form-group mb-0">
+        <input formControlName="password"
+               type="text"
+               class="form-control ps-3"
+               placeholder="Enter your password" />
+        <small class="red error-message" [class.d-none]="password.valid || password.untouched">Please fill in your password</small>
+      </div>
     </form>
 
     <button type="button" class="btn btn-warnning sign-in-btn"

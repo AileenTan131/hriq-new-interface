@@ -7,20 +7,32 @@
        placement="bottom"
        ngbTooltip="Add page to Quicklinks"
        [openDelay]=600
-       (click)="quicklink($event)"><img class="ps-2 pe-2"src="./assets/iconsOthers2px/pin01.svg" /></a>
+       (click)="quicklink($event)"
+       class="pe-2 ps-2 ms-1 me-1">
+<!--    <img class="ps-2 pe-2"src="./assets/iconsOthers2px/pin01.svg" />-->
+      <span class="k-icon k-i-star-outline"></span>
+    </a>
 
     <a href="#"
        tooltipClass="tooltipclass"
        placement="bottom"
        ngbTooltip="Save"
-       [openDelay]=600><img class="pe-2 ps-2" src="./assets/iconsOthers2px/save-01.svg" /></a>
+       [openDelay]=600
+       class="pe-2 ps-2 ms-1 me-1">
+      <img src="./assets/iconsOthers2px/save-01.svg" />
+  <!--    <span class="k-icon k-i-save"></span>-->
+    </a>
 
     <a href="#"
-        tooltipClass="tooltipclass"
+       tooltipClass="tooltipclass"
        placement="bottom"
        ngbTooltip="Submit"
        [openDelay]=600
-       (click)="send($event)"><img class="pe-2 ps-2" src="./assets/iconsOthers2px/send-01.svg" /></a>
+       (click)="send($event)"
+       class="pe-2 ps-2 ms-1 me-1">
+  <!--    <img src="./assets/iconsOthers2px/send-01.svg" />-->
+      <span class="k-icon k-i-hyperlink-open"></span>
+    </a>
   </span>
 </div>
 

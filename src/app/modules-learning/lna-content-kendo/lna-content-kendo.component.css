@@ -4,12 +4,6 @@
   /*  justify-content:center*/
 }
 
-/*th.headerCustomClass {
-
-padding: 8px 0px
- 
-}
-*/
 .lnaGrid {
   padding: 0px 30px;
 }
@@ -137,6 +131,7 @@ table {
   right: 0px;
   padding-right: 25px;
 }
+
 .row {
   width:100%
 }
