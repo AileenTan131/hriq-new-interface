@@ -72,13 +72,13 @@ button {
   background-color: white;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  border: 1px solid var(--color04);
+  border: 1px solid var(--colorGrey);
   border-radius: 10px;
   padding: 5px 10px;
 }
 
 ::ng-deep .tooltipclass .tooltip-arrow::before {
-  border-bottom-color: var(--color04);
+  border-bottom-color: var(--colorGrey);
 }
 
 /*.spinner-border {

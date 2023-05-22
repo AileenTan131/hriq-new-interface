@@ -18,12 +18,14 @@
 .module-icons {
   padding-bottom: 20px;
 }
-
+.moduleLegend:hover{
+    color: black
+}
 .moduleIcons {
   width: 29px;
 }
 .moduleLegend {
-  color: var(--color01);
+  color: black;
 }
 
 a {
@@ -105,9 +107,7 @@ h5 {
 .body-align {
   padding: 0px 20px
 }
-.red{
-    color: red;
-}
+
 
 .shift-body-up {
   padding-top: 0;

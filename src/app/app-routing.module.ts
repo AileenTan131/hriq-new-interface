@@ -20,6 +20,7 @@ import { CoursesInterestedComponent } from './modules-learning/lna-content-kendo
 import { TimeSettingComponent } from './menu/time-menu/setting/setting.component';
 
 import { ColorFilter } from './color-filter';
+import { BgChangeImageDirective } from './app-BgChangeImage'
 
 const routes: Routes = [
   { path: '', redirectTo: '/homepage-login', pathMatch: 'full' }, 
@@ -67,7 +68,8 @@ export const RoutingComponents = [
   LnaContentKendoComponent,
   CoursesInterestedComponent,
   TimeSettingComponent,
-  ColorFilter
+  ColorFilter,
+  BgChangeImageDirective
 ]
 
 

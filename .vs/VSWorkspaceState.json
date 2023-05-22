@@ -5,10 +5,10 @@
     "\\src\\app",
     "\\src\\app\\encapsulation",
     "\\src\\app\\login",
-    "\\src\\app\\menu\\learning-menu\\setting",
-    "\\src\\app\\menu\\time-menu\\setting",
-    "\\src\\app\\modules-learning\\lna-content-kendo\\courses-interested"
+    "\\src\\app\\module-panel",
+    "\\src\\app\\modules-learning\\lna-content-kendo\\courses-interested",
+    "\\src\\app\\top-panel"
   ],
-  "SelectedNode": "\\src\\app\\login\\login.component.css",
+  "SelectedNode": "\\src\\app\\login\\login.component.ts",
   "PreviewInSolutionExplorer": false
 }

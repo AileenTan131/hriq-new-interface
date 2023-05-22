@@ -115,7 +115,9 @@ h1 {
   filter: invert(6%) sepia(76%) saturate(5175%) hue-rotate(13deg) brightness(101%) contrast(91%);
 }
 
-
+.grey-filter {
+  filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(98deg) brightness(93%) contrast(83%)
+}
 
 
 
