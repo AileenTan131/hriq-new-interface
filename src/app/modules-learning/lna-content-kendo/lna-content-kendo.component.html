@@ -1,13 +1,29 @@
-
 <!--<div class="container-fluid p-0">-->
 <div class="banner d-flex align-items-center">
   MY LEARNING NEEDS ANALYSIS 2023
   <span class="action-icons pb-1">
-    <a href="/" (click)="quicklink($event)"><img src="./assets/iconsOthers2px/pin01.svg" /></a>
-    <a href="#" (click)="send($event)"><img class=" ps-3" src="./assets/iconsOthers2px/send-01.svg" /></a>
-    <a href="#"><img class=" ps-3" src="./assets/iconsOthers2px/save-01.svg" /></a>
+    <a href="/"
+       tooltipClass="tooltipclass"
+       placement="bottom"
+       ngbTooltip="Add page to Quicklinks"
+       [openDelay]=600
+       (click)="quicklink($event)"><img class="ps-2 pe-2"src="./assets/iconsOthers2px/pin01.svg" /></a>
+
+    <a href="#"
+       tooltipClass="tooltipclass"
+       placement="bottom"
+       ngbTooltip="Save"
+       [openDelay]=600><img class="pe-2 ps-2" src="./assets/iconsOthers2px/save-01.svg" /></a>
+
+    <a href="#"
+        tooltipClass="tooltipclass"
+       placement="bottom"
+       ngbTooltip="Submit"
+       [openDelay]=600
+       (click)="send($event)"><img class="pe-2 ps-2" src="./assets/iconsOthers2px/send-01.svg" /></a>
   </span>
 </div>
+
 
 <div class="progress loading-bar" role="progressbar" aria-label="Basic example" aria-valuenow="75"
      aria-valuemin="0" aria-valuemax="100" style="height: 5px ; background-color: white">
@@ -69,7 +85,7 @@
         <label class="k-checkbox-label ps-1" for="{{ column }}">{{ column }}</label>
       </div>
     </div>
-      <a href="#" class="summary">Summary of courses & budget</a>
+    <a href="#" class="summary">Summary of courses & budget</a>
   </div>
 
   <div class="lnaGrid">

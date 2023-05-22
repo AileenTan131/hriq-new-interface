@@ -130,9 +130,3 @@ h5 {
 
 
 
-.k-notification {
-  color: var(--color01);
-  background-color: var(--color03);
-  height: 2px;
-  border-radius: 8px;
-}
