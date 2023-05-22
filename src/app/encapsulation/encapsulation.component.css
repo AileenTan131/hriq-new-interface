@@ -243,6 +243,9 @@ h1 {
   font-size: 23px;
   color: var(--color01);
 }
+.k-icon.action:hover{
+    color: red
+ }
 .k-icon.white,
 .k-i-hyperlink-open,
 .k-i-save,
@@ -250,6 +253,13 @@ h1 {
   font-size: 23px;
   color: white;
 }
+  .k-icon.white:hover,
+  .k-i-hyperlink-open:hover,
+  .k-i-save:hover,
+  .k-i-star-outline:hover {
+    font-size: 23px;
+    color: #c1c1c1;
+  }
 .k-i-check-outline,
 .k-i-checkmark-outline,
 .k-i-success {
