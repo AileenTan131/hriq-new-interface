@@ -18,14 +18,14 @@
 .module-icons {
   padding-bottom: 20px;
 }
-.moduleLegend {
-  color: black;
-}
 .moduleLegend:hover{
     color: black
 }
 .moduleIcons {
   width: 29px;
+}
+.moduleLegend {
+  color: black;
 }
 
 a {
@@ -72,7 +72,10 @@ button.header {
   padding: 3.5px 15px;
   border: none
 }
-
+button:hover, .isSelected {
+  color: var(--color01);
+  background-color: var(--color03)
+}
 
 
 .hide {

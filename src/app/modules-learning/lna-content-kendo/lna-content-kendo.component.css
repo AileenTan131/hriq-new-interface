@@ -86,9 +86,9 @@ table {
 
 .training-plan {
   font-weight: 600;
-/*  color: var(--color01);*/
+  color: var(--color01);
   background-color: #ebebeb;
-  /*border-radius: 17px;*/
+  border-radius: 17px;
 /*  border: 1px solid rgb(0, 0, 128, 0.1);*/
 /*  border: 2px solid white;*/
   border: none;
@@ -118,7 +118,7 @@ table {
   color: var(--color01);
   font-weight: 600;
   position: relative;
-  left: 217px
+  left:217px
 }
 
 .ao {

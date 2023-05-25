@@ -66,7 +66,10 @@ input::placeholder{
 
 .sign-in-btn {
   background-color: var(--color01);
-  letter-spacing:1px;
+  letter-spacing:1px
+}
+
+button {
   color: white
 }
 

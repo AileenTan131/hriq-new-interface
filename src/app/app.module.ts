@@ -20,7 +20,7 @@ import { ButtonsModule } from "@progress/kendo-angular-buttons";
 import { IconsModule } from "@progress/kendo-angular-icons";
 import { NotificationModule } from '@progress/kendo-angular-notification';
 
-import { MatButtonModule } from '@angular/material/button';
+
 
 
 
@@ -46,8 +46,7 @@ import { MatButtonModule } from '@angular/material/button';
     ButtonsModule,
     ReactiveFormsModule,
     IconsModule,
-    NotificationModule,
-    MatButtonModule
+    NotificationModule
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],

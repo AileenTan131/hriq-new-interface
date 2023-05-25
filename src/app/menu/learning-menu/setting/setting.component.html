@@ -6,12 +6,11 @@
     </div>
     <h5 class="text-center pt-2"><strong>Global</strong></h5>
     <br />
-    <button class="flat-white selection"
+    <button class="selection"
             (click)="onSelect(globals)"
             [class.selected]="isSelected(globals)"
             data-bs-dismiss="modal"
-            *ngFor='let globals of global'
-            [mat-flat-button]="isSelected(globals)" style="overflow: hidden">
+            *ngFor='let globals of global'>
       {{globals.name}}
     </button>
   </div>
@@ -27,8 +26,7 @@
             (click)="onSelect(courses)"
             [class.selected]="isSelected(courses)"
             data-bs-dismiss="modal"
-            *ngFor='let courses of course'
-            [mat-flat-button]="isSelected(courses)" style="overflow: hidden">
+            *ngFor='let courses of course'>
       {{courses.name}}
     </button>
   </div>
@@ -44,8 +42,7 @@
             (click)="onSelect(competencies)"
             [class.selected]="isSelected(competencies)"
             data-bs-dismiss="modal"
-            *ngFor='let competencies of competency'
-            [mat-flat-button]="isSelected(competencies)"  style="overflow: hidden">
+            *ngFor='let competencies of competency'>
       {{competencies.name}}
     </button>
   </div>
@@ -62,8 +59,7 @@
             (click)="onSelect(currencies)"
             [class.selected]="isSelected(currencies)"
             data-bs-dismiss="modal"
-            *ngFor='let currencies of currency'
-            [mat-flat-button]="isSelected(currencies)" style="overflow: hidden">
+            *ngFor='let currencies of currency'>
       {{currencies.name}}
     </button>
   </div>
@@ -79,8 +75,7 @@
             (click)="onSelect(budgets)"
             [class.selected]="isSelected(budget)"
             data-bs-dismiss="modal"
-            *ngFor='let budgets of budget'
-            [mat-flat-button]="isSelected(budget)" style="overflow: hidden">
+            *ngFor='let budgets of budget'>
       {{budgets.name}}
     </button>
   </div>
@@ -96,8 +91,7 @@
             (click)="onSelect(accesses)"
             [class.selected]="isSelected(accesses)"
             data-bs-dismiss="modal"
-            *ngFor='let accesses of access'
-            [mat-flat-button]="isSelected(accesses)" style="overflow: hidden">
+            *ngFor='let accesses of access'>
       {{accesses.name}}
     </button>
   </div>

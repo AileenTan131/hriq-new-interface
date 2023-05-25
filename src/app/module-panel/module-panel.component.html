@@ -223,7 +223,7 @@
             </div>
           </form>
 
-            <button mat-button class="outline-2 mt-3 mb-4" type="submit" data-bs-dismiss="modal" (click)="alertPasswordUpdate()">Update Password</button>
+            <button class="button-03 mt-3 mb-4" type="submit" data-bs-dismiss="modal" (click)="alertPasswordUpdate()">Update Password</button>
 
           </div>
         </div>
@@ -244,7 +244,7 @@
         <kendo-autocomplete [data]="languageSelect" #languageValue [size]="selectedSize" placeholder="e.g. English"> </kendo-autocomplete>
       </div>
       <div>
-        <button mat-button class="outline-2 button-ms" type="submit"  data-bs-dismiss="modal" (click)="alertLanguageUpdate(languageValue.value)">Set Language</button>
+        <button class="button-03  button-ms" type="submit"  data-bs-dismiss="modal" (click)="alertLanguageUpdate(languageValue.value)">Set Language</button>
       </div>
     </div>
   </div>
@@ -405,7 +405,7 @@
         </div>
       </div>
       <div class="modal-footer d-flex justify-content-start ps-4 pb-3">
-        <button mat-button class="outline-2" type="submit" data-bs-dismiss="modal" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
+        <button class="button-03" type="submit" data-bs-dismiss="modal" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
       </div>
     </div>
   </div>
