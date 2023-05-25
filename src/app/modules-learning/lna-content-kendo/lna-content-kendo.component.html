@@ -219,7 +219,7 @@
                          [minResizableWidth]="40"
                          *ngIf="!isHidden('Courses Interested')">
         <ng-template kendoGridCellTemplate let-dataItem>
-          <button class="training-plan" (click)="coursesInterested()" routerLink="/courses-interested">
+          <button mat-flat-button class="training-plan" (click)="coursesInterested()" routerLink="/courses-interested">
             My Training Plan
             <button class="btn btn-sm btn-secondary rounded-pill" style="width:2rem; height:2rem" field="PlanNo">{{dataItem.PlanNo}}</button>
           </button>
@@ -253,8 +253,8 @@
     <div class="ao">
       <strong>
         <span>Approving Officers</span>
-        <button class="button-02 ms-2">Approving Officer 1</button>
-        <button class="button-02 ms-2">Approving Officer 2</button>
+        <button mat-flat-button class="ms-3">Approving Officer 1</button>
+        <button mat-flat-button class="ms-3">Approving Officer 2</button>
       </strong>
     </div>
   </div>

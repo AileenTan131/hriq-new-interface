@@ -29,6 +29,7 @@ h1 {
   color: red;
 }
 
+/*buttons*/
 .button-01 {
   border-radius: 10px;
   border: 1px solid var(--color01);
@@ -50,13 +51,59 @@ h1 {
   font-weight: 600;
   background-color:white
 }
-/*button:hover, .isSelected {
+button.header:hover,
+button.selection:hover,
+.mat-mdc-button:hover.outline-2:hover,
+.isSelected {
   color: var(--color01);
-  background-color: var(--color03)
-}*/
+  background-color: var(--color03) !important
+}
 
-.password{
-    font-weight:100px !important;
+
+  /*Buttons from Angular Material*/
+  .mat-mdc-raised-button:not(:disabled), .mat-mdc-unelevated-button:not(:disabled), .mat-mdc-raised-button:not(:disabled).outline-1, .mat-mdc-button:not(:disabled).outline-2 {
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  letter-spacing: 0;
+}
+.mat-mdc-unelevated-button:not(:disabled) {
+  color: var(--color01) !important;
+  background-color: var(--color03) !important;
+  /*  padding: 0px 14px;*/
+  height: 27px !important;
+}
+.mat-mdc-raised-button:not(:disabled) {
+  color: var(--color01) !important;
+  background-color: var(--color03) !important;
+  padding: 0px 16px;
+}
+  .mat-mdc-raised-button:not(:disabled).outline-1 {
+    border: 1px solid var(--color01);
+    color: var(--color01) !important;
+    background-color: white !important;
+    padding: 0px 16px;
+  }
+.mat-mdc-button:not(:disabled).outline-2 {
+  border: 1px solid var(--color02);
+  color: var(--color01) !important;
+  background-color: white !important;
+  padding: 0px 16px;
+}
+.mat-mdc-button-ripple .mat-ripple-element {
+  opacity: 10%;
+  background-color: var(--color01) !important;
+}
+.mat-mdc-button,
+.mat-mdc-raised-button,
+.mat-mdc-unelevated-button {
+  --mat-mdc-button-persistent-ripple-color: white !important;
+}
+
+
+  .password {
+  font-weight: 100px !important;
 }
 
 .white-circle {

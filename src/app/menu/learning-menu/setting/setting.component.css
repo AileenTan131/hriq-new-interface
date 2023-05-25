@@ -16,11 +16,6 @@ button {
   border: none
 }
 
-  button:hover, .selected {
-    color: var(--color01);
-    background-color: var(--color03)
-  }
-
 h5 {
   margin: 0
 }
