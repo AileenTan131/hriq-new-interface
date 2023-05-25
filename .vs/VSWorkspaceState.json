@@ -3,12 +3,7 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\login",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\modules-learning\\lna-content-kendo\\courses-interested",
-    "\\src\\app\\top-panel"
+    "\\src\\app\\login"
   ],
-  "SelectedNode": "\\src\\app\\login\\login.component.ts",
   "PreviewInSolutionExplorer": false
 }

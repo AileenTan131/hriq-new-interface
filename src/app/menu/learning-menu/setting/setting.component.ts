@@ -28,7 +28,6 @@ export class SettingComponent implements OnInit {
     { 'id': 12, 'name': 'Competency Mapping' },
     { 'id': 13, 'name': 'Competency' },
     { 'id': 'lna-content', 'name': 'Learning Needs' },
-    { 'id': 'lna-content-kendo', 'name': 'Learning Needs - K' },
     { 'id': 15, 'name': 'Job Grade Matrix' }
   ];
 

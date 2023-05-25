@@ -8,7 +8,6 @@ import { ModulePanelComponent } from './module-panel/module-panel.component';
 import { DashboardComponent } from './homepage/dashboard/dashboard.component';
 import { InformationComponent } from './homepage/information/information.component';
 import { GlobalComponent } from './modules-learning/global/global.component';
-import { LnaContentComponent } from './modules-learning/lna-content/lna-content.component';
 import { SettingComponent } from './menu/learning-menu/setting/setting.component';
 import { ReportComponent } from './menu/learning-menu/report/report.component';
 import { TransactionComponent } from './menu/learning-menu/transaction/transaction.component';
@@ -31,8 +30,7 @@ const routes: Routes = [
     children: [
       { path: '', component: HomepageComponent },
       { path: 'homepage', component: HomepageComponent },
-      { path: 'homepage/lna-content', component: LnaContentComponent},
-      { path: 'homepage/lna-content-kendo', component: LnaContentKendoComponent },
+      { path: 'homepage/lna-content', component: LnaContentKendoComponent },
       { path: 'homepage/global', component: GlobalComponent },
       { path: 'homepage/lna-content-kendo/courses-interested', component:CoursesInterestedComponent}
     ]
@@ -57,7 +55,6 @@ export const RoutingComponents = [
   DashboardComponent,
   InformationComponent,
   GlobalComponent,
-  LnaContentComponent,
   SettingComponent,
   ReportComponent,
   TransactionComponent,

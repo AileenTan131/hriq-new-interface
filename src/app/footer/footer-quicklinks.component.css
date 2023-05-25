@@ -32,9 +32,6 @@ h6 {
   right:8px;
 /*  width:1830px*/
 }
-.links {
-  text-decoration: underline
-}
 
 .company, .timestamp, .quick-links{
   z-index: 2
@@ -53,8 +50,7 @@ li {
   margin: 0 10px
 }
 a{
-    text-decoration:none;
-    color: var(--color01);
+    color: black;
     padding-left:10px
 }
 .dropup {
