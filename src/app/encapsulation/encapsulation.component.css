@@ -4,26 +4,52 @@ h1 {
   font-size: 1.5rem;
 }
 
-.top-banner {
-  margin: 0px 10px;
+.banner {
+  height: 38px;
+  width: 100vw;
+  background: var(--color01);
   color: white;
+  padding-left: 20px;
   font-size: 1.31rem;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  position: fixed;
+  z-index: 2;
+}
+
+.banner-rounded {
+  margin: 0px 10px;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: center
-}
-.banner-title-01 {
-  padding-left: 20px;
-  padding-right: 0
+/*  padding-left: 10px;*/
 }
 .dark-banner {
   background: var(--color01);
+  font-size: 1.31rem;
+  color: white;
+  letter-spacing: 2px;
 }
 .light-banner {
-  background: var(--color04);
+  background: var(--color03);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color01);
 }
+.body{
+    margin-top:38px;
+}
+
+.action-icons {
+  position: fixed;
+  right: 0px;
+  padding-right: 25px;
+  padding-top: 5px;
+  z-index: 2;
+}
+
+
+
 
 .red {
   color: red;
@@ -123,6 +149,7 @@ button.selection:hover,
 .progress-bar{
     background-color:var(--color04)
 }
+
 
 
 
@@ -279,6 +306,21 @@ button.selection:hover,
   background-color: #fff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px var(--color04);
 }
+.k-switch-on .k-switch-track {
+  border-color: white !important;
+  background-color: var(--color04) !important;
+}
+.k-switch *:hover {
+  filter: brightness(110%);
+}
+.k-switch-off:focus .k-switch-on:focus .k-switch-track, .k-switch-off.k-focus .k-switch-track,
+.k-switch-on:focus .k-switch-track, .k-switch-on.k-focus .k-switch-track {
+  border-color: white;
+  outline: 0.15rem solid rgba(200,200,200,0.5);
+}
+
+
+
 
 
 /*Kendo Icons*/

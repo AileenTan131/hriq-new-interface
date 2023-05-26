@@ -1,13 +1,8 @@
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0
-}
-
-.top-panel {
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end
+.white-bg {
+  height: 92px;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
 }
 
 li {
@@ -20,7 +15,7 @@ li {
 }
 
 .icons{
-    max-width: 50%
+    max-width: 50%;
 }
 
 button {
@@ -32,7 +27,7 @@ button {
   align-items: center
 }
 
-.alerts, .notification, .information {
+/*.alerts, .notification, .information {
   top: 15px;
 }
 
@@ -52,7 +47,7 @@ button {
   position: fixed;
   right: 563px;
   background-color: var(--color01);
-}
+}*/
 
 ::ng-deep .popover {
   color: black;
@@ -146,5 +141,14 @@ button {
   height: 110%
 }
 .client-logo{
-    height: 89px
+    height: 89px;
+}
+.position{
+    position: fixed;
+    top:0px;
+}
+.position-right {
+  position: fixed;
+  right:0;
+  top:10px;
 }

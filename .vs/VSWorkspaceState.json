@@ -3,7 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\login"
+    "\\src\\app\\encapsulation",
+    "\\src\\app\\homepage",
+    "\\src\\app\\login",
+    "\\src\\app\\menu\\learning-menu",
+    "\\src\\app\\modules-learning",
+    "\\src\\app\\modules-learning\\global",
+    "\\src\\app\\modules-learning\\lna-content-kendo"
   ],
+  "SelectedNode": "\\src\\app\\modules-learning\\lna-content-kendo\\lna-content-kendo.component.ts",
   "PreviewInSolutionExplorer": false
 }

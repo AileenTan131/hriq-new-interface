@@ -1,7 +1,9 @@
+.position {
+    position:fixed;
+    padding-left: 17px
+}
 .panel-background {
-  width: 100px;
   height: 100vh;
-  background-color: var(--color03);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -85,10 +87,11 @@ button:hover, .isSelected {
 .color-scheme-img {
   width: 180px
 }
-.banner-theme{
-    padding-top:2px;
-    padding-bottom:2px;
-    height:30px;
+.banner-theme {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 30px;
+    justify-content: center;
 }
 h5 {
   font-weight: normal;

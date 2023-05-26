@@ -6,11 +6,16 @@
 
 .lnaGrid {
   padding: 0px 30px;
+ /* padding-top: 220px;*/
 }
-
 
 kendo-textbox {
   display: none
+}
+
+.k-grid{
+/*   z-index:-2
+*/
 }
 
 .k-table-alt-row,
@@ -20,19 +25,11 @@ kendo-textbox {
 }
 
 
-.banner {
-  height: 38px;
-  background: var(--color01);
-  color: white;
-  padding-left: 20px;
-  font-size: 1.31rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
 
 .card {
   padding: 0;
   border-color: transparent;
+ /* z-index:-1;*/
 }
 
 .hide-profile {
@@ -40,7 +37,7 @@ kendo-textbox {
   text-decoration: none;
   color: var(--color01);
   position: relative;
-  z-index: 1
+/*  z-index: 1*/
 }
 
 .profile-square {
@@ -122,14 +119,12 @@ table {
 }
 
 .ao {
-  position: relative;
-  top: 13px;
-}
-
-.action-icons {
-  position: absolute;
-  right: 0px;
-  padding-right: 25px;
+  position: fixed;
+  bottom:48px;
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  padding-top: 7px
 }
 
 .row {
@@ -137,13 +132,25 @@ table {
 }
 
 
-.height-max{
-    height: 640px
+.height-max {
+ height: 640px;
 }
-.height-min{
-    height:520px
+.height-min {
+  height:490px;
+}
+.padding-max {
+  padding-top: 76px;
+}
+.padding-min {
+  padding-top: 220px;
 }
 
-.negative-red{
+  .negative-red{
     color: red;
+}
+.position{
+    position:fixed;
+}
+.body {
+  overflow: hidden;
 }

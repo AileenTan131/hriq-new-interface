@@ -1,3 +1,9 @@
+.container{
+    padding:0;
+    margin:0;
+    max-height: 100vh;
+    max-width: 100vw;
+}
 .app {
   display: grid;
   /*  width: 1920px;
@@ -9,21 +15,26 @@
 .top-panel {
   grid-column: 2/3;
   grid-row: 1/2;
+  background-color:white;
+  z-index: 3;
 }
 
 .module-panel {
   grid-column: 1/2;
   grid-row: 1/-1;
+  background-color: var(--color03);
 }
 
 .footer-panel {
   grid-column: 2/3;
   grid-row: 3/4;
-  align-self: end
+  align-self: end;
+  background-color: white;
+  z-index: 2;
 }
 
 .main {
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 1820px
+/*  width: 1820px*/
 }

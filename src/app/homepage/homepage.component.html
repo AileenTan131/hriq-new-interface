@@ -2,8 +2,8 @@
   <div>
     <h1 class="ps-2 ms-2">Welcome back, {{name}}</h1>
 
-    <div class="top-banner dark-banner mt-2">
-      <div class="col-8 banner-title-01"
+    <div class="banner-rounded dark-banner mt-2 ps-2">
+      <div class="col-8"
            [class.toggleHide]="toggleOff">
         Dashboard
         <a type="button" (click)="toggleOff=!toggleOff">
@@ -14,7 +14,7 @@
                [openDelay]="200" />
         </a>
       </div>
-      <div class="col-8 banner-title-01"
+      <div class="col-8"
            [class.toggleHide]="!toggleOff">
         Information
         <a type="button" (click)="toggleOff=!toggleOff">
@@ -25,7 +25,7 @@
                [openDelay]="200" />
         </a>
       </div>
-      <div class="col-4 banner-title-01 ps-4">
+      <div class="col-4 ps-4">
         Action Box
       </div>
     </div>
@@ -77,8 +77,8 @@
     </div>
   </div>-->
 
-        <div class="top-banner dark-banner notification ms-auto">
-          <div class="col banner-title-01">
+        <div class="banner-rounded dark-banner notification ms-auto ps-1">
+          <div class="col">
             Notifications
           </div>
         </div>

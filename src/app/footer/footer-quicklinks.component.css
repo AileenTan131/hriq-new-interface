@@ -49,9 +49,12 @@ li {
   display: inline-block;
   margin: 0 10px
 }
-a{
+a {
+  color: var(--colorGrey);
+  padding-left: 10px
+}
+a:hover{
     color: black;
-    padding-left:10px
 }
 .dropup {
   position: fixed;

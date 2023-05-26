@@ -1,1 +1,150 @@
-<div>global page</div>
+<div class="banner d-flex align-items-center">
+  GLOBAL SYSTEM PARAMETERS
+</div>
+
+<span class="action-icons">
+  <a href="#"
+     tooltipClass="tooltipclass"
+     placement="bottom"
+     ngbTooltip="Save"
+     [openDelay]=1000
+     class="pe-2 ps-2 ms-1 me-1 ">
+    <!--      <img src="./assets/iconsOthers2px/save-01.svg" />-->
+    <span class="k-icon k-i-save"></span>
+  </a>
+</span>
+
+<!--<br />
+<br />-->
+<div class="body pt-2">
+  <div class="banner-rounded light-banner">
+    <div class="col-6"> Global Setting </div>
+    <div class="col-3 padding"> Set Indivdual Company </div>
+    <div class="col-3 padding"> Indivdual Company Selection </div>
+  </div>
+  <div class="row padding">
+    <div class="col-6">Allow for individual company setting</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div>
+
+  <br />
+
+  <div class="banner-rounded light-banner">
+    <div class="col-6"> Interfaces </div>
+    <div class="col-3 padding"> Set Indivdual Company </div>
+  </div>
+  <div class="row padding">
+    <div class="col-6">Interface with External eLearning System</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <hr />
+  </div>
+  <div class="row padding">
+    <div class="col-6">Interface with External Leave System</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div>
+
+  <br />
+
+  <div class="banner-rounded light-banner">
+    <div class="col"> Field Mapping </div>
+  </div>
+  <div class="padding">Use this field in Employee Record to set up Group Budget</div> <hr />
+  <div class="padding">Use this field in Employee record to set up the maximum No. of courses allowed</div>
+
+  <br />
+
+  <div class="banner-rounded light-banner">
+    <div class="col"> Evaluation Form Template </div>
+  </div>
+  <div class="padding">Pre Course Evaluation Form to use for Adhoc Courses</div> <hr />
+  <div class="padding"> Feedback Form to use for Adhoc Courses</div> <hr />
+  <div class="padding">Post Course Evaluation Form to use for Adhoc Courses</div>
+
+  <br />
+
+  <div class="banner-rounded light-banner">
+    <div class="col-6"> Course Application Restriction</div>
+    <div class="col-3 padding"> Yes / No</div>
+    <div class="col-3 padding"> Warn / Stop</div>
+  </div>
+  <div class="row padding">
+    <div class="col-6">Restrict to only courses that are available in the Course Directory</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col-6">Do not allow same date application</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col">Maximum Number of Training Days per Budget Year</div>
+  </div>
+
+
+  <br />
+
+  <div class="banner-rounded light-banner">
+    <div class="col-6"> Notification </div>
+    <div class="col-3 padding"> Notify </div>
+    <div class="col-3 padding"> Remind</div>
+  </div>
+  <div class="row padding">
+    <div class="col-6">Feedback Form</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col-6">Post Course Evaluation Form</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col-6">Certification Expiry</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col-6">Certification Upload</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col-6">Course Confirmation</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col-6">Course Cancellation</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+  <div class="row padding">
+    <div class="col-6">Course Postponement</div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+    <div class="col-3"><kendo-label text=""><kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch></kendo-label></div>
+  </div><hr />
+
+  <div class="padding">Send Email Reminder to Employee days before course start date</div> <hr />
+  <div class="padding">Send Email Reminder to First level Approving Officer days before course start date</div>
+
+  <br />
+
+  <div class="banner-rounded light-banner">
+    <div class="col"> Approval Workflow </div>
+  </div>
+  <div class="padding">Notify Approving Person</div> <hr />
+  <div class="padding">Notify employee when nominated by HR/Manager for course</div> <hr />
+  <div class="padding">Group Nomination by HR(Admin)Manager requires approval - follows Group Nomination approval flow (TCB)</div> <hr />
+  <div class="padding">Group Nomination by HR(Admin)Manager requires approval - follows Employee Training application work flow (TCA)</div> <hr />
+  <div class="padding">Additional Email Address to be notified during Course Confirmation, Cancellation, Postponement</div>
+
+  <br />
+
+  <div class="banner-rounded light-banner">
+    <div class="col"> Calculation </div>
+  </div>
+  <div class="padding">Bond Calculation to be based on</div> <hr />
+  <div class="padding">Leave Codes include in the CPD Hours report</div>
+
+</div>
