@@ -7,3 +7,27 @@ hr{
     margin:0px 16px;
     opacity:10%;
 }
+h6{
+    font-weight:600;
+    color: var(--color01);
+    text-decoration: underline;
+}
+
+kendo-dropdownlist {
+  width: 50px;
+}
+.day-padding{
+    margin-left:25px;
+}
+.week-padding, .month-padding {
+  margin-left: 17px;
+}
+.letter-spacing{
+    letter-spacing:1.5px
+}
+
+.period {
+  font-weight: 100;
+  /*    font-style:italic;*/
+  font-size: 1rem;
+}

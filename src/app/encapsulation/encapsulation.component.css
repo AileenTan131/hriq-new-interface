@@ -318,6 +318,19 @@ button.selection:hover,
   border-color: white;
   outline: 0.15rem solid rgba(200,200,200,0.5);
 }
+.k-input-solid:focus, .k-input-solid.k-focus{
+  border-color: var(--color04);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px var(--color04);
+}
+.k-button-sm.k-icon-button, 
+.k-input-sm .k-input-inner, .k-picker-sm .k-input-inner {
+  padding: 0; /*dropdownlist*/
+  text-align: center;
+}
+.k-icon-button .k-icon {
+  color: var(--color01) /*dropdownlist arrow color*/
+}
+
 
 
 

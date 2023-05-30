@@ -14,23 +14,18 @@ export class BgChangeImageDirective implements OnInit {
     let imageIndex;
     let currentImage = localStorage.getItem('currentBgImage');
 
-    if (!currentImage) {
+    if (!currentImage) { //if currentImage=null, will always be null on load
       imageIndex = 0;
-      localStorage.setItem('currentBgImage', this.imagesList[imageIndex]);
+      localStorage.setItem('currentBgImage', this.imagesList[imageIndex]);//currentBgImage set as imageList[ ]
     }
-
-    let currentImagePath;
-    currentImagePath = `assets/bg/${currentImage}`;
 
     this.renderer.setStyle(
       this.elementRef.nativeElement,
-      'background-image',
-      `url(${currentImagePath})`
+      'background-image', `url(assets/bg/${currentImage}`
     );
 
     currentImage =
-      this.imagesList[this.imagesList.indexOf(currentImage) + 1] ||
-      this.imagesList[0];
+      this.imagesList[this.imagesList.indexOf(currentImage) + 1] || this.imagesList[0]; //sets imageIndex + 1 and loops it back to [0] once lastimage is reached.
 
     localStorage.setItem('currentBgImage', currentImage);
   }
