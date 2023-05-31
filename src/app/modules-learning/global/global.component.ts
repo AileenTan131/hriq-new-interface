@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { InputSize } from "@progress/kendo-angular-inputs"
 import { DropDownSize, DropDownFillMode } from "@progress/kendo-angular-dropdowns";
+
+import { DataService } from "./data.service";
+import { Product } from "./product.model";
+import { fieldMapService01 } from "./field-map.service";
+import { EvaluationFormPrecourseService } from "./evaluation-form-precourse.service";
+import { EvaluationFormPostcourseService } from "./evaluation-form-postcourse.service";
+import { EvaluationFormFeedbackService } from "./evaluation-form-feedbackForm.service";
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-global',
   templateUrl: './global.component.html',
-  styleUrls: ['./global.component.css']
+  styleUrls: ['./global.component.css'],
+  providers: [DataService, fieldMapService01, EvaluationFormPrecourseService, EvaluationFormPostcourseService, EvaluationFormFeedbackService],
 })
-export class GlobalComponent {
+export class GlobalComponent implements OnInit{
+
+  //Toggle buttons
   public checked01 = false;
   public checked02 = false;
   public checked03 = false;
@@ -33,11 +44,15 @@ export class GlobalComponent {
   public size: InputSize = "small"
 
   //Kendo MultiSelect Tree
-  public value: { text: string; id: number }[] = [
+  public individualSetting: { text: string; id: number }[] = [
 /*    { text: "Company 01", id: 2 },*/
   ];
+  public interfaceElearning: { text: string; id: number }[] = []
+  public interfaceLeave: { text: string; id: number }[] = []
+  
 
-  public data: Companies[] = [
+  public data: Companies[]
+  =[
     {
       text: "Company A",
       id: 1,
@@ -76,8 +91,9 @@ export class GlobalComponent {
 
   public selectedSize: DropDownSize = "small";
 
-  //Kendo DropdownList
+  //Kendo DropdownList Local
   public days: Array<string> = ["01", "02", "03", "04", "05","06"]
+  public days10: Array<string> = ["01", "02", "03", "04", "05","06","07","08","09","10"]
   public weeks: Array<string> = ["01", "02", "03", "04"]
   public months: Array<string> = ["01", "02", "03", "04","05","06","07","08","09","10","11","12"]
   public fillMode: DropDownFillMode = "flat"
@@ -87,7 +103,49 @@ export class GlobalComponent {
     default: this.fillMode,
   },
   ];
+
+
+  //Kendo Dropdown List Remote Service
+  public FieldMapping01: Array<Product> = [];
+  public placeHolder: Product = {
+    ProductName: "Select field...",
+    ProductID: null,
+  };
+
+  constructor(
+    @Inject(DataService) private dataService: DataService,
+    @Inject(fieldMapService01) private fieldMapService: fieldMapService01,
+    @Inject(EvaluationFormPrecourseService) private evaluationFormPrecourseService: EvaluationFormPrecourseService,
+    @Inject(EvaluationFormPostcourseService) private evaluationFormPostcourse: EvaluationFormPostcourseService,
+    @Inject(EvaluationFormFeedbackService) private evaluationFormFeedback: EvaluationFormFeedbackService,
+  ) {
+    this.fieldMap = fieldMapService;  //Kendo Dropdown List Remote Async Pipe
+    this.fieldMapService.query();  //Kendo Dropdown List Remote Async Pipe
+
+    this.EvaluationFormPrecourse = evaluationFormPrecourseService;
+    this.evaluationFormPrecourseService.query();
+
+    this.EvaluationFormPostcourse = evaluationFormPostcourse;
+    this.evaluationFormPostcourse.query();
+
+    this.EvaluationFormFeedback = evaluationFormFeedback;
+    this.evaluationFormFeedback.query();
+  }
+
+  ngOnInit() {
+    this.dataService.fetchData().subscribe((data) => (this.FieldMapping01 = data));
+  }
+  //Kendo Dropdown List Remote Async Pipe
+  public fieldMap: Observable<any>;
+  public EvaluationFormPrecourse: Observable<any>;
+  public EvaluationFormPostcourse: Observable<any>;
+  public EvaluationFormFeedback: Observable<any>;
 }
+
+
+
+
+
 
 
 //Kendo MultiSelect Tree - Model

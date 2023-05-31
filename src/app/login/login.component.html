@@ -2,47 +2,59 @@
 <div class="container-fluid" appBgChangeImage [imagesList]="images">
   <div class="card-overlay">
     <div class="container">
-  <div class="client-logo">
-    <img class="client-logo" src="./assets/clientLogoLogin.png">
-  </div>
-  <div class="justify-center">
-    <div class="hriqLogo">
-      <img src="./assets/hriqLogoBlack.png" addFilter>
-    </div>
-    <h1 class="mb-2 mt-3"> Welcome Back</h1>
-    <h6>Enter your credentials to access our account</h6>
-
-    <form [formGroup]="loginForm">
-      <div class="form-group mb-0">
-        <input formControlName="userID"
-               type="text"
-               class="form-control ps-3"
-               placeholder="Enter your User ID" />
-        <small class="red error-message" [class.d-none]="userID.valid || userID.untouched">Please fill in your userID</small>
+      <div class="client-logo">
+        <img class="client-logo" src="./assets/clientLogoLogin.png">
       </div>
-    </form>
-    <form [formGroup]="loginForm">
-      <div class="form-group mb-0">
-        <input formControlName="password"
-               type="text"
-               class="form-control ps-3"
-               placeholder="Enter your password" />
-        <small class="red error-message" [class.d-none]="password.valid || password.untouched">Please fill in your password</small>
+      <div class="justify-center">
+        <div class="hriqLogo">
+          <img src="./assets/hriqLogoBlack.png" addFilter>
+        </div>
+        <h5>Enter your credentials to access our account</h5>
+
+        <form [formGroup]="loginForm">
+          <div class="form-group mb-0">
+            <input formControlName="userID"
+                   type="text"
+                   class="form-control inputID ps-3 mt-3"
+                   placeholder="Enter your User ID" />
+            <small class="red error-message01" [class.d-none]="userID.valid || userID.untouched">Please fill in your userID</small>
+          </div>
+        </form>
+        <form [formGroup]="loginForm">
+          <div class="form-group mb-0">
+            <input formControlName="password"
+                   [type]="showPassword ? 'text':'password'"
+                   class="form-control inputPassword ps-3"
+                   placeholder="Enter your password" />
+            <small class="red error-message02" [class.d-none]="password.valid || password.untouched">Please fill in your password</small>
+
+            <a type="button">
+              <i alt="hide"
+                 class="password-eye fa-regular fa-eye-slash"
+                 (click)="showPassword=!showPassword"
+                 [class.d-none]="showPassword"></i>
+            </a>
+            <a type="button">
+              <i alt="show"
+                 class="password-eye fa-regular fa-eye"
+                 (click)="showPassword=!showPassword"
+                 [class.d-none]="!showPassword"></i>
+            </a>
+          </div>
+        </form>
+
+        <button type="button" class="btn btn-warnning sign-in-btn"
+                routerLink="/homepage-login">
+          Sign In
+        </button>
+
+        <div class="password pt-4">
+          Forgot your password?
+          <a class="reset-password" href="#"> Reset Password</a>
+        </div>
+
       </div>
-    </form>
-
-    <button type="button" class="btn btn-warnning sign-in-btn"
-            routerLink="/homepage-login">
-      Sign In
-    </button>
-
-    <div class="password pt-4 pb-4">
-      Forgot your password?
-      <a class="reset-password" href="#"> Reset Password</a>
     </div>
-
-  </div>
-  </div>
   </div>
 </div>
 

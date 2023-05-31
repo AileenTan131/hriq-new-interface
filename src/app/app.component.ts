@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ColorSchemesService } from './color-schemes.service'
+import { ColorSchemesService } from './color-schemes.service';
 
 
 @Component({

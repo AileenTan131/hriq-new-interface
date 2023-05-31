@@ -325,14 +325,20 @@ button.selection:hover,
 .k-button-sm.k-icon-button, 
 .k-input-sm .k-input-inner, .k-picker-sm .k-input-inner {
   padding: 0; /*dropdownlist*/
-  text-align: center;
+  text-align: left;
 }
 .k-icon-button .k-icon {
   color: var(--color01) /*dropdownlist arrow color*/
 }
-
-
-
+/*grid filters*/
+.k-input-inner {
+  padding-left: 5px !important; 
+  padding-right: 0 !important;
+  max-height:31px;
+}
+.k-input-spinner{
+    width:12px;
+}
 
 
 

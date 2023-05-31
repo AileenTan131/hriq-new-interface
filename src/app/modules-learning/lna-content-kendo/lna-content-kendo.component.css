@@ -23,13 +23,15 @@ kendo-textbox {
 .rowCustomClass {
   background-color: none
 }
-
+.k-button-md.k-icon-button {
+  display: none /*remove grid filter operators*/
+}
 
 
 .card {
   padding: 0;
   border-color: transparent;
- /* z-index:-1;*/
+  /* z-index:-1;*/
 }
 
 .hide-profile {

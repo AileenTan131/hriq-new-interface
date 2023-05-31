@@ -7,6 +7,7 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  public showPassword: boolean;
 
   public images = [
     'picsum.photos.id.168.1920.1080.jpg',

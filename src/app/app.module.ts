@@ -5,6 +5,7 @@ import { NoopAnimationsModule, BrowserAnimationsModule } from '@angular/platform
 import { AppRoutingModule, RoutingComponents } from './app-routing.module'
 import { EncapsulationComponent } from './encapsulation/encapsulation.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
 
 /*import { Routes, RouterModule } from '@angular/router';*/
 
@@ -22,6 +23,8 @@ import { NotificationModule } from '@progress/kendo-angular-notification';
 
 
 import { MatButtonModule } from '@angular/material/button';
+
+
 
 
 @NgModule({
@@ -47,7 +50,9 @@ import { MatButtonModule } from '@angular/material/button';
     ReactiveFormsModule,
     IconsModule,
     NotificationModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+
 /*    RouterModule.forRoot(appRoutes),*/
   ],
   providers: [],
