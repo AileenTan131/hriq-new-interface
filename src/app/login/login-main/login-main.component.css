@@ -1,0 +1,53 @@
+input::placeholder {
+    color: var(--color01);
+    opacity: 50%;
+  }
+
+.inputID {
+  margin-bottom: 30px
+}
+
+.inputPassword {
+  margin-bottom: 8px
+}
+
+.sign-in-btn, input {
+  border-radius: 10px;
+  height: 45px;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.sign-in-btn {
+  letter-spacing: 1px;
+}
+
+h5, .reset-password {
+  color: var(--color01)
+}
+
+.password {
+  color: var(--colorGrey)
+}
+
+.error-message01,
+.error-message02 {
+  position: absolute;
+  left: 729px;
+}
+
+.error-message01 {
+  top: 199px;
+}
+
+.error-message02 {
+  top: 274px;
+}
+
+.password-eye {
+  position: fixed;
+  top: 455px;
+  right: 345px;
+  font-size: 22px;
+  color: var(--color01);
+}

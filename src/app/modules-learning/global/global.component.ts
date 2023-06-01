@@ -1,22 +1,23 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { InputSize } from "@progress/kendo-angular-inputs"
 import { DropDownSize, DropDownFillMode } from "@progress/kendo-angular-dropdowns";
 
-import { DataService } from "./data.service";
-import { Product } from "./product.model";
 import { fieldMapService01 } from "./field-map.service";
 import { EvaluationFormPrecourseService } from "./evaluation-form-precourse.service";
 import { EvaluationFormPostcourseService } from "./evaluation-form-postcourse.service";
 import { EvaluationFormFeedbackService } from "./evaluation-form-feedbackForm.service";
 import { Observable } from "rxjs";
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-global',
   templateUrl: './global.component.html',
   styleUrls: ['./global.component.css'],
-  providers: [DataService, fieldMapService01, EvaluationFormPrecourseService, EvaluationFormPostcourseService, EvaluationFormFeedbackService],
+  providers: [fieldMapService01, EvaluationFormPrecourseService, EvaluationFormPostcourseService, EvaluationFormFeedbackService],
 })
-export class GlobalComponent implements OnInit{
+
+export class GlobalComponent{
+  public isDisabled = true;
 
   //Toggle buttons
   public checked01 = false;
@@ -40,6 +41,11 @@ export class GlobalComponent implements OnInit{
   public checked19 = false;
   public checked20 = false;
   public checked21 = false;
+  public checked22 = false;
+  public checked23 = false;
+  public checked24 = false;
+  public checked25 = false;
+  public checked26 = false;
 
   public size: InputSize = "small"
 
@@ -90,9 +96,10 @@ export class GlobalComponent implements OnInit{
   }
 
   public selectedSize: DropDownSize = "small";
+  public mediumSize: DropDownSize = "medium";
 
   //Kendo DropdownList Local
-  public days: Array<string> = ["01", "02", "03", "04", "05","06"]
+  public days: Array<string> = ["01", "02", "03", "04", "05","06","07"]
   public days10: Array<string> = ["01", "02", "03", "04", "05","06","07","08","09","10"]
   public weeks: Array<string> = ["01", "02", "03", "04"]
   public months: Array<string> = ["01", "02", "03", "04","05","06","07","08","09","10","11","12"]
@@ -104,42 +111,42 @@ export class GlobalComponent implements OnInit{
   },
   ];
 
-
-  //Kendo Dropdown List Remote Service
-  public FieldMapping01: Array<Product> = [];
-  public placeHolder: Product = {
-    ProductName: "Select field...",
-    ProductID: null,
-  };
-
-  constructor(
-    @Inject(DataService) private dataService: DataService,
-    @Inject(fieldMapService01) private fieldMapService: fieldMapService01,
-    @Inject(EvaluationFormPrecourseService) private evaluationFormPrecourseService: EvaluationFormPrecourseService,
-    @Inject(EvaluationFormPostcourseService) private evaluationFormPostcourse: EvaluationFormPostcourseService,
-    @Inject(EvaluationFormFeedbackService) private evaluationFormFeedback: EvaluationFormFeedbackService,
-  ) {
-    this.fieldMap = fieldMapService;  //Kendo Dropdown List Remote Async Pipe
-    this.fieldMapService.query();  //Kendo Dropdown List Remote Async Pipe
-
-    this.EvaluationFormPrecourse = evaluationFormPrecourseService;
-    this.evaluationFormPrecourseService.query();
-
-    this.EvaluationFormPostcourse = evaluationFormPostcourse;
-    this.evaluationFormPostcourse.query();
-
-    this.EvaluationFormFeedback = evaluationFormFeedback;
-    this.evaluationFormFeedback.query();
-  }
-
-  ngOnInit() {
-    this.dataService.fetchData().subscribe((data) => (this.FieldMapping01 = data));
-  }
   //Kendo Dropdown List Remote Async Pipe
   public fieldMap: Observable<any>;
-  public EvaluationFormPrecourse: Observable<any>;
-  public EvaluationFormPostcourse: Observable<any>;
-  public EvaluationFormFeedback: Observable<any>;
+  public evaluationFormPrecourse: Observable<any>;
+  public evaluationFormPostcourse: Observable<any>;
+  public evaluationFormFeedback: Observable<any>;
+
+  constructor(
+    @Inject(fieldMapService01) private fieldMapService: fieldMapService01,
+    @Inject(EvaluationFormPrecourseService) private evaluationFormPrecourseService: EvaluationFormPrecourseService,
+    @Inject(EvaluationFormPostcourseService) private evaluationFormPostcourseService: EvaluationFormPostcourseService,
+    @Inject(EvaluationFormFeedbackService) private evaluationFormFeedbackService: EvaluationFormFeedbackService,
+  ) {
+    this.fieldMap = fieldMapService; 
+    this.fieldMapService.query();
+
+    this.evaluationFormPrecourse = evaluationFormPrecourseService;
+    this.evaluationFormPrecourseService.query();
+
+    this.evaluationFormPostcourse = evaluationFormPostcourseService;
+    this.evaluationFormPostcourseService.query();
+
+    this.evaluationFormFeedback = evaluationFormFeedbackService;
+    this.evaluationFormFeedbackService.query();
+
+  }
+
+  //Kendo Numeric Input
+  public value = '';
+  public min = 0
+  public monthsCheck = "true"
+
+  //checkboxes
+  public bondCalculation = new FormGroup({
+    bond: new FormControl(),
+ });
+
 }
 
 

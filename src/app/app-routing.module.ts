@@ -17,13 +17,23 @@ import { HomepageLoginComponent } from './homepage-login/homepage-login.componen
 import { LnaContentKendoComponent } from './modules-learning/lna-content-kendo/lna-content-kendo.component';
 import { CoursesInterestedComponent } from './modules-learning/lna-content-kendo/courses-interested/courses-interested.component';
 import { TimeSettingComponent } from './menu/time-menu/setting/setting.component';
+import { LoginMainComponent } from './login/login-main/login-main.component';
+import { LoginPResetComponent } from './login/login-p-reset/login-p-reset.component';
+
 
 import { ColorFilter } from './color-filter';
 import { BgChangeImageDirective } from './app-BgChangeImage'
 
 const routes: Routes = [
   { path: '', redirectTo: '/homepage-login', pathMatch: 'full' }, 
-  { path: 'login', component: LoginComponent }, //Login Page
+  {
+    path: 'login',  //Login Page
+    component: LoginComponent  , 
+    children: [
+      { path: '', component: LoginMainComponent },
+      { path: 'login/reset-password', component: LoginPResetComponent }
+      ]
+  },
   {
     path: 'homepage-login', //After Login Main Homepage
     component: HomepageLoginComponent,
@@ -66,7 +76,9 @@ export const RoutingComponents = [
   CoursesInterestedComponent,
   TimeSettingComponent,
   ColorFilter,
-  BgChangeImageDirective
+  BgChangeImageDirective,
+  LoginMainComponent,
+  LoginPResetComponent,
 ]
 
 

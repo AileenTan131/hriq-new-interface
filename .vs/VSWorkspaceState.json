@@ -3,13 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
-    "\\src\\app\\homepage",
-    "\\src\\app\\login",
+    "\\src\\app\\login\\login-main",
+    "\\src\\app\\login\\login-p-reset",
     "\\src\\app\\modules-learning",
     "\\src\\app\\modules-learning\\global",
-    "\\src\\app\\modules-learning\\lna-content-kendo",
     "\\src\\app\\modules-learning\\lna-content-kendo\\courses-interested"
   ],
+  "SelectedNode": "\\src\\app\\modules-learning\\global\\global.component.css",
   "PreviewInSolutionExplorer": false
 }

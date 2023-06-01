@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -7,7 +7,6 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  public showPassword: boolean;
 
   public images = [
     'picsum.photos.id.168.1920.1080.jpg',
@@ -33,17 +32,5 @@ export class LoginComponent {
 /*  $('body').css({ 'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')'});*/
 
 
-  constructor(private fb: FormBuilder) { }
 
-  get userID() {
-    return this.loginForm.get('userID')
-  }
-  get password() {
-    return this.loginForm.get('password')
-  }
-
-  loginForm = this.fb.group({
-    userID: ['', Validators.required],
-    password: ['', Validators.required],
-  })
 }

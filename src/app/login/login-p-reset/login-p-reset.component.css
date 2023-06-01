@@ -1,0 +1,35 @@
+h5{
+    max-width:500px;
+    text-align:left;
+    position: relative;
+    left:105px
+}
+input, .reset-btn {
+  border-radius: 10px;
+  height: 45px;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.reset-btn {
+  background-color: var(--color01);
+  letter-spacing: 1px;
+  color: white
+}
+
+.reset-btn:hover {
+  color: var(--color03)
+}
+input{
+    margin-bottom:30px
+}
+label {
+  position: relative;
+  right:176px;
+}
+a, h5{
+    color: var(--color01)
+}
+.bs-btn-active-shadow{
+    color: red;
+}
