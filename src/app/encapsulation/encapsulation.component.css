@@ -76,6 +76,9 @@ h1 {
   font-weight: 600;
   background-color:white
 }*/
+.action-number:hover,
+.action-list:hover,
+.notification-list:hover,
 button.header:hover,
 button.selection:hover,
 .mat-mdc-button:hover.outline-2:hover,
@@ -379,10 +382,13 @@ kendo-dropdownlist[_ngcontent-eco-c126]{
 .k-i-checkmark-outline,
 .k-i-success {
   color: green;
+  font-size: 1.3rem;
 }
 .k-notification {
-  color: black;
+  color: green;
+  font-weight: 600;
   background-color: white;
-  height: 2px;
+  height: 10px;
+  font-size:1.1rem;
   border-radius: 8px;
 }

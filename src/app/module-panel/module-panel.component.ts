@@ -77,9 +77,9 @@ export class ModulePanelComponent {
   alertPasswordUpdate() {
     this.notificationService.show({
       content: "Your password has been updated!",
-      hideAfter: 1000,
       position: { horizontal: "center", vertical: "top" },
-      animation: { type: "fade", duration: 200 },
+      animation: { type: "slide", duration: 600 },
+      hideAfter: 3000,
       type: { style: "success", icon: true, },
     })
   }
@@ -94,9 +94,9 @@ export class ModulePanelComponent {
     this.Kvalue = data,
       this.notificationService.show({
       content: this.Kvalue + " language has been applied!" ,
-      hideAfter: 1000,
       position: { horizontal: "center", vertical: "top" },
-      animation: { type: "fade", duration: 200 },
+      animation: { type: "slide", duration: 600 },
+      hideAfter: 3000,
       type: { style: "success", icon: true, },
     })
   }
@@ -178,9 +178,9 @@ export class ModulePanelComponent {
   alertThemeApplied() {
     this.notificationService.show({
       content: this.runTheme + " theme has been applied!",
-      hideAfter: 1000,
       position: { horizontal: "center", vertical: "top" },
-      animation: { type: "fade", duration: 200 },
+      animation: { type: "slide", duration: 600 },
+      hideAfter: 3000,
       type: { style: "success", icon: true,},
       })
   }

@@ -25,7 +25,7 @@
                [openDelay]="200" />
         </a>
       </div>
-      <div class="col-4 ps-3">
+      <div class="col-4 action-header">
         Action Box
       </div>
     </div>
@@ -39,67 +39,51 @@
       </div>
 
 
-      <div class="col-4">
-        <table class="table table-borderless mt-3">
-          <tbody>
-            <tr>
-              <a href="#">
-              <th class="numbers" scope="row">3</th>
-              <td>Pending approval HR employee data changes</td>
-              </a>
-            </tr>
-            <tr>
-              <a href="#">
-              <th class="numbers" scope="row">1</th>
-              <td>Moderation</td>
-              </a>
-            </tr>
-            <tr>
-              <a href="#">
-              <th class="numbers" scope="row">10</th>
-              <td>HR alerts</td>
-              </a>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-4 pt-2">
+        <div class="ps-3">
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td *ngFor="let actionNumber of actionNo"
+                    class="action-number"
+                    type="button">
+                  {{actionNumber}}
+                </td>
+              </tr>
+              <tr>
+                <td *ngFor="let action of actions"
+                    class="action-list ps-3"
+                    type="button">
+                  {{action}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-
-
-
-        <!--        <div class="pt-2">
-    <div *ngFor="let action of actions"
-         class="action-list">
-      {{action}}
-    </div>
-    <div *ngFor="let actionNumber of actionNo"
-         class="action-number">
-    {{actionNumber}}
-    </div>
-  </div>-->
-
-        <div class="banner-rounded dark-banner notification ms-auto ps-1">
+        <div class="banner-rounded dark-banner notification ms-auto ps-1 notification-header">
           <div class="col">
             Notifications
           </div>
         </div>
 
         <div class="pt-2">
-          <div *ngFor="let notification of notifications" class="notification-list">
+          <div *ngFor="let notification of notifications" class="notification-list ps-3" type="button">
             {{notification}}
           </div>
         </div>
 
         <!--   <div class="k-block">
-       <button class="k-button02" kendoButton [primary]="true">button</button>
-       <button class="k-button01" kendoButton [primary]="true">button</button>
-     </div>-->
+      <button class="k-button02" kendoButton [primary]="true">button</button>
+      <button class="k-button01" kendoButton [primary]="true">button</button>
+    </div>-->
         <br />
-<!--        <button class="button-01 me-2">Button</button>
-        <button class="button-02 me-2">Button</button>
-        <button class="button-03 me-2">Button</button>
-    
-        <br />
-        <br />-->
+        <!--        <button class="button-01 me-2">Button</button>
+            <button class="button-02 me-2">Button</button>
+            <button class="button-03 me-2">Button</button>
+
+            <br />
+            <br />-->
 
         <button mat-flat-button class="me-2">Button</button>
         <button mat-raised-button class="me-2">Button</button>

@@ -1,23 +1,22 @@
 /*.container-fluid{
     padding:0
 }*/
-
-.numbers {
+.action-header{
+    padding-left:37px
+}
+.action-number {
   padding: 3px;
   color: red;
   font-size: 1.13rem;
 }
 
-td, .notification-list {
+td, .notification-list, .action-list {
   padding: 3px;
   font-size: 1.13rem;
+  font-weight: 600
 }
 
-.notification{
-    width:100%;
-    position: relative;
-    right:14px
-}
+
 .toggle-page {
   /*    position: fixed;
     right:900px;
@@ -33,3 +32,21 @@ a{
     padding: 0
 }
 
+
+/*to make boostrap table display ruby col instead of rows*/
+table {
+  display: table;
+}
+  table tr {
+    display: table-cell;
+  }
+    table tr td {
+      display: block;
+    }
+td:hover,
+.notification-list:hover {
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  width: 98%
+}

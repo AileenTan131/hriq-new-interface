@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -7,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css'],
 })
 
-export class HomepageComponent implements OnInit {
+export class HomepageComponent {
   public name = "Jesicca";
   toggleOff = false
-
-  ngOnInit() { }
-
 
   public notifications = [
     "Your leave has been approved",
