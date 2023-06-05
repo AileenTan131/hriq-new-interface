@@ -99,10 +99,50 @@ export class GlobalComponent{
   public mediumSize: DropDownSize = "medium";
 
   //Kendo DropdownList Local
-  public days: Array<string> = ["01", "02", "03", "04", "05","06","07"]
+  public selectedDay08 = "  ";
+  public selectedWeek08 = "  ";
+  public selectedMonth08 = "  ";
+
+  public selectedDay09 = "  ";
+  public selectedWeek09 = "  ";
+  public selectedMonth09 = "  ";
+
+  public selectedDay10 = "  ";
+  public selectedWeek10 = "  ";
+  public selectedMonth10 = "  ";
+
+  public selectedDay11 = "  ";
+  public selectedWeek11 = "  ";
+  public selectedMonth11 = "  ";
+
+  public selectedDay12 = "  ";
+  public selectedWeek12 = "  ";
+  public selectedMonth12 = "  ";
+
+  public selectedDay13 = "  ";
+  public selectedWeek13 = "  ";
+  public selectedMonth13 = "  ";
+
+  public selectedDay14 = "  ";
+  public selectedWeek14 = "  ";
+  public selectedMonth14 = "  ";
+
+  public selectedDay15 = "  ";
+  public selectedWeek15 = "  ";
+  public selectedMonth15 = "  ";
+
+  public selectedDay16 = "  ";
+  public selectedWeek16 = "  ";
+  public selectedMonth16 = "  ";
+
+  public selectedDay17 = "  ";
+  public selectedWeek17 = "  ";
+  public selectedMonth17 = "  ";
+
   public days10: Array<string> = ["01", "02", "03", "04", "05","06","07","08","09","10"]
-  public weeks: Array<string> = ["01", "02", "03", "04"]
-  public months: Array<string> = ["01", "02", "03", "04","05","06","07","08","09","10","11","12"]
+  public days: Array<string> = ["  ", "01", "02", "03", "04", "05","06","07"]
+  public weeks: Array<string> = ["  ", "01", "02", "03", "04"]
+  public month: Array<string> = ["  ","01", "02", "03", "04","05","06","07","08","09","10","11","12"]
   public fillMode: DropDownFillMode = "flat"
   public options = [{
     type: "fillMode",

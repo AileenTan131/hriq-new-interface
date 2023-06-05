@@ -262,11 +262,14 @@
       <span class="period ms-4">Weeks</span>
       <span class="period ms-4">Months</span>
     </div>
-    <div class="col-4 padding">
-      Remind
-      <span class="period ms-4">Days</span>
-      <span class="period ms-4">Weeks</span>
-      <span class="period ms-4">Months</span>
+    <div class="col-4 padding d-flex">
+      <div class="flex-grow-1">
+        Remind
+        <span class="period ms-4">Days</span>
+        <span class="period ms-4">Weeks</span>
+        <span class="period ms-4">Months</span>
+      </div>
+      <span class="small">(Only one option allowed)</span>
     </div>
   </div>
 
@@ -274,16 +277,27 @@
     <div class="col-6">Feedback Form</div>
     <div class="col-2">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked08" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked08" [itemDisabled]="itemDisabled"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked08"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked08"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked08" [(ngModel)]="selectedDay08"
+                          [disabled]="selectedMonth08!=='  ' || selectedWeek08!=='  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked08" [(ngModel)]="selectedWeek08"
+                          [disabled]="selectedMonth08!=='  ' || selectedDay08!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked08" [(ngModel)]="selectedMonth08"
+                          [disabled]="selectedWeek08!=='  ' || selectedDay08!== '  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
+
     </div>
 
     <div class="col-4">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked09" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked09"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked09"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked09"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked09" [(ngModel)]="selectedDay09"
+                          [disabled]="selectedMonth09!=='  ' || selectedWeek09!=='  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked09" [(ngModel)]="selectedWeek09"
+                          [disabled]="selectedMonth09!=='  ' || selectedDay09!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked09" [(ngModel)]="selectedMonth09"
+                          [disabled]="selectedWeek09!=='  ' || selectedDay09!== '  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
     </div>
   </div>
   <hr />
@@ -291,15 +305,25 @@
     <div class="col-6">Post Course Evaluation Form</div>
     <div class="col-2">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked10" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked10"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked10"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked10"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked10" [(ngModel)]="selectedDay10"
+                          [disabled]="selectedMonth10!=='  ' || selectedWeek10!=='  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked10" [(ngModel)]="selectedWeek10"
+                          [disabled]="selectedMonth10!=='  ' || selectedDay10!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked10" [(ngModel)]="selectedMonth10"
+                          [disabled]="selectedWeek10!=='  ' || selectedDay10!== '  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
     </div>
     <div class="col-4">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked11" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked11"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked11"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked11"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked11" [(ngModel)]="selectedDay11"
+                          [disabled]="selectedMonth11!=='  ' || selectedWeek11!=='  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked11" [(ngModel)]="selectedWeek11"
+                          [disabled]="selectedMonth11!=='  ' || selectedDay11!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked11" [(ngModel)]="selectedMonth11"
+                          [disabled]="selectedWeek11!=='  ' || selectedDay11!== '  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
     </div>
   </div>
   <hr />
@@ -307,15 +331,25 @@
     <div class="col-6">Certification Expiry</div>
     <div class="col-2">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked12" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked12"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked12"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked12"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked12" [(ngModel)]="selectedDay12"
+                          [disabled]="selectedMonth12!=='  ' || selectedWeek12!=='  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked12" [(ngModel)]="selectedWeek12"
+                          [disabled]="selectedMonth12!=='  ' || selectedDay12!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked12" [(ngModel)]="selectedMonth12"
+                          [disabled]="selectedWeek12!=='  ' || selectedDay12!== '  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
     </div>
     <div class="col-4">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked13" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked13"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked13"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked13"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked13" [(ngModel)]="selectedDay13"
+                          [disabled]="selectedMonth13!=='  ' || selectedWeek13!=='  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked13" [(ngModel)]="selectedWeek13"
+                          [disabled]="selectedMonth13!=='  ' || selectedDay13!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked13" [(ngModel)]="selectedMonth13"
+                          [disabled]="selectedWeek13!=='  ' || selectedDay13!== '  '"
+                          [listHeight]="500" ></kendo-dropdownlist>
     </div>
   </div>
   <hr />
@@ -323,15 +357,25 @@
     <div class="col-6">Certification Upload</div>
     <div class="col-2">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked14" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked14"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked14"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked14"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked14" [(ngModel)]="selectedDay14"
+                          [disabled]="selectedMonth14!=='  ' || selectedWeek14!=='  '"
+                          [listHeight]="500"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked14" [(ngModel)]="selectedWeek14"
+                          [disabled]="selectedMonth14!=='  ' || selectedDay14!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked14" [(ngModel)]="selectedMonth14"
+                          [disabled]="selectedWeek14!=='  ' || selectedDay14!== '  '"
+                          [listHeight]="500"></kendo-dropdownlist>
     </div>
     <div class="col-4">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked15" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked15"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked15"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked15"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked15" [(ngModel)]="selectedDay15"
+                          [disabled]="selectedMonth15!=='  ' || selectedWeek15!=='  '"
+                          [listHeight]="500"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked15" [(ngModel)]="selectedWeek15"
+                          [disabled]="selectedMonth15!=='  ' || selectedDay15!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked15" [(ngModel)]="selectedMonth15"
+                          [disabled]="selectedWeek15!=='  ' || selectedDay15!== '  '"
+                          [listHeight]="500"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
@@ -339,15 +383,25 @@
     <div class="col-6">Course Confirmation</div>
     <div class="col-2">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked16" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked16"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked16"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked16"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked16" [(ngModel)]="selectedDay16"
+                          [disabled]="selectedMonth16!=='  ' || selectedWeek16!=='  '"
+                          [listHeight]="500"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked16" [(ngModel)]="selectedWeek16"
+                          [disabled]="selectedMonth16!=='  ' || selectedDay16!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked16" [(ngModel)]="selectedMonth16"
+                          [disabled]="selectedWeek16!=='  ' || selectedDay16!== '  '"
+                          [listHeight]="500"></kendo-dropdownlist>
     </div>
     <div class="col-4">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked17" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked17"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked17"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked17"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked17" [(ngModel)]="selectedDay17"
+                          [disabled]="selectedMonth17!=='  ' || selectedWeek17!=='  '"
+                          [listHeight]="500"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked17" [(ngModel)]="selectedWeek17"
+                          [disabled]="selectedMonth17!=='  ' || selectedDay17!== '  '"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked17" [(ngModel)]="selectedMonth17"
+                          [disabled]="selectedWeek17!=='  ' || selectedDay17!== '  '"
+                          [listHeight]="500"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
@@ -357,13 +411,13 @@
       <kendo-label text=""><kendo-switch [(ngModel)]="checked18" [size]="size"></kendo-switch></kendo-label>
       <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked18"></kendo-dropdownlist>
       <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked18"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked18"></kendo-dropdownlist>
+      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked18"></kendo-dropdownlist>
     </div>
     <div class="col-4">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked19" [size]="size"></kendo-switch></kendo-label>
       <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked19"></kendo-dropdownlist>
       <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked19"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked19"></kendo-dropdownlist>
+      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked19"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
@@ -373,13 +427,13 @@
       <kendo-label text=""><kendo-switch [(ngModel)]="checked20" [size]="size"></kendo-switch></kendo-label>
       <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked20"></kendo-dropdownlist>
       <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked20"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked20"></kendo-dropdownlist>
+      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked20"></kendo-dropdownlist>
     </div>
     <div class="col-4">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked21" [size]="size"></kendo-switch></kendo-label>
       <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked21"></kendo-dropdownlist>
       <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked21"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="months" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked21"></kendo-dropdownlist>
+      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked21"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
@@ -469,8 +523,8 @@
     <div class="col-6">Additional Email Address to be notified during Course Confirmation, Cancellation, Postponement</div>
     <div class="col-2">
       <kendo-textbox format="n2"
-                            [value]="value"
-                            [size]="mediumSize"></kendo-textbox>
+                     [value]="value"
+                     [size]="mediumSize"></kendo-textbox>
     </div>
   </div>
 
@@ -480,48 +534,48 @@
     <div class="col"> Calculation </div>
   </div>
   <!-- {{bondCalculation.value | json}}; Valid: {{bondCalculation.valid}}-->
-    <div class="row padding">
-      <div class="col-6">Bond Calculation to be based on</div>
-      <div class="col-6">
-        <section [formGroup]="bondCalculation">
-          <input type="radio"
-                 value="calendar"
-                 formControlName="bond"
-                 required
-                 #calendar />
-          <kendo-label class="ms-2">Calendar Days</kendo-label>
-          <input type="radio"
-                 value="working"
-                 formControlName="bond"
-                 #working
-                 class="ms-4" />
-          <kendo-label class="ms-2">Working Days ((Based on Pay Category of Payroll Module)</kendo-label>
-          <input type="radio"
-                 value="months"
-                 formControlName="bond"
-                 #months
-                 class="ms-4" />
-          <kendo-label class="ms-2">Months</kendo-label>
-        </section>
-      </div>
+  <div class="row padding">
+    <div class="col-6">Bond Calculation to be based on</div>
+    <div class="col-6">
+      <section [formGroup]="bondCalculation">
+        <input type="radio"
+               value="calendar"
+               formControlName="bond"
+               required
+               #calendar />
+        <kendo-label class="ms-2">Calendar Days</kendo-label>
+        <input type="radio"
+               value="working"
+               formControlName="bond"
+               #working
+               class="ms-4" />
+        <kendo-label class="ms-2">Working Days ((Based on Pay Category of Payroll Module)</kendo-label>
+        <input type="radio"
+               value="month"
+               formControlName="bond"
+               #months
+               class="ms-4" />
+        <kendo-label class="ms-2">Months</kendo-label>
+      </section>
+    </div>
+  </div>
+
+
+
+  <hr />
+  <div class="row padding">
+    <div class="col-6">Leave Codes include in the CPD Hours report</div>
+    <div class="col-2">
+      <kendo-dropdownlist [data]="evaluationFormPostcourse | async"
+                          textField="CategoryName"
+                          valueField="CategoryID"
+                          [fillMode]="fillMode"
+                          [size]="size"
+                          class="long"
+                          [style.width.px]="275">
+      </kendo-dropdownlist>
     </div>
 
-
-
-    <hr />
-    <div class="row padding">
-      <div class="col-6">Leave Codes include in the CPD Hours report</div>
-      <div class="col-2">
-        <kendo-dropdownlist [data]="evaluationFormPostcourse | async"
-                            textField="CategoryName"
-                            valueField="CategoryID"
-                            [fillMode]="fillMode"
-                            [size]="size"
-                            class="long"
-                            [style.width.px]="275">
-        </kendo-dropdownlist>
-      </div>
-
-    </div>
+  </div>
 
 </div>

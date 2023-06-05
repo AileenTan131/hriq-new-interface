@@ -39,3 +39,7 @@ kendo-dropdownlist {
   /*    font-style:italic;*/
   font-size: 1rem;
 }
+.small{
+    font-size: 0.8rem;
+    align-self: center;
+}

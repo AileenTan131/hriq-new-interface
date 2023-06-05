@@ -338,11 +338,14 @@ button.selection:hover,
 .k-icon-button .k-icon {
   color: var(--color01) /*dropdownlist arrow color*/
 }
+kendo-dropdownlist[_ngcontent-eco-c126]{
+    background-color:red
+}
 /*grid filters*/
 .k-input-inner {
-  padding-left: 5px !important; 
+  padding-left: 5px !important;
   padding-right: 0 !important;
-  max-height:31px;
+  max-height: 31px;
 }
 .k-input-spinner{
     width:12px;
