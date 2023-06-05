@@ -17,17 +17,15 @@
            placeholder="Enter your password" />
     <small class="red error-message02" [class.d-none]="password.valid || password.untouched">Please fill in your password</small>
 
-    <a type="button">
-      <i alt="hide"
-         class="password-eye fa-regular fa-eye-slash"
-         (click)="showPassword=!showPassword"
-         [class.d-none]="showPassword"></i>
+    <a type="button"
+       (click)="showPassword=!showPassword"
+       [class.d-none]="showPassword">
+      <i alt="hide" class="password-eye fa-regular fa-eye-slash"></i>
     </a>
-    <a type="button">
-      <i alt="show"
-         class="password-eye fa-regular fa-eye"
-         (click)="showPassword=!showPassword"
-         [class.d-none]="!showPassword"></i>
+    <a type="button"
+       (click)="showPassword=!showPassword"
+        [class.d-none]="!showPassword">
+      <i alt="show" class="password-eye fa-regular fa-eye"></i>
     </a>
   </div>
 </form>

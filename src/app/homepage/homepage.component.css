@@ -50,3 +50,7 @@ td:hover,
   border: none;
   width: 98%
 }
+.action-number:hover{
+  background-color: #ffe9e9;
+
+}

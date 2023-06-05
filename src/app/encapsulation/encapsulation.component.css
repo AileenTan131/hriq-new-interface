@@ -54,6 +54,10 @@ h1 {
   filter: invert(88%) sepia(0%) saturate(656%) hue-rotate(134deg) brightness(90%) contrast(90%);
 }
 
+.red{
+    color: red;
+}
+
 /*buttons*/
 /*.button-01 {
   border-radius: 10px;
@@ -76,7 +80,7 @@ h1 {
   font-weight: 600;
   background-color:white
 }*/
-.action-number:hover,
+
 .action-list:hover,
 .notification-list:hover,
 button.header:hover,
