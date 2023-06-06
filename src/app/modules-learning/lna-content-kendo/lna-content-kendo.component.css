@@ -122,11 +122,12 @@ table {
 
 .ao {
   position: fixed;
-  bottom:48px;
+  bottom:45px;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   height: 40px;
-  padding-top: 7px
+  padding-top: 7px;
+  z-index:1
 }
 
 .row {
@@ -135,18 +136,21 @@ table {
 
 
 .height-max {
- height: 640px;
+ height: 69vh;
 }
 .height-min {
-  height:490px;
+  height:53vh;
 }
+
 .padding-max {
   padding-top: 76px;
 }
 .padding-min {
   padding-top: 220px;
 }
-
+.lnaGrid{
+    padding-bottom: 30px
+}
   .negative-red{
     color: red;
 }
@@ -156,3 +160,4 @@ table {
 .body {
   overflow: hidden;
 }
+

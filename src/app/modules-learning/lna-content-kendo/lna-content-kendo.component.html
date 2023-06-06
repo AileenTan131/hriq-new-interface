@@ -112,11 +112,12 @@
     <kendo-grid #grid
                 [kendoGridBinding]="gridData"
                 [filterable]="false"
-                [class.height-max]="textShow"
-                [class.height-min]="!textShow"
                 [sortable]="true"
                 [resizable]="true"
-                [filterable]="true">
+                [filterable]="true"
+                [class.height-max]="textShow"
+                [class.height-min]="!textShow"
+                >
       <!--scrollable="none"-->
       <!--SN-->
       <kendo-grid-column field="SN" title="#"
@@ -144,8 +145,7 @@
       <!--Skills-->
       <kendo-grid-column field="Skills" title="Skills"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                         [headerClass]="'headerCustomClass'"
-                         [width]="350"
+                         [headerClass]="'headerCustomClass'"                 
                          [minResizableWidth]="300"
                          *ngIf="!isHidden('Skills')"
                          [filterable]="false">
@@ -156,7 +156,7 @@
                          [filterable]="false"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [resizable]="false" [width]=48
+                         [resizable]="false" [width]=36
                          *ngIf="!isHidden('Attachment')">
         <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
           <a type="button"><span *ngIf='dataItem.Attachment===true' class="k-icon color01 k-i-attachment-45"></span></a>
@@ -211,7 +211,8 @@
 
       <!--  Piority-->
       <kendo-grid-column field="Piority" title="Piority"
-                         [width]=88 [resizable]="false"
+                         [width]=79
+                         [minResizableWidth]="55"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          *ngIf="!isHidden('Piority')"
@@ -233,7 +234,7 @@
       <kendo-grid-column field="PlanNo" title="Courses Interested"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [width]="178"
+                         [width]="186"
                          [resizable]="false"
                          [minResizableWidth]="40"
                          *ngIf="!isHidden('Courses Interested')"
@@ -245,6 +246,16 @@
           </button>
         </ng-template>
       </kendo-grid-column>
+
+      <!--Remarks-->
+      <kendo-grid-column field="Remarks" title="Remarks"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         
+                         *ngIf="!isHidden('Remarks')"
+                         [filterable]="false"
+                         [scrollable]="false"
+                         ></kendo-grid-column>
 
       <!--Hours-->
       <kendo-grid-column field="TotalHours" title="Hours"
@@ -272,13 +283,6 @@
                          *ngIf="!isHidden('Budget')">
       </kendo-grid-column>
 
-      <!--Remarks-->
-      <kendo-grid-column field="Remarks" title="Remarks"
-                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                         [headerClass]="'headerCustomClass'"
-                         [width]=240
-                         *ngIf="!isHidden('Remarks')"
-                         [filterable]="false"></kendo-grid-column>
     </kendo-grid>
 
     <div class="ao">
