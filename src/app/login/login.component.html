@@ -2,17 +2,20 @@
 <div class="container-fluid" appBgChangeImage [imagesList]="images">
   <div class="card-overlay">
     <div class="container">
-      <div class="client-logo">
-        <img class="client-logo" src="./assets/clientLogoLogin.png">
-      </div>
-      <div class="justify-center">
-        <div class="hriqLogo">
-          <img src="./assets/hriqLogoBlack.png" addFilter>
-        </div>
 
-        <router-outlet></router-outlet>
-      
+      <div class="client-logo">
+        <img class="client-logo img-fluid" src="./assets/clientLogoLogin.png">
       </div>
+
+      <div class="login">
+        <div class="box">
+        <div class="hriqLogo">
+          <img class="hriq-logo-size" src="./assets/hriqLogoBlack.png" addFilter>
+        </div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

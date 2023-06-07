@@ -1,4 +1,4 @@
-<h5>Enter your credentials to access our account</h5>
+<h6>Enter your credentials to access our account</h6>
 
 <form [formGroup]="loginForm">
   <div class="form-group mb-0">
@@ -11,22 +11,24 @@
 </form>
 <form [formGroup]="loginForm">
   <div class="form-group mb-0">
-    <input formControlName="password"
-           [type]="showPassword ? 'text':'password'"
-           class="form-control inputPassword ps-3"
-           placeholder="Enter your password" />
-    <small class="red error-message02" [class.d-none]="password.valid || password.untouched">Please fill in your password</small>
+    <div class="input-container">
+      <input formControlName="password"
+             [type]="showPassword ? 'text':'password'"
+             class="form-control inputPassword ps-3"
+             placeholder="Enter your password" />
+      <small class="red error-message02" [class.d-none]="password.valid || password.untouched">Please fill in your password</small>
 
-    <a type="button"
-       (click)="showPassword=!showPassword"
-       [class.d-none]="showPassword">
-      <i alt="hide" class="password-eye fa-regular fa-eye-slash"></i>
-    </a>
-    <a type="button"
-       (click)="showPassword=!showPassword"
-        [class.d-none]="!showPassword">
-      <i alt="show" class="password-eye fa-regular fa-eye"></i>
-    </a>
+            <a type="button"
+           (click)="showPassword=!showPassword"
+           [class.d-none]="showPassword">
+          <i alt="hide" class="password-eye fa-regular fa-eye-slash"></i>
+        </a>
+        <a type="button"
+           (click)="showPassword=!showPassword"
+           [class.d-none]="!showPassword">
+          <i alt="show" class="password-eye fa-regular fa-eye"></i>
+        </a>
+    </div>
   </div>
 </form>
 
