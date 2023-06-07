@@ -112,12 +112,11 @@
     <kendo-grid #grid
                 [kendoGridBinding]="gridData"
                 [filterable]="false"
-                [sortable]="true"
-                [resizable]="true"
-                [filterable]="true"
                 [class.height-max]="textShow"
                 [class.height-min]="!textShow"
-                >
+                [sortable]="true"
+                [resizable]="true"
+                [filterable]="true">
       <!--scrollable="none"-->
       <!--SN-->
       <kendo-grid-column field="SN" title="#"
@@ -145,7 +144,8 @@
       <!--Skills-->
       <kendo-grid-column field="Skills" title="Skills"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                         [headerClass]="'headerCustomClass'"                 
+                         [headerClass]="'headerCustomClass'"
+                         [width]="350"
                          [minResizableWidth]="300"
                          *ngIf="!isHidden('Skills')"
                          [filterable]="false">
@@ -156,7 +156,7 @@
                          [filterable]="false"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [resizable]="false" [width]=36
+                         [resizable]="false" [width]=48
                          *ngIf="!isHidden('Attachment')">
         <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
           <a type="button"><span *ngIf='dataItem.Attachment===true' class="k-icon color01 k-i-attachment-45"></span></a>
@@ -170,7 +170,8 @@
                          [width]="123"
                          [minResizableWidth]="50"
                          *ngIf="!isHidden('Current Rate')"
-                         filter="numeric">
+                         filter="numeric"
+                         [format]="'#'">
         <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
           <kendo-grid-numeric-filter-cell [column]="column"
                                           [filter]="filter"
@@ -189,7 +190,8 @@
                          [width]="133"
                          [minResizableWidth]="50"
                          *ngIf="!isHidden('Required Rate')"
-                         filter="numeric">
+                         filter="numeric"
+                         [format]="'#'">
         <ng-template kendoGridCellTemplate let-dataItem>
           {{dataItem.RequiredRate}}/{{dataItem.FullRate}}
         </ng-template>
@@ -202,7 +204,8 @@
                          [width]="59"
                          [minResizableWidth]="40"
                          *ngIf="!isHidden('Gap')"
-                         filter="numeric">
+                         filter="numeric"
+                         [format]="'#'">
         <ng-template kendoGridCellTemplate let-dataItem>
           <div [class.negative-red]="dataItem.Gap < 0 ">{{dataItem.Gap}}</div>
         </ng-template>
@@ -211,8 +214,7 @@
 
       <!--  Piority-->
       <kendo-grid-column field="Piority" title="Piority"
-                         [width]=79
-                         [minResizableWidth]="55"
+                         [width]=88 [resizable]="false"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
                          *ngIf="!isHidden('Piority')"
@@ -234,7 +236,7 @@
       <kendo-grid-column field="PlanNo" title="Courses Interested"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
                          [headerClass]="'headerCustomClass'"
-                         [width]="186"
+                         [width]="178"
                          [resizable]="false"
                          [minResizableWidth]="40"
                          *ngIf="!isHidden('Courses Interested')"
@@ -247,16 +249,6 @@
         </ng-template>
       </kendo-grid-column>
 
-      <!--Remarks-->
-      <kendo-grid-column field="Remarks" title="Remarks"
-                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
-                         [headerClass]="'headerCustomClass'"
-                         
-                         *ngIf="!isHidden('Remarks')"
-                         [filterable]="false"
-                         [scrollable]="false"
-                         ></kendo-grid-column>
-
       <!--Hours-->
       <kendo-grid-column field="TotalHours" title="Hours"
                          [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
@@ -264,7 +256,8 @@
                          [width]="73"
                          [minResizableWidth]="40"
                          *ngIf="!isHidden('Hours')"
-                         filter="numeric">
+                         filter="numeric"
+                         [format]="'#'">
         <!--        <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
               <kendo-grid-string-filter-cell [showOperators]="false"
                                              [column]="column"
@@ -280,9 +273,18 @@
                          [headerClass]="'headerCustomClass'"
                          [width]="81"
                          [minResizableWidth]="65"
-                         *ngIf="!isHidden('Budget')">
+                         *ngIf="!isHidden('Budget')"
+                         filter="numeric"
+                         [format]="'#'">
       </kendo-grid-column>
 
+      <!--Remarks-->
+      <kendo-grid-column field="Remarks" title="Remarks"
+                         [headerStyle]="{ 'background-color': 'var(--color02)', 'font-weight' : 'bold' }"
+                         [headerClass]="'headerCustomClass'"
+                         [width]=240
+                         *ngIf="!isHidden('Remarks')"
+                         [filterable]="false"></kendo-grid-column>
     </kendo-grid>
 
     <div class="ao">
