@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 import { NotificationService } from "@progress/kendo-angular-notification";
 import { DropDownSize } from "@progress/kendo-angular-dropdowns";
@@ -17,8 +16,6 @@ import { ColorSchemesService } from '../color-schemes.service';
 })
 export class ModulePanelComponent {
   constructor(
-    private route: ActivatedRoute,
-    private router: Router,
     private colorSchemes: ColorSchemesService,
     private fb: FormBuilder,
     private notificationService: NotificationService,
@@ -28,9 +25,6 @@ export class ModulePanelComponent {
     })
   }
 
-  showHomepage() {
-    this.router.navigate(['homepage'], { relativeTo: this.route })
-  }
 
   //Learning menu
   public menu = 'TRANSACTIONS'

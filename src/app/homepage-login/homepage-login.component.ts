@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-homepage-login',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage-login.component.css']
 })
 export class HomepageLoginComponent {
+  constructor(private route: ActivatedRoute,
+    private router: Router) { }
 
+  showHomepage() {
+    this.router.navigate(['homepage'], { relativeTo: this.route })
+  }
 }

@@ -26,11 +26,6 @@ export class FooterQuicklinksComponent {
     "Link08",
     "Link09",
     "Link10",
-    "Link11",
-    "Link12",
-    "Link13",
-    "Link14",
-    "Link15",
   ];
 
     maxquicklinks = 15

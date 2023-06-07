@@ -2,20 +2,13 @@
     position:fixed;
     padding-left: 17px
 }
-.panel-background {
-  height: 100vh;
+/*.panel-background {
+ 
   display: flex;
   flex-direction: column;
   text-align: center;
  justify-content: center;
-}
-
-.hriqLogo {
-  position: fixed;
-  top: 25px;
-  left: 20px;
-  height: 40px
-}
+}*/
 
 .module-icons {
   padding-bottom: 20px;

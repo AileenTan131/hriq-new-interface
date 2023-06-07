@@ -1,3 +1,4 @@
+
 h6 {
   font-size: 0.90rem;
   color: var(--colorGrey);
@@ -5,16 +6,12 @@ h6 {
 }
 
 .timestamp {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding-right: 4px
+  float: left;
 }
 
 .company {
-  position: fixed;
-  bottom: 0;
-  padding-left: 4px
+float:right;
+padding-left: 4px;
 }
 
 /*.footer-background {
@@ -26,11 +23,13 @@ h6 {
 }*/
 
 .quick-links {
-  position: fixed;
-  bottom: 19px;
+  /*  position: fixed;
+  bottom: 19px;*/
+  display: flex;
+  justify-content: end;
   padding-left: 8px;
-  right:8px;
-/*  width:1830px*/
+/*  width: calc(100% - 100px);*/
+  flex-wrap: wrap
 }
 
 .company, .timestamp, .quick-links{

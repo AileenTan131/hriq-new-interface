@@ -6,7 +6,7 @@ h1 {
 
 .banner {
   height: 38px;
-  width: 100vw;
+  width: 100%;
   background: var(--color01);
   color: white;
   padding-left: 20px;

@@ -1,40 +1,57 @@
-.container{
-    padding:0;
-    margin:0;
-    max-height: 100vh;
-    max-width: 100vw;
+.container-fluid {
+  padding: 0;
 }
+
 .app {
+  height: 100vh;
   display: grid;
   /*  width: 1920px;
     height: 1080px;*/
   grid-template-columns: 100px 1fr;
   grid-template-rows: 92px 1fr 50px;
+  grid-template-areas:
+    "hriq top-panel"
+    "module-panel body"
+    "module-panel footer"
+}
+
+.hriq{
+    background-color: var(--color03);
+}
+.hriqLogo {
+    position: fixed;
+  top: 25px;
+  left: 20px;
+  height: 40px;
+/*  display: flex;
+  flex-direction: column;
+ 
+  justify-self:center;*/
+ /* padding-top:20px*/
 }
 
 .top-panel {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  background-color:white;
+  grid-area: top-panel;
+  background-color: white;
   z-index: 3;
 }
 
 .module-panel {
-  grid-column: 1/2;
-  grid-row: 1/-1;
+  grid-area: module-panel;
   background-color: var(--color03);
+}
+.module-icons{
+  text-align: center;
+
 }
 
 .footer-panel {
-  grid-column: 2/3;
-  grid-row: 3/4;
+  grid-area: footer;
   align-self: end;
   background-color: white;
   z-index: 2;
 }
 
 .main {
-  grid-column: 2/3;
-  grid-row: 2/3;
-/*  width: 1820px*/
+  grid-area: body;
 }
