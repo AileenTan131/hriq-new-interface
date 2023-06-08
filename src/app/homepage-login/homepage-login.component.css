@@ -15,8 +15,12 @@
     "module-panel footer"
 }
 
-.hriq{
-    background-color: var(--color03);
+.hriq-box {
+  background-color: var(--color03);
+  height: 93px;
+  width: 100px;
+  position: fixed;
+  z-index: 3
 }
 .hriqLogo {
   position: fixed;
@@ -78,6 +82,9 @@ letter-spacing:1px;
   color: var(--color01);
   background-color: var(--color03);
 */}
+.resize-alert{
+    display:none
+}
 .close-icon {
   color: var(--color01);
   color: white;
@@ -95,4 +102,20 @@ letter-spacing:1px;
 }
 .close-popup{
     display:none;
+}
+
+
+@media(max-width:1100px) { /*nest hub*/
+  /*.app {
+    height: 100vh;
+    display: grid;*/
+    /*  width: 1920px;
+    height: 1080px;*/
+    /*grid-template-columns: 50px 1fr;
+    grid-template-rows: 92px 1fr 50px;
+    grid-template-areas:
+      "hriq top-panel"
+      "module-panel body"
+      "module-panel footer"
+  }*/
 }
