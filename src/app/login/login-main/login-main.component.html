@@ -1,10 +1,10 @@
-<h6>Enter your credentials to access our account</h6>
+<h6 class="pb-2 pt-2">Enter your credentials to access our account</h6>
 
 <form [formGroup]="loginForm">
   <div class="form-group mb-0">
     <input formControlName="userID"
            type="text"
-           class="form-control inputID ps-3 mt-3"
+           class="form-control ps-3 mt-3 mb-3"
            placeholder="Enter your User ID" />
     <small class="red error-message01" [class.d-none]="userID.valid || userID.untouched">Please fill in your userID</small>
   </div>
@@ -14,7 +14,7 @@
     <div class="input-container">
       <input formControlName="password"
              [type]="showPassword ? 'text':'password'"
-             class="form-control inputPassword ps-3"
+             class="form-control inputPassword ps-3 mb-3"
              placeholder="Enter your password" />
       <small class="red error-message02" [class.d-none]="password.valid || password.untouched">Please fill in your password</small>
 

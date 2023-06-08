@@ -27,8 +27,10 @@ input::placeholder {
 h5, h6, .reset-password {
   color: var(--color01);
 }
-h6{
-    font-weight: 600
+h6 {
+  font-weight: 600;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .password {
@@ -57,12 +59,7 @@ h6{
   color: var(--color01);
 }
 
-.inputID {
-  margin-bottom: 30px
-}
-
 .inputPassword {
-  margin-bottom: 8px;
   position: relative;
   left: 12px
 }
@@ -71,7 +68,6 @@ h6{
   display: -ms-flexbox; /* IE10 */
   display: flex;
   width: 100%;
-  margin-bottom: 15px;
 }
 
 
@@ -86,7 +82,30 @@ h6{
 @media(max-width:1100px) { /*nest hub*/
   .password-eye {
     position: relative;
-    right: 63px;
+    right: 72px;
   }
 }
-
+@media(max-width:920px) { /*surface pro 7*/
+  .password-eye {
+    position: relative;
+    right: 57px;
+  }
+}
+@media(max-width:770px) {
+  .password-eye {
+    position: relative;
+    right: 77px;
+  }
+}
+@media(max-width:375px) { /*iphone se, saumsung galaxy 8*/
+  .password-eye {
+    position: relative;
+    right:61px;
+  }
+}
+@media(max-width:300px) {  /*galaxy fold*/
+  .password-eye {
+    position: relative;
+    right: 49px;
+  }
+}

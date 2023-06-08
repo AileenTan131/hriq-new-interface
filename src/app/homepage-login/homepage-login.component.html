@@ -1,6 +1,14 @@
 <div class="container-fluid">
-  <div class="app">
+  <div [ngClass]="{'rotate-screen':screenWidth<650, 'd-none':screenWidth>650}" *ngIf="close">
+    *Please rotate your screen for better viewing
+    <a type="button"  (click)="closePopup()">
+    <i class="fa-regular fa-rectangle-xmark  close-icon"></i>
+<!--    <i class="fa-solid fa-xmark close-icon"></i>-->
+    </a>
+  </div>
 
+  <!--  [class.d-none]="screenWidth<650"-->
+  <div class="app">
     <a (click)="showHomepage()" type="button" class="hriq">
       <img class="hriqLogo" src="./assets/hriqLogoBlack.png" addFilter>
     </a>
@@ -24,7 +32,7 @@
 </div>
 
 
-  <!--  <app-module-panel></app-module-panel>
-    <app-top-panel></app-top-panel>
-    <app-footer></app-footer>
-  -->
+<!--  <app-module-panel></app-module-panel>
+  <app-top-panel></app-top-panel>
+  <app-footer></app-footer>
+-->

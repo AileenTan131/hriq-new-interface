@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -12,5 +12,17 @@ export class HomepageLoginComponent {
 
   showHomepage() {
     this.router.navigate(['homepage'], { relativeTo: this.route })
+  }
+
+  screenWidth: number;
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+  }
+
+  close: boolean=true;
+
+  closePopup() {
+    this.close = false;
   }
 }
