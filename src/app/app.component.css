@@ -6,6 +6,7 @@
   --colorGrey: #a2a2a2;
   --color02-if-white: #00377d;
   --color04-if-white: #00377d;
+  --alpha: 0.5
 }
 .green-theme {
   --color01: #056770;

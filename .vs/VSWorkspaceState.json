@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.angular",
     "\\src",
     "\\src\\app",
     "\\src\\app\\encapsulation",
-    "\\src\\app\\modules-learning",
-    "\\src\\app\\modules-learning\\global",
-    "\\src\\app\\modules-learning\\lna-content-kendo\\courses-interested"
+    "\\src\\app\\homepage-login",
+    "\\src\\app\\login",
+    "\\src\\app\\login\\login-main",
+    "\\src\\app\\login\\login-p-reset",
+    "\\src\\app\\module-panel",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\encapsulation\\encapsulation.component.css",
+  "SelectedNode": "\\src\\app\\app.component.css",
   "PreviewInSolutionExplorer": false
 }
