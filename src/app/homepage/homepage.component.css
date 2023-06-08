@@ -1,8 +1,24 @@
-/*.container-fluid{
-    padding:0
-}*/
-.action-header{
-    padding-left:37px
+.dashboard{
+padding-right: 0;
+margin-right: 0
+}
+.dashboard.banner-rounded{
+    border-radius: 8px 0px 0px 8px
+}
+
+.action-header {
+  padding-left: 0;
+  margin-left: 0;
+}
+  .action-header.banner-rounded {
+  border-radius: 0px 8px 8px 0px
+  }
+
+.col-4 {
+  padding-left: 0;
+}
+.col-8 {
+  padding-right: 0;
 }
 .action-number {
   padding: 3px;
@@ -54,3 +70,50 @@ td:hover,
   background-color: #ffe9e9;
 
 }
+.body-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 35px 1fr;
+  grid-template-areas:
+    "welcome-user welcome-user"
+    "dashboard action-notification"
+}
+  .welcome-user{
+      grid-area: welcome-user;
+  }
+  .dash-info{
+      grid-area: dashboard;
+  }
+  .action-notic{
+      grid-area: action-notification;
+  }
+
+
+@media(max-width:1000px){
+    .body-section{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px auto 1fr;
+        grid-template-areas:
+            "welcome-user"
+            "dashboard"
+            "action-notification"
+    }
+  .welcome-user,
+  .dash-info,
+  .action-notic {
+    grid-area: initial;
+  }
+  .dashboard.banner-rounded,
+  .action-header.banner-rounded {
+    border-radius: 8px
+  }
+  .dashboard {
+    margin-right: 10px
+  }
+  .action-header {
+    margin-left: 10px
+  }
+  }

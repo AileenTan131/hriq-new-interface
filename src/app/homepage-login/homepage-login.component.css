@@ -105,7 +105,7 @@ letter-spacing:1px;
 }
 
 
-@media(max-width:1100px) { /*nest hub*/
+@media(max-width:450px) { /*samung galaxy A51/71*/
   /*.app {
     height: 100vh;
     display: grid;*/

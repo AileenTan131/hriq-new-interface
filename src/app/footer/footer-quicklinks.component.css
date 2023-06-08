@@ -1,17 +1,14 @@
-
 h6 {
   font-size: 0.90rem;
   color: var(--colorGrey);
   margin: 3px;
 }
-
 .timestamp {
   float: left;
 }
 
 .company {
 float:right;
-padding-left: 4px;
 }
 
 /*.footer-background {
@@ -23,13 +20,11 @@ padding-left: 4px;
 }*/
 
 .quick-links {
-  /*  position: fixed;
-  bottom: 19px;*/
   display: flex;
   justify-content: end;
-  padding-left: 8px;
+  padding-right: 8px;
 /*  width: calc(100% - 100px);*/
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .company, .timestamp, .quick-links{
@@ -46,11 +41,11 @@ padding-left: 4px;
 }
 li {
   display: inline-block;
-  margin: 0 10px
+  margin: 0;
+  padding-left:15px
 }
 a {
   color: var(--colorGrey);
-  padding-left: 10px
 }
 a:hover{
     color: black;
@@ -65,11 +60,26 @@ max-width:50%
 }
 
 
+@media(max-width:1000px) {
+  .quick-links {
+    justify-content: left;
+  }
+  li{
+      padding-right:15px;
+      padding-left:0
+  }
+  .padding{
+      padding-right: 10px
+  }
+  .company{
+      float: left;
+  }
+
+}
 
 
 
-
-/*.quicklink-row.overflow .quicklink:nth-child(n+{{maxquicklinks + 1}}) {
+  /*.quicklink-row.overflow .quicklink:nth-child(n+{{maxquicklinks + 1}}) {
   display: none;
 }
 

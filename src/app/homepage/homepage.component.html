@@ -1,37 +1,30 @@
-<div class="container-fluid">
-  <div>
-    <h1 class="ps-2 ms-2">Welcome back, {{name}}</h1>
+<div class="container-fluid body-section">
+    <h1 class="ps-2 ms-2 welcome-user">Welcome back, {{name}}</h1>
 
-    <div class="banner-rounded dark-banner mt-2 ps-2">
-      <div class="col-8"
-           [class.toggleHide]="toggleOff">
-        Dashboard
-        <a type="button" (click)="toggleOff=!toggleOff">
-          <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
-               tooltipClass="tooltipclass"
-               placement="bottom"
-               ngbTooltip="Toggle Page"
-               [openDelay]="200" />
-        </a>
-      </div>
-      <div class="col-8"
-           [class.toggleHide]="!toggleOff">
-        Information
-        <a type="button" (click)="toggleOff=!toggleOff">
-          <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
-               tooltipClass="tooltipclass"
-               placement="bottom"
-               ngbTooltip="Toggle Page"
-               [openDelay]="200" />
-        </a>
-      </div>
-      <div class="col-4 action-header">
-        Action Box
-      </div>
-    </div>
+      <div class="dash-info">
+        <div class="banner-rounded dark-banner dashboard ps-3"
+             [class.toggleHide]="toggleOff">
+          Dashboard
+          <a type="button" (click)="toggleOff=!toggleOff">
+            <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
+                 tooltipClass="tooltipclass"
+                 placement="bottom"
+                 ngbTooltip="Toggle Page"
+                 [openDelay]="200" />
+          </a>
 
-    <div class="row">
-      <div class="col-8">
+          <div class="information"
+               [class.toggleHide]="!toggleOff">
+            Information
+            <a type="button" (click)="toggleOff=!toggleOff">
+              <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
+                   tooltipClass="tooltipclass"
+                   placement="bottom"
+                   ngbTooltip="Toggle Page"
+                   [openDelay]="200" />
+            </a>
+          </div>
+        </div>
         <div class="mt-4">
           <app-dashboard [class.toggleHide]="toggleOff" class="dashboard"></app-dashboard>
           <app-information [class.toggleHide]="!toggleOff"></app-information>
@@ -39,60 +32,64 @@
       </div>
 
 
-      <div class="col-4 pt-2">
-        <div class="ps-3">
-          <table class="table table-borderless">
-            <tbody>
-              <tr>
-                <td *ngFor="let actionNumber of actionNo"
-                    class="action-number"
-                    type="button">
-                  {{actionNumber}}
-                </td>
-              </tr>
-              <tr>
-                <td *ngFor="let action of actions"
-                    class="action-list ps-3"
-                    type="button">
-                  {{action}}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="banner-rounded dark-banner notification ms-auto ps-1 notification-header">
-          <div class="col">
-            Notifications
-          </div>
+      <div class="action-notic">
+        <div class="action-header banner-rounded dark-banner ps-3">
+          Action Box
         </div>
 
         <div class="pt-2">
-          <div *ngFor="let notification of notifications" class="notification-list ps-3" type="button">
-            {{notification}}
+          <div class="ps-3">
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td *ngFor="let actionNumber of actionNo"
+                      class="action-number"
+                      type="button">
+                    {{actionNumber}}
+                  </td>
+                </tr>
+                <tr>
+                  <td *ngFor="let action of actions"
+                      class="action-list ps-3"
+                      type="button">
+                    {{action}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
 
-        <!--   <div class="k-block">
-      <button class="k-button02" kendoButton [primary]="true">button</button>
-      <button class="k-button01" kendoButton [primary]="true">button</button>
-    </div>-->
-        <br />
-        <!--        <button class="button-01 me-2">Button</button>
-            <button class="button-02 me-2">Button</button>
-            <button class="button-03 me-2">Button</button>
+          <div class="banner-rounded dark-banner notification notification-header ps-3">
+            Notifications
+          </div>
 
-            <br />
-            <br />-->
+          <div class="pt-2">
+            <div *ngFor="let notification of notifications" class="notification-list ps-3" type="button">
+              {{notification}}
+            </div>
+          </div>
 
+
+<!--
         <button mat-flat-button class="me-2">Button</button>
         <button mat-raised-button class="me-2">Button</button>
         <button mat-raised-button class="dark me-2">Button</button>
         <button mat-raised-button class="outline-1 me-2">Button</button>
-        <button mat-button class="outline-2 me-2">Button</button>
+        <button mat-button class="outline-2 me-2">Button</button>-->
+
+
+
+    <!--  <div class="k-block">
+        <button class="k-button02" kendoButton [primary]="true">button</button>
+        <button class="k-button01" kendoButton [primary]="true">button</button>
       </div>
-    </div>
-  </div>
+      <br />
+      <button class="button-01 me-2">Button</button>
+      <button class="button-02 me-2">Button</button>
+      <button class="button-03 me-2">Button</button>
+-->
+
+
 
 
 
