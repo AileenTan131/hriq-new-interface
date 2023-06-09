@@ -1,6 +1,6 @@
 .white-bg {
   height: 92px;
-  width: 100%;
+  width: calc(100% - 100px);
   position: fixed;
   background-color: white;
 }
@@ -14,7 +14,7 @@ li {
   margin: 0px 15px;
 }
 
-.icons{
+img.icons{
     max-width: 50%;
 }
 
@@ -26,28 +26,6 @@ button {
   flex-direction: column;
   align-items: center
 }
-
-/*.alerts, .notification, .information {
-  top: 15px;
-}
-
-.alerts {
-  position: fixed;
-  right: 407px;
-  background-color: #ff0000;
-}
-
-.notification {
-  position: fixed;
-  right: 481px;
-  background-color: #ffa200;
-}
-
-.information {
-  position: fixed;
-  right: 563px;
-  background-color: var(--color01);
-}*/
 
 ::ng-deep .popover {
   color: black;
@@ -76,20 +54,12 @@ button {
   border-bottom-color: var(--colorGrey);
 }
 
-/*.spinner-border {
-  width: 70px;
-  height: 70px;
-  border-width: 4px;
-  position: fixed;
-  right: 38px;
-  color: var(--color04);
-}
-*/
 .hover-menu {
   position: relative;
   display: inline-block;
   float: right
 }
+
 
 .dropdowns {
   display: none;
@@ -98,14 +68,12 @@ button {
   min-width: 160px;
   /* z-index:1*/
 }
-
   .dropdowns a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     /*display: block*/
   }
-
     .dropdowns a:hover {
       background-color: #efefef;
       color: black;
@@ -143,12 +111,44 @@ button {
 .client-logo{
     height: 89px;
 }
-.position{
-    position: fixed;
-    top:0px;
+.top-panel{
+    display: flex;
+    align-items: center;
+/*    width:95%;*/
 }
-.position-right {
-  position: fixed;
-  right:0;
-  top:10px;
-}
+/*.top-icons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}*/
+
+
+
+
+@media(max-width:772px) { /*resize to portrait - ipad Mini*/
+  .top-icons {
+    display: flex;
+    align-items: center;
+  }
+    .icons,
+    .profile-pic {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media(max-width:700px) { /*resize to portrait*/
+    .client-logo {
+      height: 72px;
+      margin-top: 7px;
+    }
+
+    .top-panel {
+      display: initial  /*breaks into 2 lines*/
+    }
+
+    .white-bg {
+      height: 150px;
+      border-bottom: 5px solid var(--color03)
+    }
+  }

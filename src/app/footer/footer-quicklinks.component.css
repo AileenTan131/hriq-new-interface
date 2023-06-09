@@ -8,7 +8,8 @@ h6 {
 }
 
 .company {
-float:right;
+  float:right;
+  padding-left: 20px;
 }
 
 /*.footer-background {
@@ -63,6 +64,9 @@ max-width:50%
 @media(max-width:1000px) {
   .quick-links {
     justify-content: left;
+    padding-left:27px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   li{
       padding-right:15px;
@@ -71,11 +75,14 @@ max-width:50%
   .padding{
       padding-right: 10px
   }
-  .company{
-      float: left;
   }
-
-}
+  @media(max-width:683px) {
+    .company {
+      float: left;
+      padding-left: 0;
+      margin-right: 25px;
+    }
+  }
 
 
 

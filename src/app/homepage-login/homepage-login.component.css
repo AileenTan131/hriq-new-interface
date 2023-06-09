@@ -46,11 +46,13 @@
   background-color: var(--color03);
 /*  z-index:2*/
 }
-.module-icons{
-  text-align: center;
+  .module-icons{
+    text-align: center;
+    }
 
+.main {
+  grid-area: body;
 }
-
 .footer-panel {
   grid-area: footer;
   align-self: end;
@@ -58,9 +60,6 @@
   z-index: 2;
 }
 
-.main {
-  grid-area: body;
-}
 
 
 
@@ -105,17 +104,18 @@ letter-spacing:1px;
 }
 
 
-@media(max-width:450px) { /*samung galaxy A51/71*/
-  /*.app {
-    height: 100vh;
-    display: grid;*/
-    /*  width: 1920px;
-    height: 1080px;*/
-    /*grid-template-columns: 50px 1fr;
-    grid-template-rows: 92px 1fr 50px;
-    grid-template-areas:
-      "hriq top-panel"
-      "module-panel body"
-      "module-panel footer"
-  }*/
-}
+
+
+
+
+@media(max-width:700px) { /*resize to portrait*/
+  .main {
+    padding-bottom: 120px;
+  }
+  .module-panel {
+      padding-top: 74px
+  }
+  .hriq-box {
+    height: 150px;
+  }
+  }

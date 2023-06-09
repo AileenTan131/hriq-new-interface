@@ -3,14 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
+    "\\src\\app\\footer",
+    "\\src\\app\\homepage",
     "\\src\\app\\homepage-login",
-    "\\src\\app\\login",
-    "\\src\\app\\login\\login-main",
-    "\\src\\app\\login\\login-p-reset",
-    "\\src\\app\\module-panel",
+    "\\src\\app\\top-panel",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\app.component.css",
+  "SelectedNode": "\\src\\app\\footer\\footer-quicklinks.component.html",
   "PreviewInSolutionExplorer": false
 }
