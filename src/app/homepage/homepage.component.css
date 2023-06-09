@@ -92,35 +92,39 @@ td:hover,
 
 
 
-@media(max-width:1000px){   /*resize to portrait*/
-    .body-section{
-/*        height: 100vh;*/
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 35px auto 1fr;
-        grid-template-areas:
-            "welcome-user"
-            "dashboard"
-            "action-notification"
-    }
+@media(max-width:1000px) { /*resize to portrait*/
+  .body-section {
+    /*        height: 100vh;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px auto 1fr;
+    grid-template-areas:
+      "welcome-user"
+      "dashboard"
+      "action-notification";
+  }
+
   .welcome-user,
   .dash-info,
   .action-notic {
     grid-area: initial;
   }
+
   .dashboard.banner-rounded,
   .action-header.banner-rounded {
     border-radius: 8px
   }
+
   .dashboard {
     margin-right: 10px
   }
+
   .action-header {
     margin-left: 10px
   }
-  @media(max-width:700px) { /*resize to portrait*/
-    .body-section {
-      margin-top: 65px;
-    }
+}
+@media(max-width:700px) {
+  .body-section {
+
   }
-  }
+}

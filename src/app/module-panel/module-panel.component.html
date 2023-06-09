@@ -175,7 +175,7 @@
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header ">
-        <h1 class="modal-title w-100 ps-3 pt-2">Change Password</h1>
+        <h1 class="modal-title w-100 pt-2">Change Password</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body shift-body-up">
@@ -217,7 +217,7 @@
             </div>
           </form>
 
-            <button mat-button class="outline-2 mt-3 mb-4" type="submit" data-bs-dismiss="modal" (click)="alertPasswordUpdate()">Update Password</button>
+            <button mat-button class="outline-2 d-flex justify-content-start mt-3 mb-4" type="submit" data-bs-dismiss="modal" (click)="alertPasswordUpdate()">Update Password</button>
 
           </div>
         </div>
@@ -230,7 +230,7 @@
   <div class="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title w-100 ps-3 pt-2">Input your Default Language</h1>
+        <h1 class="modal-title w-100 pt-2">Input your Default Language</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body language-input shift-body-up">
@@ -238,7 +238,7 @@
         <kendo-autocomplete [data]="languageSelect" #languageValue [size]="selectedSize" placeholder="e.g. English"> </kendo-autocomplete>
       </div>
       <div>
-        <button mat-button class="outline-2 button-ms" type="submit"  data-bs-dismiss="modal" (click)="alertLanguageUpdate(languageValue.value)">Set Language</button>
+        <button mat-button class="outline-2 button-ms d-flex justify-content-start" type="submit"  data-bs-dismiss="modal" (click)="alertLanguageUpdate(languageValue.value)">Set Language</button>
       </div>
     </div>
   </div>
@@ -260,23 +260,23 @@
               <h5 class="banner-theme banner-rounded dark-banner">
                 Primary Theme Series
               </h5>
-              <div class="row pt-4 pb-4">
+              <div class="row pt-4 pb-4 ps-2 pe-2">
                 <div class="col-4">
-                  <button class="hide-button ms-3" (click)="setBlueData()" [class.isSelected]="runTheme==='Blue'">
+                  <button class="hide-button" (click)="setBlueData()" [class.isSelected]="runTheme==='Blue'">
                     <h6>Blue</h6>
-                    <img class="color-scheme-img" src="././assets/blue.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/blue.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setGreenData()" [class.isSelected]="runTheme==='Green'">
                     <h6>Green</h6>
-                    <img class="color-scheme-img" src="././assets/green.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/green.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setRedData()" [class.isSelected]="runTheme==='Red'">
                     <h6>Red</h6>
-                    <img class="color-scheme-img" src="././assets/red.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/red.jpg" />
                   </button>
                 </div>
               </div>
@@ -286,23 +286,23 @@
               <h5 class="banner-theme banner-rounded dark-banner">
                 Flower Theme Series
               </h5>
-              <div class="row pt-4 pb-4">
+              <div class="row pt-4 pb-4 ps-2 pe-2">
                 <div class="col-4">
-                  <button class="hide-button ms-3" (click)="setHydrangeaData()" [class.isSelected]="runTheme==='Hydrangea'">
+                  <button class="hide-button" (click)="setHydrangeaData()" [class.isSelected]="runTheme==='Hydrangea'">
                     <h6>Hydrangea</h6>
-                    <img class="color-scheme-img" src="././assets/hydrangea.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/hydrangea.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setSakuraData()" [class.isSelected]="runTheme==='Sakura'">
                     <h6>Sakura</h6>
-                    <img class="color-scheme-img" src="././assets/sakura.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/sakura.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setLavenderData()" [class.isSelected]="runTheme==='Lavender'">
                     <h6>Lavender</h6>
-                    <img class="color-scheme-img" src="././assets/lavender.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/lavender.jpg" />
                   </button>
                 </div>
               </div>
@@ -312,27 +312,27 @@
               <h5 class="banner-theme banner-rounded dark-banner ">
                 Style Theme Series
               </h5>
-              <div class="row pt-4 pb-4">
+              <div class="row pt-4 pb-4 ps-2 pe-2">
                 <div class="col-4">
-                  <button class="hide-button ms-3" (click)="setMediterraneanData()" [class.isSelected]="runTheme==='Mediterranean'">
+                  <button class="hide-button" (click)="setMediterraneanData()" [class.isSelected]="runTheme==='Mediterranean'">
                     <h6>Mediterranean</h6>
-                    <img class="color-scheme-img" src="././assets/mediterranean.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/mediterranean.jpg" />
                   </button>
-                  <button class="hide-button mt-3 ms-3" (click)="setIndustrialData()" [class.isSelected]="runTheme==='Industrial'">
+                  <button class="hide-button mt-3" (click)="setIndustrialData()" [class.isSelected]="runTheme==='Industrial'">
                     <h6>Industrial</h6>
-                    <img class="color-scheme-img" src="././assets/industrial.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/industrial.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setMinimalistData()" [class.isSelected]="runTheme==='Minimalist'">
                     <h6>Minimalist</h6>
-                    <img class="color-scheme-img" src="././assets/minimalist.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/minimalist.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setBohemianData()" [class.isSelected]="runTheme==='Bohemian'">
                     <h6>Bohemian</h6>
-                    <img class="color-scheme-img" src="././assets/bohemian.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/bohemian.jpg" />
                   </button>
                 </div>
               </div>
@@ -344,23 +344,23 @@
               <h5 class="banner-theme banner-rounded dark-banner">
                 Nature Theme Series
               </h5>
-              <div class="row pt-4 pb-4">
+              <div class="row pt-4 pb-4 ps-2 pe-2">
                 <div class="col-4">
-                  <button class="hide-button ms-3" (click)="setForestData()" [class.isSelected]="runTheme==='Forest'">
+                  <button class="hide-button" (click)="setForestData()" [class.isSelected]="runTheme==='Forest'">
                     <h6>Forest</h6>
-                    <img class="color-scheme-img" src="././assets/forest.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/forest.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setBeachData()" [class.isSelected]="runTheme==='Beach'">
                     <h6>Beach</h6>
-                    <img class="color-scheme-img" src="././assets/beach.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/beach.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button  class="hide-button" (click)="setSeaData()" [class.isSelected]="runTheme==='Sea'">
                     <h6>Sea</h6>
-                    <img class="color-scheme-img" src="././assets/sea.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/sea.jpg" />
                   </button>
                 </div>
               </div>
@@ -370,27 +370,27 @@
               <h5 class="banner-theme banner-rounded dark-banner">
                 Seasons Theme Series
               </h5>
-              <div class="row pt-4 pb-4">
+              <div class="row pt-4 pb-4 ps-2 pe-2">
                 <div class="col-4">
-                  <button class="hide-button ms-3" (click)="setSpringData()" [class.isSelected]="runTheme==='Spring'">
+                  <button class="hide-button" (click)="setSpringData()" [class.isSelected]="runTheme==='Spring'">
                     <h6>Spring</h6>
-                    <img class="color-scheme-img" src="././assets/spring.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/spring.jpg" />
                   </button>
-                  <button class="hide-button mt-3 ms-3" (click)="setWinterData()" [class.isSelected]="runTheme==='Winter'">
+                  <button class="hide-button mt-3" (click)="setWinterData()" [class.isSelected]="runTheme==='Winter'">
                     <h6>Winter</h6>
-                    <img class="color-scheme-img" src="././assets/winter.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/winter.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setSummerData()" [class.isSelected]="runTheme==='Summer'">
                     <h6>Summer</h6>
-                    <img class="color-scheme-img" src="././assets/summer.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/summer.jpg" />
                   </button>
                 </div>
                 <div class="col-4">
                   <button class="hide-button" (click)="setAutumnData()" [class.isSelected]="runTheme==='Autumn'">
                     <h6>Autumn</h6>
-                    <img class="color-scheme-img" src="././assets/autumn.jpg" />
+                    <img class="color-scheme-img img-fluid" src="././assets/autumn.jpg" />
                   </button>
                 </div>
               </div>
@@ -399,8 +399,7 @@
         </div>
       </div>
       <div class="modal-footer d-flex justify-content-start ps-4 pb-3">
-        <button mat-button class="outline-2" type="submit" data-bs-dismiss="modal" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
-
+        <button mat-button class="outline-2 ms-0" type="submit" data-bs-dismiss="modal" (click)="alertThemeApplied()">Apply {{runTheme}} Theme</button>
       </div>
     </div>
   </div>

@@ -129,6 +129,7 @@ button {
   .top-icons {
     display: flex;
     align-items: center;
+    margin-top: 4px;
   }
     .icons,
     .profile-pic {

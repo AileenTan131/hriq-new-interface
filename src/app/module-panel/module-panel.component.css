@@ -1,7 +1,7 @@
 .module-panel {
-  padding-top: 2px;
-  display: flex;
-  justify-content: center;
+  padding-top: 10px;
+  position: fixed;
+  margin-left: 19px
 }
 
 .module-icons {
@@ -61,6 +61,9 @@ button.header {
   padding: 3.5px 15px;
   border: none
 }
+.col-4{
+    padding:0
+}
 button:hover, .isSelected {
   color: var(--color01);
   background-color: var(--color03)
@@ -114,7 +117,6 @@ h5 {
 }
 h5 {
   font-size: 1.2rem;
-  padding-left: 18px
 }
 /*.svg icons color-filter themes in encapsulation*/
 
@@ -130,4 +132,32 @@ h5 {
   .moduleLegend{
       font-size:0.8rem
   }
+
+  .modal-dialog-centered.modal-dialog-scrollable .modal-content {
+    max-height: 80%;
+  }
+}
+
+
+/*modal-popup*/
+@media(max-width:1300px) {
+  .modal-color {
+    --bs-modal-width: 60%;
+  }
+}
+
+@media(max-width:700px) {
+  .h6, h6 {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-height:575px) {  /*fixed module icons start stop get cut >> scroll mode*/
+  .module-panel {
+    position: initial;
+    display: flex;
+    justify-content: center;
+    margin-left: 0
+  }
+
 }
