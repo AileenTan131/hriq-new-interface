@@ -138,18 +138,19 @@ button {
     }
   }
 
-  @media(max-width:700px) { /*resize to portrait*/
-    .client-logo {
-      height: 72px;
-      margin-top: 7px;
-    }
+@media(max-width:700px) { /*resize to portrait*/
+  .client-logo {
+    height: 72px;
+    margin-top: 7px;
+  }
 
-    .top-panel {
-      display: initial  /*breaks into 2 lines*/
-    }
+  .top-panel {
+    display: initial /*breaks into 2 lines*/
+  }
 
-    .white-bg {
-      height: 150px;
-      border-bottom: 5px solid var(--color03)
+  .white-bg {
+    height: 150px;
+    border-bottom: 5px solid var(--color03);
+    width: calc(100% - 70px);
     }
   }

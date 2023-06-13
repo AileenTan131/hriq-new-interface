@@ -21,13 +21,13 @@ kendo-dropdownlist {
   kendo-dropdownlist.long {
     width: 250px;
   }
-  .day-padding {
-    margin-left: 25px;
-  }
   .days-padding {
     margin-left: 73px;
   }
-.week-padding, .month-padding {
+/*  .day-padding {
+    margin-left: 25px;
+  }*/
+.day-padding, .week-padding, .month-padding {
   margin-left: 15px;
 }
 .letter-spacing{
@@ -45,4 +45,17 @@ kendo-dropdownlist {
 }
 .row{
     margin:0
+}
+
+.add-padding{
+    padding-right:10px;
+}
+
+
+
+@media (max-width: 1000px) {
+  .period-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

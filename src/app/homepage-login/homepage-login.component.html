@@ -1,19 +1,21 @@
 <div class="container-fluid">
-<!--  <div [ngClass]="{'rotate-screen':screenWidth<650,'resize-alert':screenWidth>650}" *ngIf="close">
-    *Please rotate your screen for better viewing
-    <a type="button"  (click)="closePopup()">
-    <i class="fa-regular fa-rectangle-xmark  close-icon"></i>
+  <div [ngClass]="{'resize-alert':screenWidth>650}" class="alert-message"
+       [class.d-none]="close">
+    Best viewed in landscape mode
+    <a type="button" (click)="closePopup()">
+      <i class="fa-regular fa-rectangle-xmark  close-icon"></i>
     </a>
-  </div>-->
+  </div>
 
-  <!--  [class.d-none]="screenWidth<650"-->
-  <div class="app">
+  <!--    [class.d-none]="screenWidth<650"-->
+  <div class="app"  [class.d-shift]="close">
     <a (click)="showHomepage()" type="button" class="hriq-box">
+      <div class="empty-space"></div>
       <img class="hriqLogo" src="./assets/hriqLogoBlack.png" addFilter>
     </a>
 
     <div class="top-panel">
-      <app-top-panel></app-top-panel>
+      <app-top-panel ></app-top-panel>
     </div>
 
     <div class="module-panel">

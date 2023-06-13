@@ -22,11 +22,11 @@
 <div class="body pt-2">
   <div class="banner-rounded light-banner">
     <div class="col-6"> Global Setting </div>
-    <div class="col-2 padding"> Set Indivdual Company </div>
-    <div class="col-4 padding"> Company Selection </div>
+    <div class="col-2"> Set Indivdual Company </div>
+    <div class="col-4"> Company Selection </div>
   </div>
-  <div class="row padding">
-    <div class="col-6">Allow for individual company setting</div>
+  <div class="row">
+    <div class="col-6 padding">Allow for individual company setting</div>
     <div class="col-2 mt-1">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked01" [size]="size"></kendo-switch></kendo-label>
       <span *ngIf="checked01" class="letter-spacing p-3">Yes</span>
@@ -47,8 +47,7 @@
         </kendo-multiselecttree>
       </div>
       <ng-template #elseBlock>
-        <kendo-textbox
-                       [size]="selectedSize"
+        <kendo-textbox [size]="selectedSize"
                        [disabled]="isDisabled">
         </kendo-textbox>
       </ng-template>
@@ -59,17 +58,17 @@
 
   <div class="banner-rounded light-banner">
     <div class="col-6"> Interfaces </div>
-    <div class="col-2 padding"> Set Indivdual Company </div>
-    <div class="col-4 padding"> Company Selection </div>
+    <div class="col-2"> Set Indivdual Company </div>
+    <div class="col-4"> Company Selection </div>
   </div>
-  <div class="row padding">
-    <div class="col-6">Interface with External eLearning System</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Interface with External eLearning System</div>
+    <div class="col-2 mt-1">
       <kendo-switch [(ngModel)]="checked02" [size]="size"></kendo-switch>
       <span *ngIf="checked02" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked02" class="letter-spacing p-3">No</span>
     </div>
-    <div class="col-4">
+    <div class="col-4 mt-1">
       <div *ngIf="checked02; else elseBlock">
         <kendo-multiselecttree kendoMultiSelectTreeExpandable
                                [kendoMultiSelectTreeHierarchyBinding]="data"
@@ -83,8 +82,7 @@
         </kendo-multiselecttree>
       </div>
       <ng-template #elseBlock>
-        <kendo-textbox
-                       [size]="selectedSize"
+        <kendo-textbox [size]="selectedSize"
                        [disabled]="isDisabled">
         </kendo-textbox>
       </ng-template>
@@ -92,14 +90,14 @@
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Interface with External Leave System</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Interface with External Leave System</div>
+    <div class="col-2 mt-1">
       <kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch>
       <span *ngIf="checked03" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked03" class="letter-spacing p-3">No</span>
     </div>
-    <div class="col-4">
+    <div class="col-4 mt-1">
       <div *ngIf="checked03; else elseBlock">
         <kendo-multiselecttree kendoMultiSelectTreeExpandable
                                [kendoMultiSelectTreeHierarchyBinding]="data"
@@ -113,8 +111,7 @@
         </kendo-multiselecttree>
       </div>
       <ng-template #elseBlock>
-        <kendo-textbox 
-                       [size]="selectedSize"
+        <kendo-textbox [size]="selectedSize"
                        [disabled]="isDisabled">
         </kendo-textbox>
       </ng-template>
@@ -124,35 +121,31 @@
   </div>
 
 
-  <br />
-
   <div class="banner-rounded light-banner">
     <div class="col"> Field Mapping </div>
   </div>
-  <div class="row padding">
-    <div class="col-6">Use this field in Employee Record to set up Group Budget</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Use this field in Employee Record to set up Group Budget</div>
+    <div class="col">
       <kendo-dropdownlist [data]="fieldMap | async"
                           textField="CategoryName"
                           valueField="CategoryID"
                           [fillMode]="fillMode"
                           [size]="size"
-                          class="long"
-                          [style.width.px]="275">
+                          class="long">
       </kendo-dropdownlist>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Use this field in Employee record to set up the maximum No. of courses allowed</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Use this field in Employee record to set up the maximum No. of courses allowed</div>
+    <div class="col">
       <kendo-dropdownlist [data]="fieldMap | async"
                           textField="CategoryName"
                           valueField="CategoryID"
                           [fillMode]="fillMode"
                           [size]="size"
-                          class="long"
-                          [style.width.px]="275">
+                          class="long">
       </kendo-dropdownlist>
     </div>
   </div>
@@ -162,44 +155,41 @@
   <div class="banner-rounded light-banner">
     <div class="col"> Evaluation Form Template </div>
   </div>
-  <div class="row padding">
-    <div class="col-6">Pre Course Evaluation Form to use for Adhoc Courses</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6  padding">Pre Course Evaluation Form to use for Adhoc Courses</div>
+    <div class="col">
       <kendo-dropdownlist [data]="evaluationFormPrecourse | async"
                           textField="CategoryName"
                           valueField="CategoryID"
                           [fillMode]="fillMode"
                           [size]="size"
-                          class="long"
-                          [style.width.px]="275">
+                          class="long">
       </kendo-dropdownlist>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6"> Feedback Form to use for Adhoc Courses</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6  padding"> Feedback Form to use for Adhoc Courses</div>
+    <div class="col">
       <kendo-dropdownlist [data]="evaluationFormFeedback | async"
                           textField="CategoryName"
                           valueField="CategoryID"
                           [fillMode]="fillMode"
                           [size]="size"
-                          class="long"
-                          [style.width.px]="275">
+                          class="long">
       </kendo-dropdownlist>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Post Course Evaluation Form to use for Adhoc Courses</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Post Course Evaluation Form to use for Adhoc Courses</div>
+    <div class="col">
       <kendo-dropdownlist [data]="evaluationFormPostcourse | async"
                           textField="CategoryName"
                           valueField="CategoryID"
                           [fillMode]="fillMode"
                           [size]="size"
-                          class="long"
-                          [style.width.px]="275">
+                          class="long">
       </kendo-dropdownlist>
     </div>
   </div>
@@ -207,40 +197,40 @@
 
   <div class="banner-rounded light-banner">
     <div class="col-6"> Course Application Restriction</div>
-    <div class="col-2 padding"> No / Yes</div>
-    <div class="col-4 padding"> Warn / Stop</div>
+    <div class="col-2"> No / Yes</div>
+    <div class="col-4"> Warn / Stop</div>
   </div>
-  <div class="row padding">
-    <div class="col-6">Restrict to only courses that are available in the Course Directory</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Restrict to only courses that are available in the Course Directory</div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked04" [size]="size"></kendo-switch>
       <span *ngIf="checked04" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked04" class="letter-spacing p-3">No</span>
     </div>
-    <div class="col-4">
+    <div class="col-4 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked05" [size]="size"></kendo-switch>
       <span *ngIf="checked05" class="letter-spacing p-3">Stop</span>
       <span *ngIf="!checked05" class="letter-spacing p-3">Warn</span>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Do not allow same date application</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Do not allow same date application</div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked06" [size]="size"></kendo-switch>
       <span *ngIf="checked06" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked06" class="letter-spacing p-3">No</span>
     </div>
-    <div class="col-4">
+    <div class="col-4 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked07" [size]="size"></kendo-switch>
       <span *ngIf="checked07" class="letter-spacing p-3">Stop</span>
       <span *ngIf="!checked07" class="letter-spacing p-3">Warn</span>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Maximum Number of Training Days per Budget Year</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Maximum Number of Training Days per Budget Year</div>
+    <div class="col-2 mt-1">
       <kendo-numerictextbox format="n2"
                             [value]="value"
                             [size]="mediumSize"
@@ -253,190 +243,198 @@
 
   <div class="banner-rounded light-banner">
     <div class="col-6"> Notification </div>
-    <div class="col-2 padding">
-      Notify
-      <span class="period ms-4">Days</span>
-      <span class="period ms-4">Weeks</span>
-      <span class="period ms-4">Months</span>
+    <div class="col-2">
+        <span>Notify</span>
+        <span class="col d-flex-inline">
+          <span class="col p-0 period-flex-wrap">
+              <span class="period pe-2">Days/</span>
+              <span class="period pe-2 ">Weeks/</span>
+              <span class="period">Months</span>
+          </span>
+        </span>
     </div>
-    <div class="col-4 padding d-flex">
-      <div class="flex-grow-1">
-        Remind
-        <span class="period ms-4">Days</span>
-        <span class="period ms-4">Weeks</span>
-        <span class="period ms-4">Months</span>
-      </div>
-      <span class="small">(Only one option allowed)</span>
+    <div class="col-2">
+      <span>Remind</span>
+      <span class="col d-flex-inline">
+        <span class="col p-0 period-flex-wrap">
+          <span class="period pe-2">Days/</span>
+          <span class="period pe-2 ">Weeks/</span>
+          <span class="period">Months</span>
+        </span>
+      </span>
+    </div>
+    <div class="col-2 d-flex justify-content-end">
+      <span class="small">(Only 1 option is allowed)</span>
     </div>
   </div>
 
-  <div class="row padding">
-    <div class="col-6">Feedback Form</div>
-    <div class="col-2">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked08" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked08" [(ngModel)]="selectedDay08"
+  <div class="row">
+    <div class="col-6 padding">Feedback Form</div>
+    <div class="col-2 mt-1 mb-1">
+     <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked08" [size]="size"></kendo-switch></kendo-label></span>
+     
+      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked08" [(ngModel)]="selectedDay08"
                           [disabled]="selectedMonth08!=='  ' || selectedWeek08!=='  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked08" [(ngModel)]="selectedWeek08"
+                          [listHeight]="500"></kendo-dropdownlist>
+      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked08" [(ngModel)]="selectedWeek08"
                           [disabled]="selectedMonth08!=='  ' || selectedDay08!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked08" [(ngModel)]="selectedMonth08"
+      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked08" [(ngModel)]="selectedMonth08"
                           [disabled]="selectedWeek08!=='  ' || selectedDay08!== '  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
+                          [listHeight]="500"></kendo-dropdownlist>
+      </div>
 
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"> <kendo-label text=""><kendo-switch [(ngModel)]="checked09" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked09" [(ngModel)]="selectedDay09"
+                            [disabled]="selectedMonth09!=='  ' || selectedWeek09!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked09" [(ngModel)]="selectedWeek09"
+                            [disabled]="selectedMonth09!=='  ' || selectedDay09!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked09" [(ngModel)]="selectedMonth09"
+                            [disabled]="selectedWeek09!=='  ' || selectedDay09!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
-
-    <div class="col-4">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked09" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked09" [(ngModel)]="selectedDay09"
-                          [disabled]="selectedMonth09!=='  ' || selectedWeek09!=='  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked09" [(ngModel)]="selectedWeek09"
-                          [disabled]="selectedMonth09!=='  ' || selectedDay09!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked09" [(ngModel)]="selectedMonth09"
-                          [disabled]="selectedWeek09!=='  ' || selectedDay09!== '  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
+    </div>
+  <hr />
+  <div class="row ">
+    <div class="col-6 padding">Post Course Evaluation Form</div>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked10" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked10" [(ngModel)]="selectedDay10"
+                            [disabled]="selectedMonth10!=='  ' || selectedWeek10!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked10" [(ngModel)]="selectedWeek10"
+                            [disabled]="selectedMonth10!=='  ' || selectedDay10!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked10" [(ngModel)]="selectedMonth10"
+                            [disabled]="selectedWeek10!=='  ' || selectedDay10!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+    </div>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked11" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked11" [(ngModel)]="selectedDay11"
+                            [disabled]="selectedMonth11!=='  ' || selectedWeek11!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked11" [(ngModel)]="selectedWeek11"
+                            [disabled]="selectedMonth11!=='  ' || selectedDay11!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked11" [(ngModel)]="selectedMonth11"
+                            [disabled]="selectedWeek11!=='  ' || selectedDay11!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Post Course Evaluation Form</div>
-    <div class="col-2">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked10" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked10" [(ngModel)]="selectedDay10"
-                          [disabled]="selectedMonth10!=='  ' || selectedWeek10!=='  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked10" [(ngModel)]="selectedWeek10"
-                          [disabled]="selectedMonth10!=='  ' || selectedDay10!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked10" [(ngModel)]="selectedMonth10"
-                          [disabled]="selectedWeek10!=='  ' || selectedDay10!== '  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
+  <div class="row">
+    <div class="col-6 padding">Certification Expiry</div>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked12" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked12" [(ngModel)]="selectedDay12"
+                            [disabled]="selectedMonth12!=='  ' || selectedWeek12!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked12" [(ngModel)]="selectedWeek12"
+                            [disabled]="selectedMonth12!=='  ' || selectedDay12!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked12" [(ngModel)]="selectedMonth12"
+                            [disabled]="selectedWeek12!=='  ' || selectedDay12!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
-    <div class="col-4">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked11" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked11" [(ngModel)]="selectedDay11"
-                          [disabled]="selectedMonth11!=='  ' || selectedWeek11!=='  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked11" [(ngModel)]="selectedWeek11"
-                          [disabled]="selectedMonth11!=='  ' || selectedDay11!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked11" [(ngModel)]="selectedMonth11"
-                          [disabled]="selectedWeek11!=='  ' || selectedDay11!== '  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-    </div>
-  </div>
-  <hr />
-  <div class="row padding">
-    <div class="col-6">Certification Expiry</div>
-    <div class="col-2">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked12" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked12" [(ngModel)]="selectedDay12"
-                          [disabled]="selectedMonth12!=='  ' || selectedWeek12!=='  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked12" [(ngModel)]="selectedWeek12"
-                          [disabled]="selectedMonth12!=='  ' || selectedDay12!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked12" [(ngModel)]="selectedMonth12"
-                          [disabled]="selectedWeek12!=='  ' || selectedDay12!== '  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-    </div>
-    <div class="col-4">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked13" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked13" [(ngModel)]="selectedDay13"
-                          [disabled]="selectedMonth13!=='  ' || selectedWeek13!=='  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked13" [(ngModel)]="selectedWeek13"
-                          [disabled]="selectedMonth13!=='  ' || selectedDay13!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked13" [(ngModel)]="selectedMonth13"
-                          [disabled]="selectedWeek13!=='  ' || selectedDay13!== '  '"
-                          [listHeight]="500" ></kendo-dropdownlist>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked13" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" cclass="me-2" [class.d-none]="!checked13" [(ngModel)]="selectedDay13"
+                            [disabled]="selectedMonth13!=='  ' || selectedWeek13!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked13" [(ngModel)]="selectedWeek13"
+                            [disabled]="selectedMonth13!=='  ' || selectedDay13!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked13" [(ngModel)]="selectedMonth13"
+                            [disabled]="selectedWeek13!=='  ' || selectedDay13!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Certification Upload</div>
-    <div class="col-2">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked14" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked14" [(ngModel)]="selectedDay14"
-                          [disabled]="selectedMonth14!=='  ' || selectedWeek14!=='  '"
-                          [listHeight]="500"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked14" [(ngModel)]="selectedWeek14"
-                          [disabled]="selectedMonth14!=='  ' || selectedDay14!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked14" [(ngModel)]="selectedMonth14"
-                          [disabled]="selectedWeek14!=='  ' || selectedDay14!== '  '"
-                          [listHeight]="500"></kendo-dropdownlist>
+  <div class="row">
+    <div class="col-6 padding">Certification Upload</div>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked14" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked14" [(ngModel)]="selectedDay14"
+                            [disabled]="selectedMonth14!=='  ' || selectedWeek14!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked14" [(ngModel)]="selectedWeek14"
+                            [disabled]="selectedMonth14!=='  ' || selectedDay14!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked14" [(ngModel)]="selectedMonth14"
+                            [disabled]="selectedWeek14!=='  ' || selectedDay14!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
-    <div class="col-4">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked15" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked15" [(ngModel)]="selectedDay15"
-                          [disabled]="selectedMonth15!=='  ' || selectedWeek15!=='  '"
-                          [listHeight]="500"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked15" [(ngModel)]="selectedWeek15"
-                          [disabled]="selectedMonth15!=='  ' || selectedDay15!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked15" [(ngModel)]="selectedMonth15"
-                          [disabled]="selectedWeek15!=='  ' || selectedDay15!== '  '"
-                          [listHeight]="500"></kendo-dropdownlist>
-    </div>
-  </div>
-  <hr />
-  <div class="row padding">
-    <div class="col-6">Course Confirmation</div>
-    <div class="col-2">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked16" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked16" [(ngModel)]="selectedDay16"
-                          [disabled]="selectedMonth16!=='  ' || selectedWeek16!=='  '"
-                          [listHeight]="500"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked16" [(ngModel)]="selectedWeek16"
-                          [disabled]="selectedMonth16!=='  ' || selectedDay16!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked16" [(ngModel)]="selectedMonth16"
-                          [disabled]="selectedWeek16!=='  ' || selectedDay16!== '  '"
-                          [listHeight]="500"></kendo-dropdownlist>
-    </div>
-    <div class="col-4">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked17" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked17" [(ngModel)]="selectedDay17"
-                          [disabled]="selectedMonth17!=='  ' || selectedWeek17!=='  '"
-                          [listHeight]="500"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked17" [(ngModel)]="selectedWeek17"
-                          [disabled]="selectedMonth17!=='  ' || selectedDay17!== '  '"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked17" [(ngModel)]="selectedMonth17"
-                          [disabled]="selectedWeek17!=='  ' || selectedDay17!== '  '"
-                          [listHeight]="500"></kendo-dropdownlist>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked15" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked15" [(ngModel)]="selectedDay15"
+                            [disabled]="selectedMonth15!=='  ' || selectedWeek15!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked15" [(ngModel)]="selectedWeek15"
+                            [disabled]="selectedMonth15!=='  ' || selectedDay15!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked15" [(ngModel)]="selectedMonth15"
+                            [disabled]="selectedWeek15!=='  ' || selectedDay15!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Course Cancellation</div>
-    <div class="col-2">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked18" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked18"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked18"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked18"></kendo-dropdownlist>
+  <div class="row">
+    <div class="col-6 padding">Course Confirmation</div>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked16" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked16" [(ngModel)]="selectedDay16"
+                            [disabled]="selectedMonth16!=='  ' || selectedWeek16!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked16" [(ngModel)]="selectedWeek16"
+                            [disabled]="selectedMonth16!=='  ' || selectedDay16!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked16" [(ngModel)]="selectedMonth16"
+                            [disabled]="selectedWeek16!=='  ' || selectedDay16!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
-    <div class="col-4">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked19" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked19"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked19"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked19"></kendo-dropdownlist>
-    </div>
-  </div>
-  <hr />
-  <div class="row padding">
-    <div class="col-6">Course Postponement</div>
-    <div class="col-2">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked20" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked20"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked20"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked20"></kendo-dropdownlist>
-    </div>
-    <div class="col-4">
-      <kendo-label text=""><kendo-switch [(ngModel)]="checked21" [size]="size"></kendo-switch></kendo-label>
-      <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="day-padding" [class.d-none]="!checked21"></kendo-dropdownlist>
-      <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="week-padding" [class.d-none]="!checked21"></kendo-dropdownlist>
-      <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" class="month-padding" [class.d-none]="!checked21"></kendo-dropdownlist>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked17" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked17" [(ngModel)]="selectedDay17"
+                            [disabled]="selectedMonth17!=='  ' || selectedWeek17!=='  '"
+                            [listHeight]="500"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked17" [(ngModel)]="selectedWeek17"
+                            [disabled]="selectedMonth17!=='  ' || selectedDay17!== '  '"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked17" [(ngModel)]="selectedMonth17"
+                            [disabled]="selectedWeek17!=='  ' || selectedDay17!== '  '"
+                            [listHeight]="500"></kendo-dropdownlist>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Send Email Reminder to Employee days before course start date</div>
-    <div class="col-2">
+  <div class="row">
+    <span class="col-6 padding">Course Cancellation</span>
+    <span class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked18" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked18"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked18"></kendo-dropdownlist>
+        <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked18"></kendo-dropdownlist>
+    </span>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked19" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked19"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked19"></kendo-dropdownlist>
+        <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked19"></kendo-dropdownlist>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-6 padding">Course Postponement</div>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked20" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked20"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked20"></kendo-dropdownlist>
+        <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked20"></kendo-dropdownlist>
+    </div>
+    <div class="col-2 mt-1 mb-1">
+      <span class="col ps-0"><kendo-label text=""><kendo-switch [(ngModel)]="checked21" [size]="size"></kendo-switch></kendo-label></span>
+        <kendo-dropdownlist [data]="days" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked21"></kendo-dropdownlist>
+        <kendo-dropdownlist [data]="weeks" [size]="size" [fillMode]="fillMode" class="me-2" [class.d-none]="!checked21"></kendo-dropdownlist>
+        <kendo-dropdownlist [listHeight]="500" [data]="month" [size]="size" [fillMode]="fillMode" [class.d-none]="!checked21"></kendo-dropdownlist>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-6 padding">Send Email Reminder to Employee days before course start date</div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-numerictextbox format="n2"
                             [value]="value"
                             [size]="mediumSize"
@@ -445,9 +443,9 @@
   </div>
 
   <hr />
-  <div class="row padding">
-    <div class="col-6">Send Email Reminder to First level Approving Officer days before course start date</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Send Email Reminder to First level Approving Officer days before course start date</div>
+    <div class="col-2 mt-1">
       <kendo-numerictextbox format="n2"
                             [value]="value"
                             [size]="mediumSize"
@@ -460,36 +458,36 @@
   <div class="banner-rounded light-banner">
     <div class="col"> Approval Workflow </div>
   </div>
-  <div class="row padding">
-    <div class="col-6">Notify Approving Person</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Notify Approving Person</div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked22" [size]="size"></kendo-switch>
       <span *ngIf="checked22" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked22" class="letter-spacing p-3">No</span>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Notify employee when nominated by HR/Manager for course</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Notify employee when nominated by HR/Manager for course</div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked23" [size]="size"></kendo-switch>
       <span *ngIf="checked23" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked23" class="letter-spacing p-3">No</span>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Group Nomination by HR(Admin)Manager requires approval - Follows Group Nomination approval flow (TCB)</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Group Nomination by HR(Admin)Manager requires approval - Follows Group Nomination approval flow (TCB)</div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked24" [size]="size"></kendo-switch>
       <span *ngIf="checked24" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked24" class="letter-spacing p-3">No</span>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Group Nomination by HR(Admin) requires Approval - Approval Work flow must be same as the employee training application work flow(TCA). </div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Group Nomination by HR(Admin) requires Approval - Approval Work flow must be same as the employee training application work flow(TCA). </div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked25" [size]="size"></kendo-switch>
       <span *ngIf="checked25" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked25" class="letter-spacing p-3">No</span>
@@ -501,24 +499,23 @@
         <kendo-numerictextbox format="n2"
                               [value]="value"
                               [size]="mediumSize"
-                              [style.width.px]="275"
                               [min]="min"></kendo-numerictextbox>
       </div>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Group Nomination by HR(Admin)Manager requires approval - Follows Employee Training application work flow (TCA)</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Group Nomination by HR(Admin)Manager requires approval - Follows Employee Training application work flow (TCA)</div>
+    <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked26" [size]="size"></kendo-switch>
       <span *ngIf="checked26" class="letter-spacing p-3">Yes</span>
       <span *ngIf="!checked26" class="letter-spacing p-3">No</span>
     </div>
   </div>
   <hr />
-  <div class="row padding">
-    <div class="col-6">Additional Email Address to be notified during Course Confirmation, Cancellation, Postponement</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Additional Email Address to be notified during Course Confirmation, Cancellation, Postponement</div>
+    <div class="col mt-1">
       <kendo-textbox format="n2"
                      [value]="value"
                      [size]="mediumSize"></kendo-textbox>
@@ -528,18 +525,22 @@
   <br />
 
   <div class="banner-rounded light-banner">
-    <div class="col"> Calculation </div>
+    <div class="col">
+      Calculation
+    </div> 
   </div>
+
   <!-- {{bondCalculation.value | json}}; Valid: {{bondCalculation.valid}}-->
-  <div class="row padding">
-    <div class="col-6">Bond Calculation to be based on</div>
+  <div class="row">
+    <div class="col-6 padding">Bond Calculation to be based on</div>
     <div class="col-6">
       <section [formGroup]="bondCalculation">
         <input type="radio"
                value="calendar"
                formControlName="bond"
                required
-               #calendar />
+               #calendar />
+
         <kendo-label class="ms-2">Calendar Days</kendo-label>
         <input type="radio"
                value="working"
@@ -560,19 +561,18 @@
 
 
   <hr />
-  <div class="row padding">
-    <div class="col-6">Leave Codes include in the CPD Hours report</div>
-    <div class="col-2">
+  <div class="row">
+    <div class="col-6 padding">Leave Codes include in the CPD Hours report</div>
+    <div class="col">
       <kendo-dropdownlist [data]="evaluationFormPostcourse | async"
                           textField="CategoryName"
                           valueField="CategoryID"
                           [fillMode]="fillMode"
                           [size]="size"
-                          class="long"
-                          [style.width.px]="275">
+                          class="long">
       </kendo-dropdownlist>
     </div>
-
   </div>
-
 </div>
+
+<br/>

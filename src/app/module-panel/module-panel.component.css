@@ -150,6 +150,9 @@ h5 {
   .h6, h6 {
     font-size: 0.8rem;
   }
+  .module-panel {
+    margin-left: 10px
+  }
 }
 
 @media(max-height:575px) {  /*fixed module icons start stop get cut >> scroll mode*/

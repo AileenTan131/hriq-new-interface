@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, HostListener } from '@angular/core';
 import { InputSize } from "@progress/kendo-angular-inputs"
 import { DropDownSize, DropDownFillMode } from "@progress/kendo-angular-dropdowns";
 
@@ -187,6 +187,12 @@ export class GlobalComponent{
     bond: new FormControl(),
  });
 
+  //screen width
+  screenWidth: number;
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+  }
 }
 
 

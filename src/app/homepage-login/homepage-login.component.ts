@@ -20,9 +20,10 @@ export class HomepageLoginComponent {
     this.screenWidth = window.innerWidth;
   }
 
-  close: boolean=true;
+  close: boolean = false;
 
   closePopup() {
-    this.close = false;
+    this.close = true;
   }
+
 }
