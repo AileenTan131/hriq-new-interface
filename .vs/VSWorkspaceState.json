@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\encapsulation",
     "\\src\\app\\homepage",
-    "\\src\\app\\homepage-login",
+    "\\src\\app\\menu",
+    "\\src\\app\\menu\\learning-menu",
+    "\\src\\app\\menu\\learning-menu\\setting",
     "\\src\\app\\module-panel",
-    "\\src\\app\\modules-learning",
-    "\\src\\app\\modules-learning\\global",
+    "\\src\\app\\top-panel",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\modules-learning\\global\\global.component.css",
+  "SelectedNode": "\\src\\app\\menu\\learning-menu\\setting\\setting.component.css",
   "PreviewInSolutionExplorer": false
 }

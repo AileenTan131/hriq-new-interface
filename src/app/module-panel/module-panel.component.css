@@ -115,9 +115,6 @@ h5 {
     margin:30px;
 
 }
-h5 {
-  font-size: 1.2rem;
-}
 /*.svg icons color-filter themes in encapsulation*/
 
 
@@ -144,6 +141,16 @@ h5 {
   .modal-color {
     --bs-modal-width: 60%;
   }
+  .fix-position{
+      position: fixed;
+      left: 0;
+      right: 0;
+  }
+  .child-route{
+      position: relative;
+      top:60px;
+  }
+
 }
 
 @media(max-width:700px) {
@@ -162,5 +169,4 @@ h5 {
     justify-content: center;
     margin-left: 0
   }
-
 }

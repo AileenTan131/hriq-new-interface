@@ -147,7 +147,6 @@ button.selection:hover,
 
 .white-circle {
   position: absolute;
-  bottom: 308px;
   background-color: white;
   width: 60px;
   height: 60px;
@@ -401,3 +400,23 @@ kendo-dropdownlist[_ngcontent-eco-c126]{
 
 
 
+@media(max-width:700px) {
+  .banner {
+    font-size: 1rem;
+  }
+
+  .dark-banner {
+    background: var(--color01);
+    font-size: 1.31rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+.light-banner,
+.banner-rounded {
+  font-size: 1rem;
+}
+h1{
+    font-size: 1.2rem;
+}
+}

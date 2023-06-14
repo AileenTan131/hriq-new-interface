@@ -1,70 +1,70 @@
 <!--Left module panel-->
- <div class="module-panel">
-    <div>
-      <div class="module-icons" addFilter>
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/user02.svg" /></div>
-          <div class="moduleLegend">HR</div>
-        </a>
-      </div>
+<div class="module-panel">
+  <div>
+    <div class="module-icons" addFilter>
+      <a href="#">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/user02.svg" /></div>
+        <div class="moduleLegend">HR</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/calendarCheck01.svg"  /></div>
-          <div class="moduleLegend">Leave</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a href="#">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/calendarCheck01.svg" /></div>
+        <div class="moduleLegend">Leave</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalColor">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/currencyDollar02.svg"  /></div>
-          <div class="moduleLegend">Payroll</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalColor">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/currencyDollar02.svg" /></div>
+        <div class="moduleLegend">Payroll</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/coinsHand.svg"  /></div>
-          <div class="moduleLegend">Claims</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a href="#">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/coinsHand.svg" /></div>
+        <div class="moduleLegend">Claims</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalTime">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userLeft01.svg"  /></div>
-          <div class="moduleLegend">Time</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalTime">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userLeft01.svg" /></div>
+        <div class="moduleLegend">Time</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/graduationHat02.svg"  /></div>
-          <div class="moduleLegend">Learning</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/graduationHat02.svg" /></div>
+        <div class="moduleLegend">Learning</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/edit05.svg"  /></div>
-          <div class="moduleLegend">Appraisal</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a href="#">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/edit05.svg" /></div>
+        <div class="moduleLegend">Appraisal</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userCircle.svg"  /></div>
-          <div class="moduleLegend">Recruit</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a href="#">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/userCircle.svg" /></div>
+        <div class="moduleLegend">Recruit</div>
+      </a>
+    </div>
 
-      <div class="module-icons" addFilter>
-        <a href="#">
-          <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/key01.svg"  /></div>
-          <div class="moduleLegend">Security</div>
-        </a>
-      </div>
+    <div class="module-icons" addFilter>
+      <a href="#">
+        <div><img class="moduleIcons" src="./assets/iconsModulePanel2px/key01.svg" /></div>
+        <div class="moduleLegend">Security</div>
+      </a>
     </div>
   </div>
+</div>
 
 <!--Modal-->
 <!--Modal-->
@@ -80,36 +80,41 @@
       <div class="d-flex justify-content-center">
         <img src="./assets/iconsMenu/learningSetting.png" addFilter />
       </div>
-      <div class="modal-body modal-menu-body">
-        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
+      <div class="modal-body modal-menu-body menu">
+
         <h6 class="text-center">
-          <button (click)="showLearningTransaction()"
-                  [class.isSelected]="menu==='TRANSACTIONS'"
-                  class="header hide-button">
-            Transactions
-          </button>
-          <span class="dot"> • </span>
-          <button (click)="showLearningReport()"
-                  [class.isSelected]="menu==='REPORTS'"
-                  class="header hide-button">
-            Reports
-          </button>
-          <span class="dot"> • </span>
-          <button (click)="showLearningSetting()"
-                  [class.isSelected]="menu==='SYSTEM'"
-                  class="header hide-button">
-            System Settings
-          </button>
+          <span class="fix-position">
+            <h1 class="modal-title text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
+            <button (click)="showLearningTransaction()"
+                    [class.isSelected]="menu==='TRANSACTIONS'"
+                    class="header hide-button">
+              Transactions
+            </button>
+            <span class="dot"> • </span>
+            <button (click)="showLearningReport()"
+                    [class.isSelected]="menu==='REPORTS'"
+                    class="header hide-button">
+              Reports
+            </button>
+            <span class="dot"> • </span>
+            <button (click)="showLearningSetting()"
+                    [class.isSelected]="menu==='SYSTEM'"
+                    class="header hide-button">
+              System Settings
+            </button>
 
           <!--line-->
           <div class="line-box" addFilter></div>
+          </span>
 
           <br />
 
           <!-- children routes-->
-          <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
-          <app-report [class.hide]="menu!=='REPORTS'"></app-report>
-          <app-setting [class.hide]="menu!=='SYSTEM'"></app-setting>
+          <span class="child-route">
+            <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
+            <app-report [class.hide]="menu!=='REPORTS'"></app-report>
+            <app-setting [class.hide]="menu!=='SYSTEM'"></app-setting>
+          </span>
         </h6>
       </div>
     </div>
@@ -217,10 +222,10 @@
             </div>
           </form>
 
-            <button mat-button class="outline-2 d-flex justify-content-start mt-3 mb-4" type="submit" data-bs-dismiss="modal" (click)="alertPasswordUpdate()">Update Password</button>
+          <button mat-button class="outline-2 d-flex justify-content-start mt-3 mb-4" type="submit" data-bs-dismiss="modal" (click)="alertPasswordUpdate()">Update Password</button>
 
-          </div>
         </div>
+      </div>
     </div>
   </div>
 </div>
@@ -238,7 +243,7 @@
         <kendo-autocomplete [data]="languageSelect" #languageValue [size]="selectedSize" placeholder="e.g. English"> </kendo-autocomplete>
       </div>
       <div>
-        <button mat-button class="outline-2 button-ms d-flex justify-content-start" type="submit"  data-bs-dismiss="modal" (click)="alertLanguageUpdate(languageValue.value)">Set Language</button>
+        <button mat-button class="outline-2 button-ms d-flex justify-content-start" type="submit" data-bs-dismiss="modal" (click)="alertLanguageUpdate(languageValue.value)">Set Language</button>
       </div>
     </div>
   </div>
@@ -358,7 +363,7 @@
                   </button>
                 </div>
                 <div class="col-4">
-                  <button  class="hide-button" (click)="setSeaData()" [class.isSelected]="runTheme==='Sea'">
+                  <button class="hide-button" (click)="setSeaData()" [class.isSelected]="runTheme==='Sea'">
                     <h6>Sea</h6>
                     <img class="color-scheme-img img-fluid" src="././assets/sea.jpg" />
                   </button>

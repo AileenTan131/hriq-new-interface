@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div [ngClass]="{'resize-alert':screenWidth>650}" class="alert-message"
+  <div class="alert-message" id="resize-alert"
        [class.d-none]="close">
     Best viewed in landscape mode
     <a type="button" (click)="closePopup()">
@@ -7,15 +7,14 @@
     </a>
   </div>
 
-  <!--    [class.d-none]="screenWidth<650"-->
-  <div class="app"  [class.d-shift]="close">
+  <div class="app" [class.d-shift]="close">
     <a (click)="showHomepage()" type="button" class="hriq-box">
       <div class="empty-space"></div>
       <img class="hriqLogo" src="./assets/hriqLogoBlack.png" addFilter>
     </a>
 
     <div class="top-panel">
-      <app-top-panel ></app-top-panel>
+      <app-top-panel></app-top-panel>
     </div>
 
     <div class="module-panel">
@@ -31,9 +30,3 @@
     </div>
   </div>
 </div>
-
-
-<!--  <app-module-panel></app-module-panel>
-  <app-top-panel></app-top-panel>
-  <app-footer></app-footer>
--->

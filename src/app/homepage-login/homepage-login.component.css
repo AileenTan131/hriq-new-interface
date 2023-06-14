@@ -74,12 +74,10 @@
   border-bottom: 3px solid white;
   letter-spacing: 1px;
   z-index: 10;
-  display: block;
-
 }
 
 .resize-alert {
-  display: none
+  display: block
 }
 
 
@@ -114,12 +112,24 @@
   .hriq-box {
     width: 70px;
   }
-  app-top-panel, .main, app-module-panel, .hriqLogo {
+  #resize-alert {
+    display: block
+  }
+
+ 
+/*  app-top-panel, .hriqLogo, .main {
     position: relative;
-    top: 20px
+    top: 20px;
+
   }
   .d-shift {
     transform: translateY(-20px);
     transition: transform 0.5s;
-  }
+  }*/
 }
+
+ @media (min-width:650px){
+    #resize-alert{
+        display: none
+    }
+  }
