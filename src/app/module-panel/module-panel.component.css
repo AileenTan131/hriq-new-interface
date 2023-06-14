@@ -3,7 +3,6 @@
   position: fixed;
   margin-left: 19px
 }
-
 .module-icons {
   padding-bottom: 20px;
 }
@@ -16,44 +15,41 @@
 .moduleLegend {
   color: black;
 }
-
 a {
   text-decoration: none
 }
 
 
-
 /*Modal pages*/
 /*Modal pages*/
 /*Modal pages*/
-.modal-menu {
+  .modal-menu {
   --bs-modal-width: 80%;
 }
 .modal-color {
   --bs-modal-width: 40%;
 }
-
 .modal-menu-body {
-  height: 600px;
+  height: 650px;
+  padding-top: 0;
 }
 .modal-color-body {
   height: 400px;
 }
-
+.modal-header{
+    padding-bottom: 0;
+    background-color: white;
+}
 .modal-header, .modal-footer {
   border: none;
 }
-
-
 .dot {
   color: var(--color01);
 }
-
 button.header {
   color: var(--color01);
   font-weight: 600;
 }
-
 .hide-button {
   text-align: center;
   background-color: transparent;
@@ -68,7 +64,6 @@ button:hover, .isSelected {
   color: var(--color01);
   background-color: var(--color03)
 }
-
 
 .hide {
   display: none
@@ -87,21 +82,16 @@ h5 {
   font-weight: normal;
   font-size: 1.1rem;
 }
-
 .line-box{
     height:5px;
     background-color: black;
     width: 100%;
     position:relative;
-    top:55px;
-/*    z-index:-2*/
+    top:29px;
 }
-
 .body-align {
   padding: 0px 20px
 }
-
-
 .shift-body-up {
   padding-top: 0;
 }
@@ -113,11 +103,60 @@ h5 {
 }
 .button-ms{
     margin:30px;
-
+}
+.white-box {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 2;
+}
+  .fix-position{
+      position: fixed;
+      left: 0;
+      right: 0;
+  }
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas:
+    "menu-head"
+    "menu-child-route"
+}
+.menu-child-route {
+  grid-area: menu-child-route;
+}
+.menu-head{
+    grid-area: menu-head;
+    position: fixed;
+    left:0;
+    right: 0;
+    z-index: 3;
+    padding-bottom: 15px;
+    display: block;
+    margin: 0 auto;
 }
 /*.svg icons color-filter themes in encapsulation*/
 
 
+
+
+/*modal-popup*/
+@media(max-width:1300px) {
+  .modal-color {
+    --bs-modal-width: 60%;
+  }
+  .menu-cat-icon {
+    width: 5%
+  }
+  .white-box {
+    height: 160px;
+  }
+  .menu-child-route {
+    position: relative;
+    top: 10px;
+  }
+}
 
 @media(max-width:1100px) { /*nest hub*/
   .moduleIcons {
@@ -129,28 +168,15 @@ h5 {
   .moduleLegend{
       font-size:0.8rem
   }
-
   .modal-dialog-centered.modal-dialog-scrollable .modal-content {
     max-height: 80%;
   }
-}
-
-
-/*modal-popup*/
-@media(max-width:1300px) {
-  .modal-color {
-    --bs-modal-width: 60%;
+  .white-box {
+    height: 140px;
   }
-  .fix-position{
-      position: fixed;
-      left: 0;
-      right: 0;
+  .menu-child-route {
+    top: 0px;
   }
-  .child-route{
-      position: relative;
-      top:60px;
-  }
-
 }
 
 @media(max-width:700px) {
@@ -160,13 +186,69 @@ h5 {
   .module-panel {
     margin-left: 10px
   }
-}
-
-@media(max-height:575px) {  /*fixed module icons start stop get cut >> scroll mode*/
-  .module-panel {
-    position: initial;
-    display: flex;
-    justify-content: center;
-    margin-left: 0
+  .line-box{
+      display: none
+  }
+  .white-box {
+    height: 150px;
+  }
+  .menu-cat-icon {
+    width: 7%
   }
 }
+
+@media(max-width:650px) {
+  .menu-child-route {
+    top: -20px;
+  }
+  .white-box {
+    height: 125px;
+  }
+}
+
+@media(max-width:440px) {
+  .menu-cat-icon {
+    width: 13%
+  }
+}
+
+@media(max-width:390px) {
+  .menu-child-route {
+    top: 10px;
+  }
+  .white-box {
+    height: 155px;
+  }
+}
+
+
+
+
+  @media(max-height:575px) { /*fixed module icons start stop get cut >> scroll mode*/
+    .module-panel {
+      position: initial;
+      display: flex;
+      justify-content: center;
+      margin-left: 0
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "menu-head menu-child-route"
+    }
+    .fix-position {
+      position: relative;
+      top: 0
+    }
+    .menu-cat-icon {
+      width: 22%
+    }
+    .line-box {
+      display: none
+    }
+    .white-box {
+      display: none;
+    }
+    }

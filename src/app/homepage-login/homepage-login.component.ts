@@ -14,11 +14,6 @@ export class HomepageLoginComponent {
     this.router.navigate(['homepage'], { relativeTo: this.route })
   }
 
-  screenWidth: number;
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.screenWidth = window.innerWidth;
-  }
 
   close: boolean = false;
 

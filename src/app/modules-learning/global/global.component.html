@@ -29,8 +29,8 @@
     <div class="col-6 padding">Allow for individual company setting</div>
     <div class="col-2 mt-1">
       <kendo-label text=""><kendo-switch [(ngModel)]="checked01" [size]="size"></kendo-switch></kendo-label>
-      <span *ngIf="checked01" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked01" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked01" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked01" class="letter-spacing p-3">No</small>
     </div>
 
     <div class="col-4 mt-1">
@@ -65,8 +65,8 @@
     <div class="col-6 padding">Interface with External eLearning System</div>
     <div class="col-2 mt-1">
       <kendo-switch [(ngModel)]="checked02" [size]="size"></kendo-switch>
-      <span *ngIf="checked02" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked02" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked02" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked02" class="letter-spacing p-3">No</small>
     </div>
     <div class="col-4 mt-1">
       <div *ngIf="checked02; else elseBlock">
@@ -94,8 +94,8 @@
     <div class="col-6 padding">Interface with External Leave System</div>
     <div class="col-2 mt-1">
       <kendo-switch [(ngModel)]="checked03" [size]="size"></kendo-switch>
-      <span *ngIf="checked03" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked03" class="letter-spacing p-3">No</span>
+      <samll *ngIf="checked03" class="letter-spacing p-3">Yes</samll>
+      <small *ngIf="!checked03" class="letter-spacing p-3">No</small>
     </div>
     <div class="col-4 mt-1">
       <div *ngIf="checked03; else elseBlock">
@@ -204,13 +204,13 @@
     <div class="col-6 padding">Restrict to only courses that are available in the Course Directory</div>
     <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked04" [size]="size"></kendo-switch>
-      <span *ngIf="checked04" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked04" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked04" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked04" class="letter-spacing p-3">No</small>
     </div>
     <div class="col-4 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked05" [size]="size"></kendo-switch>
-      <span *ngIf="checked05" class="letter-spacing p-3">Stop</span>
-      <span *ngIf="!checked05" class="letter-spacing p-3">Warn</span>
+      <small *ngIf="checked05" class="letter-spacing p-3">Stop</small>
+      <small *ngIf="!checked05" class="letter-spacing p-3">Warn</small>
     </div>
   </div>
   <hr />
@@ -218,13 +218,13 @@
     <div class="col-6 padding">Do not allow same date application</div>
     <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked06" [size]="size"></kendo-switch>
-      <span *ngIf="checked06" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked06" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked06" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked06" class="letter-spacing p-3">No</small>
     </div>
     <div class="col-4 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked07" [size]="size"></kendo-switch>
-      <span *ngIf="checked07" class="letter-spacing p-3">Stop</span>
-      <span *ngIf="!checked07" class="letter-spacing p-3">Warn</span>
+      <small *ngIf="checked07" class="letter-spacing p-3">Stop</small>
+      <small *ngIf="!checked07" class="letter-spacing p-3">Warn</small>
     </div>
   </div>
   <hr />
@@ -462,8 +462,8 @@
     <div class="col-6 padding">Notify Approving Person</div>
     <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked22" [size]="size"></kendo-switch>
-      <span *ngIf="checked22" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked22" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked22" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked22" class="letter-spacing p-3">No</small>
     </div>
   </div>
   <hr />
@@ -471,8 +471,8 @@
     <div class="col-6 padding">Notify employee when nominated by HR/Manager for course</div>
     <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked23" [size]="size"></kendo-switch>
-      <span *ngIf="checked23" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked23" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked23" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked23" class="letter-spacing p-3">No</small>
     </div>
   </div>
   <hr />
@@ -480,8 +480,8 @@
     <div class="col-6 padding">Group Nomination by HR(Admin)Manager requires approval - Follows Group Nomination approval flow (TCB)</div>
     <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked24" [size]="size"></kendo-switch>
-      <span *ngIf="checked24" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked24" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked24" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked24" class="letter-spacing p-3">No</small>
     </div>
   </div>
   <hr />
@@ -489,8 +489,8 @@
     <div class="col-6 padding">Group Nomination by HR(Admin) requires Approval - Approval Work flow must be same as the employee training application work flow(TCA). </div>
     <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked25" [size]="size"></kendo-switch>
-      <span *ngIf="checked25" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked25" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked25" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked25" class="letter-spacing p-3">No</small>
     </div>
     <div class="col-4"
          [class.d-none]="!checked25">
@@ -508,8 +508,8 @@
     <div class="col-6 padding">Group Nomination by HR(Admin)Manager requires approval - Follows Employee Training application work flow (TCA)</div>
     <div class="col-2 mt-1 mb-1">
       <kendo-switch [(ngModel)]="checked26" [size]="size"></kendo-switch>
-      <span *ngIf="checked26" class="letter-spacing p-3">Yes</span>
-      <span *ngIf="!checked26" class="letter-spacing p-3">No</span>
+      <small *ngIf="checked26" class="letter-spacing p-3">Yes</small>
+      <small *ngIf="!checked26" class="letter-spacing p-3">No</small>
     </div>
   </div>
   <hr />

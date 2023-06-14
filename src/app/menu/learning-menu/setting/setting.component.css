@@ -6,6 +6,7 @@
 .selection {
   display: block;
   margin: 0 auto;
+
 }
 
 button {
@@ -20,20 +21,87 @@ h5 {
   margin: 0
 }
 
-@media (max-width: 1300px) {
-  .row {
-    width: 1200px
-  }
+.learning-divisions {
+  display: grid;
+  grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.65%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "learning-global learning-courses learning-competency learning-currency learning-budget learning-access"
+}
+.learning-global {
+  grid-area: learning-global;
+}
+.learning-courses {
+  grid-area: learning-courses;
+}
+.learning-competency {
+  grid-area: learning-competency;
+}
+.learning-currency {
+  grid-area: learning-currency;
+}
+.learning-budget {
+  grid-area: learning-budget;
+}
+.learning-access {
+  grid-area: learning-access;
+}
+.title{
+    margin-top:13px
+}
+.padding-top{
+    padding-top: 15px;
 }
 
-  @media (max-width: 700px) {
-    .row {
-      width: 1000px
-    }
 
-    h5 {
-      font-size: 1.1rem
+
+@media (max-width: 1300px) {
+    .menu-icon{
+        width:25%;
     }
+}
+@media (max-width: 700px), (max-height:575px) {
+  h5 {
+    font-size: 1.1rem
   }
 
+  .learning-divisions {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "learning-global"
+      "learning-courses"
+      "learning-competency"
+      "learning-currency"
+      "learning-budget"
+      "learning-access"
+  }
+
+  .menu-icon, .white-circle {
+    display: none
+  }
+
+  #banner-menu {
+    background-color: var(--color01);
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 0px;
+    margin: 0px 20px
+  }
+
+  .title {
+    margin-top: 0px
+  }
+
+  .padding-top {
+    margin-top: 0;
+  }
+}
   /*class menu-icon and white-circle input encapsulation*/
+

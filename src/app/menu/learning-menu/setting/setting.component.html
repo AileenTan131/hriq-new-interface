@@ -1,104 +1,115 @@
-<div class="row">
-  <div class="col-2 mt-2">
+<div class="learning-divisions">
+
+  <div class="learning-global">
     <div class="d-flex justify-content-center">
       <div class="white-circle"></div>
-        <img class="menu-icon" src="./assets/iconsMenu/global.png" addFilter/>
+      <img class="menu-icon" src="./assets/iconsMenu/global.png" addFilter />
     </div>
-    <h5 class="text-center pt-2"><strong>Global</strong></h5>
-    <br />
-    <button class="selection"
-            (click)="onSelect(globals)"
-            [class.selected]="isSelected(globals)"
-            data-bs-dismiss="modal"
-            *ngFor='let globals of global'
-            [mat-flat-button]="isSelected(globals)" style="overflow: hidden">
-      {{globals.name}}
-    </button>
+    <h5 id="banner-menu" class="text-center title">
+      <strong>Global</strong>
+    </h5>
+    <div class="padding-top">
+      <button class="selection"
+              (click)="onSelect(globals)"
+              [class.selected]="isSelected(globals)"
+              data-bs-dismiss="modal"
+              *ngFor='let globals of global'
+              [mat-flat-button]="isSelected(globals)" style="overflow: hidden">
+        {{globals.name}}
+      </button>
+    </div>
   </div>
 
-  <div class="col-2 mt-2">
+  <div class="learning-courses">
     <div class="d-flex justify-content-center">
       <div class="white-circle"></div>
-        <img class="menu-icon" src="./assets/iconsMenu/course.png" addFilter/>
+      <img class="menu-icon" src="./assets/iconsMenu/course.png" addFilter />
     </div>
-    <h5 class="text-center pt-2"><strong>Course</strong></h5>
-    <br />
-    <button class="selection"
-            (click)="onSelect(courses)"
-            [class.selected]="isSelected(courses)"
-            data-bs-dismiss="modal"
-            *ngFor='let courses of course'
-            [mat-flat-button]="isSelected(courses)" style="overflow: hidden">
-      {{courses.name}}
-    </button>
+    <h5 id="banner-menu" class="text-center title"><strong>Course</strong></h5>
+    <div class="padding-top">
+      <button class="selection"
+              (click)="onSelect(courses)"
+              [class.selected]="isSelected(courses)"
+              data-bs-dismiss="modal"
+              *ngFor='let courses of course'
+              [mat-flat-button]="isSelected(courses)" style="overflow: hidden">
+        {{courses.name}}
+      </button>
+    </div>
   </div>
 
-  <div class="col-2 mt-2">
+  <div class="learning-competency">
     <div class="d-flex justify-content-center">
       <div class="white-circle"></div>
-        <img class="menu-icon" src="./assets/iconsMenu/competency.png" addFilter/>
+      <img class="menu-icon" src="./assets/iconsMenu/competency.png" addFilter />
     </div>
-    <h5 class="text-center pt-2"><strong>Competency</strong></h5>
-    <br />
-    <button class="selection"
-            (click)="onSelect(competencies)"
-            [class.selected]="isSelected(competencies)"
-            data-bs-dismiss="modal"
-            *ngFor='let competencies of competency'
-            [mat-flat-button]="isSelected(competencies)" style="overflow: hidden">
-      {{competencies.name}}
-    </button>
+    <h5 id="banner-menu" class="text-center title"><strong>Competency</strong></h5>
+    <div class="padding-top">
+      <button class="selection"
+              (click)="onSelect(competencies)"
+              [class.selected]="isSelected(competencies)"
+              data-bs-dismiss="modal"
+              *ngFor='let competencies of competency'
+              [mat-flat-button]="isSelected(competencies)" style="overflow: hidden">
+        {{competencies.name}}
+      </button>
+    </div>
   </div>
 
 
-  <div class="col-2 mt-2">
+  <div class="learning-currency">
     <div class="d-flex justify-content-center">
       <div class="white-circle"></div>
-        <img class="menu-icon" src="./assets/iconsMenu/currency.png" addFilter/>
+      <img class="menu-icon" src="./assets/iconsMenu/currency.png" addFilter />
     </div>
-    <h5 class="text-center pt-2"><strong>Currency</strong></h5>
-    <br />
-    <button class="selection"
-            (click)="onSelect(currencies)"
-            [class.selected]="isSelected(currencies)"
-            data-bs-dismiss="modal"
-            *ngFor='let currencies of currency'
-            [mat-flat-button]="isSelected(currencies)" style="overflow: hidden">
-      {{currencies.name}}
-    </button>
+    <h5 id="banner-menu" class="text-center title"><strong>Currency</strong></h5>
+    <div class="padding-top">
+      <button class="selection"
+              (click)="onSelect(currencies)"
+              [class.selected]="isSelected(currencies)"
+              data-bs-dismiss="modal"
+              *ngFor='let currencies of currency'
+              [mat-flat-button]="isSelected(currencies)" style="overflow: hidden">
+        {{currencies.name}}
+      </button>
+    </div>
   </div>
 
-  <div class="col-2 mt-2">
+  <div class="learning-budget">
     <div class="d-flex justify-content-center">
       <div class="white-circle"></div>
-        <img class="menu-icon" src="./assets/iconsMenu/budget.png" addFilter/>
+      <img class="menu-icon" src="./assets/iconsMenu/budget.png" addFilter />
     </div>
-    <h5 class="text-center  pt-2"><strong>Budget</strong></h5>
-    <br />
-    <button class="selection"
-            (click)="onSelect(budgets)"
-            [class.selected]="isSelected(budget)"
-            data-bs-dismiss="modal"
-            *ngFor='let budgets of budget'
-            [mat-flat-button]="isSelected(budget)" style="overflow: hidden">
-      {{budgets.name}}
-    </button>
+    <h5 id="banner-menu" class="text-center title"><strong>Budget</strong></h5>
+    <div class="padding-top">
+      <button class="selection"
+              (click)="onSelect(budgets)"
+              [class.selected]="isSelected(budget)"
+              data-bs-dismiss="modal"
+              *ngFor='let budgets of budget'
+              [mat-flat-button]="isSelected(budget)" style="overflow: hidden">
+        {{budgets.name}}
+      </button>
+    </div>
   </div>
 
-  <div class="col-2 mt-2">
+  <div class="learning-access">
     <div class="d-flex justify-content-center">
       <div class="white-circle"></div>
-        <img class="menu-icon" src="./assets/iconsMenu/accessControls.png" addFilter/>
+      <img class="menu-icon" src="./assets/iconsMenu/accessControls.png" addFilter />
     </div>
-    <h5 class="text-center pt-2"><strong>Access Controls</strong></h5>
-    <br />
-    <button class="selection"
-            (click)="onSelect(accesses)"
-            [class.selected]="isSelected(accesses)"
-            data-bs-dismiss="modal"
-            *ngFor='let accesses of access'
-            [mat-flat-button]="isSelected(accesses)" style="overflow: hidden">
-      {{accesses.name}}
-    </button>
+    <h5 id="banner-menu" class="text-center title"><strong>Access Controls</strong></h5>
+    <div class="padding-top">
+      <button class="selection"
+              (click)="onSelect(accesses)"
+              [class.selected]="isSelected(accesses)"
+              data-bs-dismiss="modal"
+              *ngFor='let accesses of access'
+              [mat-flat-button]="isSelected(accesses)" style="overflow: hidden">
+        {{accesses.name}}
+      </button>
+    </div>
   </div>
+
+  <br/>
 </div>

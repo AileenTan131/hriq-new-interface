@@ -32,7 +32,7 @@ h1 {
 }
 .light-banner {
   background: var(--color03);
-  font-size: 1.1rem;
+/*  font-size: 1.1rem;*/
   font-weight: 600;
   color: var(--color01);
 }
@@ -154,8 +154,8 @@ button.selection:hover,
 }
 .menu-icon {
   position: relative;
-  left: 0px;
-  z-index:1;
+  margin-top: 6px;
+  z-index: 1;
 }
 
 .progress-bar{
@@ -398,25 +398,45 @@ kendo-dropdownlist[_ngcontent-eco-c126]{
 
 
 
-
-
-@media(max-width:700px) {
-  .banner {
-    font-size: 1rem;
+@media(max-width:1300px) {
+  .white-circle {
+    width: 50px;
+    height: 50px;
   }
-
-  .dark-banner {
-    background: var(--color01);
-    font-size: 1.31rem;
-    color: white;
-    letter-spacing: 2px;
+}
+@media(max-width:1100px) {
+  .white-circle {
+    width: 40px;
+    height: 40px;
   }
+}
+  @media(max-width:700px) {
+    .banner {
+      font-size: 1rem;
+    }
+    .light-banner,
+    .banner-rounded {
+      font-size: 1rem;
+    }
 
-.light-banner,
-.banner-rounded {
-  font-size: 1rem;
-}
-h1{
-    font-size: 1.2rem;
-}
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    .dark-banner {
+      background: var(--color01);
+      font-size: 1.31rem;
+      color: white;
+      letter-spacing: 2px;
+    }
+
+  }
+@media(max-width:440px) {
+  .light-banner,
+  .banner-rounded {
+    font-size: 0.8rem;
+  }
+  html*{
+      font-size: 0.5rem !important ;
+  }
 }

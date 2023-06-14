@@ -77,45 +77,43 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
-      <div class="d-flex justify-content-center">
-        <img src="./assets/iconsMenu/learningSetting.png" addFilter />
-      </div>
+
       <div class="modal-body modal-menu-body menu">
+        <div class="fix-position text-center menu-head">
+          <div class="d-flex justify-content-center pb-2">
+            <img class="menu-cat-icon" src="./assets/iconsMenu/learningSetting.png" addFilter />
+          </div>
 
-        <h6 class="text-center">
-          <span class="fix-position">
-            <h1 class="modal-title text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
-            <button (click)="showLearningTransaction()"
-                    [class.isSelected]="menu==='TRANSACTIONS'"
-                    class="header hide-button">
-              Transactions
-            </button>
-            <span class="dot"> • </span>
-            <button (click)="showLearningReport()"
-                    [class.isSelected]="menu==='REPORTS'"
-                    class="header hide-button">
-              Reports
-            </button>
-            <span class="dot"> • </span>
-            <button (click)="showLearningSetting()"
-                    [class.isSelected]="menu==='SYSTEM'"
-                    class="header hide-button">
-              System Settings
-            </button>
+          <h1 class="modal-title text-center" id="exampleModalLabel">LEARNING {{menu}} SETTING</h1>
+          <button (click)="showLearningTransaction()"
+                  [class.isSelected]="menu==='TRANSACTIONS'"
+                  class="header hide-button">
+            Transactions
+          </button>
+          <span class="dot"> • </span>
+          <button (click)="showLearningReport()"
+                  [class.isSelected]="menu==='REPORTS'"
+                  class="header hide-button">
+            Reports
+          </button>
+          <span class="dot"> • </span>
+          <button (click)="showLearningSetting()"
+                  [class.isSelected]="menu==='SYSTEM'"
+                  class="header hide-button">
+            System Settings
+          </button>
+        </div>
 
+          <div class="white-box"></div>
+
+        <!-- children routes-->
+        <span class="menu-child-route">
           <!--line-->
           <div class="line-box" addFilter></div>
-          </span>
-
-          <br />
-
-          <!-- children routes-->
-          <span class="child-route">
-            <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
-            <app-report [class.hide]="menu!=='REPORTS'"></app-report>
-            <app-setting [class.hide]="menu!=='SYSTEM'"></app-setting>
-          </span>
-        </h6>
+          <learning-transaction [class.hide]="menu!=='TRANSACTIONS'"></learning-transaction>
+          <app-report [class.hide]="menu!=='REPORTS'"></app-report>
+          <app-setting [class.hide]="menu!=='SYSTEM'"></app-setting>
+        </span>
       </div>
     </div>
   </div>
@@ -130,7 +128,7 @@
       </div>
 
       <div class="d-flex justify-content-center">
-        <img src="./assets/iconsMenu/learningSetting.png" addFilter />
+        <img class="menu-cat-icon" src="./assets/iconsMenu/learningSetting.png" addFilter />
       </div>
       <div class="modal-body modal-menu-body">
         <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">TIME {{menu}} SETTING</h1>
