@@ -93,7 +93,9 @@ td:hover,
 @media(max-width:1300px) {
    td, .notification-list, .action-list {
       font-size: 1rem;
-    }}
+    }
+
+}
 
 
   @media(max-width:1000px) { /*resize to portrait*/
@@ -131,6 +133,7 @@ td:hover,
   }
 
   @media(max-width:700px) {
-    .body-section {
+    .welcome-user{
+        padding-top:7px
     }
   }

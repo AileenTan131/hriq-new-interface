@@ -82,42 +82,45 @@
 
 
 
+@media(max-width:700px) {
+    .main {
+      padding-bottom: 120px;
+      margin-top: 57px
+    }
+}
 
 
+  @media(max-width:649px) { /*resize to portrait*/
 
-@media(max-width:649px) { /*resize to portrait*/
-  .main {
-    padding-bottom: 120px;
-    margin-top: 57px
-  }
+    .app {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      grid-template-rows: 92px 1fr 50px;
+      grid-template-areas:
+        "hriq top-panel"
+        "module-panel body"
+        "module-panel footer"
+    }
 
-  .app {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    grid-template-rows: 92px 1fr 50px;
-    grid-template-areas:
-      "hriq top-panel"
-      "module-panel body"
-      "module-panel footer"
-  }
+    .hriqLogo {
+      position: fixed;
+      top: 25px !important;
+      left: 13px;
+      height: 30px;
+      z-index: 3
+    }
 
-  .hriqLogo {
-    position: fixed;
-    top: 25px !important;
-    left: 13px;
-    height: 30px;
-    z-index: 3
-  }
-  .hriq-box {
-    width: 70px;
-  }
-  #resize-alert {
-    display: block
-  }
+    .hriq-box {
+      width: 70px;
+    }
 
- 
-/*  app-top-panel, .hriqLogo, .main {
+    #resize-alert {
+      display: block
+    }
+
+
+    /*  app-top-panel, .hriqLogo, .main {
     position: relative;
     top: 20px;
 
@@ -126,10 +129,10 @@
     transform: translateY(-20px);
     transition: transform 0.5s;
   }*/
-}
+  }
 
- @media (min-width:650px){
-    #resize-alert{
-        display: none
+  @media (min-width:650px) {
+    #resize-alert {
+      display: none
     }
   }
