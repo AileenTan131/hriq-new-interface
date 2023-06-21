@@ -245,10 +245,9 @@ h5 {
     .menu-cat-icon {
       width: 22%
     }
-    .line-box {
+    .line-box,
+    .white-box,
+    .dot {
       display: none
-    }
-    .white-box {
-      display: none;
     }
     }

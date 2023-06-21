@@ -12,24 +12,25 @@
              ngbTooltip="Toggle Page"
              [openDelay]="200" />
       </a>
+    </div>
 
-      <div class="information"
-           [class.toggleHide]="!toggleOff">
-        Information
-        <a type="button" (click)="toggleOff=!toggleOff">
-          <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
-               tooltipClass="tooltipclass"
-               placement="bottom"
-               ngbTooltip="Toggle Page"
-               [openDelay]="200" />
-        </a>
+    <div class="information banner-rounded dark-banner dashboard ps-3"
+         [class.toggleHide]="!toggleOff">
+      Information
+      <a type="button" (click)="toggleOff=!toggleOff">
+        <img class="toggle-page pb-1" src="./assets/iconsOthers2px/intersectSquare.svg"
+             tooltipClass="tooltipclass"
+             placement="bottom"
+             ngbTooltip="Toggle Page"
+             [openDelay]="200" />
+      </a>
+    </div>
+
+      <div class="mt-4">
+        <app-dashboard class="img-responsive" [class.toggleHide]="toggleOff"></app-dashboard>
+        <app-information [class.toggleHide]="!toggleOff"></app-information>
       </div>
     </div>
-    <div class="mt-4">
-      <app-dashboard [class.toggleHide]="toggleOff" class="dashboard"></app-dashboard>
-      <app-information [class.toggleHide]="!toggleOff"></app-information>
-    </div>
-  </div>
 
 
   <div class="action-notic">

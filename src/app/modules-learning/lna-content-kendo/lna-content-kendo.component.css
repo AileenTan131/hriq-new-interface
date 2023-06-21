@@ -127,16 +127,11 @@ table {
   padding-top: 7px
 }
 
-.row {
-  width:100%
-}
-
-
 .height-max {
- height: 640px;
+ height: 670px;
 }
 .height-min {
-  height:520px;
+  height:555px;
 }
 .padding-max {
 /*  padding-top: 76px;*/

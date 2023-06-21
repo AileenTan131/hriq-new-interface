@@ -4,13 +4,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\homepage",
+    "\\src\\app\\homepage-login",
     "\\src\\app\\menu",
-    "\\src\\app\\menu\\learning-menu",
-    "\\src\\app\\menu\\learning-menu\\setting",
-    "\\src\\app\\module-panel",
-    "\\src\\app\\top-panel",
-    "\\src\\assets"
+    "\\src\\app\\modules-learning",
+    "\\src\\app\\modules-learning\\global",
+    "\\src\\app\\modules-learning\\lna-content-kendo"
   ],
-  "SelectedNode": "\\src\\app\\menu\\learning-menu\\setting\\setting.component.css",
   "PreviewInSolutionExplorer": false
 }

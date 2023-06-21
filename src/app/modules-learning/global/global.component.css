@@ -3,7 +3,6 @@
     padding-bottom:3px;
     padding-left:27px
 }
-.padding-front{}
 hr{
     margin:0px 16px;
     opacity:10%;
@@ -30,6 +29,9 @@ kendo-dropdownlist {
 .day-padding, .week-padding, .month-padding {
   margin-left: 15px;
 }
+.col-2 {
+  padding-right: 0px;
+}
 .letter-spacing{
     letter-spacing:1.5px
 }
@@ -38,6 +40,7 @@ kendo-dropdownlist {
   font-weight: 100;
   /*    font-style:italic;*/
   font-size: 1rem;
+  padding-right:15px;
 }
 .small{
     font-size: 0.8rem;
@@ -50,12 +53,8 @@ kendo-dropdownlist {
 .add-padding{
     padding-right:10px;
 }
-
-
-
-@media (max-width: 1000px) {
-  .period-flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.period-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
+

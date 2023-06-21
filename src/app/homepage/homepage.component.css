@@ -1,6 +1,6 @@
 .dashboard{
 padding-right: 0;
-margin-right: 0
+margin-right: 0;
 }
 .dashboard.banner-rounded{
     border-radius: 8px 0px 0px 8px
@@ -70,7 +70,7 @@ td:hover,
 
 }
 .body-section {
-/*  height: 100vh;*/
+  /*  height: 100vh;*/
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: 35px 1fr;
@@ -78,15 +78,18 @@ td:hover,
     "welcome-user welcome-user"
     "dashboard action-notification"
 }
-  .welcome-user{
-      grid-area: welcome-user;
-  }
-  .dash-info{
-      grid-area: dashboard;
-  }
-  .action-notic{
-      grid-area: action-notification;
-  }
+
+.welcome-user {
+  grid-area: welcome-user;
+}
+
+.dash-info {
+  grid-area: dashboard;
+}
+
+.action-notic {
+  grid-area: action-notification;
+}
 
 
 
